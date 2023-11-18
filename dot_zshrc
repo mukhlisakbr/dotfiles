@@ -1,0 +1,38 @@
+# antigen
+source $(brew --prefix)/share/antigen/antigen.zsh
+antigen bundle git
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
+antigen apply
+
+# starship
+eval "$(starship init zsh)"
+
+# zoxide
+eval "$(zoxide init zsh)"
+
+# nvm 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# brew
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
+# alias
+alias l="exa --icons"
+alias ll="exa --icons -l"
+alias lla="exa --icons -la"
+alias lg="lazygit"
+alias ld="lazydocker"
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# pyenv
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+
+# sublime
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
