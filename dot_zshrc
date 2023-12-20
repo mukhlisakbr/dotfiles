@@ -1,6 +1,6 @@
 # brew
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # zplug
 export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
@@ -37,3 +37,10 @@ alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 
 # sublime
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/mukhlis/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
