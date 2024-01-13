@@ -7,6 +7,9 @@ export SAVEHIST=$HISTSIZE
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
+# lean config
+PROMPT_LEAN_TMUX=""
+
 # zplug
 export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
 source $ZPLUG_HOME/init.zsh
@@ -15,10 +18,11 @@ zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 #zplug "miekg/lean"
+zplug "jackharrisonsherlock/common", as:theme
 zplug load
 
 # starship
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
 
 # zoxide
 eval "$(zoxide init zsh)"
