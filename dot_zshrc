@@ -7,7 +7,7 @@ export SAVEHIST=$HISTSIZE
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
-# lean config
+# prompt config
 PROMPT_LEAN_TMUX=""
 
 # zplug
@@ -18,11 +18,11 @@ zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 #zplug "miekg/lean"
-zplug "jackharrisonsherlock/common", as:theme
+#zplug "jackharrisonsherlock/common", as:theme
 zplug load
 
 # starship
-#eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 # zoxide
 eval "$(zoxide init zsh)"
@@ -38,6 +38,7 @@ alias ll="exa --icons -l"
 alias lla="exa --icons -la"
 alias lg="lazygit"
 alias ld="lazydocker"
+alias cat="bat"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
