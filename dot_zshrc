@@ -55,3 +55,6 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+
+# for lazygit
+export XDG_CONFIG_HOME="$HOME/.config"
