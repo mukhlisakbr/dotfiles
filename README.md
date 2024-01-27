@@ -4,16 +4,9 @@ These are my new dotfiles managed by chezmoi, specifically tailored for macOS.
 
 Required packages that need to be installed beforehand:
 
-- homebrew
+- homebrew apps
 ```bash
-brew install zplug
-brew install starship
-brew install zoxide
-brew install exa
-brew install lazygit
-brew install lazydocker
-brew install fzf
-brew install pyenv
+brew install zplug starship zoxide exa lazygit lazydocker fzf pyenv bat git-delta
 ```
-
-- nvm https://github.com/nvm-sh/nvm#installing-and-updating
+- other
+  - nvm https://github.com/nvm-sh/nvm#installing-and-updating
