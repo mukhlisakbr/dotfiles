@@ -17,12 +17,14 @@ zplug "plugins/git", from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
-#zplug "miekg/lean"
-#zplug "jackharrisonsherlock/common", as:theme
+# zplug "miekg/lean"
+# zplug "jackharrisonsherlock/common", as:theme
+zplug mafredri/zsh-async, from:github
+zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
 zplug load
 
 # starship
-#eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 # zoxide
 eval "$(zoxide init zsh)"
