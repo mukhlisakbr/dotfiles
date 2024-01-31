@@ -41,7 +41,7 @@ alias lla="exa --icons -la"
 alias lg="lazygit"
 alias ld="lazydocker"
 alias cat="bat"
-alias vim="nvim"
+#alias vim="nvim"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
