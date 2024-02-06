@@ -1,0 +1,10 @@
+[user]
+	email = 27577560+mukhlisakbr@users.noreply.github.com
+	name = Mukhlis Akbarrudin
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIZseL4tyOASOeJLzrWRHJnmZ5dNXS/jIcmQB8+MrEHF
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
