@@ -1,8 +1,4 @@
-# dotfiles-v2
-
-These are my new dotfiles managed by chezmoi, specifically tailored for macOS.
-
-Required packages that need to be installed beforehand:
+# dotfiles
 
 - homebrew apps
 ```bash
