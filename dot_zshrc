@@ -14,7 +14,7 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # prompt config
-PROMPT_LEAN_TMUX=""
+#PROMPT_LEAN_TMUX=""
 
 # zplug
 export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
@@ -23,12 +23,16 @@ zplug "plugins/git", from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
-# zplug "miekg/lean"
-# zplug "jackharrisonsherlock/common", as:theme
+#zplug "miekg/lean"
+#zplug "jackharrisonsherlock/common", as:theme
 #zplug mafredri/zsh-async, from:github
 #zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
 zplug 'win0err/aphrodite-terminal-theme', as:theme
+#zplug "jeffreytse/zsh-vi-mode"
 zplug load
+
+# zsh-vi-mode
+#ZVM_VI_INSERT_ESCAPE_BINDKEY=kj
 
 # starship
 # eval "$(starship init zsh)"
