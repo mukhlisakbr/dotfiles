@@ -1,19 +1,5 @@
 # dotfiles
 
-- homebrew apps
-```bash
-brew install zplug \
-    starship \
-    zoxide \
-    exa \
-    lazygit \
-    lazydocker \
-    fzf \
-    pyenv \
-    bat \
-    git-delta
+nothing.
 
-```
-
-- other
-  - nvm https://github.com/nvm-sh/nvm#installing-and-updating
+- nvm https://github.com/nvm-sh/nvm#installing-and-updating
