@@ -3,7 +3,7 @@ setopt share_history
 export HISTSIZE=1000000000
 export SAVEHIST=$HISTSIZE
 # zsh prompt
-export PROMPT="%F{green}%n%f%F{green}@%f%F{green}%m%f:%F{57}%~%f %# "
+export PROMPT="%F{green}%n%f%F{green}@%f%F{green}%m%f:%F{magenta}%~%f %# "
 
 # brew
 if type brew &>/dev/null
