@@ -1,0 +1,3 @@
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export PS1='\[\e[92m\]\u@\h\[\e[0m\]:\[\e[95m\]\w\[\e[0m\] \$ '
