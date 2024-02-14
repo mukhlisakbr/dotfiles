@@ -27,8 +27,11 @@ zplug "zsh-users/zsh-completions"
 #zplug "jackharrisonsherlock/common", as:theme
 #zplug mafredri/zsh-async, from:github
 #zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
-zplug 'win0err/aphrodite-terminal-theme', as:theme
+#zplug 'win0err/aphrodite-terminal-theme', as:theme
 #zplug "jeffreytse/zsh-vi-mode"
+#zplug "akz92/clean", as:theme
+zplug "gdsrosa/minimal_improved", as:theme
+#zplug "andrepolischuk/neat"
 zplug load
 
 # zsh-vi-mode
