@@ -2,6 +2,8 @@
 setopt share_history
 export HISTSIZE=1000000000
 export SAVEHIST=$HISTSIZE
+# zsh prompt
+export PROMPT="%F{green}%n%f%F{green}@%f%F{green}%m%f:%F{57}%~%f %# "
 
 # brew
 if type brew &>/dev/null
@@ -30,7 +32,7 @@ zplug "zsh-users/zsh-completions"
 #zplug 'win0err/aphrodite-terminal-theme', as:theme
 #zplug "jeffreytse/zsh-vi-mode"
 #zplug "akz92/clean", as:theme
-zplug "gdsrosa/minimal_improved", as:theme
+#zplug "gdsrosa/minimal_improved", as:theme
 #zplug "andrepolischuk/neat"
 zplug load
 
