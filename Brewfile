@@ -25,10 +25,12 @@ brew "jq"
 brew "lazydocker"
 brew "lazygit"
 brew "libpq"
+brew "mas"
 brew "neofetch"
 brew "nmap"
 brew "openjdk"
 brew "php"
+brew "pwgen"
 brew "pyenv"
 brew "ripgrep"
 brew "scrcpy"
@@ -58,14 +60,24 @@ cask "ipvanish-vpn"
 cask "iterm2"
 cask "microsoft-auto-update"
 cask "microsoft-office"
+cask "microsoft-remote-desktop"
 cask "ngrok"
+cask "obs"
 cask "orbstack"
 cask "rectangle"
 cask "surfshark"
 cask "tableplus"
+cask "tailscale"
 cask "vagrant-vmware-utility"
 cask "vmware-fusion"
-cask "warp"
+mas "1Password for Safari", id: 1569813296
+mas "Bear", id: 1091189122
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
 vscode "bmewburn.vscode-intelephense-client"
 vscode "bradlc.vscode-tailwindcss"
 vscode "codezombiech.gitignore"
