@@ -58,7 +58,7 @@ alias ll="exa --icons -l"
 alias lla="exa --icons -la"
 alias lg="lazygit"
 alias ld="lazydocker"
-alias cat="bat"
+#alias cat="bat"
 #alias vim="nvim"
 
 # fzf
