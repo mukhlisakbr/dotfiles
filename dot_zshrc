@@ -5,13 +5,15 @@ export SAVEHIST=$HISTSIZE
 # zsh prompt
 export PROMPT="%F{green}%n%f%F{green}@%f%F{green}%m%f:%F{magenta}%~%f %# "
 
-# brew
+# brew shell completions
 if type brew &>/dev/null
 then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
   autoload -Uz compinit
   compinit
 fi
+
+# brew path
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
@@ -27,16 +29,16 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 #zplug "miekg/lean"
 #zplug "jackharrisonsherlock/common", as:theme
-#zplug mafredri/zsh-async, from:github
-#zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
-#zplug 'win0err/aphrodite-terminal-theme', as:theme
+#zplug "mafredri/zsh-async", from:github
+#zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
+#zplug "win0err/aphrodite-terminal-theme", as:theme
 #zplug "jeffreytse/zsh-vi-mode"
 #zplug "akz92/clean", as:theme
 #zplug "gdsrosa/minimal_improved", as:theme
 #zplug "andrepolischuk/neat"
 zplug load
 
-# zsh-vi-mode
+# zsh vi mode
 #ZVM_VI_INSERT_ESCAPE_BINDKEY=kj
 
 # starship
@@ -78,5 +80,5 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
-# for lazygit
+# lazygit
 export XDG_CONFIG_HOME="$HOME/.config"
