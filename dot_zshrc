@@ -2,7 +2,8 @@
 setopt share_history
 export HISTSIZE=1000000000
 export SAVEHIST=$HISTSIZE
-# zsh prompt
+
+# custom zsh prompt
 #export PROMPT="%F{green}%n%f%F{green}@%f%F{green}%m%f:%F{magenta}%~%f %# "
 
 # brew shell completions
@@ -17,10 +18,7 @@ fi
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
-# prompt config
-PROMPT_LEAN_TMUX=""
-
-# zplug
+## start - zplug
 export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
 source $ZPLUG_HOME/init.zsh
 zplug "plugins/git", from:oh-my-zsh
@@ -29,8 +27,9 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 #zplug "jeffreytse/zsh-vi-mode"
 
-# zsh theme
-zplug "miekg/lean"
+# theme
+#zplug "miekg/lean"
+#PROMPT_LEAN_TMUX=""
 #zplug "jackharrisonsherlock/common", as:theme
 #zplug "mafredri/zsh-async", from:github
 #zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
@@ -38,8 +37,20 @@ zplug "miekg/lean"
 #zplug "akz92/clean", as:theme
 #zplug "gdsrosa/minimal_improved", as:theme
 #zplug "andrepolischuk/neat"
+zplug "themes/robbyrussell", from:oh-my-zsh
+#zplug "themes/clean", from:oh-my-zsh, as:theme
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
 
 zplug load
+
+## end - zplug
 
 # zsh vi mode
 #ZVM_VI_INSERT_ESCAPE_BINDKEY=kj
