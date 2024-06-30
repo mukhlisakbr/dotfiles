@@ -37,8 +37,10 @@ zplug "zsh-users/zsh-completions"
 #zplug "akz92/clean", as:theme
 #zplug "gdsrosa/minimal_improved", as:theme
 #zplug "andrepolischuk/neat"
-zplug "themes/robbyrussell", from:oh-my-zsh
+#zplug "themes/robbyrussell", from:oh-my-zsh
 #zplug "themes/clean", from:oh-my-zsh, as:theme
+zplug "agkozak/agkozak-zsh-prompt"
+#zplug "nicolodiamante/simple"
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -86,13 +88,6 @@ alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 
 # sublime
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
-
-# pnpm
-export PNPM_HOME="/Users/mukhlis/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
 
 # lazygit
 export XDG_CONFIG_HOME="$HOME/.config"
