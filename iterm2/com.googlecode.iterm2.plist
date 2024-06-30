@@ -361,6 +361,8 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>F16621F0-4FA6-41F2-85F3-02D0ED454BF1</string>
+	<key>EnableProxyIcon</key>
+	<false/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideScrollbar</key>
@@ -1959,6 +1961,8 @@
 			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
+			<key>Title Components</key>
+			<integer>2</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
