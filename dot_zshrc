@@ -91,5 +91,6 @@ export XDG_CONFIG_HOME="$HOME/.config"
 FNM_PATH="/Users/mukhlis/Library/Application Support/fnm"
 if [ -d "$FNM_PATH" ]; then
   export PATH="/Users/mukhlis/Library/Application Support/fnm:$PATH"
-  eval "`fnm env`"
+  #eval "`fnm env`"
+  eval "$(fnm env --use-on-cd)"
 fi
