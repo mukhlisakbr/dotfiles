@@ -3,9 +3,6 @@ setopt share_history
 export HISTSIZE=1000000000
 export SAVEHIST=$HISTSIZE
 
-# custom zsh prompt
-#export PROMPT="%F{green}%n%f%F{green}@%f%F{green}%m%f:%F{magenta}%~%f %# "
-
 # brew shell completions
 if type brew &>/dev/null
 then
@@ -37,7 +34,7 @@ zplug "zsh-users/zsh-completions"
 #zplug "akz92/clean", as:theme
 #zplug "gdsrosa/minimal_improved", as:theme
 #zplug "andrepolischuk/neat"
-zplug "themes/robbyrussell", from:oh-my-zsh, as:theme
+#zplug "themes/robbyrussell", from:oh-my-zsh, as:theme
 #zplug "themes/clean", from:oh-my-zsh, as:theme
 #zplug "agkozak/agkozak-zsh-prompt"
 #zplug "nicolodiamante/simple"
@@ -58,7 +55,7 @@ zplug load
 #ZVM_VI_INSERT_ESCAPE_BINDKEY=kj
 
 # starship
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 # zoxide
 eval "$(zoxide init zsh)"
