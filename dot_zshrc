@@ -89,3 +89,10 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 # fnm
 eval "$(fnm env --use-on-cd)"
+
+# bun completions
+[ -s "/Users/mukhlis/.bun/_bun" ] && source "/Users/mukhlis/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
