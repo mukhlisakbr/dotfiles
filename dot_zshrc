@@ -1,32 +1,29 @@
-# zsh
-setopt share_history
-export HISTSIZE=1000000000
-export SAVEHIST=$HISTSIZE
-
-# brew shell completions
+# load brew shell completions before ohmyzsh
 if type brew &>/dev/null
 then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-  autoload -Uz compinit
-  compinit
 fi
+
+# ohmyzsh
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
 
 # brew path
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
-## start - zplug
+# zplug
 export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
 source $ZPLUG_HOME/init.zsh
-zplug "plugins/git", from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 #zplug "jeffreytse/zsh-vi-mode"
 
-# zsh theme
+# theme
 #zplug "miekg/lean"
-#PROMPT_LEAN_TMUX=""
 #zplug "jackharrisonsherlock/common", as:theme
 #zplug "mafredri/zsh-async", from:github
 #zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
@@ -46,16 +43,10 @@ if ! zplug check --verbose; then
         echo; zplug install
     fi
 fi
-
 zplug load
 
-## end - zplug
-
-# zsh vi mode
-#ZVM_VI_INSERT_ESCAPE_BINDKEY=kj
-
 # starship
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
 
 # zoxide
 eval "$(zoxide init zsh)"
@@ -64,9 +55,6 @@ eval "$(zoxide init zsh)"
 alias l="exa --icons"
 alias ll="exa --icons -l"
 alias lla="exa --icons -la"
-#alias l="exa"
-#alias ll="exa -l"
-#alias lla="exa -la"
 alias lg="lazygit"
 alias ld="lazydocker"
 #alias cat="bat"
