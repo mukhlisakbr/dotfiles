@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AllowClipboardAccess</key>
+	<true/>
 	<key>ClickToSelectCommand</key>
 	<false/>
 	<key>Custom Color Presets</key>
@@ -722,13 +724,13 @@
 				<key>Alpha Component</key>
 				<real>0.5</real>
 				<key>Blue Component</key>
-				<real>0.65218597462148864</real>
+				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.65218597462148864</real>
+				<real>1</real>
 				<key>Red Component</key>
-				<real>0.9787440299987793</real>
+				<real>1</real>
 			</dict>
 			<key>Badge Color (Light)</key>
 			<dict>
@@ -857,13 +859,13 @@
 				<key>Alpha Component</key>
 				<real>0.25</real>
 				<key>Blue Component</key>
-				<real>0.94099044799804688</real>
+				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.80232617749205526</real>
+				<real>0.9268307089805603</real>
 				<key>Red Component</key>
-				<real>0.37649588016392954</real>
+				<real>0.70213186740875244</real>
 			</dict>
 			<key>Cursor Guide Color (Light)</key>
 			<dict>
@@ -1472,13 +1474,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.0</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
 				<real>1</real>
 				<key>Red Component</key>
-				<real>0.99999994039535522</real>
+				<real>1</real>
 			</dict>
 			<key>Match Background Color (Light)</key>
 			<dict>
