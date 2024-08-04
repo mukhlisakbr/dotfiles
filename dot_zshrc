@@ -52,9 +52,9 @@ zplug load
 eval "$(zoxide init zsh)"
 
 # alias
-alias l="exa --icons"
-alias ll="exa --icons -l"
-alias lla="exa --icons -la"
+alias l="eza --icons"
+alias ll="eza --icons -l"
+alias lla="eza --icons -la"
 alias lg="lazygit"
 alias ld="lazydocker"
 #alias cat="bat"
