@@ -90,4 +90,5 @@ eval "$(fnm env --use-on-cd)"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# test auto commit
+# change def editor
+export EDITOR=nvim
