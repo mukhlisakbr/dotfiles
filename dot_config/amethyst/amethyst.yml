@@ -1,0 +1,5 @@
+mod1:
+  # - option
+  # - shift
+  - control
+  - command
