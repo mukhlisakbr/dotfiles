@@ -9,7 +9,7 @@ fi
 # ohmyzsh
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
-plugins=(git)
+plugins=(git vagrant)
 source $ZSH/oh-my-zsh.sh
 
 # disable auto title
@@ -63,7 +63,8 @@ alias lla="eza --icons -la"
 alias lg="lazygit"
 alias ld="lazydocker"
 #alias cat="bat"
-#alias vim="nvim"
+alias vim="nvim"
+alias sc="sc-im"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
