@@ -1,7 +1,8 @@
 README.md
 Brewfile
 
-.config/karabiner/automatic_backups/
+.config/karabiner/automatic_backups/**
+.config/karabiner/assets/**
 iterm2/
 
 // ignore sublime files
