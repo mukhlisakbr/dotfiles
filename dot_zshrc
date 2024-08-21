@@ -89,6 +89,7 @@ export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
 # lazygit
 export XDG_CONFIG_HOME="$HOME/.config"
+export LG_CONFIG_FILE="/Users/mukhlis/.config/lazygit/config.yml,/Users/mukhlis/.config/lazygit/catppuccin-mocha-red.yml"
 
 # fnm
 eval "$(fnm env --use-on-cd)"
