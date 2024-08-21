@@ -121,3 +121,8 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# appium
+export ANDROID_HOME="/Users/mukhlis/Library/Android/sdk"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-22.jdk/Contents/Home"
