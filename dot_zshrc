@@ -24,6 +24,7 @@ DISABLE_AUTO_TITLE=true
 
 # brew path
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # zplug
 export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
