@@ -3,3 +3,5 @@
 -- Add any additional options here
 
 vim.opt.relativenumber = false
+-- vim.o.background = "dark" -- or "light" for light mode
+-- vim.cmd([[colorscheme gruvbox]])
