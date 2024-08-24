@@ -1,4 +1,4 @@
-#imap kj <Esc>
+inoremap kj <Esc>
 
 let mapleader=" "
 
