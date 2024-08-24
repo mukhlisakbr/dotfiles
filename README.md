@@ -25,6 +25,14 @@ This repository contains my personal dotfiles managed using `chezmoi`.
 - `bat`: A cat clone with syntax highlighting and Git integration.
 - `sc-im`: A spreadsheet program for the terminal.
 - `eza`: A modern replacement for `ls` with more features and better defaults.
+- `zoxide`: A smarter cd command for navigating your filesystem.
+- `fd`: A simple, fast and user-friendly alternative to `find`.
+- `ripgrep`: A line-oriented search tool that recursively searches your current directory for a regex pattern.
+- `lazygit`: A simple terminal UI for git commands.
+- `pwgen`: A password generator for the command line.
+- `scrcpy`: A tool to display and control Android devices.
+- `zplug`: A next-generation plugin manager for zsh.
+- `ohmyzsh`: A framework for managing your zsh configuration.
 
 ### Terminal
 
