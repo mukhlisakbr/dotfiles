@@ -6,5 +6,5 @@ set ai
 set number
 set hlsearch
 set ruler
-"highlight Comment ctermfg=green
 inoremap kj <Esc>
+set clipboard=unnamed

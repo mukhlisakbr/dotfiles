@@ -74,9 +74,10 @@ alias lla="eza --icons -la"
 alias lg="lazygit"
 alias ld="lazydocker"
 #alias cat="bat"
-alias vim="nvim"
+#alias vim="nvim"
 alias sc="sc-im"
 alias pn="pnpm"
+alias ws="webstorm"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
