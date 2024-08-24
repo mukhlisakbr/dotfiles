@@ -1,53 +1,16 @@
 # dotfiles
 
-This repository contains my personal dotfiles managed using `chezmoi`.
-
-## Currently Used
-
-### Utilities
-
-- `Raycast`
-- `Bartender`
-- `Karabiner-Elements`
-- `iStat Menus`
-
-### Code Editor
-
-- `WebStorm`
-- `NVim`
-- `Vim`
-
-### Command Line Tools
-
-- `Homebrew`
-- `fzf`
-- `fnm`
-- `bat`
-- `sc-im`
-- `eza`
-- `zoxide`
-- `fd`
-- `ripgrep`
-- `lazygit`
-- `pwgen`
-- `scrcpy`
-- `zplug`
-- `ohmyzsh`
-
-### Terminal
-
-- `Warp`
-- `Kitty`
+This repo contains my personal dotfiles managed using `chezmoi`, mainly for macOS.
 
 ## Keymaps
 
-### Remapped Keys with Karabiner-Elements
+### Remapped Keys
 
 - `Caps Lock`: Acts as `Control` when pressed with another key and as `Escape` when pressed alone
 - Double `Right Shift`: Acts as `Caps Lock`
 - `Control+H/J/K/L`: Acts as arrow keys (Left/Down/Up/Right)
 
-### Standard Keymaps
+### Standard Keys
 
 - `Option+1-4`: Switch between spaces 1 to 4
 - `Command+Shift+V`: Open clipboard history
