@@ -6,35 +6,54 @@ This repository contains my personal dotfiles managed using `chezmoi`.
 
 ### Utilities
 
-- `Raycast`: A command launcher for macOS.
-- `Bartender`: An app to organize your menu bar apps.
-- `Karabiner-Elements`: A powerful and stable keyboard customizer for macOS.
-- `iStat Menus`: A system monitoring app for macOS.
+- `Raycast`
+- `Bartender`
+- `Karabiner-Elements`
+- `iStat Menus`
 
 ### Code Editor
 
-- `WebStorm`: An integrated development environment for JavaScript and related technologies.
-- `NVim`: A hyperextensible Vim-based text editor.
-- `Vim`: A highly configurable text editor built to enable efficient text editing.
+- `WebStorm`
+- `NVim`
+- `Vim`
 
 ### Command Line Tools
 
-- `Homebrew`: A package manager for macOS.
-- `fzf`: A command-line fuzzy finder.
-- `fnm`: A fast and simple Node.js version manager.
-- `bat`: A cat clone with syntax highlighting and Git integration.
-- `sc-im`: A spreadsheet program for the terminal.
-- `eza`: A modern replacement for `ls` with more features and better defaults.
-- `zoxide`: A smarter cd command for navigating your filesystem.
-- `fd`: A simple, fast and user-friendly alternative to `find`.
-- `ripgrep`: A line-oriented search tool that recursively searches your current directory for a regex pattern.
-- `lazygit`: A simple terminal UI for git commands.
-- `pwgen`: A password generator for the command line.
-- `scrcpy`: A tool to display and control Android devices.
-- `zplug`: A next-generation plugin manager for zsh.
-- `ohmyzsh`: A framework for managing your zsh configuration.
+- `Homebrew`
+- `fzf`
+- `fnm`
+- `bat`
+- `sc-im`
+- `eza`
+- `zoxide`
+- `fd`
+- `ripgrep`
+- `lazygit`
+- `pwgen`
+- `scrcpy`
+- `zplug`
+- `ohmyzsh`
 
 ### Terminal
 
-- `Warp`: A modern, Rust-based terminal with AI command search.
-- `Kitty`: A fast, feature-rich, GPU-based terminal emulator.
+- `Warp`
+- `Kitty`
+
+## Keymaps
+
+### Remapped Keys with Karabiner-Elements
+
+- `Caps Lock`: Acts as `Control` when pressed with another key and as `Escape` when pressed alone
+- Double `Right Shift`: Acts as `Caps Lock`
+- `Control+H/J/K/L`: Acts as arrow keys (Left/Down/Up/Right)
+
+### Standard Keymaps
+
+- `Option+1-4`: Switch between spaces 1 to 4
+- `Command+Shift+V`: Open clipboard history
+- `Command+Shift+Space`: Open 1Password search
+- `Command+Shift+K`: Open Shortcat search
+- `Control+H`: Left arrow
+- `Control+J`: Down arrow
+- `Control+K`: Up arrow
+- `Control+L`: Right arrow
