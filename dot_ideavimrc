@@ -1,1 +1,11 @@
-imap kj <Esc>
+#imap kj <Esc>
+
+let mapleader=" "
+
+map <Leader><Leader> <Action>(SearchEverywhere)
+map <Leader>t        <Action>(ActivateTerminalToolWindow)
+map <Leader>c        <Action>(ActivateCommitToolWindow)
+map <Leader>cp       <Action>(Git.Commit.And.Push.Executor)
+map <Leader>e        <Action>(ActivateProjectToolWindow)
+map <Leader>h        <Action>(PreviousTab)
+map <Leader>l        <Action>(NextTab)
