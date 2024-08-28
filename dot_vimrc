@@ -8,3 +8,9 @@ set hlsearch
 set ruler
 inoremap kj <Esc>
 set clipboard=unnamed
+
+call plug#begin()
+
+Plug 'mechatroner/rainbow_csv'
+
+call plug#end()
