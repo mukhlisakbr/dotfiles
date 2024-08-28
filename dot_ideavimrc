@@ -1,6 +1,8 @@
 inoremap kj <Esc>
-
+set clipboard+=unnamed
 let mapleader=" "
+set visualbell
+set noerrorbells
 
 map <Leader><Leader> <Action>(SearchEverywhere)
 map <Leader>t        <Action>(ActivateTerminalToolWindow)
