@@ -110,7 +110,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # change def editor
-export EDITOR=nvim
+export EDITOR=vim
 
 # yazi cd
 function yy() {
