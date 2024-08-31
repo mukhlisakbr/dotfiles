@@ -1,0 +1,10 @@
+[font]
+normal = { family = "GeistMono Nerd Font Mono", style = "Regular" }
+bold = { style = "Medium" }
+size = 14.00
+
+[window]
+decorations = "None"
+startup_mode = "Maximized"
+opacity = 0.20
+blur = true

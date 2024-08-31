@@ -1,3 +1,11 @@
+call plug#begin()
+
+Plug 'mechatroner/rainbow_csv'
+Plug 'ayu-theme/ayu-vim'
+
+call plug#end()
+
+set termguicolors
 syntax on
 set tabstop=2
 set shiftwidth=2
@@ -8,9 +16,6 @@ set hlsearch
 set ruler
 inoremap kj <Esc>
 set clipboard=unnamed
-
-call plug#begin()
-
-Plug 'mechatroner/rainbow_csv'
-
-call plug#end()
+let ayucolor="dark"
+colorscheme ayu
+hi Normal guibg=NONE ctermbg=NONE
