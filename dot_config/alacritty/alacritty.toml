@@ -6,7 +6,7 @@ size = 14.00
 [window]
 decorations = "None"
 startup_mode = "Maximized"
-opacity = 0.70
+opacity = 0.80
 blur = true
 
 [keyboard]
