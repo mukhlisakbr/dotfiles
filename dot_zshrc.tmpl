@@ -29,8 +29,57 @@ DISABLE_AUTO_TITLE=true
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
-# zplug
+
+# starship
+#eval "$(starship init zsh)"
+
+# zoxide
+eval "$(zoxide init zsh)"
+
+# alias
+alias l="eza --icons"
+alias ll="eza --icons -l"
+alias lla="eza --icons -la"
+alias lg="lazygit"
+alias ld="lazydocker"
+#alias cat="bat"
+#alias vim="nvim"
+alias sc="sc-im"
+alias pn="pnpm"
+alias ws="webstorm"
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#export FZF_DEFAULT_OPTS=" \
+#--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
+#--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+#--color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
+#--color=selected-bg:#45475a \
+#--multi"
+
+{{ if eq .chezmoi.os "darwin" }}
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+
+# sublime
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+
+# fnm
+eval "$(fnm env --use-on-cd)"
+
 export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
+
+{{ else if eq .chezmoi.os "android" }}
+
+export ZPLUG_HOME=/data/data/com.termux/files/home/.zplug
+
+{{ end }}
+
+# zplug
 source $ZPLUG_HOME/init.zsh
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
@@ -61,48 +110,11 @@ if ! zplug check --verbose; then
 fi
 zplug load
 
-# starship
-#eval "$(starship init zsh)"
-
-# zoxide
-eval "$(zoxide init zsh)"
-
-# alias
-alias l="eza --icons"
-alias ll="eza --icons -l"
-alias lla="eza --icons -la"
-alias lg="lazygit"
-alias ld="lazydocker"
-#alias cat="bat"
-#alias vim="nvim"
-alias sc="sc-im"
-alias pn="pnpm"
-alias ws="webstorm"
-
-# fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-#export FZF_DEFAULT_OPTS=" \
-#--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
-#--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
-#--color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
-#--color=selected-bg:#45475a \
-#--multi"
-
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
-
-# sublime
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
-
 # lazygit
 export XDG_CONFIG_HOME="$HOME/.config"
 #export LG_CONFIG_FILE="/Users/mukhlis/.config/lazygit/config.yml,/Users/mukhlis/.config/lazygit/catppuccin-mocha-red.yml"
 
-# fnm
-eval "$(fnm env --use-on-cd)"
+
 
 # bun
 [ -s "/Users/mukhlis/.bun/_bun" ] && source "/Users/mukhlis/.bun/_bun"
