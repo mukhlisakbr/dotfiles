@@ -56,44 +56,51 @@ alias ws="webstorm"
 
 {{ if eq .chezmoi.os "darwin" }}
 
-  # pyenv
-  export PYENV_ROOT="$HOME/.pyenv"
-  [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-  eval "$(pyenv init -)"
-  alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 
-  # sublime
-  export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+# sublime
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
-  # brew path
-  export PATH="/usr/local/sbin:$PATH"
-  export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+# brew path
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
-  # fnm
-  eval "$(fnm env --use-on-cd)"
+# fnm
+eval "$(fnm env --use-on-cd)"
 
-  export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
+export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
 
-  # appium
-  export ANDROID_HOME="/Users/mukhlis/Library/Android/sdk"
-  export PATH="$ANDROID_HOME/platform-tools:$PATH"
-  export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-22.jdk/Contents/Home"
+# appium
+export ANDROID_HOME="/Users/mukhlis/Library/Android/sdk"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-22.jdk/Contents/Home"
 
-  # bun
-  [ -s "/Users/mukhlis/.bun/_bun" ] && source "/Users/mukhlis/.bun/_bun"
-  export BUN_INSTALL="$HOME/.bun"
-  export PATH="$BUN_INSTALL/bin:$PATH"
+# bun
+[ -s "/Users/mukhlis/.bun/_bun" ] && source "/Users/mukhlis/.bun/_bun"
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 
-  # pnpm
-  export PNPM_HOME="/Users/mukhlis/Library/pnpm"
-  case ":$PATH:" in
-    *":$PNPM_HOME:"*) ;;
-    *) export PATH="$PNPM_HOME:$PATH" ;;
-  esac
+# pnpm
+export PNPM_HOME="/Users/mukhlis/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 
 {{ else if eq .chezmoi.os "android" }}
 
-  export ZPLUG_HOME=/data/data/com.termux/files/home/.zplug
+export ZPLUG_HOME=/data/data/com.termux/files/home/.zplug
+
+# fnm
+FNM_PATH="/data/data/com.termux/files/home/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/data/data/com.termux/files/home/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
 
 {{ end }}
 
