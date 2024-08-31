@@ -6,5 +6,17 @@ size = 14.00
 [window]
 decorations = "None"
 startup_mode = "Maximized"
-opacity = 0.20
+opacity = 0.50
 blur = true
+
+[keyboard]
+bindings = [
+  # jump word
+  { key = "Right", mods = "Option", chars = "\u001BF" },
+  { key = "Left",  mods = "Option", chars = "\u001BB" },
+  # jump line
+  { key = "Left",  mods = "Command", chars = "\u001bOH"  },
+  { key = "Right", mods = "Command", chars =  "\u001bOF" },
+  # delete line
+  { key = "Back",  mods = "Command", chars = "\u0015"    },
+]
