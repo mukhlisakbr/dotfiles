@@ -1,7 +1,7 @@
 [font]
 normal = { family = "GeistMono Nerd Font Mono", style = "Regular" }
 bold = { style = "Medium" }
-size = 14.00
+size = 14
 
 [window]
 decorations = "None"
@@ -19,4 +19,5 @@ bindings = [
   { key = "Right", mods = "Command", chars =  "\u001bOF" },
   # delete line
   { key = "Back",  mods = "Command", chars = "\u0015"    },
+  # test autocommit
 ]
