@@ -1,6 +1,6 @@
 {
   // font
-  "font_size": 13,
+  "font_size": 14,
   "font_face": "GeistMono Nerd Font",
   "font_options": ["no_liga", "no_clig", "no_calt"],
   // vim
@@ -13,7 +13,7 @@
   "hide_tab_scrolling_buttons": true,
   "caret_extra_bottom": 0,
   "caret_extra_top": 0,
-  "color_scheme": "Monokai.sublime-color-scheme",
-  "theme": "Adaptive.sublime-theme",
+  "color_scheme": "Mariana.sublime-color-scheme",
+  "theme": "Default Dark.sublime-theme",
   "open_files_in_new_window": false,
 }
