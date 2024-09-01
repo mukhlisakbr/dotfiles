@@ -1,3 +1,7 @@
+import = [
+  "~/.config/alacritty/themes/themes/ayu_dark.toml"
+]
+
 [font]
 normal = { family = "GeistMono Nerd Font Mono", style = "Regular" }
 bold = { style = "Medium" }

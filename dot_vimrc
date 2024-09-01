@@ -2,6 +2,7 @@ call plug#begin()
 
 Plug 'mechatroner/rainbow_csv'
 Plug 'ayu-theme/ayu-vim'
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
