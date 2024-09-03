@@ -6,7 +6,7 @@ import = [
 normal = { family = "GeistMono Nerd Font Mono", style = "Regular" }
 bold = { style = "Medium" }
 size = 13
-offset = { x = 0, y = 3 }
+#offset = { x = 0, y = 3 }
 
 [window]
 #decorations = "None"
