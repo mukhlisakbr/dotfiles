@@ -5,7 +5,7 @@ import = [
 [font]
 normal = { family = "GeistMono Nerd Font Mono", style = "Regular" }
 bold = { style = "Medium" }
-size = 13.00
+size = 13.20
 #offset = { x = 0, y = 3 }
 
 [window]
