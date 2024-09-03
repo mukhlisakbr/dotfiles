@@ -14,7 +14,7 @@ startup_mode = "Maximized"
 opacity = 0.80
 blur = true
 #dynamic_padding = true
-resize_increments = true
+#resize_increments = true
 
 [keyboard]
 bindings = [
