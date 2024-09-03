@@ -1,0 +1,69 @@
+[
+  // file operations
+  {
+    "key": "a",
+    "when": "filesExplorerFocus && !inputFocus",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "d",
+    "when": "filesExplorerFocus && !inputFocus",
+    "command": "moveFileToTrash"
+  },
+  {
+    "key": "r",
+    "when": "filesExplorerFocus && !inputFocus",
+    "command": "renameFile"
+  },
+  {
+    "key": "enter",
+    "when": "filesExplorerFocus",
+    "command": "explorer.openAndPassFocus"
+  },
+
+  // navigation
+  {
+    "key": "cmd+e",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "cmd+g",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "cmd+k",
+    "command": "workbench.action.quickTextSearch"
+  },
+  {
+    "key": "cmd+p",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+m",
+    "command": "workbench.actions.view.problems"
+  },
+
+  // switch editor tabs
+  { "key": "cmd+1", "command": "workbench.action.openEditorAtIndex1" },
+  { "key": "cmd+2", "command": "workbench.action.openEditorAtIndex2" },
+  { "key": "cmd+3", "command": "workbench.action.openEditorAtIndex3" },
+  { "key": "cmd+4", "command": "workbench.action.openEditorAtIndex4" },
+  { "key": "cmd+5", "command": "workbench.action.openEditorAtIndex5" }
+
+  // switch termainal when focused
+  // {
+  //   "key": "cmd+1",
+  //   "command": "workbench.action.terminal.focusAtIndex1",
+  //   "when": "terminalFocus"
+  // },
+  // {
+  //   "key": "cmd+2",
+  //   "command": "workbench.action.terminal.focusAtIndex2",
+  //   "when": "terminalFocus"
+  // },
+  // {
+  //   "key": "cmd+3",
+  //   "command": "workbench.action.terminal.focusAtIndex3",
+  //   "when": "terminalFocus"
+  // }
+]
