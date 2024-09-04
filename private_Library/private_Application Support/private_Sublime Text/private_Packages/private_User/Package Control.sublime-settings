@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"ayu",
 		"GitHub Theme",
 		"Package Control",
 		"Sublitesse Color Scheme",

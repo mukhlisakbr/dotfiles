@@ -92,7 +92,7 @@
   "workbench.tree.renderIndentGuides": "none",
   "workbench.tips.enabled": false,
   "workbench.tree.enableStickyScroll": false,
-  "workbench.activityBar.location": "hidden",
+  "workbench.activityBar.location": "top",
   "workbench.editor.showTabs": "none",
   "workbench.colorTheme": "Ayu Dark Bordered",
   "workbench.sideBar.location": "right",
