@@ -73,10 +73,12 @@ eval "$(fnm env --use-on-cd)"
 
 export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
 
-# appium
-export ANDROID_HOME="/Users/mukhlis/Library/Android/sdk"
-export PATH="$ANDROID_HOME/platform-tools:$PATH"
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-22.jdk/Contents/Home"
+# android and java
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+#export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-22.jdk/Contents/Home"
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
 # bun
 [ -s "/Users/mukhlis/.bun/_bun" ] && source "/Users/mukhlis/.bun/_bun"
