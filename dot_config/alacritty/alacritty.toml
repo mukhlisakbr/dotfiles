@@ -6,10 +6,10 @@ import = [
 normal = { family = "GeistMono Nerd Font Mono", style = "Regular" }
 bold = { style = "Medium" }
 size = 13
-offset = { x = 0, y = 2 }
+#offset = { x = 0, y = 2 }
 
 [window]
-#decorations = "None"
+decorations = "None"
 startup_mode = "Maximized"
 opacity = 0.80
 blur = true
