@@ -35,10 +35,6 @@
     "command": "workbench.action.quickTextSearch"
   },
   {
-    "key": "cmd+p",
-    "command": "workbench.action.quickOpen"
-  },
-  {
     "key": "cmd+m",
     "command": "workbench.actions.view.problems"
   },
