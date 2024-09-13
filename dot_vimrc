@@ -20,7 +20,7 @@ set clipboard=unnamed
 
 inoremap kj <Esc>
 
-let ayucolor="mirage"
+#let ayucolor="mirage"
 colorscheme onedark
 
-hi Normal guibg=NONE ctermbg=NONE
+#hi Normal guibg=NONE ctermbg=NONE
