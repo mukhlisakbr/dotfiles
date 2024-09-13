@@ -3,7 +3,7 @@ call plug#begin()
 Plug 'mechatroner/rainbow_csv'
 Plug 'ayu-theme/ayu-vim'
 Plug 'joshdick/onedark.vim'
-"Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot'
 Plug 'rakr/vim-one'
 
 call plug#end()
@@ -20,10 +20,12 @@ set number
 set hlsearch
 set ruler
 set clipboard=unnamed
+" Use new regular expression engine
+set re=0
 
 inoremap kj <Esc>
 
 "let ayucolor="mirage"
-colorscheme one
+colorscheme onedark
 
 hi Normal guibg=NONE ctermbg=NONE
