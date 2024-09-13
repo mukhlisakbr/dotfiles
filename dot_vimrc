@@ -5,7 +5,7 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'rakr/vim-one'
-
+Plug 'vv9k/vim-github-dark'
 call plug#end()
 
 syntax on
@@ -26,6 +26,7 @@ set re=0
 inoremap kj <Esc>
 
 let ayucolor="mirage"
-colorscheme onedark
+let g:gh_color = "soft"
+colorscheme ghdark
 
 hi Normal guibg=NONE ctermbg=NONE
