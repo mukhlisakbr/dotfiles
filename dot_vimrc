@@ -6,8 +6,9 @@ Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
-set termguicolors
 syntax on
+
+set termguicolors
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -15,8 +16,11 @@ set ai
 set number
 set hlsearch
 set ruler
-inoremap kj <Esc>
 set clipboard=unnamed
-let ayucolor="dark"
+
+inoremap kj <Esc>
+
+let ayucolor="mirage"
 colorscheme ayu
+
 hi Normal guibg=NONE ctermbg=NONE
