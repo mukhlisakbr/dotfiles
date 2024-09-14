@@ -31,5 +31,3 @@ let g:gh_color = "soft"
 "colorscheme ghdark
 
 "hi Normal guibg=NONE ctermbg=NONE
-
-autocmd BufNewFile,BufRead .zshrc.tmpl set filetype=zsh
