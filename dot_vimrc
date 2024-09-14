@@ -6,6 +6,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'rakr/vim-one'
 Plug 'vv9k/vim-github-dark'
+
 call plug#end()
 
 syntax on
@@ -27,6 +28,6 @@ inoremap kj <Esc>
 
 let ayucolor="mirage"
 let g:gh_color = "soft"
-colorscheme ghdark
+"colorscheme ghdark
 
 hi Normal guibg=NONE ctermbg=NONE
