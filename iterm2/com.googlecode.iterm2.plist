@@ -2315,7 +2315,7 @@
 	<key>DimOnlyText</key>
 	<false/>
 	<key>DoubleClickPerformsSmartSelection</key>
-	<true/>
+	<false/>
 	<key>EnableDivisionView</key>
 	<false/>
 	<key>EnableProxyIcon</key>
