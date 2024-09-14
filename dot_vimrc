@@ -23,6 +23,7 @@ set ruler
 set clipboard=unnamed
 " Use new regular expression engine
 set re=0
+set modeline
 
 inoremap kj <Esc>
 
@@ -31,3 +32,4 @@ let g:gh_color = "soft"
 "colorscheme ghdark
 
 "hi Normal guibg=NONE ctermbg=NONE
+
