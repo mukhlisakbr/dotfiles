@@ -24,6 +24,7 @@ set clipboard=unnamed
 " Use new regular expression engine
 set re=0
 set modeline
+set modelines=5
 
 inoremap kj <Esc>
 
