@@ -32,8 +32,7 @@ inoremap kj <Esc>
 
 let ayucolor="mirage"
 let g:gh_color = "soft"
-"let g:colors_name = "tokyonight-night"
-colorscheme tokyonight
+colorscheme tokyonight-night
 
 "hi Normal guibg=NONE ctermbg=NONE
 
