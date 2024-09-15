@@ -3173,7 +3173,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>Recycle</string>
+			<string>No</string>
 			<key>Custom Locale</key>
 			<string>en_US.UTF-8</string>
 			<key>Default Bookmark</key>
