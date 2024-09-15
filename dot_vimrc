@@ -6,6 +6,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'rakr/vim-one'
 Plug 'vv9k/vim-github-dark'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
 
@@ -30,7 +31,7 @@ inoremap kj <Esc>
 
 let ayucolor="mirage"
 let g:gh_color = "soft"
-"colorscheme ghdark
+colorscheme dracula
 
 "hi Normal guibg=NONE ctermbg=NONE
 
