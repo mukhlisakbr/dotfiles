@@ -34,5 +34,5 @@ let ayucolor="mirage"
 let g:gh_color = "soft"
 colorscheme tokyonight
 
-"hi Normal guibg=NONE ctermbg=NONE
+hi Normal guibg=NONE ctermbg=NONE
 
