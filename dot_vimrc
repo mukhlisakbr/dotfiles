@@ -7,6 +7,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'rakr/vim-one'
 Plug 'vv9k/vim-github-dark'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'folke/tokyonight.nvim', { 'rtp': 'extras/vim' }
 
 call plug#end()
 
@@ -31,7 +32,7 @@ inoremap kj <Esc>
 
 let ayucolor="mirage"
 let g:gh_color = "soft"
-colorscheme dracula
+colorscheme tokyonight
 
 "hi Normal guibg=NONE ctermbg=NONE
 
