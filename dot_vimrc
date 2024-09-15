@@ -35,4 +35,3 @@ let g:gh_color = "soft"
 colorscheme tokyonight-night
 
 "hi Normal guibg=NONE ctermbg=NONE
-
