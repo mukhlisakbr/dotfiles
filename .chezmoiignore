@@ -3,7 +3,7 @@ Brewfile
 
 .config/karabiner/automatic_backups/**
 .config/karabiner/assets/**
-iterm2/
+iterm/
 
 // ignore sublime files
 Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.last-run
