@@ -13,3 +13,5 @@ Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.system
 Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.user-ca-bundle
 Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.cache/
 Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.ca-certs/
+
+pretty-ts-error.css
