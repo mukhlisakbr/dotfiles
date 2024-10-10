@@ -37,4 +37,4 @@ colorscheme tokyonight-night
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
-"hi Normal guibg=NONE ctermbg=NONE
+hi Normal guibg=NONE ctermbg=NONE
