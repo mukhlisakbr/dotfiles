@@ -4760,9 +4760,9 @@
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>TerminalMargin</key>
-	<integer>10</integer>
+	<integer>0</integer>
 	<key>TerminalVMargin</key>
-	<integer>5</integer>
+	<integer>0</integer>
 	<key>UseBorder</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
