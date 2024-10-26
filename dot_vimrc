@@ -23,18 +23,22 @@ set number
 set hlsearch
 set ruler
 set clipboard=unnamed
+
 " Use new regular expression engine
 set re=0
 set modeline
 set modelines=5
 
+" remap
 inoremap kj <Esc>
 
 let ayucolor="mirage"
 let g:gh_color = "soft"
 "colorscheme tokyonight-night
 
+" change cursor in insert
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
+" remove bg
 hi Normal guibg=NONE ctermbg=NONE
