@@ -32,7 +32,7 @@ inoremap kj <Esc>
 
 let ayucolor="mirage"
 let g:gh_color = "soft"
-#colorscheme tokyonight-night
+"colorscheme tokyonight-night
 
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
