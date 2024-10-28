@@ -45,9 +45,6 @@ export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
-# fnm
-eval "$(fnm env --use-on-cd)"
-
 # android and java
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
