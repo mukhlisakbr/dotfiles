@@ -34,7 +34,9 @@ alias ws="webstorm"
 #alias npm="pnpm"
 
 # fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 export FZF_CTRL_T_COMMAND=""
 
 # pyenv
