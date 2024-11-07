@@ -8,4 +8,4 @@ export PATH="$PATH:/Users/mukhlis/Library/Application Support/JetBrains/Toolbox/
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 
 # Added by `rbenv init` on Thu Sep  5 03:03:30 WIB 2024
-eval "$(rbenv init - --no-rehash zsh)"
+#eval "$(rbenv init - --no-rehash zsh)"
