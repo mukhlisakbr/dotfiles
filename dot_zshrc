@@ -1,5 +1,5 @@
 # disable auto title zsh
-export DISABLE_AUTO_TITLE="false"
+#export DISABLE_AUTO_TITLE="false"
 
 # oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
