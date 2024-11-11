@@ -5,7 +5,6 @@ plugins=(git vagrant docker docker-compose conda)
 source $ZSH/oh-my-zsh.sh
 
 # disable auto title zsh
-export DISABLE_AUTO_TITLE=false
 
 # starship
 #eval "$(starship init zsh)"
@@ -132,3 +131,5 @@ unset __conda_setup
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+export DISABLE_AUTO_TITLE=false
