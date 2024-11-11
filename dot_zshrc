@@ -1,11 +1,11 @@
+# disable auto title zsh
+export DISABLE_AUTO_TITLE="false"
+
 # oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 plugins=(git vagrant docker docker-compose conda)
 source $ZSH/oh-my-zsh.sh
-
-# disable auto title zsh
-#export DISABLE_AUTO_TITLE="false"
 
 # starship
 #eval "$(starship init zsh)"
