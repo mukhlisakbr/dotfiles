@@ -5,7 +5,8 @@ plugins=(git vagrant docker docker-compose conda)
 source $ZSH/oh-my-zsh.sh
 
 # disable auto title zsh
-DISABLE_AUTO_TITLE=false
+#DISABLE_AUTO_TITLE=false
+echo "Initial DISABLE_AUTO_TITLE: $DISABLE_AUTO_TITLE"
 
 # starship
 #eval "$(starship init zsh)"
