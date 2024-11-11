@@ -4176,6 +4176,8 @@
 				<key>Red Component</key>
 				<real>0.14513972401618958</real>
 			</dict>
+			<key>Load Shell Integration Automatically</key>
+			<false/>
 			<key>Match Background Color</key>
 			<dict>
 				<key>Alpha Component</key>
