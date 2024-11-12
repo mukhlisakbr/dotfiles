@@ -1,13 +1,13 @@
 call plug#begin()
 
 Plug 'mechatroner/rainbow_csv'
-Plug 'ayu-theme/ayu-vim'
-Plug 'joshdick/onedark.vim'
+"Plug 'ayu-theme/ayu-vim'
+"Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
-Plug 'rakr/vim-one'
-Plug 'vv9k/vim-github-dark'
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'folke/tokyonight.nvim', { 'rtp': 'extras/vim' }
+"Plug 'rakr/vim-one'
+"Plug 'vv9k/vim-github-dark'
+"Plug 'dracula/vim', { 'as': 'dracula' }
+"Plug 'folke/tokyonight.nvim', { 'rtp': 'extras/vim' }
 
 call plug#end()
 
@@ -32,8 +32,8 @@ set modelines=5
 " remap
 inoremap kj <Esc>
 
-let ayucolor="mirage"
-let g:gh_color = "soft"
+"let ayucolor="mirage"
+"let g:gh_color = "soft"
 "colorscheme tokyonight-night
 
 " change cursor in insert
