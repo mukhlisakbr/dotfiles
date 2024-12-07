@@ -4,18 +4,31 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Change double tap right ⇧ key to caps lock",
+                        "description": "Restore Caps Lock as Esc",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "escape",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "key_code": "caps_lock" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Press twice caps_lock to activate caps_lock & otherwise held_down and use as CTRL",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
-                                        "name": "right_shift pressed",
+                                        "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "right_shift",
+                                    "key_code": "caps_lock",
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [{ "key_code": "caps_lock" }],
@@ -23,23 +36,23 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "right_shift",
+                                    "key_code": "caps_lock",
                                     "modifiers": { "optional": ["any"] }
                                 },
+                                "parameters": { "basic.to_if_held_down_threshold_milliseconds": 0 },
                                 "to": [
                                     {
                                         "set_variable": {
-                                            "name": "right_shift pressed",
+                                            "name": "caps_lock pressed",
                                             "value": 1
                                         }
-                                    },
-                                    { "key_code": "right_shift" }
+                                    }
                                 ],
                                 "to_delayed_action": {
                                     "to_if_canceled": [
                                         {
                                             "set_variable": {
-                                                "name": "right_shift pressed",
+                                                "name": "caps_lock pressed",
                                                 "value": 0
                                             }
                                         }
@@ -47,12 +60,13 @@
                                     "to_if_invoked": [
                                         {
                                             "set_variable": {
-                                                "name": "right_shift pressed",
+                                                "name": "caps_lock pressed",
                                                 "value": 0
                                             }
                                         }
                                     ]
                                 },
+                                "to_if_held_down": [{ "key_code": "left_control" }],
                                 "type": "basic"
                             }
                         ]
@@ -102,20 +116,6 @@
                                     }
                                 },
                                 "to": [{ "key_code": "right_arrow" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change caps_lock to left_control if pressed with other keys, change caps_lock to escape if pressed alone.",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "caps_lock",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "key_code": "left_control" }],
-                                "to_if_alone": [{ "key_code": "escape" }],
                                 "type": "basic"
                             }
                         ]
