@@ -1,11 +1,6 @@
 [user]
 	email = 27577560+mukhlisakbr@users.noreply.github.com
 	name = Mukhlis Akbarrudin
-	signingkey = /Users/m/.ssh/id_ed25519.pub
-[gpg]
-	format = ssh
-[commit]
-	gpgsign = true
 [init]
 	defaultBranch = main
 
