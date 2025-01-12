@@ -1,6 +1,12 @@
 font-family = GeistMono Nerd Font Mono
-window-padding-x = 8
-theme = GitHub Dark
 font-size = 16
+
+window-padding-x = 8
+#window-theme = system
+#window-padding-y = 8
+
+#macos-titlebar-style = hidden
+
+theme = GitHub Dark
 
 keybind = cmd+backspace=esc:w
