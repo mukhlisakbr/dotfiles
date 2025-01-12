@@ -1,0 +1,6 @@
+font-family = GeistMono Nerd Font Mono
+window-padding-x = 8
+theme = GitHub Dark
+font-size = 16
+
+keybind = cmd+backspace=esc:w
