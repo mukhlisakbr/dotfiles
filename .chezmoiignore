@@ -4,12 +4,12 @@ Brewfile
 iterm/
 
 // ignore sublime files
-Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.last-run
-Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.ca-list
-Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.ca-bundle
-Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.system-ca-bundle
-Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.user-ca-bundle
-Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.cache/
-Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.ca-certs/
+#Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.last-run
+#Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.ca-list
+#Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.ca-bundle
+#Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.system-ca-bundle
+#Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.user-ca-bundle
+#Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.cache/
+#Library/Application\ Support/Sublime\ Text/Packages/User/Package\ Control.ca-certs/
 
 pretty-ts-error.css
