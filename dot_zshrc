@@ -20,8 +20,9 @@ alias sc="sc-im"
 alias pn="pnpm"
 alias ws="webstorm"
 
-# Set up fzf key bindings and fuzzy completion
+# fzf disable ctrl+t
 export FZF_CTRL_T_COMMAND=""
+# fzf theme 
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --highlight-line \
   --info=inline-right \
@@ -45,6 +46,7 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --color=separator:#ff9e64 \
   --color=spinner:#ff007c \
 "
+# Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
 # sublime
@@ -63,7 +65,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 # zplug setting
 export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
 
-# zplug
+# zplug plugins
 source $ZPLUG_HOME/init.zsh
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
