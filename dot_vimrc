@@ -7,7 +7,7 @@ Plug 'sheerun/vim-polyglot'
 "Plug 'rakr/vim-one'
 "Plug 'vv9k/vim-github-dark'
 "Plug 'dracula/vim', { 'as': 'dracula' }
-"Plug 'folke/tokyonight.nvim', { 'rtp': 'extras/vim' }
+Plug 'folke/tokyonight.nvim', { 'rtp': 'extras/vim' }
 
 call plug#end()
 
@@ -34,7 +34,7 @@ inoremap kj <Esc>
 
 "let ayucolor="mirage"
 "let g:gh_color = "soft"
-"colorscheme tokyonight-night
+colorscheme tokyonight-night
 
 " change cursor in insert
 let &t_SI = "\e[6 q"
