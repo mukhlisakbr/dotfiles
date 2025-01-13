@@ -4,8 +4,8 @@
 [init]
 	defaultBranch = main
 
-[include]
-  path = /Users/m/.config/delta/catppuccin.gitconfig
-
-[delta]
-  features = catppuccin-mocha
+#[include]
+#	path = /Users/mukhlis/.config/delta/catppuccin.gitconfig
+#[delta]
+#  features = catppuccin-mocha
+#  test
