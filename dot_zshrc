@@ -20,7 +20,6 @@ alias sc="sc-im"
 alias pn="pnpm"
 alias ws="webstorm"
 
-# fzf
 # Set up fzf key bindings and fuzzy completion
 export FZF_CTRL_T_COMMAND=""
 source <(fzf --zsh)
