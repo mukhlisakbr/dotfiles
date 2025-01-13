@@ -9,3 +9,5 @@ window-padding-x = 8
 theme = catppuccin-mocha
 
 keybind = cmd+backspace=esc:w
+
+cursor-style = block
