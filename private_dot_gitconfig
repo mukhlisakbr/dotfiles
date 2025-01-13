@@ -20,6 +20,7 @@
   dark = true
   # light = true
   side-by-side = true
+  paging = never
 
 [merge]
   conflictstyle = diff3
