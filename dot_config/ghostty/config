@@ -6,7 +6,6 @@ font-feature = -dlig
 
 window-padding-x = 8
 
-theme = cattppucin-mocha
+theme = catppuccin-mocha
 
 keybind = cmd+backspace=esc:w
-
