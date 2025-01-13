@@ -3,7 +3,6 @@ git:
   paging:
     colorArg: always
     useConfig: true
-    pager: delta --paging=never
 
 # from : https://github.com/mohseenrm/lazygit-tokyonight/blob/main/tokyonight/night.yaml
 
