@@ -12,6 +12,8 @@ source $ZSH/oh-my-zsh.sh
 # zoxide
 eval "$(zoxide init zsh)"
 
+export EZA_CONFIG_DIR = ~/.config/eza
+
 # zsh alias
 alias eza="eza --icons --git"
 alias l="eza"
