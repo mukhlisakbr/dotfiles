@@ -4,11 +4,6 @@ ZSH_THEME="robbyrussell"
 plugins=(git vagrant docker docker-compose conda)
 source $ZSH/oh-my-zsh.sh
 
-#export TERM=screen-256color
-
-# starship
-#eval "$(starship init zsh)"
-
 # zoxide
 eval "$(zoxide init zsh)"
 
@@ -21,12 +16,9 @@ alias ll="eza -l"
 alias lla="eza -la"
 alias lg="lazygit"
 alias ld="lazydocker"
-#alias cat="bat"
-#alias vim="nvim"
 alias sc="sc-im"
 alias pn="pnpm"
 alias ws="webstorm"
-#alias npm="pnpm"
 
 # fzf
 # Set up fzf key bindings and fuzzy completion
@@ -56,12 +48,6 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
 "
 source <(fzf --zsh)
 
-# pyenv
-#export PYENV_ROOT="$HOME/.pyenv"
-#[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-#eval "$(pyenv init -)"
-#alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
-
 # sublime
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
@@ -73,7 +59,6 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-#export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-22.jdk/Contents/Home"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
 # zplug setting
@@ -84,22 +69,6 @@ source $ZPLUG_HOME/init.zsh
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
-#zplug "jeffreytse/zsh-vi-mode"
-#zplug romkatv/powerlevel10k, as:theme, depth:1
-
-# zplug theme
-#zplug "miekg/lean"
-#zplug "jackharrisonsherlock/common", as:theme
-#zplug "mafredri/zsh-async", from:github
-#zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
-#zplug "win0err/aphrodite-terminal-theme", as:theme
-#zplug "akz92/clean", as:theme
-#zplug "gdsrosa/minimal_improved", as:theme
-#zplug "andrepolischuk/neat"
-#zplug "themes/robbyrussell", from:oh-my-zsh, as:theme
-#zplug "themes/clean", from:oh-my-zsh, as:theme
-#zplug "agkozak/agkozak-zsh-prompt"
-#zplug "nicolodiamante/simple"
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -144,23 +113,13 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# pnpm
-#export PNPM_HOME="/Users/mukhlis/Library/pnpm"
-#case ":$PATH:" in
-#  *":$PNPM_HOME:"*) ;;
-#  *) export PATH="$PNPM_HOME:$PATH" ;;
-#esac
-# pnpm end
-
 # nvm
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-
 # Herd injected PHP 8.3 configuration.
 export HERD_PHP_83_INI_SCAN_DIR="/Users/m/Library/Application Support/Herd/config/php/83/"
-
 
 # Herd injected PHP binary.
 export PATH="/Users/m/Library/Application Support/Herd/bin/":$PATH
