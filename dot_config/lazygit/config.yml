@@ -4,8 +4,7 @@ git:
     colorArg: always
     useConfig: true
 
-# from : https://github.com/mohseenrm/lazygit-tokyonight/blob/main/tokyonight/night.yaml
-
+# https://github.com/folke/tokyonight.nvim/blob/main/extras/lazygit/tokyonight_night.conf
 gui:
   nerdFontsVersion: "3"
   theme:
@@ -31,3 +30,4 @@ gui:
 
   authorColors:
     "*": "#86e1fc"
+
