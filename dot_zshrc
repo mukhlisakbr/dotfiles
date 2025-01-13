@@ -25,7 +25,6 @@ alias ws="webstorm"
 export FZF_CTRL_T_COMMAND=""
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --highlight-line \
-  --info=inline-right \
   --ansi \
   --border=none
   --color=bg+:#283457 \
