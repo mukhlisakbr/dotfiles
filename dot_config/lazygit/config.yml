@@ -1,6 +1,8 @@
 git:
   overrideGpg: true
-  useConfig: true
+  paging:
+    colorArg: always
+    useConfig: true
 
 # from : https://github.com/mohseenrm/lazygit-tokyonight/blob/main/tokyonight/night.yaml
 
