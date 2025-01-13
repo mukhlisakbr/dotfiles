@@ -1,7 +1,7 @@
 git:
   paging:
     colorArg: always
-    pager: delta --dark --true-color=always --paging=never --line-numbers
+    pager: delta --true-color=always --paging=never --line-numbers
   overrideGpg: true
 
 gui:
