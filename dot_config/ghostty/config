@@ -13,4 +13,5 @@ theme = tokyonight
 keybind = cmd+backspace=esc:w
 
 shell-integration-features = no-cursor
-cursor-style = bar
+cursor-style = block
+cursor-style-blink = false
