@@ -124,3 +124,11 @@ export HERD_PHP_83_INI_SCAN_DIR="/Users/m/Library/Application Support/Herd/confi
 
 # Herd injected PHP binary.
 export PATH="/Users/m/Library/Application Support/Herd/bin/":$PATH
+
+# pnpm
+export PNPM_HOME="/Users/m/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
