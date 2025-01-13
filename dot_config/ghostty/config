@@ -11,3 +11,5 @@ theme = catppuccin-mocha
 keybind = cmd+backspace=esc:w
 
 cursor-style = block
+cursor-style-blink = false
+
