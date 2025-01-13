@@ -4,6 +4,8 @@
 [init]
 	defaultBranch = main
 
+# from: https://github.com/mohseenrm/lazygit-tokyonight
+
 [core]
   pager = delta
 
