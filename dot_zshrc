@@ -22,10 +22,29 @@ alias ws="webstorm"
 
 # Set up fzf key bindings and fuzzy completion
 export FZF_CTRL_T_COMMAND=""
-export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
-" --color=bg+:#1a1b26,bg:#16161e,spinner:#7dcfff,hl:#7aa2f7"\
-" --color=fg:#787c99,header:#7aa2f7,info:#e0af68,pointer:#7dcfff"\
-" --color=marker:#7dcfff,fg+:#cbccd1,prompt:#e0af68,hl+:#7aa2f7"
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
+  --highlight-line \
+  --info=inline-right \
+  --ansi \
+  --layout=reverse \
+  --border=none
+  --color=bg+:#283457 \
+  --color=bg:#16161e \
+  --color=border:#27a1b9 \
+  --color=fg:#c0caf5 \
+  --color=gutter:#16161e \
+  --color=header:#ff9e64 \
+  --color=hl+:#2ac3de \
+  --color=hl:#2ac3de \
+  --color=info:#545c7e \
+  --color=marker:#ff007c \
+  --color=pointer:#ff007c \
+  --color=prompt:#2ac3de \
+  --color=query:#c0caf5:regular \
+  --color=scrollbar:#27a1b9 \
+  --color=separator:#ff9e64 \
+  --color=spinner:#ff007c \
+"
 source <(fzf --zsh)
 
 # sublime
