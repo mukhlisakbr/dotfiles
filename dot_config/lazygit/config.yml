@@ -1,5 +1,6 @@
 git:
   overrideGpg: true
+  useConfig: true
 
 # from : https://github.com/mohseenrm/lazygit-tokyonight/blob/main/tokyonight/night.yaml
 
