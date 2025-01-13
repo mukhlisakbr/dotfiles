@@ -15,7 +15,7 @@ eval "$(zoxide init zsh)"
 export EZA_CONFIG_DIR="$HOME/.config/eza"
 
 # zsh alias
-alias eza="eza --icons --git"
+alias eza="eza --icons"
 alias l="eza"
 alias ll="eza -l"
 alias lla="eza -la"
