@@ -4,30 +4,31 @@ git:
     colorArg: always
     useConfig: true
 
-# https://github.com/folke/tokyonight.nvim/blob/main/extras/lazygit/tokyonight_night.conf
+# https://github.com/folke/tokyonight.nvim/blob/main/extras/lazygit/tokyonight_night.yml
 gui:
   nerdFontsVersion: "3"
   theme:
     activeBorderColor:
-      - "#4fd6be"
-      - bold
+      - "#ff9e64"
+      - "bold"
     inactiveBorderColor:
-      - "#394b70"
-    optionsTextColor:
-      - "#89b4fa"
-    selectedLineBgColor:
-      - "#fca7ea"
-    cherryPickedCommitBgColor:
-      - "#ff007c"
-    cherryPickedCommitFgColor:
-      - "#65bcff"
-    unstagedChangesColor:
-      - "#ff757f"
-    defaultFgColor:
-      - "#c8d3f5"
+      - "#27a1b9"
     searchingActiveBorderColor:
-      - "#ffc777"
-
-  authorColors:
-    "*": "#86e1fc"
-
+      - "#ff9e64"
+      - "bold"
+    optionsTextColor:
+      - "#7aa2f7"
+    selectedLineBgColor:
+      - "#283457"
+    cherryPickedCommitFgColor:
+      - "#7aa2f7"
+    cherryPickedCommitBgColor:
+      - "#bb9af7"
+    markedBaseCommitFgColor:
+      - "#7aa2f7"
+    markedBaseCommitBgColor:
+      - "#e0af68"
+    unstagedChangesColor:
+      - "#db4b4b"
+    defaultFgColor:
+      - "#c0caf5"
