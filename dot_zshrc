@@ -24,7 +24,7 @@ alias ws="webstorm"
 export FZF_CTRL_T_COMMAND=""
 # fzf theme 
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
-  --pointer=">"\
+  --pointer='>'\
 "
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
