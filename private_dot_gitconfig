@@ -5,7 +5,6 @@
 	defaultBranch = main
 
 # https://github.com/folke/tokyonight.nvim/blob/main/extras/delta/tokyonight_night.gitconfig
-
 [delta]
   minus-style                   = syntax "#37222c"
   minus-non-emph-style          = syntax "#37222c"
