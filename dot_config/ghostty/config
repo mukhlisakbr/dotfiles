@@ -6,9 +6,7 @@ font-feature = -dlig
 
 window-padding-x = 8
 
-#theme = catppuccin-mocha
-#theme = GitHub Dark
-#theme = tokyonight_night
+theme = GitHub Dark
 
 keybind = cmd+backspace=esc:w
 
