@@ -8,7 +8,7 @@ font-feature = -dlig
 #fullscreen = true
 #window-decoration = false
 
-theme = GitHub Dark
+theme = tokyonight_night
 
 keybind = cmd+backspace=esc:w
 
