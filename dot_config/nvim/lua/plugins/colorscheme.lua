@@ -1,26 +1,8 @@
 return {
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    priority = 1000,
-    config = function()
-      require("catppuccin").setup({ transparent_background = true })
-    end,
-  },
-  {
-    "ellisonleao/gruvbox.nvim",
-    priority = 1000,
-    config = function()
-      local gruvbox = require("gruvbox")
-      gruvbox.setup({
-        dim_inactive = false,
-        transparent_mode = true,
-      })
-    end,
-  },
-  {
     "folke/tokyonight.nvim",
     opts = {
+      style = "night",
       transparent = true,
       styles = {
         sidebars = "transparent",
@@ -31,7 +13,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "tokyonight",
     },
   },
 }
