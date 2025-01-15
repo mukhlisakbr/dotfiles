@@ -9,8 +9,7 @@
     "lazyvim.plugins.extras.lang.tailwind",
     "lazyvim.plugins.extras.lang.typescript",
     "lazyvim.plugins.extras.lang.yaml",
-    "lazyvim.plugins.extras.linting.eslint",
-    "lazyvim.plugins.extras.ui.indent-blankline"
+    "lazyvim.plugins.extras.linting.eslint"
   ],
   "news": {
     "NEWS.md": "10960"
