@@ -4,8 +4,7 @@ font-feature = -calt
 font-feature = -liga
 font-feature = -dlig
 
-#window-padding-x = 8
-#fullscreen = true
+window-padding-balance = true
 window-decoration = false
 
 theme = tokyonight_night
@@ -16,7 +15,7 @@ shell-integration-features = no-cursor
 cursor-style = block
 cursor-style-blink = false
 
-background-opacity = 0.95
+background-opacity = 0.9
 background-blur-radius = 20
 
 copy-on-select = true
