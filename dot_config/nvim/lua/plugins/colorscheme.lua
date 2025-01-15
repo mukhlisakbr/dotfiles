@@ -13,6 +13,7 @@ return {
     config = function()
       local gruvbox = require("gruvbox")
       gruvbox.setup({
+        dim_inactive = false,
         transparent_mode = true,
       })
     end,
@@ -30,7 +31,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-mocha",
+      colorscheme = "gruvbox",
     },
   },
 }
