@@ -20,6 +20,7 @@ alias sc="sc-im"
 alias pn="pnpm"
 alias ws="webstorm"
 
+# fzf
 # fzf disable ctrl+t
 export FZF_CTRL_T_COMMAND=""
 # fzf theme 
@@ -32,7 +33,7 @@ source <(fzf --zsh)
 # sublime
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
-# brew path
+# brew
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
@@ -42,16 +43,16 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
+# zplug
 # zplug setting
 export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
-
 # zplug plugins
 source $ZPLUG_HOME/init.zsh
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 
-# Install plugins if there are plugins that have not been installed
+# zplug Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
     if read -q; then
@@ -66,7 +67,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 # change def editor
 export EDITOR=vim
 
-# setup yazi cd
+# yazi cd
 function yy() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
 	yazi "$@" --cwd-file="$tmp"
@@ -76,32 +77,14 @@ function yy() {
 	rm -f -- "$tmp"
 }
 
-# conda setting
-export CONDA_AUTO_ACTIVATE_BASE=false
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-        . "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/homebrew/Caskroom/miniconda/base/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
 # nvm
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
+# herd
 # Herd injected PHP 8.3 configuration.
 export HERD_PHP_83_INI_SCAN_DIR="/Users/m/Library/Application Support/Herd/config/php/83/"
-
 # Herd injected PHP binary.
 export PATH="/Users/m/Library/Application Support/Herd/bin/":$PATH
 
