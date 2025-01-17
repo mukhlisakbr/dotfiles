@@ -65,7 +65,7 @@ zplug load
 export XDG_CONFIG_HOME="$HOME/.config"
 
 # change def editor
-export EDITOR=vim
+export EDITOR=nvim
 
 # yazi cd
 function yy() {
