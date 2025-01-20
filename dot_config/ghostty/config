@@ -23,6 +23,8 @@ cursor-style-blink = false
 
 copy-on-select = true
 
+macos-option-as-alt = true
+
 keybind = cmd+backspace=esc:w
 keybind = ctrl+t=unbind
-keybind = opt+c=unbind
+keybind = alt+c=unbind
