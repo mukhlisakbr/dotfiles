@@ -12,7 +12,6 @@ window-padding-balance = true
 
 theme = tokyonight_night
 
-keybind = cmd+backspace=esc:w
 
 shell-integration-features = no-cursor
 
@@ -24,5 +23,6 @@ cursor-style-blink = false
 
 copy-on-select = true
 
+keybind = cmd+backspace=esc:w
 keybind = ctrl+t=unbind
-keybind = option+c=unbind
+keybind = opt+c=unbind
