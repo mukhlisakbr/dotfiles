@@ -14,16 +14,12 @@ alias eza="eza --icons"
 alias l="eza"
 alias ll="eza -l"
 alias lla="eza -la"
-#alias lg="TERM=xterm-256color lazygit"
 alias lg="lazygit"
 alias ld="lazydocker"
 alias sc="sc-im"
 alias pn="pnpm"
 alias ws="webstorm"
 
-# fzf
-# fzf disable ctrl+t
-#export FZF_CTRL_T_COMMAND=""
 # fzf theme 
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --pointer='>'\
