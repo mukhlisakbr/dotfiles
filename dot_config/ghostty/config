@@ -15,8 +15,8 @@ shell-integration-features = no-cursor
 cursor-style = block
 cursor-style-blink = false
 
-background-opacity = 0.8
-background-blur-radius = 15
+#background-opacity = 0.8
+#background-blur-radius = 15
 
 copy-on-select = true
 
