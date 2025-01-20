@@ -4,7 +4,7 @@ font-feature = -calt
 font-feature = -liga
 font-feature = -dlig
 
-#window-padding-y = 8
+window-padding = 8
 window-padding-balance = true
 #window-decoration = false
 
