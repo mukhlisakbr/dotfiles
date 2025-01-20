@@ -7,7 +7,8 @@ font-feature = -dlig
 window-padding-x = 4
 #window-padding-y = 6
 window-padding-balance = true
-window-decoration = false
+#window-decoration = false
+macos-title-bar = false
 
 theme = tokyonight_night
 
