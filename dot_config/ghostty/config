@@ -6,14 +6,16 @@ font-feature = -dlig
 
 #window-padding-y = 8
 window-padding-balance = true
-#macos-titlebar-style = hidden
 #window-decoration = false
+
+#macos-titlebar-style = hidden
 
 theme = tokyonight_night
 
 keybind = cmd+backspace=esc:w
 
 shell-integration-features = no-cursor
+
 cursor-style = block
 cursor-style-blink = false
 
@@ -22,3 +24,4 @@ cursor-style-blink = false
 
 copy-on-select = true
 
+keybind = ctrl+t=unbind
