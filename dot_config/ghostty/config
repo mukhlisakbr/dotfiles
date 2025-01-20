@@ -25,3 +25,4 @@ cursor-style-blink = false
 copy-on-select = true
 
 keybind = ctrl+t=unbind
+keybind = alt+c=unbind
