@@ -5,7 +5,7 @@ font-feature = -liga
 font-feature = -dlig
 
 window-padding-x = 8,0
-window-padding-y = 4,0
+window-padding-y = 8,0
 #window-padding-balance = true
 #window-decoration = false
 macos-titlebar-style = hidden
