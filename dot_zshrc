@@ -22,7 +22,7 @@ alias ws="webstorm"
 
 # fzf
 # fzf disable ctrl+t
-export FZF_CTRL_T_COMMAND=""
+#export FZF_CTRL_T_COMMAND=""
 # fzf theme 
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --pointer='>'\
