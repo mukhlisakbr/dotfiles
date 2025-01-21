@@ -22,9 +22,9 @@ alias ws="webstorm"
 
 # fzf
 ## comand
-export FZF_DEFAULT_COMMAND="fd --type f --strip-cwd-prefix --hidden --follow"
+export FZF_DEFAULT_COMMAND="fd --type f --sort=name --strip-cwd-prefix --hidden --follow"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="fd --type d --strip-cwd-prefix --hidden --follow"
+export FZF_ALT_C_COMMAND="fd --type d --sort=name --strip-cwd-prefix --hidden --follow"
 ## opts
 export FZF_CTRL_T_OPTS="
   --preview 'bat -n --color=always {}'
@@ -32,8 +32,9 @@ export FZF_CTRL_T_OPTS="
 "
 export FZF_CTRL_R_OPTS="--bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'"
 export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
+## customize
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --pointer='>'"
-# source it
+## source it
 source <(fzf --zsh)
 
 # sublime
