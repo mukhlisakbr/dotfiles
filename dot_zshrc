@@ -21,9 +21,9 @@ alias pn="pnpm"
 alias ws="webstorm"
 
 # fzf
-# add pointer
+# change pointer
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --pointer='>'"
-# set fd as default fzf comamnd
+# set fd as default comamnd
 export FZF_DEFAULT_COMMAND="fd --type f --strip-cwd-prefix --hidden --follow"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --type d --strip-cwd-prefix --hidden --follow"
@@ -35,7 +35,7 @@ export FZF_CTRL_T_OPTS="
 export FZF_CTRL_R_OPTS="--bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'"
 # print tree in preview alt+c
 export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
-# setup fzf key bindings and fuzzy completion
+# setup key bindings and fuzzy completion
 source <(fzf --zsh)
 
 # sublime
