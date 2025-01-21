@@ -41,7 +41,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
 # zplug
-# zplug setting
 export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
 # zplug plugins
 source $ZPLUG_HOME/init.zsh
