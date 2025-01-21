@@ -20,24 +20,22 @@ alias sc="sc-im"
 alias pn="pnpm"
 alias ws="webstorm"
 
-# fzf theme 
-export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
-  --pointer='>'\
-"
-# Setting fd as the default source for fzf
-export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow'
-# To apply the command to CTRL-T as well
+# fzf
+# add pointer
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --pointer='>'"
+# set fd as default fzf comamnd
+export FZF_DEFAULT_COMMAND="fd --type f --strip-cwd-prefix --hidden --follow"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="fd --type d"
-# Preview file content using bat (https://github.com/sharkdp/bat)
+export FZF_ALT_C_COMMAND="fd --type d --strip-cwd-prefix --hidden --follow"
+# use bat in preview
 export FZF_CTRL_T_OPTS="
   --preview 'bat -n --color=always {}'
   --bind 'ctrl-/:change-preview-window(down|hidden|)'"
-# CTRL-Y to copy the command into clipboard using pbcopy
+# ctrl+y to copy to clipboard using pbcopy
 export FZF_CTRL_R_OPTS="--bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'"
-# Print tree structure in the preview window
+# print tree in preview alt+c
 export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
-# Set up fzf key bindings and fuzzy completion
+# setup fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
 # sublime
