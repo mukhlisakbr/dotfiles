@@ -22,9 +22,9 @@ alias ws="webstorm"
 
 # fzf
 ## comand
-export FZF_DEFAULT_COMMAND="fd --type f --sort=name --strip-cwd-prefix --hidden --follow"
+export FZF_DEFAULT_COMMAND="fd --type f --strip-cwd-prefix --hidden --follow"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="fd --type d --sort=name --strip-cwd-prefix --hidden --follow"
+export FZF_ALT_C_COMMAND="fd --type d --strip-cwd-prefix --hidden --follow"
 ## opts
 export FZF_CTRL_T_OPTS="
   --preview 'bat -n --color=always {}'
