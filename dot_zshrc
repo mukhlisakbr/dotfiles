@@ -25,7 +25,7 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --pointer='>'\
 "
 # Setting fd as the default source for fzf
-export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix'
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden'
 # To apply the command to CTRL-T as well
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # Set up fzf key bindings and fuzzy completion
