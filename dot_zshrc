@@ -4,6 +4,9 @@ ZSH_THEME="robbyrussell"
 plugins=(git vagrant docker docker-compose conda)
 source $ZSH/oh-my-zsh.sh
 
+# starship
+eval "$(starship init zsh)"
+
 # zoxide
 eval "$(zoxide init zsh)"
 
