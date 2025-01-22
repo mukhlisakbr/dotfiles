@@ -24,17 +24,16 @@ alias pn="pnpm"
 alias ws="webstorm"
 
 # fzf
-## comand
 export FZF_DEFAULT_COMMAND="fd --type f --strip-cwd-prefix --hidden --follow"
 export FZF_CTRL_T_COMMAND="fd --type f --strip-cwd-prefix --hidden --follow"
 export FZF_ALT_C_COMMAND="fd --type d --strip-cwd-prefix --hidden --follow"
-## opts
+
 export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always {}' --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 export FZF_CTRL_R_OPTS="--bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'"
 export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
-## customize
+
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --pointer='>'"
-## source it
+
 source <(fzf --zsh)
 
 # sublime
@@ -46,19 +45,18 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # android and java
 export ANDROID_HOME=$HOME/Library/Android/sdk
+
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
 # zplug
 export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
-# zplug plugins
 source $ZPLUG_HOME/init.zsh
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
-
-# zplug Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
     if read -q; then
@@ -89,9 +87,7 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # herd
-# Herd injected PHP 8.3 configuration.
 export HERD_PHP_83_INI_SCAN_DIR="/Users/m/Library/Application Support/Herd/config/php/83/"
-# Herd injected PHP binary.
 export PATH="/Users/m/Library/Application Support/Herd/bin/":$PATH
 
 # pnpm
@@ -100,4 +96,3 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
