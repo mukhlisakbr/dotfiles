@@ -20,7 +20,7 @@ background-blur-radius = 20
 
 copy-on-select = true
 
-macos-titlebar-style = hidden
+#macos-titlebar-style = hidden
 macos-option-as-alt = true
 
 keybind = cmd+backspace=esc:w
