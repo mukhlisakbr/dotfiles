@@ -8,7 +8,7 @@ window-padding-x = 6
 window-padding-y = 4
 window-padding-balance = true
 
-theme = "3024 Night"
+theme = "tokyonight_night"
 
 shell-integration-features = no-cursor
 
