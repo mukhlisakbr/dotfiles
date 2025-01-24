@@ -3,6 +3,7 @@ call plug#begin()
 Plug 'mechatroner/rainbow_csv'
 Plug 'sheerun/vim-polyglot'
 Plug 'folke/tokyonight.nvim', { 'rtp': 'extras/vim' }
+Plug "rose-pine/vim"
 
 call plug#end()
 
@@ -27,7 +28,8 @@ set modelines=5
 " remap
 inoremap kj <Esc>
 
-colorscheme tokyonight-night
+set background=dark
+colorscheme rosepine
 
 " change cursor in insert
 let &t_SI = "\e[6 q"
