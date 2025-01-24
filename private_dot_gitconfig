@@ -5,7 +5,8 @@
 	defaultBranch = main
 
 [core]
-    pager = delta
+  pager = delta --dark --paging=never
+
 
 # https://github.com/folke/tokyonight.nvim/blob/main/extras/delta/tokyonight_night.gitconfig
 [delta]
