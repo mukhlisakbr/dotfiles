@@ -2,8 +2,7 @@ call plug#begin()
 
 Plug 'mechatroner/rainbow_csv'
 Plug 'sheerun/vim-polyglot'
-Plug 'folke/tokyonight.nvim', { 'rtp': 'extras/vim' }
-Plug "rose-pine/vim"
+Plug 'rose-pine/vim'
 
 call plug#end()
 
