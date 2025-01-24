@@ -8,8 +8,7 @@ window-padding-x = 6
 window-padding-y = 0
 window-padding-balance = true
 
-#theme = tokyonight_night
-theme = GitHub Dark
+theme = "3024 Night"
 
 shell-integration-features = no-cursor
 
