@@ -2,6 +2,7 @@ git:
   overrideGpg: true
   paging:
     colorArg: always
+    useConfig: true
     pager: delta --dark --paging=never
 
 # https://github.com/folke/tokyonight.nvim/blob/main/extras/lazygit/tokyonight_night.yml
