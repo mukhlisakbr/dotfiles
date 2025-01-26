@@ -2,6 +2,10 @@ git:
   overrideGpg: true
 # https://github.com/folke/tokyonight.nvim/blob/main/extras/lazygit/tokyonight_night.yml
 
+gui:
+  theme:
+    selectedLineBgColor:
+      - default
 #gui:
 #  nerdFontsVersion: "3"
 #  theme:
