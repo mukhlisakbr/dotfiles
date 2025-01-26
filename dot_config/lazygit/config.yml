@@ -5,7 +5,7 @@ git:
 gui:
   theme:
     selectedLineBgColor:
-      - default
+      - reverse
 #gui:
 #  nerdFontsVersion: "3"
 #  theme:
