@@ -21,6 +21,7 @@ background-blur-radius = 20
 copy-on-select = true
 
 macos-option-as-alt = true
+macos-titlebar-proxy-icon = hidden
 
 keybind = cmd+backspace=esc:w
 keybind = ctrl+t=unbind
