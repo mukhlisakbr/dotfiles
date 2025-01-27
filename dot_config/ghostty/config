@@ -29,7 +29,6 @@ keybind = ctrl+t=unbind
 keybind = alt+c=unbind
 
 # vitesse
-
 palette = 0=#393a34
 palette = 1=#cb7676
 palette = 2=#4d9375
