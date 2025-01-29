@@ -1,5 +1,5 @@
 [manager]
-#show_hidden = true
+show_hidden = true
 
 [preview]
 wrap = "yes"
