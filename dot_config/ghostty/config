@@ -8,7 +8,7 @@ window-padding-x = 6
 #window-padding-y = 4
 window-padding-balance = true
 
-theme = "GitHub Dark"
+theme = "GitHub-Dark-Default"
 
 shell-integration-features = no-cursor
 
