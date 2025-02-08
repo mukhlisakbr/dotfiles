@@ -8,15 +8,12 @@ window-padding-x = 6
 #window-padding-y = 4
 window-padding-balance = true
 
-theme = GitHub-Dark-Default
+#theme = GitHub-Dark-Default
 
 shell-integration-features = no-cursor
 
 cursor-style = block
 cursor-style-blink = false
-
-#background-opacity = 0.8
-#background-blur-radius = 20
 
 copy-on-select = true
 
@@ -29,24 +26,24 @@ keybind = ctrl+t=unbind
 keybind = alt+c=unbind
 
 # manual theme: vitesse
-#palette = 0=#393a34
-#palette = 1=#cb7676
-#palette = 2=#4d9375
-#palette = 3=#e6cc77
-#palette = 4=#6394bf
-#palette = 5=#d9739f
-#palette = 6=#5eaab5
-#palette = 7=#dbd7ca
-#palette = 8=#777777
-#palette = 9=#cb7676
-#palette = 10=#4d9375
-#palette = 11=#e6cc77
-#palette = 12=#6394bf
-#palette = 13=#d9739f
-#palette = 14=#5eaab5
-#palette = 15=#ffffff
-#background = #000000
-#foreground = #dbd7ca
-#cursor-color = #dbd7ca
-#selection-background = #4d9375
-#selection-foreground = #000000
+palette = 0=#393a34
+palette = 1=#cb7676
+palette = 2=#4d9375
+palette = 3=#e6cc77
+palette = 4=#6394bf
+palette = 5=#d9739f
+palette = 6=#5eaab5
+palette = 7=#dbd7ca
+palette = 8=#777777
+palette = 9=#cb7676
+palette = 10=#4d9375
+palette = 11=#e6cc77
+palette = 12=#6394bf
+palette = 13=#d9739f
+palette = 14=#5eaab5
+palette = 15=#ffffff
+background = #121212
+foreground = #dbd7ca
+cursor-color = #dbd7ca
+selection-background = #4d9375
+selection-foreground = #121212
