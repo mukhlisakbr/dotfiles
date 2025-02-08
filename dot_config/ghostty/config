@@ -5,30 +5,30 @@ font-feature = -liga
 font-feature = -dlig
 
 window-padding-x = 6
-# window-padding-y = 4
+#window-padding-y = 4
 window-padding-balance = true
 
-# theme = "rose-pine"
+#theme = "rose-pine"
 
 shell-integration-features = no-cursor
 
 cursor-style = block
 cursor-style-blink = false
 
-# background-opacity = 0.8
-# background-blur-radius = 20
+#background-opacity = 0.8
+#background-blur-radius = 20
 
 copy-on-select = true
 
 macos-option-as-alt = true
 macos-titlebar-proxy-icon = hidden
-#macos-titlebar-style = hidden
+macos-titlebar-style = hidden
 
 keybind = cmd+backspace=esc:w
 keybind = ctrl+t=unbind
 keybind = alt+c=unbind
 
-# vitesse
+# manual theme: vitesse
 palette = 0=#393a34
 palette = 1=#cb7676
 palette = 2=#4d9375
