@@ -5,6 +5,8 @@ font-feature = -calt, -liga, -dlig
 window-padding-x = 6
 window-padding-balance = true
 
+shell-integration-features = no-cursor
+
 copy-on-select = true
 
 macos-option-as-alt = true
