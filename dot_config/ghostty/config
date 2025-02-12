@@ -15,12 +15,7 @@ cursor-style-blink = false
 copy-on-select = true
 
 macos-option-as-alt = true
-#macos-titlebar-proxy-icon = hidden
 macos-titlebar-style = tabs
-
-#keybind = cmd+backspace=esc:w
-#keybind = ctrl+t=unbind
-#keybind = alt+c=unbind
 
 # manual theme: vitesse
 palette = 0=#393a34
