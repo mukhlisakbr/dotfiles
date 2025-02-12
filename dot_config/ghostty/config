@@ -1,13 +1,9 @@
 font-family = GeistMono Nerd Font Mono
 font-size = 13
-font-feature = -calt
-font-feature = -liga
-font-feature = -dlig
+font-feature = -calt, -liga, -dlig
 
 window-padding-x = 6
 window-padding-balance = true
-
-shell-integration-features = no-cursor
 
 cursor-style = block
 cursor-style-blink = false
