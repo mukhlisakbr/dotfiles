@@ -19,7 +19,7 @@ copy-on-select = true
 
 macos-option-as-alt = true
 macos-titlebar-proxy-icon = hidden
-macos-titlebar-style = hidden
+#macos-titlebar-style = hidden
 
 keybind = cmd+backspace=esc:w
 keybind = ctrl+t=unbind
