@@ -5,7 +5,6 @@ font-feature = -calt, -liga, -dlig
 window-padding-x = 6
 window-padding-balance = true
 
-cursor-style = block
 cursor-style-blink = false
 
 copy-on-select = true
