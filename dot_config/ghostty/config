@@ -5,12 +5,9 @@ font-feature = -liga
 font-feature = -dlig
 
 window-padding-x = 6
-#window-padding-y = 4
 window-padding-balance = true
 
-#theme = GitHub-Dark-Default
-
-shell-integration-features = no-cursor
+#shell-integration-features = no-cursor
 
 cursor-style = block
 cursor-style-blink = false
@@ -18,12 +15,12 @@ cursor-style-blink = false
 copy-on-select = true
 
 macos-option-as-alt = true
-macos-titlebar-proxy-icon = hidden
+#macos-titlebar-proxy-icon = hidden
 macos-titlebar-style = tabs
 
-keybind = cmd+backspace=esc:w
-keybind = ctrl+t=unbind
-keybind = alt+c=unbind
+#keybind = cmd+backspace=esc:w
+#keybind = ctrl+t=unbind
+#keybind = alt+c=unbind
 
 # manual theme: vitesse
 palette = 0=#393a34
