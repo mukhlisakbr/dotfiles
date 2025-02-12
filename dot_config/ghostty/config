@@ -5,6 +5,9 @@ font-feature = -calt, -liga, -dlig
 window-padding-x = 6
 window-padding-balance = true
 
+cursor-style = box
+cursor-style-blink = false
+
 shell-integration-features = no-cursor
 
 copy-on-select = true
