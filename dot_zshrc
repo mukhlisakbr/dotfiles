@@ -101,3 +101,6 @@ esac
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
+
+# ssh agent
+export SSH_AUTH_SOCK=/Users/m/.bitwarden-ssh-agent.sock
