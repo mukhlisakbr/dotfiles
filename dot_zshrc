@@ -100,12 +100,3 @@ esac
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
-
-# ssh agent
-#export SSH_AUTH_SOCK=/Users/m/.bitwarden-ssh-agent.sock
-
-# qt 
-export PATH="/opt/homebrew/opt/qt@5/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/openssl/lib -L/opt/homebrew/opt/qt@5/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/openssl/include -I/opt/homebrew/opt/qt@5/include"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl/lib/pkgconfig:/opt/homebrew/opt/qt@5/lib/pkgconfig"
