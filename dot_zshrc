@@ -5,10 +5,10 @@ plugins=(git vagrant docker docker-compose conda)
 source $ZSH/oh-my-zsh.sh
 
 # starship
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
 
 # zoxide
-#eval "$(zoxide init zsh)"
+eval "$(zoxide init zsh)"
 
 #export EZA_CONFIG_DIR="$HOME/.config/eza"
 
