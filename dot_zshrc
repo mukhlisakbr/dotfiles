@@ -8,7 +8,7 @@ source $ZSH/oh-my-zsh.sh
 eval "$(starship init zsh)"
 
 # zoxide
-eval "$(zoxide init zsh)"
+#eval "$(zoxide init zsh)"
 
 #export EZA_CONFIG_DIR="$HOME/.config/eza"
 
