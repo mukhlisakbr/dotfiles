@@ -105,7 +105,7 @@ eval "$(pyenv init - zsh)"
 #export SSH_AUTH_SOCK=/Users/m/.bitwarden-ssh-agent.sock
 
 # qt 
-export PATH="/opt/homebrew/opt/qt/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/qt/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/qt/include"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/qt/lib/pkgconfig"
+export PATH="/opt/homebrew/opt/qt@5/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/qt@5/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/qt@5/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/qt@5/lib/pkgconfig"
