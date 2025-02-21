@@ -106,6 +106,6 @@ eval "$(pyenv init - zsh)"
 
 # qt 
 export PATH="/opt/homebrew/opt/qt@5/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/qt@5/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/qt@5/include"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/qt@5/lib/pkgconfig"
+export LDFLAGS="-L/opt/homebrew/opt/openssl/lib -L/opt/homebrew/opt/qt@5/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/openssl/include -I/opt/homebrew/opt/qt@5/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl/lib/pkgconfig:/opt/homebrew/opt/qt@5/lib/pkgconfig"
