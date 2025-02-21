@@ -103,3 +103,6 @@ eval "$(pyenv init - zsh)"
 
 # ssh agent
 #export SSH_AUTH_SOCK=/Users/m/.bitwarden-ssh-agent.sock
+
+# qt 
+
