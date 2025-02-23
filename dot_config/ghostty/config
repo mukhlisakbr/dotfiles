@@ -10,7 +10,7 @@ copy-on-select = clipboard
 macos-option-as-alt = true
 macos-titlebar-style = tabs
 
-theme = tokyonight_night
+#theme = tokyonight_night
 
 # manual theme: vitesse dark
 #palette = 0=#393a34
