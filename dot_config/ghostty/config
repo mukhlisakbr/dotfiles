@@ -2,7 +2,7 @@ font-family = GeistMono Nerd Font Mono
 font-size = 16
 font-feature = -calt, -liga, -dlig
 
-window-padding-x = 6
+window-padding-x = 8
 window-padding-y = 4
 window-padding-balance = true
 
