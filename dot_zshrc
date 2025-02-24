@@ -5,12 +5,12 @@ plugins=(git vagrant docker docker-compose conda)
 source $ZSH/oh-my-zsh.sh
 
 # starship
-#eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 # zoxide
 eval "$(zoxide init zsh)"
 
-#export EZA_CONFIG_DIR="$HOME/.config/eza"
+export EZA_CONFIG_DIR="$HOME/.config/eza"
 
 # zsh alias
 alias eza="eza --icons --sort=type"
@@ -68,7 +68,7 @@ zplug load
 export XDG_CONFIG_HOME="$HOME/.config"
 
 # change def editor
-export EDITOR=nvim
+export EDITOR=vim
 
 # yazi cd
 function y() {
