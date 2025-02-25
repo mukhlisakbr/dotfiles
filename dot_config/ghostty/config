@@ -10,7 +10,7 @@ copy-on-select = clipboard
 macos-option-as-alt = true
 macos-titlebar-style = hidden
 
-theme = tokyonight_night
+theme = 3024 Night
 
 #background-opacity = 0.9
 #background-blur = true
