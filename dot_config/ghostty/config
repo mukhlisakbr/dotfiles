@@ -1,6 +1,6 @@
 font-family = GeistMono Nerd Font Mono
 #font-family = Liga SFMono Nerd Font
-font-size = 16
+font-size = 14
 font-feature = -calt, -liga, -dlig
 
 window-padding-x = 6
