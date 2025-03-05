@@ -96,3 +96,6 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+
+# git
+alias wip='git add . && git commit -m "wip" && git push'
