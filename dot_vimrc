@@ -30,7 +30,8 @@ set modelines=5
 inoremap kj <Esc>
 
 set background=dark
-colorscheme tokyonight
+let ayucolor="dark"
+colorscheme ayu
 
 " change cursor in insert
 let &t_SI = "\e[6 q"
