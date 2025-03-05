@@ -99,3 +99,4 @@ esac
 
 # git
 alias wip='git add . && git commit -m "wip" && git push'
+alias gs='git status -s'
