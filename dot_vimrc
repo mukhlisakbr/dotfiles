@@ -4,6 +4,7 @@ Plug 'mechatroner/rainbow_csv'
 Plug 'sheerun/vim-polyglot'
 Plug 'rose-pine/vim'
 Plug 'folke/tokyonight.nvim', { 'rtp': 'extras/vim' }
+Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
 
