@@ -1,7 +1,10 @@
 # oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
+
 ZSH_THEME="robbyrussell"
+
 plugins=(git docker docker-compose)
+
 source $ZSH/oh-my-zsh.sh
 
 # zoxide
@@ -12,11 +15,14 @@ export EZA_CONFIG_DIR="$HOME/.config/eza"
 
 # zsh alias
 alias eza="eza --icons --sort=type"
+
 alias l="eza"
 alias ll="eza -l"
 alias lla="eza -la"
+
 alias lg="lazygit"
 alias ld="lazydocker"
+
 alias sc="sc-im"
 alias pn="pnpm"
 alias ws="webstorm"
@@ -50,6 +56,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
 # zinit
 source /opt/homebrew/opt/zinit/zinit.zsh
+
 zinit load zsh-users/zsh-syntax-highlighting
 zinit load zsh-users/zsh-autosuggestions
 zinit load zsh-users/zsh-completions
