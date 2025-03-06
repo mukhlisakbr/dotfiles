@@ -87,4 +87,5 @@ case ":$PATH:" in
 esac
 
 # gitignore
-function gi() { curl -sLw \"\\\n\" https://www.toptal.com/developers/gitignore/api/\$@ ;}
+function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$@ ;}
+
