@@ -4,9 +4,6 @@ ZSH_THEME="robbyrussell"
 plugins=(git docker docker-compose)
 source $ZSH/oh-my-zsh.sh
 
-# starship
-#eval "$(starship init zsh)"
-
 # zoxide
 eval "$(zoxide init zsh)"
 
@@ -50,20 +47,6 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
-
-# zplug
-#export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
-#source $ZPLUG_HOME/init.zsh
-#zplug "zsh-users/zsh-syntax-highlighting"
-#zplug "zsh-users/zsh-autosuggestions"
-#zplug "zsh-users/zsh-completions"
-#if ! zplug check --verbose; then
-#    printf "Install? [y/N]: "
-#    if read -q; then
-#        echo; zplug install
-#    fi
-#fi
-#zplug load
 
 # zinit
 source /opt/homebrew/opt/zinit/zinit.zsh
