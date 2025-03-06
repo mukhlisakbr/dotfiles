@@ -67,6 +67,9 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
 # zinit
 source /opt/homebrew/opt/zinit/zinit.zsh
+zinit load zsh-users/zsh-syntax-highlighting
+zinit load zsh-users/zsh-autosuggestions
+zinit load zsh-users/zsh-completions
 
 # lazygit
 export XDG_CONFIG_HOME="$HOME/.config"
