@@ -57,7 +57,7 @@ zinit load zsh-users/zsh-completions
 # lazygit
 export XDG_CONFIG_HOME="$HOME/.config"
 
-# change def editor
+# default editor
 export EDITOR=vim
 
 # yazi cd
