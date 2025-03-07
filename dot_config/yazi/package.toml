@@ -13,5 +13,5 @@ hash = "8538c8db6d36bcca995afbc96ea7acb5"
 
 [[flavor.deps]]
 use = "mukhlisakbr/solarized-osaka"
-rev = "0ba6327"
-hash = "5b9766b8e12f72cabac32101fa08d0ec"
+rev = "439b674"
+hash = "63e5b4a4d4fb6dca3a93a441232a95e4"

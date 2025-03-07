@@ -33,3 +33,6 @@ let &t_EI = "\e[2 q"
 
 " remove bg
 hi Normal guibg=NONE ctermbg=NONE
+
+" selected color
+highlight! link Visual CursorLine
