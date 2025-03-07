@@ -5,3 +5,8 @@ deps = []
 use = "kmlupreti/ayu-dark"
 rev = "5412a78"
 hash = "60690920e8c0f9f81ff02009de5d156f"
+
+[[flavor.deps]]
+use = "gmvar/gruvbox-dark"
+rev = "2a2bd50"
+hash = "8538c8db6d36bcca995afbc96ea7acb5"
