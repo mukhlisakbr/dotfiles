@@ -24,7 +24,7 @@ set re=0
 " remap
 inoremap kj <Esc>
 
-set background=dark
+set background=dar
 colorscheme osaka_solarized
 
 " cursor
