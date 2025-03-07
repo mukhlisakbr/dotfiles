@@ -30,7 +30,7 @@ set re=0
 inoremap kj <Esc>
 
 set background=dark
-colorscheme "solarized-osaka"
+colorscheme solarized_osaka
 
 " cursor
 let &t_SI = "\e[6 q"
