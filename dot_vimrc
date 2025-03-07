@@ -1,11 +1,6 @@
 call plug#begin()
 
-Plug 'mechatroner/rainbow_csv'
 Plug 'sheerun/vim-polyglot'
-Plug 'rose-pine/vim'
-Plug 'folke/tokyonight.nvim', { 'rtp': 'extras/vim' }
-Plug 'ayu-theme/ayu-vim'
-Plug 'morhetz/gruvbox'
 Plug 'ioksc/vim-osaka-solarized-theme'
 
 call plug#end()
