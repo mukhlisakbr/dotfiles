@@ -11,7 +11,6 @@ call plug#end()
 
 syntax on
 
-set nocompatible
 set termguicolors
 set tabstop=2
 set shiftwidth=2
@@ -21,22 +20,24 @@ set number
 set hlsearch
 set ruler
 set clipboard=unnamed
+set cursorline
 
 " Use new regular expression engine
 set re=0
-set modeline
-set modelines=5
 
 " remap
 inoremap kj <Esc>
 
 set background=dark
-let ayucolor="dark"
 colorscheme gruvbox
 
-" change cursor in insert
+" cursor
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
 " remove bg
 hi Normal guibg=NONE ctermbg=NONE
+
+" indent
+set list
+set listchars=multispace:\ \ ┊
