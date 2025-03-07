@@ -32,7 +32,7 @@ inoremap kj <Esc>
 
 set background=dark
 let ayucolor="dark"
-colorscheme ayu
+colorscheme gruvbox
 
 " change cursor in insert
 let &t_SI = "\e[6 q"
