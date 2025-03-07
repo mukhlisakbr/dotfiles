@@ -37,7 +37,3 @@ let &t_EI = "\e[2 q"
 
 " remove bg
 hi Normal guibg=NONE ctermbg=NONE
-
-" indent
-set list
-set listchars=multispace:\ \ ┊
