@@ -32,7 +32,7 @@ let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
 " remove bg
-hi Normal guibg=NONE ctermbg=NONE
+"hi Normal guibg=NONE ctermbg=NONE
 
 " selected color
-highlight! link Visual CursorLine
+hi Visual guifg=#00141A guibg=#B58901 gui=none
