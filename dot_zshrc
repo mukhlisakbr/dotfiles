@@ -58,7 +58,7 @@ zinit load zsh-users/zsh-completions
 export XDG_CONFIG_HOME="$HOME/.config"
 
 # default editor
-export EDITOR=vim
+export EDITOR=nvim
 
 # yazi cd
 function y() {
