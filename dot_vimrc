@@ -2,6 +2,7 @@ call plug#begin()
 
 Plug 'sheerun/vim-polyglot'
 Plug 'ioksc/vim-osaka-solarized-theme'
+Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
@@ -17,15 +18,15 @@ set hlsearch
 set ruler
 set clipboard=unnamed
 set cursorline
-
-" Use new regular expression engine
+set laststatus=2
+set noshowmode
 set re=0
+set background=dark
+
+colorscheme osaka_solarized
 
 " remap
 inoremap kj <Esc>
-
-set background=dark
-colorscheme osaka_solarized
 
 " cursor
 let &t_SI = "\e[6 q"
@@ -36,3 +37,7 @@ let &t_EI = "\e[2 q"
 
 " fix selected color
 hi Visual guifg=#00141A guibg=#B58900 gui=NONE
+
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ }
