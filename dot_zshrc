@@ -8,6 +8,9 @@ plugins=(
 )
 source $ZSH/oh-my-zsh.sh
 
+# starship
+eval "$(starship init zsh)"
+
 # zoxide
 eval "$(zoxide init zsh)"
 
