@@ -2,7 +2,7 @@ font-family = GeistMono NFM
 font-size = 16
 font-feature = -calt, -liga, -dlig
 
-adjust-cell-height = 20%
+adjust-cell-height = 2
 
 window-padding-balance = true
 
