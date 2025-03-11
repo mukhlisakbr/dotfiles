@@ -3,6 +3,7 @@ font-size = 16
 font-feature = -calt, -liga, -dlig
 
 adjust-cell-height = 8
+adjust-cursor-height = 8
 
 window-padding-balance = true
 
