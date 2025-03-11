@@ -2,6 +2,8 @@ font-family = GeistMono NFM
 font-size = 16
 font-feature = -calt, -liga, -dlig
 
+adjust-cell-height = 20%
+
 window-padding-balance = true
 
 copy-on-select = clipboard
