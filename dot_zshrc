@@ -52,10 +52,6 @@ source <(fzf --zsh)
 # sublime
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
-# brew
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-
 # android and java
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -68,7 +64,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 # default editor
 export EDITOR=nvim
 
-# yazi cd
+# yazi
 function y() {
   local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
   yazi "$@" --cwd-file="$tmp"
