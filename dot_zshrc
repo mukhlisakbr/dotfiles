@@ -8,6 +8,12 @@ plugins=(
 )
 source $ZSH/oh-my-zsh.sh
 
+# zinit
+source /opt/homebrew/opt/zinit/zinit.zsh
+zinit ice wait lucid; zinit light zsh-users/zsh-syntax-highlighting
+zinit ice wait lucid; zinit light zsh-users/zsh-autosuggestions
+zinit ice wait lucid; zinit light zsh-users/zsh-completions
+
 # starship
 eval "$(starship init zsh)"
 
@@ -50,12 +56,6 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
-
-# zinit
-source /opt/homebrew/opt/zinit/zinit.zsh
-zinit load zsh-users/zsh-syntax-highlighting
-zinit load zsh-users/zsh-autosuggestions
-zinit load zsh-users/zsh-completions
 
 # lazygit
 export XDG_CONFIG_HOME="$HOME/.config"
