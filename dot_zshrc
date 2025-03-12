@@ -8,11 +8,16 @@ plugins=(
 )
 source $ZSH/oh-my-zsh.sh
 
-# zinit
-source /opt/homebrew/opt/zinit/zinit.zsh
-zinit ice wait lucid; zinit light zsh-users/zsh-syntax-highlighting
-zinit ice wait lucid; zinit light zsh-users/zsh-autosuggestions
-zinit ice wait lucid; zinit light zsh-users/zsh-completions
+# zplug
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
+source $ZPLUG_HOME/init.zsh
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-completions"
+if ! zplug check; then
+  zplug install
+fi
+zplug load
 
 # starship
 eval "$(starship init zsh)"
