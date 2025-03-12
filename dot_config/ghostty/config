@@ -5,7 +5,8 @@ font-feature = -calt, -liga, -dlig
 adjust-cell-height = 12
 adjust-cursor-height = 12
 
-window-padding-balance = true
+window-padding-x = 6
+window-padding-y = 4
 
 copy-on-select = clipboard
 
