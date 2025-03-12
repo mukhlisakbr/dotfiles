@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "private_dot_gitconfig": "ini",
+    "dot_bashrc": "shellscript",
+    "dot_zshrc": "shellscript",
+    "dot_zprofile": "shellscript",
+    "dot_vimrc": "viml",
+    "dot_ideavimrc": "viml"
+  }
+}
