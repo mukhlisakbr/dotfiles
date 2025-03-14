@@ -1,3 +1,2 @@
 [flavor]
-dark = "solarized-osaka"
-light = "solarized-osaka"
+use = "dracula"
