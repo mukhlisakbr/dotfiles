@@ -1,6 +1,8 @@
 call plug#begin()
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
+Plug 'tribela/vim-transparent'
+Plug 'jszakmeister/vim-togglecursor'
 call plug#end()
 
 syntax on
@@ -20,15 +22,7 @@ set noshowmode
 set re=0
 set background=dark
 
-colorscheme desert
+colorscheme darkblue
 
 " remap
 inoremap kj <Esc>
-
-" cursor
-let &t_SI = "\e[6 q"
-let &t_EI = "\e[2 q"
-
-" transparent
-hi Normal guibg=NONE ctermbg=NONE
-hi EndOfBuffer ctermbg=NONE guibg=NONE
