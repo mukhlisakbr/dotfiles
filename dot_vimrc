@@ -25,6 +25,3 @@ inoremap kj <Esc>
 " cursor
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
-
-" remove bg
-"hi Normal guibg=NONE ctermbg=NONE
