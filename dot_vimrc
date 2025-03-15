@@ -22,7 +22,7 @@ set noshowmode
 set re=0
 set background=dark
 
-colorscheme darkblue
+colorscheme habamax
 
 " remap
 inoremap kj <Esc>
