@@ -4,6 +4,7 @@ Plug 'itchyny/lightline.vim'
 call plug#end()
 
 syntax on
+
 set termguicolors
 set tabstop=2
 set shiftwidth=2
@@ -19,9 +20,14 @@ set noshowmode
 set re=0
 set background=dark
 
+colorscheme retrobox
+
 " remap
 inoremap kj <Esc>
 
 " cursor
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
+
+" transparent
+hi Normal guibg=NONE ctermbg=NONE
