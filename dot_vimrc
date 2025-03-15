@@ -20,7 +20,7 @@ set noshowmode
 set re=0
 set background=dark
 
-colorscheme retrobox
+colorscheme desert
 
 " remap
 inoremap kj <Esc>
@@ -31,3 +31,4 @@ let &t_EI = "\e[2 q"
 
 " transparent
 hi Normal guibg=NONE ctermbg=NONE
+hi EndOfBuffer ctermbg=NONE guibg=NONE
