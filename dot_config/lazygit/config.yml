@@ -4,4 +4,4 @@ git:
 gui:
   theme:
     selectedLineBgColor:
-      - reverse
+      - bold
