@@ -11,3 +11,5 @@ macos-titlebar-style = tabs
 
 background-opacity = 0.9
 background-blur = true
+
+theme = "3024 Night"
