@@ -60,9 +60,6 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 # lazygit
 export XDG_CONFIG_HOME="$HOME/.config"
 
-# default editor
-export EDITOR=nvim
-
 # yazi
 function y() {
   local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
