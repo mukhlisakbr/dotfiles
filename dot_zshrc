@@ -80,7 +80,7 @@ export HERD_PHP_83_INI_SCAN_DIR="/Users/m/Library/Application Support/Herd/confi
 export PATH="/Users/m/Library/Application Support/Herd/bin/":$PATH
 
 # pnpm
-export PNPM_HOME="/Users/m/Library/pnpm"
+export PNPM_HOME="/Users/ghost/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
