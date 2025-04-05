@@ -1,14 +1,18 @@
 {
-  "font_size": 16,
+  "font_size": 14,
   "font_face": "GeistMono Nerd Font",
   "font_options": ["no_liga", "no_clig", "no_calt"],
   "ignored_packages": [
   ],
-  "vintage_start_in_command_mode": true,
   "tab_size": 2,
   "translate_tabs_to_spaces": true,
   "hide_tab_scrolling_buttons": true,
   "caret_extra_bottom": 0,
   "caret_extra_top": 0,
   "open_files_in_new_window": false,
+  "theme": "Adaptive.sublime-theme",
+  "color_scheme": "Mariana.sublime-color-scheme",
+  "ui_scale": 1.2,
+  "draw_minimap": false,
+  "highlight_line": true,
 }
