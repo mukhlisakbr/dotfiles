@@ -1,5 +1,5 @@
 {
-  "font_size": 14,
+  "font_size": 16,
   "font_face": "GeistMono Nerd Font",
   "font_options": ["no_liga", "no_clig", "no_calt"],
   "ignored_packages": [
