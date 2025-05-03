@@ -90,3 +90,6 @@ export HERD_PHP_84_INI_SCAN_DIR="/Users/ghost/Library/Application Support/Herd/c
 
 # Herd injected PHP binary.
 export PATH="/Users/ghost/Library/Application Support/Herd/bin/":$PATH
+
+# Added by Windsurf
+export PATH="/Users/ghost/.codeium/windsurf/bin:$PATH"
