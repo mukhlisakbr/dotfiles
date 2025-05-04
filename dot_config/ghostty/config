@@ -1,17 +1,12 @@
 font-family = GeistMono NFM
-font-size = 14
+font-size = 16
 font-feature = -calt, -liga, -dlig
 
 window-padding-balance = true
 
 copy-on-select = clipboard
 
-#window-padding-x = 6
-
 macos-option-as-alt = true
 macos-titlebar-style = tabs
 
-#background-opacity = 0.8
-#background-blur = true
-
-#theme = "3024 Night"
+theme = "GitHub-Dark-Default"
