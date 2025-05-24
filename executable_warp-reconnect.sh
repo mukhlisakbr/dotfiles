@@ -27,7 +27,7 @@ fi
 
 # Disconnect and reconnect WARP
 log "🔄 Starting WARP reconnection process..."
-log "⏹️  Disconnecting from WARP..."
+log "⏹️ Disconnecting from WARP..."
 disconnect_result=$(warp-cli disconnect 2>&1)
 if [[ "$disconnect_result" == *"Success"* ]]; then
   log "✅ Successfully disconnected from WARP"
@@ -70,7 +70,7 @@ if [ "$old_ip" != "$new_ip" ]; then
   log "   • New IP: $new_ip"
   log_colored "\033[32m✅ WARP reconnection completed successfully - IP changed!\033[0m"
 else
-  log "⚠️  Warning: IP address has NOT changed"
+  log "⚠️ Warning: IP address has NOT changed"
   log "📊 IP Status:"
   log "   • Previous IP: $old_ip"
   log "   • Current IP:  $new_ip"
