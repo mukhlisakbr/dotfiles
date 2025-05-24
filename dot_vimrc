@@ -2,7 +2,6 @@ call plug#begin()
 Plug 'sheerun/vim-polyglot'
 Plug 'tribela/vim-transparent'
 Plug 'jszakmeister/vim-togglecursor'
-Plug 'wojciechkepka/vim-github-dark'
 call plug#end()
 
 syntax on
@@ -17,8 +16,6 @@ set hlsearch
 set ruler
 set clipboard=unnamed
 set re=0
-
-colorscheme ghdark
 
 " remap
 inoremap kj <Esc>

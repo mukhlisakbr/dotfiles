@@ -1,5 +1,5 @@
 {
-  "font_size": 16,
+  "font_size": 14,
   "font_face": "GeistMono Nerd Font",
   "font_options": ["no_liga", "no_clig", "no_calt"],
   "ignored_packages": [
@@ -9,6 +9,8 @@
   "caret_extra_bottom": 0,
   "caret_extra_top": 0,
   "theme": "Adaptive.sublime-theme",
-  "color_scheme": "Monokai.sublime-color-scheme",
+  "color_scheme": "auto",
   "index_files": true,
+  "dark_color_scheme": "Mariana.sublime-color-scheme",
+  "light_color_scheme": "Breakers.sublime-color-scheme",
 }
