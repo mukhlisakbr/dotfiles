@@ -1094,7 +1094,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>GeistMonoNFM-Regular 13</string>
+			<string>GeistMonoNFM-Regular 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1261,6 +1261,8 @@
 		</dict>
 	</dict>
 	<key>SeparateWindowTitlePerTab</key>
+	<true/>
+	<key>ShowSecureKeyboardEntryIndicator</key>
 	<true/>
 	<key>SoundForEsc</key>
 	<false/>
