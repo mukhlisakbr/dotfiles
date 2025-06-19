@@ -1266,6 +1266,8 @@
 	</dict>
 	<key>SeparateWindowTitlePerTab</key>
 	<true/>
+	<key>ShowPaneTitles</key>
+	<false/>
 	<key>ShowSecureKeyboardEntryIndicator</key>
 	<true/>
 	<key>SoundForEsc</key>
