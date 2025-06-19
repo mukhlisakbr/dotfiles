@@ -6,6 +6,10 @@
 	<false/>
 	<key>Default Bookmark Guid</key>
 	<string>DA01F4EC-ACF2-42E0-A16F-5EC9FAADAC45</string>
+	<key>DimBackgroundWindows</key>
+	<false/>
+	<key>DimOnlyText</key>
+	<false/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideTabNumber</key>
@@ -1266,6 +1270,8 @@
 	<true/>
 	<key>SoundForEsc</key>
 	<false/>
+	<key>SplitPaneDimmingAmount</key>
+	<real>0.20000000000000001</real>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
 	<key>VisualIndicatorForEsc</key>
