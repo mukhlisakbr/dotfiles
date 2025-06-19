@@ -13,7 +13,7 @@
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideTabNumber</key>
-	<false/>
+	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -1276,12 +1276,14 @@
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.20000000000000001</real>
+	<key>StretchTabsToFillBar</key>
+	<false/>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>WindowNumber</key>
-	<true/>
+	<false/>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 </dict>
