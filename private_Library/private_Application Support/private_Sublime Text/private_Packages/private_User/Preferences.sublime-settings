@@ -1,6 +1,6 @@
 {
   // fonts
-  "font_size": 14,
+  "font_size": 13,
   "font_face": "GeistMono NFM",
   "font_options": ["no_liga", "no_clig", "no_calt"],
 
