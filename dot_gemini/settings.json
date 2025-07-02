@@ -1,4 +1,14 @@
 {
   "theme": "GitHub",
-  "selectedAuthType": "oauth-personal"
+  "selectedAuthType": "oauth-personal",
+  "mcpServers": {
+    "context7": {
+      "command": "bunx",
+      "args": ["-y", "@upstash/context7-mcp"]
+    },
+    "mobile-mcp": {
+      "command": "bunx",
+      "args": ["-y", "@mobilenext/mobile-mcp@0.0.19"]
+    }
+  }
 }
