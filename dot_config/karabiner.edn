@@ -1,52 +1,39 @@
 {:main [;; ----------------------------------------------------------------------
-        ;; Hyper Mode (Caps Lock)
-        ;; - Hold Caps Lock to activate the "hyper-mode" layer.
-        ;; - Tap for Escape.
+        ;; LAYER DEFINITIONS
         ;; ----------------------------------------------------------------------
-        {:des "Layer Definition: Hyper Mode"
-         :rules [[:caps_lock ["hyper-mode" 1] nil {:afterup ["hyper-mode" 0]
+        {:des "Layer: Hyper Mode (Caps Lock)"
+         :rules [;; Hold Caps Lock for layer, Tap for Escape.
+                 [:caps_lock ["hyper-mode" 1] nil {:afterup ["hyper-mode" 0]
                                                    :alone :escape}]]}
 
         ;; ----------------------------------------------------------------------
-        ;; Launcher Mode (Semicolon)
-        ;; - Hold Semicolon to activate the "launcher-mode" layer.
-        ;; - Tap for a normal semicolon.
+        ;; HYPER MODE RULES
+        ;; (Active while holding Caps Lock)
         ;; ----------------------------------------------------------------------
-        {:des "Layer Definition: Launcher Mode"
-         :rules [[:semicolon ["launcher-mode" 1] nil {:afterup ["launcher-mode" 0]
-                                                      :alone :semicolon}]]}
-
-        ;; ----------------------------------------------------------------------
-        ;; Rules within Hyper Mode
-        ;; ----------------------------------------------------------------------
-        {:des "Hyper Mode: General Shortcuts"
-         :rules [;; Ctrl Shortcuts
+        {:des "Rules: Hyper Mode"
+         :rules [;; Commands
                  [:c :!Tc ["hyper-mode" 1]]
                  [:r :!Tr ["hyper-mode" 1]]
 
-                 ;; Tab Navigation
+                 ;; Navigation
                  [:n :!Ttab ["hyper-mode" 1]]    ;; Next Tab
                  [:p :!TStab ["hyper-mode" 1]]   ;; Previous Tab
-                 ]}
-
-        {:des "Hyper Mode: Vim Navigation"
-         :rules [[:h :left_arrow ["hyper-mode" 1]]
+                 [:h :left_arrow ["hyper-mode" 1]]
                  [:j :down_arrow ["hyper-mode" 1]]
                  [:k :up_arrow ["hyper-mode" 1]]
                  [:l :right_arrow ["hyper-mode" 1]]]}
 
         ;; ----------------------------------------------------------------------
-        ;; App Launcher (activated by Semicolon)
+        ;; GLOBAL SHORTCUTS
+        ;; (Work everywhere)
         ;; ----------------------------------------------------------------------
-        {:des "App Launcher"
-         :rules [[:b "open -a 'Google Chrome'" ["launcher-mode" 1]]
-                 [:t "open -a 'Warp'" ["launcher-mode" 1]]
-                 [:e "open -a 'Visual Studio Code'" ["launcher-mode" 1]]
-                 [:a "open -a 'ChatGPT'" ["launcher-mode" 1]]
-                 [:c "open -a 'WhatsApp'" ["launcher-mode" 1]]]}
+        {:des "Global: App Launcher (Right Command)"
+         :rules [[:!Qb "open -a 'Google Chrome'"]
+                 [:!Qt "open -a 'Warp'"]
+                 [:!Qe "open -a 'Visual Studio Code'"]
+                 [:!Qa "open -a 'ChatGPT'"]
+                 [:!Qc "open -a 'WhatsApp'"]
+                 [:!Qf "open -a 'Finder'"]]}
 
-        ;; ----------------------------------------------------------------------
-        ;; Other Key Functions
-        ;; ----------------------------------------------------------------------
-        {:des "Right Option to Caps Lock"
+        {:des "Global: Right Option to Caps Lock"
          :rules [[:right_option :caps_lock]]}]}
