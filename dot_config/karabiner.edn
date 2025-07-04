@@ -1,51 +1,51 @@
 {:main [;; ----------------------------------------------------------------------
         ;; Hyper Mode (Caps Lock)
-        ;; - Tahan Caps Lock untuk mengaktifkan layer "hyper-mode".
-        ;; - Tekan sekali (tap) untuk Escape.
+        ;; - Hold Caps Lock to activate the "hyper-mode" layer.
+        ;; - Tap for Escape.
         ;; ----------------------------------------------------------------------
-        {:des "Definisi Layer: Hyper Mode"
+        {:des "Layer Definition: Hyper Mode"
          :rules [[:caps_lock ["hyper-mode" 1] nil {:afterup ["hyper-mode" 0]
                                                    :alone :escape}]]}
 
         ;; ----------------------------------------------------------------------
-        ;; Spacebar Mode (untuk Peluncur Aplikasi)
-        ;; - Tahan Spacebar untuk mengaktifkan layer "space-mode".
-        ;; - Tekan sekali (tap) untuk Spasi biasa.
+        ;; Spacebar Mode (for App Launcher)
+        ;; - Hold Spacebar to activate the "space-mode" layer.
+        ;; - Tap for a normal space.
         ;; ----------------------------------------------------------------------
-        {:des "Definisi Layer: Space Mode"
+        {:des "Layer Definition: Space Mode"
          :rules [[:spacebar ["space-mode" 1] nil {:afterup ["space-mode" 0]
                                                   :alone :spacebar}]]}
 
         ;; ----------------------------------------------------------------------
-        ;; Aturan di dalam Hyper Mode
+        ;; Rules within Hyper Mode
         ;; ----------------------------------------------------------------------
-        {:des "Hyper Mode: Pintasan Umum"
-         :rules [;; Pintasan Ctrl
+        {:des "Hyper Mode: General Shortcuts"
+         :rules [;; Ctrl Shortcuts
                  [:c :!Tc ["hyper-mode" 1]]
                  [:r :!Tr ["hyper-mode" 1]]
 
-                 ;; Navigasi Tab
-                 [:n :!Ttab ["hyper-mode" 1]]    ;; Next Tab
-                 [:p :!TStab ["hyper-mode" 1]] ;; Previous Tab
+                 ;; Tab Navigation
+                 [:n :!Ttab ["hyper-mode" 1]]   ;; Next Tab
+                 [:p :!TS_tab ["hyper-mode" 1]] ;; Previous Tab
                  ]}
 
-        {:des "Hyper Mode: Navigasi Vim"
+        {:des "Hyper Mode: Vim Navigation"
          :rules [[:h :left_arrow ["hyper-mode" 1]]
                  [:j :down_arrow ["hyper-mode" 1]]
                  [:k :up_arrow ["hyper-mode" 1]]
                  [:l :right_arrow ["hyper-mode" 1]]]}
 
         ;; ----------------------------------------------------------------------
-        ;; Peluncur Aplikasi (diaktifkan oleh Spacebar)
+        ;; App Launcher (activated by Spacebar)
         ;; ----------------------------------------------------------------------
-        {:des "Peluncur Aplikasi"
+        {:des "App Launcher"
          :rules [[:b "open -a 'Google Chrome'" ["space-mode" 1]]
                  [:t "open -a 'Warp'" ["space-mode" 1]]
                  [:e "open -a 'Visual Studio Code'" ["space-mode" 1]]
                  [:a "open -a 'ChatGPT'" ["space-mode" 1]]]}
 
         ;; ----------------------------------------------------------------------
-        ;; Fungsionalitas Tombol Lain
+        ;; Other Key Functions
         ;; ----------------------------------------------------------------------
-        {:des "Right Option menjadi Caps Lock"
+        {:des "Right Option to Caps Lock"
          :rules [[:right_option :caps_lock]]}]}
