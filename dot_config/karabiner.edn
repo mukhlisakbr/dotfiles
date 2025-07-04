@@ -8,6 +8,15 @@
                                                    :alone :escape}]]}
 
         ;; ----------------------------------------------------------------------
+        ;; Launcher Mode (Semicolon)
+        ;; - Hold Semicolon to activate the "launcher-mode" layer.
+        ;; - Tap for a normal semicolon.
+        ;; ----------------------------------------------------------------------
+        {:des "Layer Definition: Launcher Mode"
+         :rules [[:semicolon ["launcher-mode" 1] nil {:afterup ["launcher-mode" 0]
+                                                      :alone :semicolon}]]}
+
+        ;; ----------------------------------------------------------------------
         ;; Rules within Hyper Mode
         ;; ----------------------------------------------------------------------
         {:des "Hyper Mode: General Shortcuts"
@@ -27,14 +36,14 @@
                  [:l :right_arrow ["hyper-mode" 1]]]}
 
         ;; ----------------------------------------------------------------------
-        ;; App Launcher (activated by Right Command)
+        ;; App Launcher (activated by Semicolon)
         ;; ----------------------------------------------------------------------
         {:des "App Launcher"
-         :rules [[:!Qb "open -a 'Google Chrome'"]
-                 [:!Qt "open -a 'Warp'"]
-                 [:!Qe "open -a 'Visual Studio Code'"]
-                 [:!Qa "open -a 'ChatGPT'"]
-                 [:!Qc "open -a 'WhatsApp'"]]}
+         :rules [[:b "open -a 'Google Chrome'" ["launcher-mode" 1]]
+                 [:t "open -a 'Warp'" ["launcher-mode" 1]]
+                 [:e "open -a 'Visual Studio Code'" ["launcher-mode" 1]]
+                 [:a "open -a 'ChatGPT'" ["launcher-mode" 1]]
+                 [:c "open -a 'WhatsApp'" ["launcher-mode" 1]]]}
 
         ;; ----------------------------------------------------------------------
         ;; Other Key Functions
