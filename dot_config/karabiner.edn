@@ -1,7 +1,8 @@
 {;; ----------------------------------------------------------------------
  ;; APPLICATION DEFINITIONS
  ;; ----------------------------------------------------------------------
- :applications {:vscode ["^com\\.microsoft\\.VSCode$"]}
+ :applications {:vscode ["^com\\.microsoft\\.VSCode$"]
+}
 
  ;; ----------------------------------------------------------------------
  ;; MAIN CONFIGURATION
@@ -23,6 +24,7 @@
          :rules [;; General Commands
                  [:c :!Tc ["hyper-mode" 1]] ;; Hyper + c -> Interrupt Process (Ctrl+C)
                  [:r :!Tr ["hyper-mode" 1]] ;; Hyper + r -> Reverse Search (Ctrl+R)
+                 [:w :!Tw ["hyper-mode" 1]]      ;; Hyper + w -> Delete word backwards (Ctrl+W)
 
                  ;; General Navigation
                  [:n :!Ttab ["hyper-mode" 1]]    ;; Hyper + n -> Next Tab (Ctrl+Tab)
@@ -41,7 +43,8 @@
                  [:spacebar :!CSp [:hyper-mode :vscode]]             ;; Hyper + Space -> Show All Commands (Cmd+Shift+P)
                  [:g :!Ct [:hyper-mode :vscode]]                     ;; Hyper + g -> Go to Symbol in Workspace (Cmd+T)
                  [:d :!CSo [:hyper-mode :vscode]]                     ;; Hyper + d -> Go to Symbol in Editor (Cmd+Shift+O)
-                 ]}
+                 [:i :!SCa [:hyper-mode :vscode]]                     ;; Hyper + i -> Kilocode AI Agent (Shift+Cmd+A)
+                  ]}
 
         ;; ----------------------------------------------------------------------
         ;; 3. GLOBAL SHORTCUTS & REMAPS
@@ -50,7 +53,7 @@
         {:des "Global: Shortcuts & Remaps"
          :rules [;; App Launcher (Right Command)
                  [:!Qb "open -a 'Google Chrome'"]       ;; Right Cmd + b -> Google Chrome
-                 [:!Qt "open -a 'Warp'"]                ;; Right Cmd + t -> Warp
+                 [:!Qt "open -a 'iTerm'"]               ;; Right Cmd + t -> iTerm
                  [:!Qe "open -a 'Visual Studio Code'"]  ;; Right Cmd + e -> VS Code
                  [:!Qa "open -a 'ChatGPT'"]             ;; Right Cmd + a -> ChatGPT
                  [:!Qc "open -a 'WhatsApp'"]            ;; Right Cmd + c -> WhatsApp

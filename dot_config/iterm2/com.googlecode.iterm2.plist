@@ -7,13 +7,13 @@
 
 The script should do this: \(ai.prompt)</string>
 	<key>AiMaxTokens</key>
-	<integer>1048576</integer>
+	<integer>10000</integer>
 	<key>AiModel</key>
-	<string>google/gemini-2.0-flash-exp:free</string>
+	<string>gemini/gemini-2.5-pro</string>
 	<key>AitermURL</key>
-	<string>https://openrouter.ai/api/v1/</string>
+	<string>https://litellm.request.my.id/v1/completions</string>
 	<key>AitermUseLegacyAPI</key>
-	<false/>
+	<true/>
 	<key>ClickToSelectCommand</key>
 	<false/>
 	<key>CompactMinimalTabBarHeight</key>
@@ -796,6 +796,8 @@ The script should do this: \(ai.prompt)</string>
 			<integer>80</integer>
 			<key>Command</key>
 			<string></string>
+			<key>Composer Top Offset</key>
+			<real>0.0</real>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1114,7 +1116,7 @@ The script should do this: \(ai.prompt)</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>GeistMonoNFM-Regular 13</string>
+			<string>GeistMonoNFM-Regular 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
