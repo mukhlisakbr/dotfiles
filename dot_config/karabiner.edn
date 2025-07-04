@@ -1,39 +1,61 @@
-{:main [;; ----------------------------------------------------------------------
-        ;; LAYER DEFINITIONS
+{;; ----------------------------------------------------------------------
+ ;; APPLICATION DEFINITIONS
+ ;; ----------------------------------------------------------------------
+ :applications {:vscode ["^com\\.microsoft\\.VSCode$"]}
+
+ ;; ----------------------------------------------------------------------
+ ;; MAIN CONFIGURATION
+ ;; ----------------------------------------------------------------------
+ :main [;; ----------------------------------------------------------------------
+        ;; 1. LAYER DEFINITIONS
         ;; ----------------------------------------------------------------------
         {:des "Layer: Hyper Mode (Caps Lock)"
-         :rules [;; Hold Caps Lock for layer, Tap for Escape.
+         :rules [;; Hold Caps Lock to activate the "hyper-mode" layer.
+                 ;; Tap for Escape.
                  [:caps_lock ["hyper-mode" 1] nil {:afterup ["hyper-mode" 0]
                                                    :alone :escape}]]}
 
         ;; ----------------------------------------------------------------------
-        ;; HYPER MODE RULES
-        ;; (Active while holding Caps Lock)
+        ;; 2. HYPER MODE RULES
+        ;; (All rules active while holding Caps Lock)
         ;; ----------------------------------------------------------------------
         {:des "Rules: Hyper Mode"
-         :rules [;; Commands
-                 [:c :!Tc ["hyper-mode" 1]]
-                 [:r :!Tr ["hyper-mode" 1]]
+         :rules [;; General Commands
+                 [:c :!Tc ["hyper-mode" 1]] ;; Hyper + c -> Interrupt Process (Ctrl+C)
+                 [:r :!Tr ["hyper-mode" 1]] ;; Hyper + r -> Reverse Search (Ctrl+R)
 
-                 ;; Navigation
-                 [:n :!Ttab ["hyper-mode" 1]]    ;; Next Tab
-                 [:p :!TStab ["hyper-mode" 1]]   ;; Previous Tab
-                 [:h :left_arrow ["hyper-mode" 1]]
-                 [:j :down_arrow ["hyper-mode" 1]]
-                 [:k :up_arrow ["hyper-mode" 1]]
-                 [:l :right_arrow ["hyper-mode" 1]]]}
+                 ;; General Navigation
+                 [:n :!Ttab ["hyper-mode" 1]]    ;; Hyper + n -> Next Tab (Ctrl+Tab)
+                 [:p :!TStab ["hyper-mode" 1]]   ;; Hyper + p -> Previous Tab (Ctrl+Shift+Tab)
+                 [:h :left_arrow ["hyper-mode" 1]] ;; Hyper + h -> Left Arrow
+                 [:j :down_arrow ["hyper-mode" 1]] ;; Hyper + j -> Down Arrow
+                 [:k :up_arrow ["hyper-mode" 1]]   ;; Hyper + k -> Up Arrow
+                 [:l :right_arrow ["hyper-mode" 1]] ;; Hyper + l -> Right Arrow
+
+                 ;; VS Code Specific (only active in VS Code)
+                 [:t :!Tgrave_accent_and_tilde [:hyper-mode :vscode]] ;; Hyper + t -> Toggle Terminal (Ctrl+`)
+                 [:s :!TSg [:hyper-mode :vscode]]                     ;; Hyper + s -> Toggle Source Control (Ctrl+Shift+G)
+                 [:e :!CSe [:hyper-mode :vscode]]                     ;; Hyper + e -> Toggle Explorer (Cmd+Shift+E)
+                 [:x :!CSx [:hyper-mode :vscode]]                     ;; Hyper + x -> Toggle Extensions (Cmd+Shift+X)
+                 [:f :!Cp [:hyper-mode :vscode]]                     ;; Hyper + f -> Go to File (Cmd+P)
+                 [:spacebar :!CSp [:hyper-mode :vscode]]             ;; Hyper + Space -> Show All Commands (Cmd+Shift+P)
+                 [:g :!Ct [:hyper-mode :vscode]]                     ;; Hyper + g -> Go to Symbol in Workspace (Cmd+T)
+                 [:d :!CSo [:hyper-mode :vscode]]                     ;; Hyper + d -> Go to Symbol in Editor (Cmd+Shift+O)
+                 ]}
 
         ;; ----------------------------------------------------------------------
-        ;; GLOBAL SHORTCUTS
+        ;; 3. GLOBAL SHORTCUTS & REMAPS
         ;; (Work everywhere)
         ;; ----------------------------------------------------------------------
-        {:des "Global: App Launcher (Right Command)"
-         :rules [[:!Qb "open -a 'Google Chrome'"]
-                 [:!Qt "open -a 'Warp'"]
-                 [:!Qe "open -a 'Visual Studio Code'"]
-                 [:!Qa "open -a 'ChatGPT'"]
-                 [:!Qc "open -a 'WhatsApp'"]
-                 [:!Qf "open -a 'Finder'"]]}
+        {:des "Global: Shortcuts & Remaps"
+         :rules [;; App Launcher (Right Command)
+                 [:!Qb "open -a 'Google Chrome'"]       ;; Right Cmd + b -> Google Chrome
+                 [:!Qt "open -a 'Warp'"]                ;; Right Cmd + t -> Warp
+                 [:!Qe "open -a 'Visual Studio Code'"]  ;; Right Cmd + e -> VS Code
+                 [:!Qa "open -a 'ChatGPT'"]             ;; Right Cmd + a -> ChatGPT
+                 [:!Qc "open -a 'WhatsApp'"]            ;; Right Cmd + c -> WhatsApp
+                 [:!Qf "open -a 'Finder'"]              ;; Right Cmd + f -> Finder
 
-        {:des "Global: Right Option to Caps Lock"
-         :rules [[:right_option :caps_lock]]}]}
+                 ;; Key Remaps
+                 [:right_option :caps_lock] ;; Right Option -> Caps Lock
+                 ]}]}
