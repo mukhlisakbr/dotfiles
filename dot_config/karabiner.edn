@@ -1,0 +1,51 @@
+{:main [;; ----------------------------------------------------------------------
+        ;; Hyper Mode (Caps Lock)
+        ;; - Tahan Caps Lock untuk mengaktifkan layer "hyper-mode".
+        ;; - Tekan sekali (tap) untuk Escape.
+        ;; ----------------------------------------------------------------------
+        {:des "Definisi Layer: Hyper Mode"
+         :rules [[:caps_lock ["hyper-mode" 1] nil {:afterup ["hyper-mode" 0]
+                                                   :alone :escape}]]}
+
+        ;; ----------------------------------------------------------------------
+        ;; Spacebar Mode (untuk Peluncur Aplikasi)
+        ;; - Tahan Spacebar untuk mengaktifkan layer "space-mode".
+        ;; - Tekan sekali (tap) untuk Spasi biasa.
+        ;; ----------------------------------------------------------------------
+        {:des "Definisi Layer: Space Mode"
+         :rules [[:spacebar ["space-mode" 1] nil {:afterup ["space-mode" 0]
+                                                  :alone :spacebar}]]}
+
+        ;; ----------------------------------------------------------------------
+        ;; Aturan di dalam Hyper Mode
+        ;; ----------------------------------------------------------------------
+        {:des "Hyper Mode: Pintasan Umum"
+         :rules [;; Pintasan Ctrl
+                 [:c :!Tc ["hyper-mode" 1]]
+                 [:r :!Tr ["hyper-mode" 1]]
+
+                 ;; Navigasi Tab
+                 [:n :!Ttab ["hyper-mode" 1]]    ;; Next Tab
+                 [:p :!TStab ["hyper-mode" 1]] ;; Previous Tab
+                 ]}
+
+        {:des "Hyper Mode: Navigasi Vim"
+         :rules [[:h :left_arrow ["hyper-mode" 1]]
+                 [:j :down_arrow ["hyper-mode" 1]]
+                 [:k :up_arrow ["hyper-mode" 1]]
+                 [:l :right_arrow ["hyper-mode" 1]]]}
+
+        ;; ----------------------------------------------------------------------
+        ;; Peluncur Aplikasi (diaktifkan oleh Spacebar)
+        ;; ----------------------------------------------------------------------
+        {:des "Peluncur Aplikasi"
+         :rules [[:b "open -a 'Google Chrome'" ["space-mode" 1]]
+                 [:t "open -a 'Warp'" ["space-mode" 1]]
+                 [:e "open -a 'Visual Studio Code'" ["space-mode" 1]]
+                 [:a "open -a 'ChatGPT'" ["space-mode" 1]]]}
+
+        ;; ----------------------------------------------------------------------
+        ;; Fungsionalitas Tombol Lain
+        ;; ----------------------------------------------------------------------
+        {:des "Right Option menjadi Caps Lock"
+         :rules [[:right_option :caps_lock]]}]}
