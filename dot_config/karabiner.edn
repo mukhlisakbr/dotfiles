@@ -8,15 +8,6 @@
                                                    :alone :escape}]]}
 
         ;; ----------------------------------------------------------------------
-        ;; Spacebar Mode (for App Launcher)
-        ;; - Hold Spacebar to activate the "space-mode" layer.
-        ;; - Tap for a normal space.
-        ;; ----------------------------------------------------------------------
-        {:des "Layer Definition: Space Mode"
-         :rules [[:spacebar ["space-mode" 1] nil {:afterup ["space-mode" 0]
-                                                  :alone :spacebar}]]}
-
-        ;; ----------------------------------------------------------------------
         ;; Rules within Hyper Mode
         ;; ----------------------------------------------------------------------
         {:des "Hyper Mode: General Shortcuts"
@@ -25,8 +16,8 @@
                  [:r :!Tr ["hyper-mode" 1]]
 
                  ;; Tab Navigation
-                 [:n :!Ttab ["hyper-mode" 1]]   ;; Next Tab
-                 [:p :!TS_tab ["hyper-mode" 1]] ;; Previous Tab
+                 [:n :!Ttab ["hyper-mode" 1]]    ;; Next Tab
+                 [:p :!TStab ["hyper-mode" 1]]   ;; Previous Tab
                  ]}
 
         {:des "Hyper Mode: Vim Navigation"
@@ -36,13 +27,14 @@
                  [:l :right_arrow ["hyper-mode" 1]]]}
 
         ;; ----------------------------------------------------------------------
-        ;; App Launcher (activated by Spacebar)
+        ;; App Launcher (activated by Right Command)
         ;; ----------------------------------------------------------------------
         {:des "App Launcher"
-         :rules [[:b "open -a 'Google Chrome'" ["space-mode" 1]]
-                 [:t "open -a 'Warp'" ["space-mode" 1]]
-                 [:e "open -a 'Visual Studio Code'" ["space-mode" 1]]
-                 [:a "open -a 'ChatGPT'" ["space-mode" 1]]]}
+         :rules [[:!Qb "open -a 'Google Chrome'"]
+                 [:!Qt "open -a 'Warp'"]
+                 [:!Qe "open -a 'Visual Studio Code'"]
+                 [:!Qa "open -a 'ChatGPT'"]
+                 [:!Qc "open -a 'WhatsApp'"]]}
 
         ;; ----------------------------------------------------------------------
         ;; Other Key Functions
