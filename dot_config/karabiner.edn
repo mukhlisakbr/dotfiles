@@ -32,9 +32,9 @@
                  [:l :right_arrow]        ;; Hyper + l -> Right
 
                  ;; --- WINDOW MANAGEMENT ---
-                 [:y :!TOleft_arrow]      ;; Hyper + y -> Tile Left
-                 [:o :!TOright_arrow]     ;; Hyper + o -> Tile Right
-                 [:u :!TOreturn_or_enter] ;; Hyper + u -> Maximize
+                 [:comma :!TOleft_arrow]       ;; Hyper + < -> Tile Left
+                 [:period :!TOright_arrow]      ;; Hyper + > -> Tile Right
+                 [:slash :!TOreturn_or_enter]   ;; Hyper + / -> Maximize
 
                  ;; --- TAB NAVIGATION ---
                  [:close_bracket :!Ttab]  ;; Hyper + ] -> Next Tab
@@ -56,7 +56,9 @@
                  [:e :!CSe]                        ;; Hyper + e -> Toggle Explorer (Cmd+Shift+E)
                  [:x :!CSx]                        ;; Hyper + x -> Toggle Extensions (Cmd+Shift+X)
                  [:f :!Cp]                         ;; Hyper + f -> Go to File (Cmd+P)
-                 [:g :!Ct]                         ;; Hyper + g -> Go to Symbol (Cmd+T)
+                 [:g :!Ct]                         ;; Hyper + g -> Go to Symbol in Workspace (Cmd+T)
+                 [:o :!CSo]                        ;; Hyper + o -> Go to Symbol in File (Cmd+Shift+O)
+                 [:d :f12]                         ;; Hyper + d -> Go to Definition (F12)
                  [:i :!SCa]                        ;; Hyper + i -> Kilocode AI Agent (Shift+Cmd+A)
                  [:spacebar :!CSp]                 ;; Hyper + Space -> Show All Commands (Cmd+Shift+P)
                  ]}
