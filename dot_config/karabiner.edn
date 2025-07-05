@@ -4,6 +4,10 @@
  :applications {:vscode ["^com\\.microsoft\\.VSCode$"]
                 :chrome ["^com\\.google\\.Chrome$"]}
 
+ ;; ======================================================================
+ ;;                             TEMPLATES
+ ;; ======================================================================
+ :templates {:open "open -a '%s'"}
 
  ;; ======================================================================
  ;;                         MAIN CONFIGURATION
@@ -17,55 +21,67 @@
                                                    :alone :escape}]]}
 
         ;; ----------------------------------------------------------------------
-        ;; 2. HYPER MODE RULES (Active while holding Caps Lock)
+        ;; 2. HYPER MODE RULES (GENERAL)
         ;; ----------------------------------------------------------------------
-        {:des "Rules: Hyper Mode"
-         :rules [;; --- VIM-STYLE NAVIGATION ---
-                 [:h :left_arrow ["hyper-mode" 1]]         ;; Hyper + h -> Left
-                 [:j :down_arrow ["hyper-mode" 1]]         ;; Hyper + j -> Down
-                 [:k :up_arrow ["hyper-mode" 1]]           ;; Hyper + k -> Up
-                 [:l :right_arrow ["hyper-mode" 1]]        ;; Hyper + l -> Right
+        {:des "Rules: Hyper Mode (General)"
+         :rules [:hyper-mode
+                 ;; --- VIM-STYLE NAVIGATION ---
+                 [:h :left_arrow]         ;; Hyper + h -> Left
+                 [:j :down_arrow]         ;; Hyper + j -> Down
+                 [:k :up_arrow]           ;; Hyper + k -> Up
+                 [:l :right_arrow]        ;; Hyper + l -> Right
 
                  ;; --- WINDOW MANAGEMENT ---
-                 [:y :!TOleft_arrow ["hyper-mode" 1]]         ;; Hyper + y -> Tile Left
-                 [:o :!TOright_arrow ["hyper-mode" 1]]        ;; Hyper + o -> Tile Right
-                 [:u :!TOreturn_or_enter ["hyper-mode" 1]]    ;; Hyper + u -> Maximize
+                 [:y :!TOleft_arrow]      ;; Hyper + y -> Tile Left
+                 [:o :!TOright_arrow]     ;; Hyper + o -> Tile Right
+                 [:u :!TOreturn_or_enter] ;; Hyper + u -> Maximize
 
                  ;; --- TAB NAVIGATION ---
-                 [:close_bracket :!Ttab ["hyper-mode" 1]]     ;; Hyper + ] -> Next Tab
-                 [:open_bracket :!TStab ["hyper-mode" 1]]     ;; Hyper + [ -> Previous Tab
+                 [:close_bracket :!Ttab]  ;; Hyper + ] -> Next Tab
+                 [:open_bracket :!TStab]  ;; Hyper + [ -> Previous Tab
 
                  ;; --- SHELL & TEXT COMMANDS ---
-                 [:c :!Tc ["hyper-mode" 1]]                ;; Hyper + c -> Interrupt (Ctrl+C)
-                 [:r :!Tr ["hyper-mode" 1]]                ;; Hyper + r -> Reverse Search (Ctrl+R)
-                 [:w :!Tw ["hyper-mode" 1]]                ;; Hyper + w -> Delete Word (Ctrl+W)
-
-                 ;; --- VS CODE SPECIFIC RULES ---
-                 [:t :!Tgrave_accent_and_tilde [:hyper-mode :vscode]]    ;; Hyper + t -> Toggle Terminal (Ctrl+`)
-                 [:s :!TSg [:hyper-mode :vscode]]                        ;; Hyper + s -> Toggle Source Control (Ctrl+Shift+G)
-                 [:e :!CSe [:hyper-mode :vscode]]                        ;; Hyper + e -> Toggle Explorer (Cmd+Shift+E)
-                 [:x :!CSx [:hyper-mode :vscode]]                        ;; Hyper + x -> Toggle Extensions (Cmd+Shift+X)
-                 [:f :!Cp [:hyper-mode :vscode]]                         ;; Hyper + f -> Go to File (Cmd+P)
-                 [:g :!Ct [:hyper-mode :vscode]]                         ;; Hyper + g -> Go to Symbol (Cmd+T)
-                 [:i :!SCa [:hyper-mode :vscode]]                        ;; Hyper + i -> Kilocode AI Agent (Shift+Cmd+A)
-                 [:spacebar :!CSp [:hyper-mode :vscode]]                 ;; Hyper + Space -> Show All Commands (Cmd+Shift+P)
-
-                 ;; --- CHROME SPECIFIC RULE ---
-                 [:t :!CSa [:hyper-mode :chrome]]                        ;; Hyper + t -> Search Tabs (Cmd+Shift+A)
+                 [:c :!Tc]                ;; Hyper + c -> Interrupt (Ctrl+C)
+                 [:r :!Tr]                ;; Hyper + r -> Reverse Search (Ctrl+R)
+                 [:w :!Tw]                ;; Hyper + w -> Delete Word (Ctrl+W)
                  ]}
 
         ;; ----------------------------------------------------------------------
-        ;; 3. GLOBAL SHORTCUTS & REMAPS (Work everywhere)
+        ;; 3. HYPER MODE RULES (VS CODE)
+        ;; ----------------------------------------------------------------------
+        {:des "Rules: Hyper Mode (VS Code)"
+         :rules [[:condi :hyper-mode :vscode]
+                 [:t :!Tgrave_accent_and_tilde]    ;; Hyper + t -> Toggle Terminal (Ctrl+`)
+                 [:s :!TSg]                        ;; Hyper + s -> Toggle Source Control (Ctrl+Shift+G)
+                 [:e :!CSe]                        ;; Hyper + e -> Toggle Explorer (Cmd+Shift+E)
+                 [:x :!CSx]                        ;; Hyper + x -> Toggle Extensions (Cmd+Shift+X)
+                 [:f :!Cp]                         ;; Hyper + f -> Go to File (Cmd+P)
+                 [:g :!Ct]                         ;; Hyper + g -> Go to Symbol (Cmd+T)
+                 [:i :!SCa]                        ;; Hyper + i -> Kilocode AI Agent (Shift+Cmd+A)
+                 [:spacebar :!CSp]                 ;; Hyper + Space -> Show All Commands (Cmd+Shift+P)
+                 ]}
+
+        ;; ----------------------------------------------------------------------
+        ;; 4. HYPER MODE RULES (CHROME)
+        ;; ----------------------------------------------------------------------
+        {:des "Rules: Hyper Mode (Chrome)"
+         :rules [[:condi :hyper-mode :chrome]
+                 [:t :!CSa]                        ;; Hyper + t -> Search Tabs (Cmd+Shift+A)
+                 ]}
+
+        ;; ----------------------------------------------------------------------
+        ;; 5. GLOBAL SHORTCUTS & REMAPS
         ;; ----------------------------------------------------------------------
         {:des "Global: Shortcuts & Remaps"
          :rules [;; --- APP LAUNCHER (Right Command) ---
-                 [:!Qb "open -a 'Google Chrome'"]          ;; Right Cmd + b -> Chrome
-                 [:!Qt "open -a 'iTerm'"]                  ;; Right Cmd + t -> iTerm
-                 [:!Qe "open -a 'Visual Studio Code'"]     ;; Right Cmd + e -> VS Code
-                 [:!Qa "open -a 'ChatGPT'"]                ;; Right Cmd + a -> ChatGPT
-                 [:!Qc "open -a 'WhatsApp'"]               ;; Right Cmd + c -> WhatsApp
-                 [:!Qf "open -a 'Finder'"]                 ;; Right Cmd + f -> Finder
+                 [:!Qb [:open "Google Chrome"]]       ;; Right Cmd + b -> Chrome
+                 [:!Qt [:open "iTerm"]]               ;; Right Cmd + t -> iTerm
+                 [:!Qe [:open "Visual Studio Code"]]  ;; Right Cmd + e -> VS Code
+                 [:!Qa [:open "ChatGPT"]]             ;; Right Cmd + a -> ChatGPT
+                 [:!Qc [:open "WhatsApp"]]            ;; Right Cmd + c -> WhatsApp
+                 [:!Qf [:open "Finder"]]              ;; Right Cmd + f -> Finder
+                 [:!Qm [:open "Spotify"]]             ;; Right Cmd + m -> Spotify
 
                  ;; --- KEY REMAPS ---
-                 [:escape :caps_lock]                      ;; Remap Escape to Caps Lock
+                 [:escape :caps_lock]                   ;; Remap Escape to Caps Lock
                  ]}]}
