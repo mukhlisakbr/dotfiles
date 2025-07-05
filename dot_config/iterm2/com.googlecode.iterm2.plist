@@ -17,7 +17,377 @@ The script should do this: \(ai.prompt)</string>
 	<key>ClickToSelectCommand</key>
 	<false/>
 	<key>CompactMinimalTabBarHeight</key>
-	<real>38</real>
+	<real>30</real>
+	<key>Custom Color Presets</key>
+	<dict>
+		<key>GitHub Dark Default</key>
+		<dict>
+			<key>Ansi 0 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.34172338247299194</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.30893740057945251</real>
+				<key>Red Component</key>
+				<real>0.287454754114151</real>
+			</dict>
+			<key>Ansi 1 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.4668460488319397</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.51136314868927002</real>
+				<key>Red Component</key>
+				<real>0.93458694219589233</real>
+			</dict>
+			<key>Ansi 10 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.44268521666526794</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.81689852476119995</real>
+				<key>Red Component</key>
+				<real>0.47565758228302002</real>
+			</dict>
+			<key>Ansi 11 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.33868163824081421</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.70929253101348877</real>
+				<key>Red Component</key>
+				<real>0.86065542697906494</real>
+			</dict>
+			<key>Ansi 12 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.97858124971389771</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.74576449394226074</real>
+				<key>Red Component</key>
+				<real>0.53794574737548828</real>
+			</dict>
+			<key>Ansi 13 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.97764402627944946</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.66515737771987915</real>
+				<key>Red Component</key>
+				<real>0.79748910665512085</real>
+			</dict>
+			<key>Ansi 14 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.85841566324234009</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.82074826955795288</real>
+				<key>Red Component</key>
+				<real>0.47709006071090698</real>
+			</dict>
+			<key>Ansi 15 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>1</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>1</real>
+				<key>Red Component</key>
+				<real>0.99999994039535522</real>
+			</dict>
+			<key>Ansi 2 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.36397624015808105</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.71571308374404907</real>
+				<key>Red Component</key>
+				<real>0.39155018329620361</real>
+			</dict>
+			<key>Ansi 3 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.24430054426193237</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.60919076204299927</real>
+				<key>Red Component</key>
+				<real>0.78974872827529907</real>
+			</dict>
+			<key>Ansi 4 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.97306424379348755</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.64364743232727051</real>
+				<key>Red Component</key>
+				<real>0.42089003324508667</real>
+			</dict>
+			<key>Ansi 5 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.97228997945785522</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.55661147832870483</real>
+				<key>Red Component</key>
+				<real>0.70848602056503296</real>
+			</dict>
+			<key>Ansi 6 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.80319458246231079</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.76183623075485229</real>
+				<key>Red Component</key>
+				<real>0.39989897608757019</real>
+			</dict>
+			<key>Ansi 7 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.76467734575271606</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.72827416658401489</real>
+				<key>Red Component</key>
+				<real>0.70055490732192993</real>
+			</dict>
+			<key>Ansi 8 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.50174933671951294</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.46174454689025879</real>
+				<key>Red Component</key>
+				<real>0.43714991211891174</real>
+			</dict>
+			<key>Ansi 9 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.60867929458618164</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.64823848009109497</real>
+				<key>Red Component</key>
+				<real>0.94797748327255249</real>
+			</dict>
+			<key>Background Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.033339347690343857</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.015295098535716534</real>
+				<key>Red Component</key>
+				<real>0.0060110045596957207</real>
+			</dict>
+			<key>Badge Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>0.5</real>
+				<key>Blue Component</key>
+				<real>0.44781291484832764</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.5344090461730957</real>
+				<key>Red Component</key>
+				<real>0.91564536094665527</real>
+			</dict>
+			<key>Bold Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.95042175054550171</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.92851656675338745</real>
+				<key>Red Component</key>
+				<real>0.90691608190536499</real>
+			</dict>
+			<key>Cursor Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.9686274528503418</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.5058823823928833</real>
+				<key>Red Component</key>
+				<real>0.18431372940540314</real>
+			</dict>
+			<key>Cursor Guide Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>0.019607843137254902</real>
+				<key>Blue Component</key>
+				<real>1</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>1</real>
+				<key>Red Component</key>
+				<real>0.99999994039535522</real>
+			</dict>
+			<key>Cursor Text Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.031372550874948502</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.011764706112444401</real>
+				<key>Red Component</key>
+				<real>0.0039215688593685627</real>
+			</dict>
+			<key>Foreground Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.95042175054550171</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.92851656675338745</real>
+				<key>Red Component</key>
+				<real>0.90691608190536499</real>
+			</dict>
+			<key>Link Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.97306424379348755</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.64364743232727051</real>
+				<key>Red Component</key>
+				<real>0.42089003324508667</real>
+			</dict>
+			<key>Match Background Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.011764706112444401</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.41568627953529358</real>
+				<key>Red Component</key>
+				<real>0.61960786581039429</real>
+			</dict>
+			<key>Selected Text Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.95042175054550171</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.92851656675338745</real>
+				<key>Red Component</key>
+				<real>0.90691608190536499</real>
+			</dict>
+			<key>Selection Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.45776498317718506</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.30597418546676636</real>
+				<key>Red Component</key>
+				<real>0.18915736675262451</real>
+			</dict>
+			<key>Tab Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.033339347690343857</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.015295098535716534</real>
+				<key>Red Component</key>
+				<real>0.0060110045596957207</real>
+			</dict>
+		</dict>
+	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>DA01F4EC-ACF2-42E0-A16F-5EC9FAADAC45</string>
 	<key>DimBackgroundWindows</key>
@@ -57,26 +427,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.11764705926179886</real>
+				<real>0.34172338247299194</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.098039217293262482</real>
+				<real>0.30893740057945251</real>
 				<key>Red Component</key>
-				<real>0.078431375324726105</real>
+				<real>0.287454754114151</real>
 			</dict>
 			<key>Ansi 0 Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.11764705926179886</real>
+				<real>0.34172338247299194</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.098039217293262482</real>
+				<real>0.30893740057945251</real>
 				<key>Red Component</key>
-				<real>0.078431375324726105</real>
+				<real>0.287454754114151</real>
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
@@ -96,26 +466,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.16300037503242493</real>
+				<real>0.4668460488319397</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.23660069704055786</real>
+				<real>0.51136314868927002</real>
 				<key>Red Component</key>
-				<real>0.7074432373046875</real>
+				<real>0.93458694219589233</real>
 			</dict>
 			<key>Ansi 1 Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.16300037503242493</real>
+				<real>0.4668460488319397</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.23660069704055786</real>
+				<real>0.51136314868927002</real>
 				<key>Red Component</key>
-				<real>0.7074432373046875</real>
+				<real>0.93458694219589233</real>
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
@@ -135,26 +505,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.56541937589645386</real>
+				<real>0.44268521666526794</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.9042816162109375</real>
+				<real>0.81689852476119995</real>
 				<key>Red Component</key>
-				<real>0.3450070321559906</real>
+				<real>0.47565758228302002</real>
 			</dict>
 			<key>Ansi 10 Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.56541937589645386</real>
+				<real>0.44268521666526794</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.9042816162109375</real>
+				<real>0.81689852476119995</real>
 				<key>Red Component</key>
-				<real>0.3450070321559906</real>
+				<real>0.47565758228302002</real>
 			</dict>
 			<key>Ansi 11 Color</key>
 			<dict>
@@ -174,26 +544,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.33868163824081421</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.8833775520324707</real>
+				<real>0.70929253101348877</real>
 				<key>Red Component</key>
-				<real>0.9259033203125</real>
+				<real>0.86065542697906494</real>
 			</dict>
 			<key>Ansi 11 Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.33868163824081421</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.8833775520324707</real>
+				<real>0.70929253101348877</real>
 				<key>Red Component</key>
-				<real>0.9259033203125</real>
+				<real>0.86065542697906494</real>
 			</dict>
 			<key>Ansi 12 Color</key>
 			<dict>
@@ -213,26 +583,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.9485321044921875</real>
+				<real>0.97858124971389771</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.67044717073440552</real>
+				<real>0.74576449394226074</real>
 				<key>Red Component</key>
-				<real>0.65349078178405762</real>
+				<real>0.53794574737548828</real>
 			</dict>
 			<key>Ansi 12 Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.9485321044921875</real>
+				<real>0.97858124971389771</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.67044717073440552</real>
+				<real>0.74576449394226074</real>
 				<key>Red Component</key>
-				<real>0.65349078178405762</real>
+				<real>0.53794574737548828</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
@@ -252,26 +622,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.8821563720703125</real>
+				<real>0.97764402627944946</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.4927266538143158</real>
+				<real>0.66515737771987915</real>
 				<key>Red Component</key>
-				<real>0.8821563720703125</real>
+				<real>0.79748910665512085</real>
 			</dict>
 			<key>Ansi 13 Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.8821563720703125</real>
+				<real>0.97764402627944946</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.4927266538143158</real>
+				<real>0.66515737771987915</real>
 				<key>Red Component</key>
-				<real>0.8821563720703125</real>
+				<real>0.79748910665512085</real>
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
@@ -291,26 +661,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.85841566324234009</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.99263292551040649</real>
+				<real>0.82074826955795288</real>
 				<key>Red Component</key>
-				<real>0.37597531080245972</real>
+				<real>0.47709006071090698</real>
 			</dict>
 			<key>Ansi 14 Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.85841566324234009</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.99263292551040649</real>
+				<real>0.82074826955795288</real>
 				<key>Red Component</key>
-				<real>0.37597531080245972</real>
+				<real>0.47709006071090698</real>
 			</dict>
 			<key>Ansi 15 Color</key>
 			<dict>
@@ -332,11 +702,11 @@ The script should do this: \(ai.prompt)</string>
 				<key>Blue Component</key>
 				<real>1</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
 				<real>1</real>
 				<key>Red Component</key>
-				<real>0.99999600648880005</real>
+				<real>0.99999994039535522</real>
 			</dict>
 			<key>Ansi 15 Color (Light)</key>
 			<dict>
@@ -345,11 +715,11 @@ The script should do this: \(ai.prompt)</string>
 				<key>Blue Component</key>
 				<real>1</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
 				<real>1</real>
 				<key>Red Component</key>
-				<real>0.99999600648880005</real>
+				<real>0.99999994039535522</real>
 			</dict>
 			<key>Ansi 2 Color</key>
 			<dict>
@@ -369,26 +739,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.36397624015808105</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.7607843279838562</real>
+				<real>0.71571308374404907</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.39155018329620361</real>
 			</dict>
 			<key>Ansi 2 Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.36397624015808105</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.7607843279838562</real>
+				<real>0.71571308374404907</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.39155018329620361</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
@@ -408,26 +778,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.24430054426193237</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.76959484815597534</real>
+				<real>0.60919076204299927</real>
 				<key>Red Component</key>
-				<real>0.78058648109436035</real>
+				<real>0.78974872827529907</real>
 			</dict>
 			<key>Ansi 3 Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.24430054426193237</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.76959484815597534</real>
+				<real>0.60919076204299927</real>
 				<key>Red Component</key>
-				<real>0.78058648109436035</real>
+				<real>0.78974872827529907</real>
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
@@ -447,26 +817,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.78216177225112915</real>
+				<real>0.97306424379348755</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.26474356651306152</real>
+				<real>0.64364743232727051</real>
 				<key>Red Component</key>
-				<real>0.15404300391674042</real>
+				<real>0.42089003324508667</real>
 			</dict>
 			<key>Ansi 4 Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.78216177225112915</real>
+				<real>0.97306424379348755</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.26474356651306152</real>
+				<real>0.64364743232727051</real>
 				<key>Red Component</key>
-				<real>0.15404300391674042</real>
+				<real>0.42089003324508667</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -486,26 +856,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.74494361877441406</real>
+				<real>0.97228997945785522</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.24931684136390686</real>
+				<real>0.55661147832870483</real>
 				<key>Red Component</key>
-				<real>0.752197265625</real>
+				<real>0.70848602056503296</real>
 			</dict>
 			<key>Ansi 5 Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.74494361877441406</real>
+				<real>0.97228997945785522</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.24931684136390686</real>
+				<real>0.55661147832870483</real>
 				<key>Red Component</key>
-				<real>0.752197265625</real>
+				<real>0.70848602056503296</real>
 			</dict>
 			<key>Ansi 6 Color</key>
 			<dict>
@@ -525,26 +895,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.78166204690933228</real>
+				<real>0.80319458246231079</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.77425903081893921</real>
+				<real>0.76183623075485229</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.39989897608757019</real>
 			</dict>
 			<key>Ansi 6 Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.78166204690933228</real>
+				<real>0.80319458246231079</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.77425903081893921</real>
+				<real>0.76183623075485229</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.39989897608757019</real>
 			</dict>
 			<key>Ansi 7 Color</key>
 			<dict>
@@ -564,26 +934,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.78104829788208008</real>
+				<real>0.76467734575271606</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.78105825185775757</real>
+				<real>0.72827416658401489</real>
 				<key>Red Component</key>
-				<real>0.7810397744178772</real>
+				<real>0.70055490732192993</real>
 			</dict>
 			<key>Ansi 7 Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.78104829788208008</real>
+				<real>0.76467734575271606</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.78105825185775757</real>
+				<real>0.72827416658401489</real>
 				<key>Red Component</key>
-				<real>0.7810397744178772</real>
+				<real>0.70055490732192993</real>
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
@@ -603,26 +973,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.4078223705291748</real>
+				<real>0.50174933671951294</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.40782788395881653</real>
+				<real>0.46174454689025879</real>
 				<key>Red Component</key>
-				<real>0.40781760215759277</real>
+				<real>0.43714991211891174</real>
 			</dict>
 			<key>Ansi 8 Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.4078223705291748</real>
+				<real>0.50174933671951294</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.40782788395881653</real>
+				<real>0.46174454689025879</real>
 				<key>Red Component</key>
-				<real>0.40781760215759277</real>
+				<real>0.43714991211891174</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
@@ -642,26 +1012,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.45833224058151245</real>
+				<real>0.60867929458618164</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.47524076700210571</real>
+				<real>0.64823848009109497</real>
 				<key>Red Component</key>
-				<real>0.8659515380859375</real>
+				<real>0.94797748327255249</real>
 			</dict>
 			<key>Ansi 9 Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.45833224058151245</real>
+				<real>0.60867929458618164</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.47524076700210571</real>
+				<real>0.64823848009109497</real>
 				<key>Red Component</key>
-				<real>0.8659515380859375</real>
+				<real>0.94797748327255249</real>
 			</dict>
 			<key>BM Growl</key>
 			<true/>
@@ -683,26 +1053,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.12103271484375</real>
+				<real>0.033339347690343857</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.099111050367355347</real>
+				<real>0.015295098535716534</real>
 				<key>Red Component</key>
-				<real>0.0806884765625</real>
+				<real>0.0060110045596957207</real>
 			</dict>
 			<key>Background Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.97999999999999998</real>
+				<real>0.033339347690343857</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.97999999999999998</real>
+				<real>0.015295098535716534</real>
 				<key>Red Component</key>
-				<real>0.97999999999999998</real>
+				<real>0.0060110045596957207</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -724,26 +1094,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>0.5</real>
 				<key>Blue Component</key>
-				<real>0.65218597462148864</real>
+				<real>0.44781291484832764</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.65218597462148864</real>
+				<real>0.5344090461730957</real>
 				<key>Red Component</key>
-				<real>0.9787440299987793</real>
+				<real>0.91564536094665527</real>
 			</dict>
 			<key>Badge Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>0.5</real>
 				<key>Blue Component</key>
-				<real>0.11610633058398889</real>
+				<real>0.44781291484832764</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.11610633058398889</real>
+				<real>0.5344090461730957</real>
 				<key>Red Component</key>
-				<real>0.74613857269287109</real>
+				<real>0.91564536094665527</real>
 			</dict>
 			<key>Blinking Cursor</key>
 			<false/>
@@ -767,26 +1137,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.95042175054550171</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>1</real>
+				<real>0.92851656675338745</real>
 				<key>Red Component</key>
-				<real>0.99999600648880005</real>
+				<real>0.90691608190536499</real>
 			</dict>
 			<key>Bold Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.062745098039215685</real>
+				<real>0.95042175054550171</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.062745098039215685</real>
+				<real>0.92851656675338745</real>
 				<key>Red Component</key>
-				<real>0.062745098039215685</real>
+				<real>0.90691608190536499</real>
 			</dict>
 			<key>Character Encoding</key>
 			<integer>4</integer>
@@ -816,26 +1186,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.99998724460601807</real>
+				<real>0.9686274528503418</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>1</real>
+				<real>0.5058823823928833</real>
 				<key>Red Component</key>
-				<real>0.99997633695602417</real>
+				<real>0.18431372940540314</real>
 			</dict>
 			<key>Cursor Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.9686274528503418</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.5058823823928833</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.18431372940540314</real>
 			</dict>
 			<key>Cursor Guide Color</key>
 			<dict>
@@ -853,28 +1223,28 @@ The script should do this: \(ai.prompt)</string>
 			<key>Cursor Guide Color (Dark)</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>0.25</real>
+				<real>0.019607843137254902</real>
 				<key>Blue Component</key>
-				<real>0.94099044799804688</real>
+				<real>1</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.80232617749205526</real>
+				<real>1</real>
 				<key>Red Component</key>
-				<real>0.37649588016392954</real>
+				<real>0.99999994039535522</real>
 			</dict>
 			<key>Cursor Guide Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>0.25</real>
+				<real>0.019607843137254902</real>
 				<key>Blue Component</key>
-				<real>0.85319280624389648</real>
+				<real>1</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.77217718629089516</real>
+				<real>1</real>
 				<key>Red Component</key>
-				<real>0.52338262643729649</real>
+				<real>0.99999994039535522</real>
 			</dict>
 			<key>Cursor Text Color</key>
 			<dict>
@@ -894,26 +1264,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.031372550874948502</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.011764706112444401</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.0039215688593685627</real>
 			</dict>
 			<key>Cursor Text Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.031372550874948502</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>1</real>
+				<real>0.011764706112444401</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.0039215688593685627</real>
 			</dict>
 			<key>Cursor Type</key>
 			<integer>2</integer>
@@ -949,26 +1319,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.86198854446411133</real>
+				<real>0.95042175054550171</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.86199951171875</real>
+				<real>0.92851656675338745</real>
 				<key>Red Component</key>
-				<real>0.86197912693023682</real>
+				<real>0.90691608190536499</real>
 			</dict>
 			<key>Foreground Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.062745098039215685</real>
+				<real>0.95042175054550171</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.062745098039215685</real>
+				<real>0.92851656675338745</real>
 				<key>Red Component</key>
-				<real>0.062745098039215685</real>
+				<real>0.90691608190536499</real>
 			</dict>
 			<key>Guid</key>
 			<string>DA01F4EC-ACF2-42E0-A16F-5EC9FAADAC45</string>
@@ -1060,52 +1430,52 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.9337158203125</real>
+				<real>0.97306424379348755</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.55789834260940552</real>
+				<real>0.64364743232727051</real>
 				<key>Red Component</key>
-				<real>0.19802422821521759</real>
+				<real>0.42089003324508667</real>
 			</dict>
 			<key>Link Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.9337158203125</real>
+				<real>0.97306424379348755</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.55789834260940552</real>
+				<real>0.64364743232727051</real>
 				<key>Red Component</key>
-				<real>0.19802422821521759</real>
+				<real>0.42089003324508667</real>
 			</dict>
 			<key>Match Background Color (Dark)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.32116127014160156</real>
+				<real>0.011764706112444401</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.98600882291793823</real>
+				<real>0.41568627953529358</real>
 				<key>Red Component</key>
-				<real>0.99697142839431763</real>
+				<real>0.61960786581039429</real>
 			</dict>
 			<key>Match Background Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.32116127014160156</real>
+				<real>0.011764706112444401</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.98600882291793823</real>
+				<real>0.41568627953529358</real>
 				<key>Red Component</key>
-				<real>0.99697142839431763</real>
+				<real>0.61960786581039429</real>
 			</dict>
 			<key>Mouse Reporting</key>
 			<true/>
@@ -1147,26 +1517,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.95042175054550171</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.92851656675338745</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.90691608190536499</real>
 			</dict>
 			<key>Selected Text Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.95042175054550171</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.92851656675338745</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.90691608190536499</real>
 			</dict>
 			<key>Selection Color</key>
 			<dict>
@@ -1186,26 +1556,26 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.45776498317718506</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.84313726425170898</real>
+				<real>0.30597418546676636</real>
 				<key>Red Component</key>
-				<real>0.70196080207824707</real>
+				<real>0.18915736675262451</real>
 			</dict>
 			<key>Selection Color (Light)</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.45776498317718506</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.84313726425170898</real>
+				<real>0.30597418546676636</real>
 				<key>Red Component</key>
-				<real>0.70196080207824707</real>
+				<real>0.18915736675262451</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -1221,6 +1591,32 @@ The script should do this: \(ai.prompt)</string>
 			<false/>
 			<key>Sync Title</key>
 			<false/>
+			<key>Tab Color (Dark)</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.033339347690343857</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.015295098535716534</real>
+				<key>Red Component</key>
+				<real>0.0060110045596957207</real>
+			</dict>
+			<key>Tab Color (Light)</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.033339347690343857</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.015295098535716534</real>
+				<key>Red Component</key>
+				<real>0.0060110045596957207</real>
+			</dict>
 			<key>Tags</key>
 			<array/>
 			<key>Terminal Type</key>
