@@ -32,13 +32,14 @@
                  [:l :right_arrow]        ;; Hyper + l -> Right
 
                  ;; --- WINDOW MANAGEMENT ---
-                 [:comma :!TOleft_arrow]       ;; Hyper + < -> Tile Left
-                 [:period :!TOright_arrow]      ;; Hyper + > -> Tile Right
-                 [:slash :!TOreturn_or_enter]   ;; Hyper + / -> Maximize
+                 ;; NOTE: Window management is now handled by Aerospace tiling manager.
+                 ;; [:comma :!TOleft_arrow]        ;; Hyper + < -> Tile Left (Ctrl+Option+Left)
+                 ;; [:period :!TOright_arrow]      ;; Hyper + > -> Tile Right (Ctrl+Option+Right)
+                 ;; [:slash :!TOreturn_or_enter]   ;; Hyper + / -> Maximize (Ctrl+Option+Enter)
 
                  ;; --- TAB NAVIGATION ---
-                 [:close_bracket :!Ttab]  ;; Hyper + ] -> Next Tab
-                 [:open_bracket :!TStab]  ;; Hyper + [ -> Previous Tab
+                 [:close_bracket :!CSclose_bracket] ;; Hyper + ] -> Next Tab (Cmd+Shift+])
+                 [:open_bracket :!CSopen_bracket] ;; Hyper + [ -> Previous Tab (Cmd+Shift+[)
 
                  ;; --- SHELL & TEXT COMMANDS ---
                  [:c :!Tc]                ;; Hyper + c -> Interrupt (Ctrl+C)
