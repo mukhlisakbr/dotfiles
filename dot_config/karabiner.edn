@@ -39,7 +39,7 @@
 
                  ;; --- TAB NAVIGATION ---
                  [:close_bracket :!CSclose_bracket] ;; Hyper + ] -> Next Tab (Cmd+Shift+])
-                 [:open_bracket :!CSopen_bracket] ;; Hyper + [ -> Previous Tab (Cmd+Shift+[)
+                 [:open_bracket :!CSopen_bracket]   ;; Hyper + [ -> Previous Tab (Cmd+Shift+[)
 
                  ;; --- SHELL & TEXT COMMANDS ---
                  [:c :!Tc]                ;; Hyper + c -> Interrupt (Ctrl+C)
@@ -62,7 +62,8 @@
                  [:o :!CSo]                        ;; Hyper + o -> Go to Symbol in File (Cmd+Shift+O)
                  [:d :f12]                         ;; Hyper + d -> Go to Definition (F12)
                  [:i :!SCa]                        ;; Hyper + i -> Kilocode AI Agent (Shift+Cmd+A)
-                 [:spacebar :!CSp]                 ;; Hyper + Space -> Show All Commands (Cmd+Shift+P)
+                 [:p :!CSp]                        ;; Hyper + p -> Show Command Palette (Cmd+Shift+P)
+                 [:spacebar :!Tspacebar]           ;; Hyper + Space -> Trigger Autocomplete (Ctrl+Space)
                  ]}
 
         ;; ----------------------------------------------------------------------
