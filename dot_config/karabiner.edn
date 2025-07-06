@@ -45,6 +45,7 @@
                  [:c :!Tc]                ;; Hyper + c -> Interrupt (Ctrl+C)
                  [:r :!Tr]                ;; Hyper + r -> Reverse Search (Ctrl+R)
                  [:w :!Tw]                ;; Hyper + w -> Delete Word (Ctrl+W)
+                 [:v :!Tv]                ;; Hyper + v -> Visual Block Mode (Ctrl+V)
                  ]}
 
         ;; ----------------------------------------------------------------------
