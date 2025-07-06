@@ -18,7 +18,7 @@ default-root-container-orientation = 'auto'
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 # Don't hide apps on cmd-h
-automatically-unhide-macos-hidden-apps = false
+automatically-unhide-macos-hidden-apps = true
 
 [key-mapping]
 preset = 'qwerty'
