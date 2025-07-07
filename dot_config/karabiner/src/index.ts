@@ -5,6 +5,8 @@ import {
   toApp,
   toKey,
   hyperLayer,
+  ifApp,
+  withModifier,
 } from "karabiner.ts";
 
 /**
@@ -12,14 +14,14 @@ import {
  */
 function main() {
   // Define Hyper Key on Caps Lock. Escape if alone.
-  const hyperKeyRule = rule("Hyper Key (Caps Lock)").manipulators([
-    map("caps_lock").toHyper().toIfAlone("escape"),
+  const hyperKeyRule = rule("Hyper Key").manipulators([
+    map("⇪").toHyper().toIfAlone("⎋"),
   ]);
 
-  // Remap Right Option to Caps Lock
-  const remapRightOptionToCapsLock = rule(
-    "Remap Right Option to Caps Lock"
-  ).manipulators([map("›⌥").to("⇪")]);
+  // --- Global Remaps ---
+  const globalRemaps = rule("Global Remaps").manipulators([
+    map("›⌥").to("⇪"), // Right Option to Caps Lock
+  ]);
 
   // App Launcher layer (Hyper + o)
   const appLauncherLayer = hyperLayer("o", "app_launcher")
@@ -48,28 +50,64 @@ function main() {
     ]);
 
   // --- General Hyper Key Rules ---
-  const generalHyperRules = rule("General Hyper Key Rules").manipulators([
-    // VIM-style arrow keys
-    map("h", "Hyper").to(toKey("←")),
-    map("j", "Hyper").to(toKey("↓")),
-    map("k", "Hyper").to(toKey("↑")),
-    map("l", "Hyper").to(toKey("→")),
-    // Tab navigation
-    map("]", "Hyper").to(toKey("]", "⌘⇧")),
-    map("[", "Hyper").to(toKey("[", "⌘⇧")),
-    // Shell & text commands
-    map("c", "Hyper").to(toKey("c", "⌃")),
-    map("r", "Hyper").to(toKey("r", "⌃")),
-    map("v", "Hyper").to(toKey("v", "⌃")),
+  const generalHyperRules = rule("General Hyper Rules").manipulators([
+    withModifier("Hyper")([
+      // VIM-style arrow keys
+      map("h").to(toKey("←")),
+      map("j").to(toKey("↓")),
+      map("k").to(toKey("↑")),
+      map("l").to(toKey("→")),
+      // Tab navigation
+      map("]").to(toKey("]", "⌘⇧")),
+      map("[").to(toKey("[", "⌘⇧")),
+      // Shell & text commands
+      map("c").to(toKey("c", "⌃")),
+      map("r").to(toKey("r", "⌃")),
+      map("v").to(toKey("v", "⌃")),
+    ]),
   ]);
+
+  // --- VS Code Hyper Key Rules ---
+  const vsCodeHyperRules = rule("VS Code Hyper Rules")
+    .condition(ifApp("com.microsoft.VSCode"))
+    .manipulators([
+      withModifier("Hyper")([
+        map("t").to(toKey("`", "⌃")), // Toggle Terminal
+        map("s").to(toKey("g", "⌃⇧")), // Toggle Source Control
+        map("e").to(toKey("e", "⌘⇧")), // Toggle Explorer
+        map("x").to(toKey("x", "⌘⇧")), // Toggle Extensions
+        map("f").to(toKey("p", "⌘")), // Go to File
+        map("g").to(toKey("t", "⌘")), // Go to Symbol in Workspace
+        map("o").to(toKey("o", "⌘⇧")), // Go to Symbol in File
+        map("d").to(toKey("f12")), // Go to Definition
+        map("i").to(toKey("a", "⌘⇧")), // Kilocode AI Agent
+        map("p").to(toKey("p", "⌘⇧")), // Show Command Palette
+        map("␣").to(toKey("␣", "⌃")), // Trigger Autocomplete
+      ]),
+    ]);
+
+  // --- Chrome Hyper Key Rules ---
+  const chromeHyperRules = rule("Chrome Hyper Rules")
+    .condition(ifApp("com.google.Chrome"))
+    .manipulators([
+      withModifier("Hyper")([
+        map("t").to(toKey("a", "⌘⇧")), // Search Tabs
+      ]),
+    ]);
 
   // --- Write configuration ---
   writeToProfile("Default", [
+    // Global rules
     hyperKeyRule,
-    remapRightOptionToCapsLock,
+    globalRemaps,
+    // Layers
     appLauncherLayer,
     windowManagementLayer,
+    // General hyper rules
     generalHyperRules,
+    // App-specific rules
+    vsCodeHyperRules,
+    chromeHyperRules,
   ]);
 }
 
