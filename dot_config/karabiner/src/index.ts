@@ -4,8 +4,6 @@ import {
   map,
   toApp,
   toKey,
-  ifApp,
-  ifVar,
   hyperLayer,
 } from "karabiner.ts";
 
@@ -18,89 +16,60 @@ function main() {
     map("caps_lock").toHyper().toIfAlone("escape"),
   ]);
 
-  // --- Sub-layers ---
+  // Remap Right Option to Caps Lock
+  const remapRightOptionToCapsLock = rule(
+    "Remap Right Option to Caps Lock"
+  ).manipulators([map("›⌥").to("⇪")]);
 
-  // App Launcher layer (Hyper + ;)
-  const appLauncherLayer = hyperLayer("semicolon", "app_launcher")
+  // App Launcher layer (Hyper + o)
+  const appLauncherLayer = hyperLayer("o", "app_launcher")
     .description("App Launcher")
     .manipulators([
-      map("a").to(toApp("Alacritty")),
-      map("c").to(toApp("Google Chrome")),
-      map("d").to(toApp("Discord")),
+      map("a").to(toApp("ChatGPT")),
+      map("b").to(toApp("Google Chrome")),
+      map("c").to(toApp("WhatsApp")),
+      map("e").to(toApp("Visual Studio Code")),
       map("f").to(toApp("Finder")),
-      map("n").to(toApp("Notion")),
-      map("s").to(toApp("Slack")),
-      map("v").to(toApp("Code")), // VS Code
-      map("z").to(toApp("zoom.us")),
+      map("m").to(toApp("Spotify")),
+      map("t").to(toApp("iTerm")),
     ]);
 
   // Window Management layer (Hyper + w)
   const windowManagementLayer = hyperLayer("w", "window_management")
     .description("Window Management")
-    .leaderMode()
     .manipulators([
-      // Arrows for moving focus
-      map("h").to(toKey("left_arrow", ["left_control", "left_option"])),
-      map("j").to(toKey("down_arrow", ["left_control", "left_option"])),
-      map("k").to(toKey("up_arrow", ["left_control", "left_option"])),
-      map("l").to(toKey("right_arrow", ["left_control", "left_option"])),
       // Moving windows
-      map("h", "shift").to(
-        toKey("left_arrow", ["left_control", "left_option", "left_shift"])
-      ),
-      map("j", "shift").to(
-        toKey("down_arrow", ["left_control", "left_option", "left_shift"])
-      ),
-      map("k", "shift").to(
-        toKey("up_arrow", ["left_control", "left_option", "left_shift"])
-      ),
-      map("l", "shift").to(
-        toKey("right_arrow", ["left_control", "left_option", "left_shift"])
-      ),
+      map("h").to(toKey("←", "⌥⌃")),
+      map("j").to(toKey("↓", "⌥⌃")),
+      map("k").to(toKey("↑", "⌥⌃")),
+      map("l").to(toKey("→", "⌥⌃")),
       // Maximize window
-      map("return_or_enter").to(toKey("f", ["left_control", "left_command"])), // macOS fullscreen
+      map("⏎").to(toKey("⏎", "⌥⌃")),
     ]);
 
-  // --- Application-specific and Global Rules ---
-
-  // Define conditions that are true if we are NOT in a sub-layer.
-  const notInSubLayerConditions = [
-    ifVar("app_launcher").unless(),
-    ifVar("window_management").unless(),
-  ];
-
-  // Use the hyper alias '⌘⌥⌃⇧' for mandatory modifiers.
-  const hyper = "⌘⌥⌃⇧";
-
-  const vsCodeRules = rule(
-    "VS Code",
-    ifApp("^com\\.microsoft\\.VSCode$"),
-    ...notInSubLayerConditions
-  ).manipulators([
-    map("a", hyper).to([toKey("a", "command"), toKey("c", "command")]),
-  ]);
-
-  const chromeRules = rule(
-    "Google Chrome",
-    ifApp("^com\\.google\\.Chrome$"),
-    ...notInSubLayerConditions
-  ).manipulators([map("r", hyper).to(toKey("r", "command"))]);
-
-  const globalHyperShortcuts = rule(
-    "Global Hyper Shortcuts",
-    ...notInSubLayerConditions
-  ).manipulators([
-    map("l", hyper).to(toKey("q", ["right_control", "right_command"])), // Lock screen
+  // --- General Hyper Key Rules ---
+  const generalHyperRules = rule("General Hyper Key Rules").manipulators([
+    // VIM-style arrow keys
+    map("h", "Hyper").to(toKey("←")),
+    map("j", "Hyper").to(toKey("↓")),
+    map("k", "Hyper").to(toKey("↑")),
+    map("l", "Hyper").to(toKey("→")),
+    // Tab navigation
+    map("]", "Hyper").to(toKey("]", "⌘⇧")),
+    map("[", "Hyper").to(toKey("[", "⌘⇧")),
+    // Shell & text commands
+    map("c", "Hyper").to(toKey("c", "⌃")),
+    map("r", "Hyper").to(toKey("r", "⌃")),
+    map("v", "Hyper").to(toKey("v", "⌃")),
   ]);
 
   // --- Write configuration ---
   writeToProfile("Default", [
     hyperKeyRule,
+    remapRightOptionToCapsLock,
     appLauncherLayer,
     windowManagementLayer,
-    vsCodeRules,
-    chromeRules,
-    globalHyperShortcuts,
+    generalHyperRules,
   ]);
 }
 
