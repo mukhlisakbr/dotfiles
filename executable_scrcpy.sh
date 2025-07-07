@@ -1,7 +1,7 @@
 #!/bin/bash
 
 scrcpy \
-  --turn-screen-off \
+#  --turn-screen-off \
   --stay-awake \
   --show-touches \
 #  --always-on-top \
