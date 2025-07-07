@@ -21,21 +21,25 @@
                                                    :alone :escape}]]}
 
         ;; ----------------------------------------------------------------------
-        ;; 2. HYPER MODE RULES (GENERAL)
+        ;; 2. HYPER MODE SUB-LAYER TRIGGERS
+        ;; ----------------------------------------------------------------------
+        {:des "Sub-layer Triggers: App Launcher & Window Management"
+         :rules [:hyper-mode
+                 ;; Hold ";" to activate app launcher layer
+                 [:semicolon ["app-launcher" 1] nil {:afterup ["app-launcher" 0]}]
+                 ;; Hold 'w' to activate window management layer
+                 [:w ["window-management" 1] nil {:afterup ["window-management" 0]}]]}
+
+        ;; ----------------------------------------------------------------------
+        ;; 3. HYPER MODE RULES
         ;; ----------------------------------------------------------------------
         {:des "Rules: Hyper Mode (General)"
-         :rules [:hyper-mode
+         :rules [[:condi :hyper-mode :!app-launcher :!window-management]
                  ;; --- VIM-STYLE NAVIGATION ---
                  [:h :left_arrow]         ;; Hyper + h -> Left
                  [:j :down_arrow]         ;; Hyper + j -> Down
                  [:k :up_arrow]           ;; Hyper + k -> Up
                  [:l :right_arrow]        ;; Hyper + l -> Right
-
-                 ;; --- WINDOW MANAGEMENT ---
-                 ;; NOTE: Window management is now handled by Aerospace tiling manager.
-                 ;; [:comma :!TOleft_arrow]        ;; Hyper + < -> Tile Left (Ctrl+Option+Left)
-                 ;; [:period :!TOright_arrow]      ;; Hyper + > -> Tile Right (Ctrl+Option+Right)
-                 ;; [:slash :!TOreturn_or_enter]   ;; Hyper + / -> Maximize (Ctrl+Option+Enter)
 
                  ;; --- TAB NAVIGATION ---
                  [:close_bracket :!CSclose_bracket] ;; Hyper + ] -> Next Tab (Cmd+Shift+])
@@ -44,15 +48,14 @@
                  ;; --- SHELL & TEXT COMMANDS ---
                  [:c :!Tc]                ;; Hyper + c -> Interrupt (Ctrl+C)
                  [:r :!Tr]                ;; Hyper + r -> Reverse Search (Ctrl+R)
-                 [:w :!Tw]                ;; Hyper + w -> Delete Word (Ctrl+W)
                  [:v :!Tv]                ;; Hyper + v -> Visual Block Mode (Ctrl+V)
                  ]}
 
         ;; ----------------------------------------------------------------------
-        ;; 3. HYPER MODE RULES (VS CODE)
+        ;; 4. APPLICATION-SPECIFIC HYPER MODE RULES
         ;; ----------------------------------------------------------------------
         {:des "Rules: Hyper Mode (VS Code)"
-         :rules [[:condi :hyper-mode :vscode]
+         :rules [[:condi :hyper-mode :vscode :!app-launcher :!window-management]
                  [:t :!Tgrave_accent_and_tilde]    ;; Hyper + t -> Toggle Terminal (Ctrl+`)
                  [:s :!TSg]                        ;; Hyper + s -> Toggle Source Control (Ctrl+Shift+G)
                  [:e :!CSe]                        ;; Hyper + e -> Toggle Explorer (Cmd+Shift+E)
@@ -66,27 +69,35 @@
                  [:spacebar :!Tspacebar]           ;; Hyper + Space -> Trigger Autocomplete (Ctrl+Space)
                  ]}
 
-        ;; ----------------------------------------------------------------------
-        ;; 4. HYPER MODE RULES (CHROME)
-        ;; ----------------------------------------------------------------------
         {:des "Rules: Hyper Mode (Chrome)"
-         :rules [[:condi :hyper-mode :chrome]
+         :rules [[:condi :hyper-mode :chrome :!app-launcher :!window-management]
                  [:t :!CSa]                        ;; Hyper + t -> Search Tabs (Cmd+Shift+A)
                  ]}
 
         ;; ----------------------------------------------------------------------
-        ;; 5. GLOBAL SHORTCUTS & REMAPS
+        ;; 5. SUB-LAYER RULES
         ;; ----------------------------------------------------------------------
-        {:des "Global: Shortcuts & Remaps"
-         :rules [;; --- APP LAUNCHER (Right Command) ---
-                 [:!Qb [:open "Google Chrome"]]       ;; Right Cmd + b -> Chrome
-                 [:!Qt [:open "iTerm"]]               ;; Right Cmd + t -> iTerm
-                 [:!Qe [:open "Visual Studio Code"]]  ;; Right Cmd + e -> VS Code
-                 [:!Qa [:open "ChatGPT"]]             ;; Right Cmd + a -> ChatGPT
-                 [:!Qc [:open "WhatsApp"]]            ;; Right Cmd + c -> WhatsApp
-                 [:!Qf [:open "Finder"]]              ;; Right Cmd + f -> Finder
-                 [:!Qm [:open "Spotify"]]             ;; Right Cmd + m -> Spotify
+        {:des "Rules: App Launcher"
+         :rules [:app-launcher
+                 [:a [:open "ChatGPT"]]              ;; Hyper + ; + a -> ChatGPT
+                 [:b [:open "Google Chrome"]]        ;; Hyper + ; + b -> Chrome
+                 [:c [:open "WhatsApp"]]             ;; Hyper + ; + c -> WhatsApp
+                 [:e [:open "Visual Studio Code"]]   ;; Hyper + ; + e -> VS Code
+                 [:f [:open "Finder"]]               ;; Hyper + ; + f -> Finder
+                 [:m [:open "Spotify"]]              ;; Hyper + ; + m -> Spotify
+                 [:t [:open "iTerm"]]                ;; Hyper + ; + t -> iTerm
+                 ]}
 
-                 ;; --- KEY REMAPS ---
-                 [:escape :caps_lock]                   ;; Remap Escape to Caps Lock
-                 ]}]}
+        {:des "Rules: Window Management"
+         :rules [:window-management
+                 [:h :!TOleft_arrow]                      ;; Hyper + w + h -> Tile Left (Ctrl+Option+Left)
+                 [:l :!TOright_arrow]                     ;; Hyper + w + l -> Tile Right (Ctrl+Option+Right)
+                 [:return_or_enter :!TOreturn_or_enter]   ;; Hyper + w + enter -> Maximize (Ctrl+Option+Enter)
+                 ]}
+
+        ;; ----------------------------------------------------------------------
+        ;; 6. GLOBAL REMAPS
+        ;; ----------------------------------------------------------------------
+        {:des "Global: Remaps"
+         :rules [;; Remap Escape to Caps Lock
+                 [:escape :caps_lock]]}]}
