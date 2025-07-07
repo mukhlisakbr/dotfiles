@@ -5,4 +5,4 @@ scrcpy \
   --stay-awake \
   --show-touches \
 #  --always-on-top \
-#  --screen-off-timeout=900
+  --screen-off-timeout=0
