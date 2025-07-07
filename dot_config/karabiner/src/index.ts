@@ -73,12 +73,12 @@ function main() {
     .manipulators([
       withModifier("Hyper")([
         map("t").to(toKey("`", "⌃")), // Toggle Terminal
-        map("s").to(toKey("g", "⌃⇧")), // Toggle Source Control
+        map("g").to(toKey("g", "⌃⇧")), // Toggle Source Control
         map("e").to(toKey("e", "⌘⇧")), // Toggle Explorer
         map("x").to(toKey("x", "⌘⇧")), // Toggle Extensions
         map("f").to(toKey("p", "⌘")), // Go to File
-        map("g").to(toKey("t", "⌘")), // Go to Symbol in Workspace
-        map("o").to(toKey("o", "⌘⇧")), // Go to Symbol in File
+        map("y").to(toKey("o", "⌘⇧")), // Go to Symbol in File
+        map("u").to(toKey("t", "⌘")), // Go to Symbol in Workspace
         map("d").to(toKey("f12")), // Go to Definition
         map("i").to(toKey("a", "⌘⇧")), // Kilocode AI Agent
         map("p").to(toKey("p", "⌘⇧")), // Show Command Palette
