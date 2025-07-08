@@ -76,7 +76,7 @@ function main() {
         map("o").to(toKey("o", "⌘⇧")), // Go to Symbol in File
         map("w").to(toKey("t", "⌘")), // Go to Symbol in Workspace
         map("d").to(toKey("f12")), // Go to Definition
-        map("a").to(toKey("a", "⌘⇧")), // Kilocode AI Agent
+        map("'").to(toKey("'", "⌘")), // Cline AI Agent
         map("p").to(toKey("p", "⌘⇧")), // Show Command Palette
         map("␣").to(toKey("␣", "⌃")), // Trigger Autocomplete
       ]),
