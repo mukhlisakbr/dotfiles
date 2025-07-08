@@ -18,7 +18,7 @@ function main() {
     map("⇪").toHyper().toIfAlone("⎋"),
   ]);
   const globalRemaps = rule("Base: Global Remaps").manipulators([
-    map("›⌥").to("⇪"), // Right Option to Caps Lock
+    map("⎋").to("⇪"), // Escape to Caps Lock
   ]);
 
   // --- Modifier-based Rules ---
@@ -36,7 +36,7 @@ function main() {
   const windowManagementRule = rule(
     "Modifiers: Window Management"
   ).manipulators([
-    withModifier("‹⌃")([
+    withModifier("fn")([
       // Moving windows
       map("h").to(toKey("←", "⌥⌃")),
       map("j").to(toKey("↓", "⌥⌃")),
