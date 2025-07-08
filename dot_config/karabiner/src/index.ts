@@ -13,20 +13,17 @@ import {
  * Main function to generate Karabiner configuration.
  */
 function main() {
-  // Define Hyper Key on Caps Lock. Escape if alone.
-  const hyperKeyRule = rule("Hyper Key").manipulators([
+  // --- Base Layers & Global Rules ---
+  const hyperKeyRule = rule("Base: Hyper Key").manipulators([
     map("⇪").toHyper().toIfAlone("⎋"),
   ]);
-
-  // --- Global Remaps ---
-  const globalRemaps = rule("Global Remaps").manipulators([
+  const globalRemaps = rule("Base: Global Remaps").manipulators([
     map("›⌥").to("⇪"), // Right Option to Caps Lock
   ]);
 
-  // App Launcher layer (Hyper + o)
-  const appLauncherLayer = hyperLayer("o", "app_launcher")
-    .description("App Launcher")
-    .manipulators([
+  // --- Modifier-based Rules ---
+  const appLauncherRule = rule("Modifiers: App Launcher").manipulators([
+    withModifier("›⌘")([
       map("a").to(toApp("ChatGPT")),
       map("b").to(toApp("Google Chrome")),
       map("c").to(toApp("WhatsApp")),
@@ -34,12 +31,12 @@ function main() {
       map("f").to(toApp("Finder")),
       map("m").to(toApp("Spotify")),
       map("t").to(toApp("Ghostty")),
-    ]);
-
-  // Window Management layer (Hyper + w)
-  const windowManagementLayer = hyperLayer("w", "window_management")
-    .description("Window Management")
-    .manipulators([
+    ]),
+  ]);
+  const windowManagementRule = rule(
+    "Modifiers: Window Management"
+  ).manipulators([
+    withModifier("‹⌃")([
       // Moving windows
       map("h").to(toKey("←", "⌥⌃")),
       map("j").to(toKey("↓", "⌥⌃")),
@@ -47,10 +44,11 @@ function main() {
       map("l").to(toKey("→", "⌥⌃")),
       // Maximize window
       map("⏎").to(toKey("⏎", "⌥⌃")),
-    ]);
+    ]),
+  ]);
 
-  // --- General Hyper Key Rules ---
-  const generalHyperRules = rule("General Hyper Rules").manipulators([
+  // --- Hyper Key Rules ---
+  const generalHyperRules = rule("Hyper: General").manipulators([
     withModifier("Hyper")([
       // VIM-style arrow keys
       map("h").to(toKey("←")),
@@ -66,9 +64,7 @@ function main() {
       map("v").to(toKey("v", "⌃")),
     ]),
   ]);
-
-  // --- VS Code Hyper Key Rules ---
-  const vsCodeHyperRules = rule("VS Code Hyper Rules")
+  const vsCodeHyperRules = rule("Hyper: VS Code")
     .condition(ifApp("com.microsoft.VSCode"))
     .manipulators([
       withModifier("Hyper")([
@@ -77,17 +73,15 @@ function main() {
         map("e").to(toKey("e", "⌘⇧")), // Toggle Explorer
         map("x").to(toKey("x", "⌘⇧")), // Toggle Extensions
         map("f").to(toKey("p", "⌘")), // Go to File
-        map("y").to(toKey("o", "⌘⇧")), // Go to Symbol in File
-        map("u").to(toKey("t", "⌘")), // Go to Symbol in Workspace
+        map("o").to(toKey("o", "⌘⇧")), // Go to Symbol in File
+        map("w").to(toKey("t", "⌘")), // Go to Symbol in Workspace
         map("d").to(toKey("f12")), // Go to Definition
-        map("i").to(toKey("a", "⌘⇧")), // Kilocode AI Agent
+        map("a").to(toKey("a", "⌘⇧")), // Kilocode AI Agent
         map("p").to(toKey("p", "⌘⇧")), // Show Command Palette
         map("␣").to(toKey("␣", "⌃")), // Trigger Autocomplete
       ]),
     ]);
-
-  // --- Chrome Hyper Key Rules ---
-  const chromeHyperRules = rule("Chrome Hyper Rules")
+  const chromeHyperRules = rule("Hyper: Chrome")
     .condition(ifApp("com.google.Chrome"))
     .manipulators([
       withModifier("Hyper")([
@@ -97,15 +91,14 @@ function main() {
 
   // --- Write configuration ---
   writeToProfile("Default", [
-    // Global rules
+    // Base Layers & Global Rules
     hyperKeyRule,
     globalRemaps,
-    // Layers
-    appLauncherLayer,
-    windowManagementLayer,
-    // General hyper rules
+    // Modifier-based Rules
+    appLauncherRule,
+    windowManagementRule,
+    // Hyper Key Rules
     generalHyperRules,
-    // App-specific rules
     vsCodeHyperRules,
     chromeHyperRules,
   ]);
