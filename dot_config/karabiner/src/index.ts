@@ -76,8 +76,9 @@ function main() {
         map("o").to(toKey("o", "⌘⇧")), // Go to Symbol in File
         map("w").to(toKey("t", "⌘")), // Go to Symbol in Workspace
         map("d").to(toKey("f12")), // Go to Definition
-        map(";").to(toKey("'", "⌘")), // Cline AI Agent
+        map(";").to(toKey("'", "⌘")), // Toggle Cline AI
         map("p").to(toKey("p", "⌘⇧")), // Show Command Palette
+        map(".").to(toKey("a", "⌘⇧")), // Change Mode
         map("␣").to(toKey("␣", "⌃")), // Trigger Autocomplete
       ]),
     ]);
