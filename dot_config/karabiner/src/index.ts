@@ -100,9 +100,9 @@ function main() {
     appLauncherRule,
     windowManagementRule,
     // Hyper Key Rules
-    generalHyperRules,
     vsCodeHyperRules,
     chromeHyperRules,
+    generalHyperRules,
   ]);
 }
 
