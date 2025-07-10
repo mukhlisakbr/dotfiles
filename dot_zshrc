@@ -86,10 +86,8 @@ esac
 # gitignore
 function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$@ ;}
 
-# Herd injected PHP 8.4 configuration.
+# Herd injected configuration.
 export HERD_PHP_84_INI_SCAN_DIR="/Users/ghost/Library/Application Support/Herd/config/php/84/"
-
-# Herd injected PHP binary.
 export PATH="/Users/ghost/Library/Application Support/Herd/bin/":$PATH
 
 # Added by Windsurf
