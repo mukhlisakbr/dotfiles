@@ -73,6 +73,7 @@ function main() {
         map("g").to(toKey("g", "⌃⇧")), // Toggle Source Control
         map("e").to(toKey("e", "⌘⇧")), // Toggle Explorer
         map("x").to(toKey("x", "⌘⇧")), // Toggle Extensions
+        map("b").to(toKey("b", "⌘")), // Toggle Sidebar
         map("f").to(toKey("p", "⌘")), // Go to File
         map("o").to(toKey("o", "⌘⇧")), // Go to Symbol in File
         map("w").to(toKey("t", "⌘")), // Go to Symbol in Workspace
