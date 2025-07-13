@@ -95,3 +95,6 @@ export PATH="/Users/ghost/.codeium/windsurf/bin:$PATH"
 
 # bun
 export PATH="/Users/ghost/.bun/bin:$PATH"
+
+# term
+export TERM=xterm-256color
