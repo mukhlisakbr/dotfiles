@@ -63,6 +63,7 @@ function main() {
       map("r").to(toKey("r", "⌃")),
       map("v").to(toKey("v", "⌃")),
       map("t").to(toKey("t", "⌃")),
+      map("␣").to(toKey("␣", "⌃")),
     ]),
   ]);
   const vsCodeHyperRules = rule("Hyper: VS Code")
