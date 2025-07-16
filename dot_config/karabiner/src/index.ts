@@ -24,7 +24,7 @@ function main() {
   const appLauncherRule = rule("Modifiers: App Launcher").manipulators([
     withModifier("›⌘")([
       map("a").to(toApp("ChatGPT")),
-      map("b").to(toApp("Google Chrome")),
+      map("b").to(toApp("Arc")),
       map("c").to(toApp("WhatsApp")),
       map("e").to(toApp("Visual Studio Code")),
       map("f").to(toApp("Finder")),
@@ -82,8 +82,8 @@ function main() {
         map("␣").to(toKey("␣", "⌃")), // Trigger Autocomplete
       ]),
     ]);
-  const chromeHyperRules = rule("Hyper: Chrome")
-    .condition(ifApp("com.google.Chrome"))
+  const arcHyperRules = rule("Hyper: Arc")
+    .condition(ifApp("company.thebrowser.Browser"))
     .manipulators([
       withModifier("Hyper")([
         map("t").to(toKey("a", "⌘⇧")), // Search Tabs
@@ -100,7 +100,7 @@ function main() {
     windowManagementRule,
     // Hyper Key Rules
     vsCodeHyperRules,
-    chromeHyperRules,
+    arcHyperRules,
     generalHyperRules,
   ]);
 }
