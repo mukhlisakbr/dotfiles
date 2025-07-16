@@ -10,6 +10,7 @@ macos-option-as-alt = true
 macos-titlebar-style = tabs
 
 #theme = "GitHub-Dark-Default"
+theme = "tokyonight_night"
 
 #background-opacity = 0.8
 #background-blur = true
