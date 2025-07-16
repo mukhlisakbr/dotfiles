@@ -4,7 +4,6 @@ import {
   map,
   toApp,
   toKey,
-  hyperLayer,
   ifApp,
   withModifier,
 } from "karabiner.ts";
@@ -78,8 +77,7 @@ function main() {
         map("o").to(toKey("o", "⌘⇧")), // Go to Symbol in File
         map("w").to(toKey("t", "⌘")), // Go to Symbol in Workspace
         map("d").to(toKey("f12")), // Go to Definition
-        map(";").to(toKey("'", "⌘")), // Toggle Cline AI
-        map("'").to(toKey("a", "⌘⇧")), // Change Cline AI Mode
+        map("i").to(toKey("a", "⌘⇧")), // Toggle Kilo Code
         map("p").to(toKey("p", "⌘⇧")), // Show Command Palette
         map("␣").to(toKey("␣", "⌃")), // Trigger Autocomplete
       ]),
