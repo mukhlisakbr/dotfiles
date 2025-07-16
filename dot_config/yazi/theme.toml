@@ -1,9 +1,6 @@
-# tokyonight night theme
-# https://github.com/folke/tokyonight.nvim/tree/main/extras/yazi
-
 [mgr]
 # NOTE: can combined with tmTheme (sublime colorshceme file) for preview code highlight
-syntect_theme = "./tokyonight-night.tmTheme"
+syntect_theme = "./tokyonight_night.tmTheme"
 
 cwd = { fg = "#a9b1d6", italic = true }
 
