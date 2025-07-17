@@ -29,6 +29,7 @@ function main() {
       map("e").to(toApp("Visual Studio Code")),
       map("f").to(toApp("Finder")),
       map("m").to(toApp("Spotify")),
+      map("p").to(toApp("Bitwarden")),
       map("t").to(toApp("Ghostty")),
     ]),
   ]);
