@@ -1,5 +1,5 @@
 font-family = "GeistMono Nerd Font Mono"
-font-size = 14
+font-size = 16
 font-feature = -calt, -liga, -dlig
 
 window-padding-balance = true
@@ -12,5 +12,5 @@ macos-titlebar-style = tabs
 #theme = "GitHub-Dark-Default"
 theme = "tokyonight_night"
 
-#background-opacity = 0.8
-#background-blur = true
+background-opacity = 0.9
+background-blur = true
