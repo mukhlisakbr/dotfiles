@@ -18,7 +18,7 @@ set ruler
 set clipboard=unnamed
 set re=0
 
-colorscheme tokyonight-night
+colorscheme tokyonight-day
 
 " remap
 inoremap kj <Esc>
