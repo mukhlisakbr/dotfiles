@@ -15,4 +15,4 @@ macos-titlebar-style = tabs
 theme = "Builtin Light"
 
 background-opacity = 0.8
-background-blur = 40
+background-blur = 20
