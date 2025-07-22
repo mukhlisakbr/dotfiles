@@ -41,7 +41,7 @@ alias ws="webstorm"
 alias wip='git add . && git commit -m "wip" && git push'
 
 # bat
-export BAT_THEME="tokyonight_night"
+export BAT_THEME="tokyonight_day"
 
 # fzf
 export FZF_DEFAULT_COMMAND="fd --type f --strip-cwd-prefix --hidden --follow"
