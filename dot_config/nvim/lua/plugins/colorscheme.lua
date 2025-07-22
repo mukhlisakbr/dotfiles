@@ -10,4 +10,17 @@ return {
       },
     },
   },
+  {
+    "projekt0n/github-nvim-theme",
+    name = "github-theme",
+    options = {
+      transparent = true,
+    },
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "github_light_default",
+    },
+  },
 }
