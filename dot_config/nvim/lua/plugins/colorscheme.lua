@@ -2,7 +2,7 @@ return {
   {
     "folke/tokyonight.nvim",
     opts = {
-      style = "night",
+      style = "day",
       transparent = true,
       styles = {
         sidebars = "transparent",
@@ -18,9 +18,9 @@ return {
     },
   },
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "github_light_default",
-    },
+    --"LazyVim/LazyVim",
+    --opts = {
+    -- colorscheme = "github_light_default",
+    --},
   },
 }
