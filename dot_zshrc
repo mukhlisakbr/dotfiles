@@ -48,7 +48,7 @@ alias wip='git add . && git commit -m "wip" && git push'
 #export BAT_THEME="GitHub"
 
 # fzf
-FD_BASE="fd --strip-cwd-prefix --hidden --follow"
+FD_BASE="fd --strip-cwd-prefix"
 
 export FZF_DEFAULT_COMMAND="$FD_BASE --type f"
 export FZF_ALT_C_COMMAND="$FD_BASE --type d"
