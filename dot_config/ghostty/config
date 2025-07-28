@@ -1,19 +1,18 @@
-font-family = "GeistMono Nerd Font Mono"
-font-size = 16
+# font
+font-family = "GeistMono NFM"
+font-size = 14
 font-feature = -calt, -liga, -dlig
 
+# window
 window-padding-balance = true
 
+# clipboard
 copy-on-select = clipboard
 
+# macos
 macos-option-as-alt = true
 macos-titlebar-style = tabs
 
-#theme = "GitHub-Light-Default"
-#theme = "tokyonight-day"
-#theme = "OneHalfLight"
-#theme = "Builtin Light"
-theme = "Apple System Colors Light"
-
+# bg
 background-opacity = 0.8
 background-blur = 20
