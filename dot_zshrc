@@ -22,11 +22,8 @@ setopt SHARE_HISTORY           # Share history across multiple Zsh sessions
 setopt CORRECT                 # Suggest corrections for mistyped commands
 setopt NO_CASE_GLOB            # Enable case-insensitive globbing
 setopt AUTO_CD                 # Allow 'cd' by just typing a directory name
-
-setopt AUTO_MENU        # If multiple matches, start menu after Tab press
-setopt MENU_COMPLETE    # Cycle through completions instead of listing
-setopt LIST_PACKED      # Pack completions into columns
-setopt COMPLETE_IN_WORD # Allow completion in the middle of a word
+setopt AUTO_MENU               # If multiple matches, start menu after Tab press
+setopt COMPLETE_IN_WORD        # Allow completion in the middle of a word
 
 # -----------------------------
 # Completion System
