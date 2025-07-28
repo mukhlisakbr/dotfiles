@@ -50,11 +50,18 @@ alias wip='git add . && git commit -m "wip" && git push'
 # fzf
 FD_BASE="fd --strip-cwd-prefix"
 
+# Generic fzf command
 export FZF_DEFAULT_COMMAND="$FD_BASE --type f"
+
+# For CTRL-T (files)
+export FZF_CTRL_T_COMMAND="$FD_BASE --type f"
+
+# For ALT-C (directories)
 export FZF_ALT_C_COMMAND="$FD_BASE --type d"
 
+# Previews
 export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always {}'"
-export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
+export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 
 source <(fzf --zsh)
 
