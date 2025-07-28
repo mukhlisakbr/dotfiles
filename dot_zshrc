@@ -47,15 +47,15 @@ source /opt/homebrew/opt/zinit/zinit.zsh
 
 # Load plugins with optimized timing
 # Autosuggestions - load almost instantly after prompt
-zinit ice wait"0" lucid atload'_zsh_autosuggest_start'
+zinit ice wait lucid atload'_zsh_autosuggest_start'
 zinit light zsh-users/zsh-autosuggestions
 
 # Completions - optimized with as"completion" and blockf
-zinit ice wait"1" lucid blockf as"completion"
+zinit ice wait lucid blockf as"completion"
 zinit light zsh-users/zsh-completions
 
 # Syntax highlighting - must load last to work properly
-zinit ice wait"2" lucid
+zinit ice wait lucid
 zinit light zsh-users/zsh-syntax-highlighting
 
 # -----------------------------
