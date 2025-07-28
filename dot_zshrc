@@ -45,16 +45,15 @@ eval "$(starship init zsh)"    # Load Starship as the prompt
 # Initialize Zinit plugin manager
 source /opt/homebrew/opt/zinit/zinit.zsh
 
-# Load plugins with optimized timing
-# Autosuggestions - load almost instantly after prompt
+# zsh-autosuggestions: Suggests commands as you type. Loads asynchronously right after prompt.
 zinit ice wait lucid atload'_zsh_autosuggest_start'
 zinit light zsh-users/zsh-autosuggestions
 
-# Completions - optimized with as"completion" and blockf
+# zsh-completions: Adds extra completions. Loads asynchronously and optimized with blockf/as"completion".
 zinit ice wait lucid blockf as"completion"
 zinit light zsh-users/zsh-completions
 
-# Syntax highlighting - must load last to work properly
+# zsh-syntax-highlighting: Highlights commands as you type. Must load last, asynchronously after prompt.
 zinit ice wait lucid
 zinit light zsh-users/zsh-syntax-highlighting
 
