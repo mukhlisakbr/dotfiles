@@ -1,8 +1,10 @@
-# -----------------------------
-# Minimal Zsh Configuration for Starship
-# -----------------------------
+# =============================
+# Comprehensive Zsh Configuration
+# =============================
 
-# Set history size
+# -----------------------------
+# History Configuration
+# -----------------------------
 HISTSIZE=10000                 # Number of commands to keep in memory
 SAVEHIST=10000                 # Number of commands to save in the history file
 
@@ -14,97 +16,118 @@ setopt HIST_SAVE_NO_DUPS       # Do not save duplicate commands
 setopt HIST_VERIFY             # Show command before running after history expansion
 setopt SHARE_HISTORY           # Share history across multiple Zsh sessions
 
-# Enable command auto-correction
+# -----------------------------
+# Shell Options
+# -----------------------------
 setopt CORRECT                 # Suggest corrections for mistyped commands
+setopt NO_CASE_GLOB            # Enable case-insensitive globbing
+setopt AUTO_CD                 # Allow 'cd' by just typing a directory name
 
-# Enable case-insensitive globbing (e.g., ls *.PNG matches *.png)
-setopt NO_CASE_GLOB
-
-# Allow 'cd' by just typing a directory name
-setopt AUTO_CD
-
-# Enable tab completion system
+# -----------------------------
+# Completion System
+# -----------------------------
+# Load and initialize Zsh completion system
 autoload -Uz compinit          # Load Zsh completion system
 compinit                       # Initialize completion
 
-# Speed up completion by caching
-zstyle ':completion:*' use-cache on    # Enable completion cache
-zstyle ':completion:*' cache-path ~/.zsh/cache  # Set cache directory
+# Completion performance optimization
+zstyle ':completion:*' use-cache on              # Enable completion cache
+zstyle ':completion:*' cache-path ~/.zsh/cache   # Set cache directory
 
-# Initialize Starship prompt
+# -----------------------------
+# Prompt Initialization
+# -----------------------------
 eval "$(starship init zsh)"    # Load Starship as the prompt
 
 # -----------------------------
-# End of configuration
+# Zinit Plugin Manager
 # -----------------------------
-
-# zinit
+# Initialize Zinit plugin manager
 source /opt/homebrew/opt/zinit/zinit.zsh
 
-# Autosuggestions – load almost instantly after prompt
+# Load plugins with optimized timing
+# Autosuggestions - load almost instantly after prompt
 zinit ice wait"0" lucid atload'_zsh_autosuggest_start'
 zinit light zsh-users/zsh-autosuggestions
 
-# Completions – optimized with as"completion" and blockf
+# Completions - optimized with as"completion" and blockf
 zinit ice wait"1" lucid blockf as"completion"
 zinit light zsh-users/zsh-completions
 
-# Syntax highlighting – must load last
+# Syntax highlighting - must load last to work properly
 zinit ice wait"2" lucid
 zinit light zsh-users/zsh-syntax-highlighting
 
-# zoxide
+# -----------------------------
+# Tool Integrations
+# -----------------------------
+# zoxide - smart cd command
 eval "$(zoxide init zsh)"
 
-# eza
+# eza - modern ls replacement
 export EZA_CONFIG_DIR="$HOME/.config/eza"
 
-# zsh alias
+# -----------------------------
+# Aliases
+# -----------------------------
+# File listing aliases
 alias eza="eza --icons --sort=type"
 alias l="eza"
 alias ll="eza -l"
 alias lla="eza -la"
 
+# Development tool aliases
 alias lg="lazygit"
 alias ld="lazydocker"
 alias pn="pnpm"
 alias wip='git add . && git commit -m "wip" && git push'
 
-# bat
-#export BAT_THEME="GitHub"
+# -----------------------------
+# Bat Configuration
+# -----------------------------
+# Syntax highlighting theme for bat (cat replacement)
+#export BAT_THEME="GitHub"  # Uncomment to set a specific theme
 
-# fzf
+# -----------------------------
+# FZF Configuration
+# -----------------------------
+# Base command for fd integration
 FD_BASE="fd --strip-cwd-prefix"
 
-# Generic fzf command
-export FZF_DEFAULT_COMMAND="$FD_BASE --type f"
+# FZF command configurations
+export FZF_DEFAULT_COMMAND="$FD_BASE --type f"     # Generic fzf command
+export FZF_CTRL_T_COMMAND="$FD_BASE --type f"      # For CTRL-T (files)
+export FZF_ALT_C_COMMAND="$FD_BASE --type d"       # For ALT-C (directories)
 
-# For CTRL-T (files)
-export FZF_CTRL_T_COMMAND="$FD_BASE --type f"
+# FZF preview configurations
+export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always {}'"  # File preview with bat
+export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"     # Directory preview with tree
 
-# For ALT-C (directories)
-export FZF_ALT_C_COMMAND="$FD_BASE --type d"
-
-# Previews
-export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always {}'"
-export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
-
+# Initialize FZF key bindings and completion
 source <(fzf --zsh)
 
-# sublime
+# -----------------------------
+# Development Environment
+# -----------------------------
+# Sublime Text editor
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
-# android and java
+# Java Development Kit
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=$PATH:$ANDROID_HOME/build-tools/35.0.0
 
-# lazygit
+# Android SDK configuration
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator          # Android emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools    # ADB and fastboot
+export PATH=$PATH:$ANDROID_HOME/build-tools/35.0.0 # Build tools
+
+# XDG Base Directory specification
 export XDG_CONFIG_HOME="$HOME/.config"
 
-# yazi
+# -----------------------------
+# Custom Functions
+# -----------------------------
+# Yazi file manager with cd integration
 function y() {
   local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
   yazi "$@" --cwd-file="$tmp"
@@ -114,27 +137,35 @@ function y() {
   rm -f -- "$tmp"
 }
 
-# gitignore
+# Gitignore generator
 function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$@ ;}
 
-# Herd injected configuration.
+# -----------------------------
+# Runtime and Package Managers
+# -----------------------------
+# Herd PHP development environment
 export HERD_PHP_84_INI_SCAN_DIR="/Users/ghost/Library/Application Support/Herd/config/php/84/"
 export PATH="/Users/ghost/Library/Application Support/Herd/bin/":$PATH
 
-# Added by Windsurf
+# Windsurf AI-powered editor
 export PATH="/Users/ghost/.codeium/windsurf/bin:$PATH"
 
-# bun
+# Bun - fast JavaScript runtime and package manager
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# term
-export TERM=xterm-256color
-
-# pnpm
+# PNPM - fast, disk space efficient package manager
 export PNPM_HOME="/Users/ghost/Library/pnpm"
 case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
+  *":$PNPM_HOME:"*) ;;  # Already in PATH
+  *) export PATH="$PNPM_HOME:$PATH" ;;  # Add to PATH
 esac
-# pnpm end
+
+# -----------------------------
+# Terminal Configuration
+# -----------------------------
+export TERM=xterm-256color
+
+# =============================
+# End of Configuration
+# =============================
