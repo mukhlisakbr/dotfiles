@@ -23,6 +23,11 @@ setopt CORRECT                 # Suggest corrections for mistyped commands
 setopt NO_CASE_GLOB            # Enable case-insensitive globbing
 setopt AUTO_CD                 # Allow 'cd' by just typing a directory name
 
+setopt AUTO_MENU        # If multiple matches, start menu after Tab press
+setopt MENU_COMPLETE    # Cycle through completions instead of listing
+setopt LIST_PACKED      # Pack completions into columns
+setopt COMPLETE_IN_WORD # Allow completion in the middle of a word
+
 # -----------------------------
 # Completion System
 # -----------------------------
@@ -33,6 +38,7 @@ compinit                       # Initialize completion
 # Completion performance optimization
 zstyle ':completion:*' use-cache on              # Enable completion cache
 zstyle ':completion:*' cache-path ~/.zsh/cache   # Set cache directory
+zstyle ':completion:*' menu select
 
 # -----------------------------
 # Prompt Initialization
