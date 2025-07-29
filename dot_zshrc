@@ -41,15 +41,15 @@ alias ll="eza -l"                              # Long format listing
 alias lla="eza -la"                            # Long format with hidden files
 
 # Development tool aliases
-alias lg="lazygit"                             # Git TUI
-alias ld="lazydocker"                          # Docker TUI
-alias pn="pnpm"                               # PNPM package manager
+alias lg="lazygit"                                        # Git TUI
+alias ld="lazydocker"                                     # Docker TUI
+alias pn="pnpm"                                           # PNPM package manager
 alias wip='git add . && git commit -m "wip" && git push'  # Quick work-in-progress commit
 
 # -----------------------------
 # Bat Configuration
 # -----------------------------
-#export BAT_THEME="GitHub"                     # Uncomment to set specific bat theme
+#export BAT_THEME="GitHub"  # Uncomment to set specific bat theme
 
 # -----------------------------
 # FZF Configuration
@@ -66,7 +66,7 @@ export FZF_ALT_C_COMMAND="$FD_BASE --type d"   # ALT-C directory search
 export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always {}'"  # File preview with bat
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"     # Directory preview with tree
 
-source <(fzf --zsh)                            # Initialize FZF key bindings
+source <(fzf --zsh)   # Initialize FZF key bindings
 
 # -----------------------------
 # Development Environment
@@ -79,8 +79,8 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
 # Android SDK configuration
 export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator        # Android emulator tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools  # ADB and fastboot
+export PATH=$PATH:$ANDROID_HOME/emulator            # Android emulator tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools      # ADB and fastboot
 export PATH=$PATH:$ANDROID_HOME/build-tools/35.0.0  # Android build tools
 
 # XDG Base Directory specification
@@ -113,7 +113,7 @@ export PATH="/Users/ghost/Library/Application Support/Herd/bin/":$PATH
 export PATH="/Users/ghost/.codeium/windsurf/bin:$PATH"
 
 # Bun JavaScript runtime and package manager
-export BUN_INSTALL="$HOME/.bun"                # Bun installation directory
+export BUN_INSTALL="$HOME/.bun"                 # Bun installation directory
 export PATH="$BUN_INSTALL/bin:$PATH"            # Add Bun to PATH
 
 # PNPM package manager
