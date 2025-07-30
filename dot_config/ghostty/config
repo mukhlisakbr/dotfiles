@@ -16,3 +16,4 @@ macos-titlebar-style = tabs
 # bg
 background-opacity = 0.8
 background-blur = 20
+keybind = shift+enter=text:\n

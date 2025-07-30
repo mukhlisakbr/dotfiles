@@ -16,6 +16,7 @@ zinit light zsh-users/zsh-autosuggestions      # Command suggestions based on hi
 zinit light zsh-users/zsh-syntax-highlighting  # Real-time syntax highlighting
 zinit light zsh-users/zsh-completions          # Additional completions
 zinit light marlonrichert/zsh-autocomplete     # Real-time type-ahead autocompletion
+zstyle ':autocomplete:*' delay 1.0  # seconds (float)
 zinit light g-plane/pnpm-shell-completion      # PNPM shell completion <mcreference link="https://github.com/g-plane/pnpm-shell-completion" index="0">0</mcreference>
 
 # Load Oh My Zsh plugins for compatibility
