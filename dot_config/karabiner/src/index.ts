@@ -18,7 +18,6 @@ function main() {
   ]);
   const globalRemaps = rule("Base: Global Remaps").manipulators([
     map("⎋").to("⇪"), // Escape to Caps Lock
-    map("right_command").to("f13")
   ]);
 
   // --- Modifier-based Rules ---
@@ -98,7 +97,7 @@ function main() {
     hyperKeyRule,
     globalRemaps,
     // Modifier-based Rules
-    // appLauncherRule,
+    appLauncherRule,
     windowManagementRule,
     // Hyper Key Rules
     vsCodeHyperRules,
