@@ -97,7 +97,7 @@ function main() {
     hyperKeyRule,
     globalRemaps,
     // Modifier-based Rules
-    appLauncherRule,
+    // appLauncherRule,
     windowManagementRule,
     // Hyper Key Rules
     vsCodeHyperRules,
