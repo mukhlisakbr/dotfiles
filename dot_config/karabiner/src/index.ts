@@ -83,8 +83,8 @@ function main() {
         map("␣").to(toKey("␣", "⌃")), // Trigger Autocomplete
       ]),
     ]);
-  const arcHyperRules = rule("Hyper: Arc")
-    .condition(ifApp("company.thebrowser.Browser"))
+  const chromeHyperRules = rule("Hyper: Chrome")
+    .condition(ifApp("com.google.Chrome"))
     .manipulators([
       withModifier("Hyper")([
         map("t").to(toKey("a", "⌘⇧")), // Search Tabs
@@ -101,7 +101,7 @@ function main() {
     windowManagementRule,
     // Hyper Key Rules
     vsCodeHyperRules,
-    arcHyperRules,
+    chromeHyperRules,
     generalHyperRules,
   ]);
 }
