@@ -18,6 +18,6 @@
 
   // theme
   "theme": "Adaptive.sublime-theme",
-  "color_scheme": "Monokai.sublime-color-scheme",
-  "index_files": true,
+  "color_scheme": "Mariana.sublime-color-scheme",
 }
+
