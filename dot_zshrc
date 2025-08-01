@@ -87,6 +87,9 @@ export PATH=$PATH:$ANDROID_HOME/build-tools/35.0.0  # Android build tools
 # XDG Base Directory specification
 export XDG_CONFIG_HOME="$HOME/.config"          # Set XDG config directory
 
+# Default editor
+export EDITOR='vim'
+
 # -----------------------------
 # Custom Functions
 # -----------------------------
