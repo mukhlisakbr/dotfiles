@@ -26,7 +26,7 @@ function main() {
       map("a").to(toApp("ChatGPT")),
       map("b").to(toApp("Arc")),
       map("c").to(toApp("WhatsApp")),
-      map("e").to(toApp("Trae")),
+      map("e").to(toApp("Visual Studio Code")),
       map("f").to(toApp("Finder")),
       map("m").to(toApp("Spotify")),
       map("p").to(toApp("Bitwarden")),
