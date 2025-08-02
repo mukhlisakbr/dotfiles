@@ -15,10 +15,13 @@ source /opt/homebrew/opt/zinit/zinit.zsh  # Initialize Zinit
 zinit light zsh-users/zsh-autosuggestions      # Command suggestions based on history
 zinit light zsh-users/zsh-syntax-highlighting  # Real-time syntax highlighting
 zinit light zsh-users/zsh-completions          # Additional completions
-zinit light g-plane/pnpm-shell-completion      # PNPM shell completion
 
 # Load Oh My Zsh plugins for compatibility
 zinit snippet OMZP::git                        # Git aliases and functions
+
+# Re-run compinit after all completions loaded
+autoload -Uz compinit
+compinit
 
 # -----------------------------
 # Prompt Initialization
