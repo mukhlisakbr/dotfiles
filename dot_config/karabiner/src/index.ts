@@ -33,19 +33,19 @@ function main() {
       map("t").to(toApp("Ghostty")),
     ]),
   ]);
-  const windowManagementRule = rule(
-    "Modifiers: Window Management"
-  ).manipulators([
-    withModifier("fn")([
-      // Moving windows
-      map("h").to(toKey("←", "⌥⌃")),
-      map("j").to(toKey("↓", "⌥⌃")),
-      map("k").to(toKey("↑", "⌥⌃")),
-      map("l").to(toKey("→", "⌥⌃")),
-      // Maximize window
-      map("⏎").to(toKey("⏎", "⌥⌃")),
-    ]),
-  ]);
+  //const windowManagementRule = rule(
+  //  "Modifiers: Window Management"
+  //).manipulators([
+  //  withModifier("fn")([
+  //    // Moving windows
+  //    map("h").to(toKey("←", "⌥⌃")),
+  //    map("j").to(toKey("↓", "⌥⌃")),
+  //    map("k").to(toKey("↑", "⌥⌃")),
+  //    map("l").to(toKey("→", "⌥⌃")),
+  //    // Maximize window
+  //    map("⏎").to(toKey("⏎", "⌥⌃")),
+  //  ]),
+  //]);
 
   // --- Hyper Key Rules ---
   const generalHyperRules = rule("Hyper: General").manipulators([
@@ -96,9 +96,11 @@ function main() {
     // Base Layers & Global Rules
     hyperKeyRule,
     globalRemaps,
+
     // Modifier-based Rules
     appLauncherRule,
-    windowManagementRule,
+    //windowManagementRule,
+
     // Hyper Key Rules
     vsCodeHyperRules,
     chromeHyperRules,
