@@ -1,6 +1,6 @@
 # font
 font-family = "GeistMono NFM"
-font-size = 12
+font-size = 13
 font-feature = -calt, -liga, -dlig
 
 # window
