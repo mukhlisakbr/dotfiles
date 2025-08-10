@@ -65,7 +65,7 @@ function main() {
       map("t").to(toKey("t", "⌃")),
     ]),
   ]);
-  const vsCodeHyperRules = rule("Hyper: VS Code & Trae")
+  const codeEditorHyperRules = rule("Hyper: VS Code & Trae")
     .condition(ifApp(["com.microsoft.VSCode", "com.trae.app"]))
     .manipulators([
       withModifier("Hyper")([
@@ -102,7 +102,7 @@ function main() {
     //windowManagementRule,
 
     // Hyper Key Rules
-    vsCodeHyperRules,
+    codeEditorHyperRules,
     chromeHyperRules,
     generalHyperRules,
   ]);
