@@ -17,3 +17,6 @@ macos-titlebar-style = tabs
 background-opacity = 0.8
 background-blur = 20
 keybind = shift+enter=text:\n
+
+# theme
+theme = "GitHub-Dark-Default"

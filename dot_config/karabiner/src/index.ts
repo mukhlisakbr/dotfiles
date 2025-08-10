@@ -65,8 +65,8 @@ function main() {
       map("t").to(toKey("t", "⌃")),
     ]),
   ]);
-  const vsCodeHyperRules = rule("Hyper: VS Code")
-    .condition(ifApp("com.microsoft.VSCode"))
+  const vsCodeHyperRules = rule("Hyper: VS Code & Trae")
+    .condition(ifApp(["com.microsoft.VSCode", "com.trae.app"]))
     .manipulators([
       withModifier("Hyper")([
         map("t").to(toKey("`", "⌃")), // Toggle Terminal
