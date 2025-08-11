@@ -14,7 +14,7 @@ macos-option-as-alt = true
 macos-titlebar-style = tabs
 
 # bg
-background-opacity = 0.8
+background-opacity = 0.9
 background-blur = 20
 keybind = shift+enter=text:\n
 
