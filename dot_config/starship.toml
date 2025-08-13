@@ -1,3 +1,8 @@
+# Inserts a blank line between shell prompts
+add_newline = false
+
+# Presets
+
 [aws]
 symbol = "  "
 

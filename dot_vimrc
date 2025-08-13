@@ -1,9 +1,12 @@
 call plug#begin()
+"plugins
 Plug 'sheerun/vim-polyglot'
 Plug 'tribela/vim-transparent'
 Plug 'jszakmeister/vim-togglecursor'
-"Plug 'folke/tokyonight.nvim', { 'rtp': 'extras/vim' }
+"themes
+Plug 'folke/tokyonight.nvim', { 'rtp': 'extras/vim' }
 Plug 'wojciechkepka/vim-github-dark'
+Plug 'ayu-theme/ayu-vim'
 call plug#end()
 
 syntax on
@@ -19,7 +22,9 @@ set ruler
 set clipboard=unnamed
 set re=0
 
-colorscheme ghdark
+"colorscheme ghdark
+let ayucolor="dark"
+colorscheme ayu
 
 "remap
 inoremap kj <Esc>
