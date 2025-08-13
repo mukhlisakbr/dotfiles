@@ -63,6 +63,7 @@ function main() {
       map("r").to(toKey("r", "⌃")),
       map("v").to(toKey("v", "⌃")),
       map("t").to(toKey("t", "⌃")),
+      map("o").to(toKey("o", "⌃")), // Terminal open command
     ]),
   ]);
   const codeEditorHyperRules = rule("Hyper: VS Code & Trae")
