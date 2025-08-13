@@ -3,3 +3,7 @@ show_hidden = true
 
 [preview]
 wrap = "yes"
+
+[flavor]
+dark  = "github-dark-default"
+light = "github-dark-default"

@@ -3,6 +3,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tribela/vim-transparent'
 Plug 'jszakmeister/vim-togglecursor'
 "Plug 'folke/tokyonight.nvim', { 'rtp': 'extras/vim' }
+Plug 'wojciechkepka/vim-github-dark'
 call plug#end()
 
 syntax on
@@ -18,7 +19,7 @@ set ruler
 set clipboard=unnamed
 set re=0
 
-"colorscheme tokyonight-day
+colorscheme ghdark
 
 "remap
 inoremap kj <Esc>
