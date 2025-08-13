@@ -81,7 +81,7 @@ export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
 # Android SDK configuration
-export ANDROID_HOME=$home/library/android/sdk
+export ANDROID_HOME=$HOME/library/android/sdk
 export ANDROID_NDK_HOME=$ANDROID_HOME/ndk/27.1.12297006
 
 export PATH=$PATH:$ANDROID_HOME/emulator            # Android emulator tools
