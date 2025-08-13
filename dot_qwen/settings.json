@@ -1,10 +1,10 @@
 {
   "selectedAuthType": "qwen-oauth",
   "preferredEditor": "vim",
-  "theme": "Ayu",
   "mcpServers": {
     "context7": {
       "httpUrl": "https://mcp.context7.com/mcp"
     }
-  }
+  },
+  "theme": "Ayu"
 }
