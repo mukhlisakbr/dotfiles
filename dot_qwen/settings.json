@@ -1,6 +1,6 @@
 {
   "selectedAuthType": "qwen-oauth",
-  "preferredEditor": "vim",
+  "preferredEditor": "vscode",
   "mcpServers": {
     "context7": {
       "httpUrl": "https://mcp.context7.com/mcp"
