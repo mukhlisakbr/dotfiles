@@ -22,9 +22,9 @@ set ruler
 set clipboard=unnamed
 set re=0
 
-"colorscheme ghdark
-let ayucolor="dark"
-colorscheme ayu
+colorscheme ghdark
+"let ayucolor="dark"
+"colorscheme ayu
 
 "remap
 inoremap kj <Esc>
