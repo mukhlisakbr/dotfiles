@@ -21,5 +21,6 @@ background-blur = 20
 keybind = shift+enter=text:\n
 
 # theme
-theme = "GitHub-Dark-Default"
+#theme = "GitHub-Dark-Default"
 #theme = "ayu"
+theme = catppuccin-mocha.conf
