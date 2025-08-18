@@ -7,6 +7,7 @@ Plug 'jszakmeister/vim-togglecursor'
 Plug 'folke/tokyonight.nvim', { 'rtp': 'extras/vim' }
 Plug 'wojciechkepka/vim-github-dark'
 Plug 'ayu-theme/ayu-vim'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 call plug#end()
 
 syntax on
@@ -22,9 +23,10 @@ set ruler
 set clipboard=unnamed
 set re=0
 
-colorscheme ghdark
+"colorscheme ghdark
 "let ayucolor="dark"
 "colorscheme ayu
+colorscheme catppuccin_mocha
 
 "remap
 inoremap kj <Esc>
