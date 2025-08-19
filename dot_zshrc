@@ -54,6 +54,27 @@ alias wip='git add . && git commit -m "wip" && git push'  # Quick work-in-progre
 # -----------------------------
 export BAT_THEME="catppuccin-mocha"  # Uncomment to set specific bat theme
 
+# ---------------------
+# eza universal Dracula
+# ---------------------
+export EZA_COLORS="\
+uu=36:\
+uR=31:\
+un=35:\
+gu=37:\
+da=2;34:\
+ur=34:\
+uw=95:\
+ux=36:\
+ue=36:\
+gr=34:\
+gw=35:\
+gx=36:\
+tr=34:\
+tw=35:\
+tx=36:\
+xx=95:"
+
 # -----------------------------
 # FZF Configuration
 # -----------------------------
