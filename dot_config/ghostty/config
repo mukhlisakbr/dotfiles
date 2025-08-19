@@ -23,4 +23,5 @@ keybind = shift+enter=text:\n
 # theme
 #theme = "GitHub-Dark-Default"
 #theme = "ayu"
-theme = catppuccin-mocha.conf
+#theme = catppuccin-mocha.conf
+theme = dracula
