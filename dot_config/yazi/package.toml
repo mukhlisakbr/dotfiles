@@ -15,3 +15,8 @@ hash = "f970182bee3543831796629ccf078553"
 use = "gosxrgxx/flexoki-dark"
 rev = "28e1977"
 hash = "9dbbb64ea20f9f1271c31951dea55c7b"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:dracula"
+rev = "9cd2ac4"
+hash = "c0bfefbff165007a76c0933ed0432e3f"
