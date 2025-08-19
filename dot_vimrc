@@ -8,6 +8,7 @@ Plug 'folke/tokyonight.nvim', { 'rtp': 'extras/vim' }
 Plug 'wojciechkepka/vim-github-dark'
 Plug 'ayu-theme/ayu-vim'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
 syntax on
@@ -26,7 +27,8 @@ set re=0
 "colorscheme ghdark
 "let ayucolor="dark"
 "colorscheme ayu
-colorscheme catppuccin_mocha
+"colorscheme catppuccin_mocha
+colorscheme dracula
 
 "remap
 inoremap kj <Esc>
