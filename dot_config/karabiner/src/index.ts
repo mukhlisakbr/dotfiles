@@ -24,7 +24,7 @@ function main() {
   const appLauncherRule = rule("Modifiers: App Launcher").manipulators([
     withModifier("›⌘")([
       map("a").to(toApp("ChatGPT")),
-      map("b").to(toApp("Dia")),
+      map("b").to(toApp("Google Chrome")),
       map("c").to(toApp("WhatsApp")),
       map("e").to(toApp("Visual Studio Code")),
       map("f").to(toApp("Finder")),
