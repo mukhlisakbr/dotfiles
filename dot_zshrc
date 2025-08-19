@@ -52,7 +52,7 @@ alias wip='git add . && git commit -m "wip" && git push'  # Quick work-in-progre
 # -----------------------------
 # Bat Configuration
 # -----------------------------
-export BAT_THEME="catppuccin-mocha"  # Uncomment to set specific bat theme
+export BAT_THEME="dracula"  # Uncomment to set specific bat theme
 
 # ---------------------
 # eza universal Dracula
