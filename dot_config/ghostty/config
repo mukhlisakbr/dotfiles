@@ -1,7 +1,11 @@
 # font
-font-family = "GeistMono NFM"
+font-family = "JetBrainsMono Nerd Font Mono"
 font-size = 14
 font-feature = -calt, -liga, -dlig
+
+# cell
+adjust-cell-height = "-8%"
+adjust-cell-width = "-8%"
 
 # window
 window-padding-balance = true
@@ -24,4 +28,5 @@ keybind = shift+enter=text:\n
 #theme = "GitHub-Dark-Default"
 #theme = "ayu"
 #theme = catppuccin-mocha.conf
-theme = dracula
+#theme = dracula
+theme = "3024 Night"
