@@ -24,11 +24,15 @@ set ruler
 set clipboard=unnamed
 set re=0
 
+"custom themes
 "colorscheme ghdark
 "let ayucolor="dark"
 "colorscheme ayu
 "colorscheme catppuccin_mocha
-colorscheme dracula
+"colorscheme dracula
+
+"built in themes
+colorscheme habamax
 
 "remap
 inoremap kj <Esc>
