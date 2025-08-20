@@ -79,10 +79,9 @@ function main() {
         map("o").to(toKey("o", "⌘⇧")), // Go to Symbol in File
         map("w").to(toKey("t", "⌘")), // Go to Symbol in Workspace
         map("d").to(toKey("f12")), // Go to Definition
-        map("'").to(toKey("'", "⌘")), // Toggle Cline
+        map("i").to(toKey("a", "⌘⇧")), // Kilo Code
         map("p").to(toKey("p", "⌘⇧")), // Show Command Palette
         map("␣").to(toKey("␣", "⌃")), // Trigger Autocomplete
-        map("m").to(toKey("a", "⌘⇧")), // Toggle Cline Mode (Plan/Act)
       ]),
     ]);
   const chromeHyperRules = rule("Hyper: Chrome")
