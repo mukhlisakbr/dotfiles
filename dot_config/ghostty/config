@@ -30,3 +30,5 @@ keybind = shift+enter=text:\n
 #theme = catppuccin-mocha.conf
 #theme = dracula
 theme = "3024 Night"
+
+unfocused-split-opacity = 1
