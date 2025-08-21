@@ -3,17 +3,13 @@
   "selectedAuthType": "oauth-personal",
   "mcpServers": {
     "context7": {
-      "command": "bunx",
-      "args": [
-        "-y",
-        "@upstash/context7-mcp"
-      ]
+      "httpUrl": "https://mcp.context7.com/mcp"
     },
     "mobile-mcp": {
       "command": "bunx",
       "args": [
         "-y",
-        "@mobilenext/mobile-mcp@0.0.19"
+        "@mobilenext/mobile-mcp@latest"
       ]
     }
   },
