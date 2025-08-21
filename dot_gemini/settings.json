@@ -4,11 +4,18 @@
   "mcpServers": {
     "context7": {
       "command": "bunx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ]
     },
     "mobile-mcp": {
       "command": "bunx",
-      "args": ["-y", "@mobilenext/mobile-mcp@0.0.19"]
+      "args": [
+        "-y",
+        "@mobilenext/mobile-mcp@0.0.19"
+      ]
     }
-  }
+  },
+  "preferredEditor": "vscode"
 }
