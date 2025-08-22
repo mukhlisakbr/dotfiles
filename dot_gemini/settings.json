@@ -13,5 +13,7 @@
       ]
     }
   },
-  "preferredEditor": "vscode"
+  "preferredEditor": "vscode",
+  "hasSeenIdeIntegrationNudge": true,
+  "ideMode": true
 }
