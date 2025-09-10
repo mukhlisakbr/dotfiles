@@ -165,3 +165,6 @@ eval "$(mise activate zsh)"
 
 # bun completions
 [ -s "/Users/ghost/.bun/_bun" ] && source "/Users/ghost/.bun/_bun"
+
+# pnpm completions
+[ -s "/Users/ghost/.pnpm/_pnpm" ] && source "/Users/ghost/.pnpm/_pnpm"
