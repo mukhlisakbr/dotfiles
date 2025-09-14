@@ -171,3 +171,8 @@ eval "$(pnpm completion zsh)"
 
 # uv completions
 eval "$(uv generate-shell-completion zsh)"
+
+# ngrok completions
+if command -v ngrok &>/dev/null; then
+  eval "$(ngrok completion)"
+fi
