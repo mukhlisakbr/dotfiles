@@ -12,15 +12,24 @@ source $ZSH/oh-my-zsh.sh                # Load Oh My Zsh base configuration
 source /opt/homebrew/opt/zinit/zinit.zsh  # Initialize Zinit
 
 # Load essential plugins
+# -----------------------------
+
 zinit light zsh-users/zsh-autosuggestions      # Command suggestions based on history
+
 zinit light zsh-users/zsh-syntax-highlighting  # Real-time syntax highlighting
+
 zinit light zsh-users/zsh-completions          # Additional completions
 
 # Load Oh My Zsh plugins for compatibility
+# -----------------------------
+
 zinit snippet OMZP::git                        # Git aliases and functions
 
 # Re-run compinit after all completions loaded
+# -----------------------------
+
 autoload -Uz compinit
+
 compinit
 
 # -----------------------------
@@ -38,15 +47,25 @@ export EZA_CONFIG_DIR="$HOME/.config/eza"      # Set eza configuration directory
 # Aliases
 # -----------------------------
 # File listing aliases
+# -----------------------------
+
 alias eza="eza --icons --sort=type"            # Enhanced ls with icons and sorting
+
 alias l="eza"                                  # Short alias for eza
+
 alias ll="eza -l"                              # Long format listing
+
 alias lla="eza -la"                            # Long format with hidden files
 
 # Development tool aliases
+# -----------------------------
+
 alias lg="lazygit"                                        # Git TUI
+
 alias ld="lazydocker"                                     # Docker TUI
+
 alias pn="pnpm"                                           # PNPM package manager
+
 alias wip='git add . && git commit -m "wip" && git push'  # Quick work-in-progress commit
 
 # -----------------------------
@@ -54,9 +73,9 @@ alias wip='git add . && git commit -m "wip" && git push'  # Quick work-in-progre
 # -----------------------------
 #export BAT_THEME="dracula"  # Uncomment to set specific bat theme
 
-# ---------------------
+# -----------------------------
 # eza universal Dracula
-# ---------------------
+# -----------------------------
 #export EZA_COLORS="\
 #uu=36:\
 #uR=31:\
@@ -79,18 +98,29 @@ alias wip='git add . && git commit -m "wip" && git push'  # Quick work-in-progre
 # FZF Configuration
 # -----------------------------
 # Base command for fd integration
+# -----------------------------
+
 FD_BASE="fd --strip-cwd-prefix"
 
 # FZF command configurations
+# -----------------------------
+
 export FZF_DEFAULT_COMMAND="$FD_BASE --type f" # Default fzf file search
+
 export FZF_CTRL_T_COMMAND="$FD_BASE --type f"  # CTRL-T file search
+
 export FZF_ALT_C_COMMAND="$FD_BASE --type d"   # ALT-C directory search
 
 # FZF preview configurations
+# -----------------------------
+
 export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always {}'"  # File preview with bat
+
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"     # Directory preview with tree
 
 # FZF theme
+# -----------------------------
+
 #export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4'
 
 source <(fzf --zsh)   # Initialize FZF key bindings
@@ -122,6 +152,8 @@ export EDITOR='vim'
 # Custom Functions
 # -----------------------------
 # Yazi file manager with cd integration
+# -----------------------------
+
 function y() {
   local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
   yazi "$@" --cwd-file="$tmp"
@@ -132,6 +164,8 @@ function y() {
 }
 
 # Gitignore generator
+# -----------------------------
+
 function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$@ ;}
 
 # -----------------------------
@@ -160,6 +194,9 @@ esac
 # -----------------------------
 export TERM=xterm-256color                      # Enable 256 color support
 
+# -----------------------------
+# Shell Completions
+# -----------------------------
 # mise
 eval "$(mise activate zsh)"
 
