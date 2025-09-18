@@ -4,8 +4,8 @@ font-size = 14
 font-feature = -calt, -liga, -dlig
 
 # cell
-adjust-cell-height = "-8%"
-adjust-cell-width = "-8%"
+#adjust-cell-height = "-8%"
+#adjust-cell-width = "-8%"
 
 # window
 window-padding-balance = true
