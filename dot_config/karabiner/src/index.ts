@@ -24,14 +24,14 @@ function main() {
   const appLauncherRule = rule("Modifiers: App Launcher").manipulators([
     withModifier("›⌘")([
       map("a").to(toApp("ChatGPT")),
-      map("b").to(toApp("Google Chrome")),
+      map("b").to(toApp("Helium")),
       map("c").to(toApp("WhatsApp")),
       map("e").to(toApp("Visual Studio Code")),
       map("f").to(toApp("Finder")),
       map("m").to(toApp("Spotify")),
       map("p").to(toApp("Bitwarden")),
       map("t").to(toApp("Ghostty")),
-      map("s").to(toApp("Stremio")),
+      map("s").to(toApp("Stremio Enhanced")),
     ]),
   ]);
   //const windowManagementRule = rule(

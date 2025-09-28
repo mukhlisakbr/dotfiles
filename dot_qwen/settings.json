@@ -1,12 +1,11 @@
 {
-  "selectedAuthType": "qwen-oauth",
   "preferredEditor": "vscode",
+  "showMemoryUsage": false,
+  "ideMode": true,
+  "selectedAuthType": "qwen-oauth",
   "mcpServers": {
     "context7": {
       "httpUrl": "https://mcp.context7.com/mcp"
     }
-  },
-  "theme": "Ayu",
-  "showMemoryUsage": false,
-  "ideMode": true
+  }
 }
