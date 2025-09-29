@@ -2,6 +2,8 @@
   "preferredEditor": "vscode",
   "disableAutoUpdate": true,
   "theme": "Qwen Dark",
+  "hideTips": true,
+  "hideBanner": true,
   "showMemoryUsage": true,
   "showLineNumbers": true,
   "ideMode": true,
@@ -9,15 +11,21 @@
   "mcpServers": {
     "context7": {
       "command": "bunx",
-      "args": ["@upstash/context7-mcp@latest"]
+      "args": [
+        "@upstash/context7-mcp@latest"
+      ]
     },
     "mobile-mcp": {
       "command": "bunx",
-      "args": ["@mobilenext/mobile-mcp@latest"]
+      "args": [
+        "@mobilenext/mobile-mcp@latest"
+      ]
     },
     "chrome-devtools": {
       "command": "bunx",
-      "args": ["chrome-devtools-mcp@latest"]
+      "args": [
+        "chrome-devtools-mcp@latest"
+      ]
     }
   },
   "tools": {
