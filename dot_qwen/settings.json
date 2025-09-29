@@ -12,6 +12,14 @@
       "headers": {
         "Accept": "application/json, text/event-stream"
       }
+    },
+    "mobile-mcp": {
+      "command": "bunx",
+      "args": ["@mobilenext/mobile-mcp@latest"]
+    },
+    "chrome-devtools": {
+      "command": "bunx",
+      "args": ["chrome-devtools-mcp@latest"]
     }
   },
   "tools": {
