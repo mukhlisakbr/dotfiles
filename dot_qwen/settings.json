@@ -1,11 +1,18 @@
 {
   "preferredEditor": "vscode",
-  "showMemoryUsage": false,
+  "disableAutoUpdate": true,
+  "theme": "Qwen Dark",
+  "showMemoryUsage": true,
+  "showLineNumbers": true,
   "ideMode": true,
   "selectedAuthType": "qwen-oauth",
   "mcpServers": {
     "context7": {
       "httpUrl": "https://mcp.context7.com/mcp"
     }
-  }
+  },
+  "tools": {
+    "useRipgrep": true
+  },
+  "approvalMode": "auto-edit"
 }
