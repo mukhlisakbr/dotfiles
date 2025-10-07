@@ -30,10 +30,11 @@ function main() {
       map("f").to(toApp("Finder")),
       map("m").to(toApp("Spotify")),
       map("p").to(toApp("Bitwarden")),
-      map("t").to(toApp("Ghostty")),
+      map("t").to(toApp("Warp")),
       map("s").to(toApp("Stremio Enhanced")),
     ]),
   ]);
+
   //const windowManagementRule = rule(
   //  "Modifiers: Window Management"
   //).manipulators([
@@ -67,7 +68,7 @@ function main() {
       map("o").to(toKey("o", "⌃")), // Terminal open command
     ]),
   ]);
-  const codeEditorHyperRules = rule("Hyper: VS Code & Trae")
+  const codeEditorHyperRules = rule("Hyper: Code Editor")
     .condition(ifApp(["com.microsoft.VSCode", "com.trae.app"]))
     .manipulators([
       withModifier("Hyper")([
@@ -85,8 +86,8 @@ function main() {
         map("␣").to(toKey("␣", "⌃")), // Trigger Autocomplete
       ]),
     ]);
-  const chromeHyperRules = rule("Hyper: Chrome")
-    .condition(ifApp("com.google.Chrome"))
+  const chromeHyperRules = rule("Hyper: Chromium Browsers")
+    .condition(ifApp(["com.google.Chrome", "net.imput.helium"]))
     .manipulators([
       withModifier("Hyper")([
         map("t").to(toKey("a", "⌘⇧")), // Search Tabs
