@@ -69,7 +69,7 @@ function main() {
     ]),
   ]);
   const codeEditorHyperRules = rule("Hyper: Code Editor")
-    .condition(ifApp(["com.microsoft.VSCode", "com.trae.app"]))
+    .condition(ifApp(["com.microsoft.VSCode", "com.trae.app", "com.todesktop.230313mzl4w4u92"]))
     .manipulators([
       withModifier("Hyper")([
         map("t").to(toKey("`", "⌃")), // Toggle Terminal
