@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scrcpy \  
+scrcpy \
   --turn-screen-off \
   --stay-awake \
   --show-touches \
