@@ -1,8 +1,8 @@
 #!/bin/bash
 
-scrcpy \
-#  --turn-screen-off \
+scrcpy \  
+  --turn-screen-off \
   --stay-awake \
   --show-touches \
 #  --always-on-top \
-  --screen-off-timeout=0
+  --screen-off-timeout=86400000
