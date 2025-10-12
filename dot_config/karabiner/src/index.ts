@@ -30,7 +30,7 @@ function main() {
       map("f").to(toApp("Finder")),
       map("m").to(toApp("Spotify")),
       map("p").to(toApp("Bitwarden")),
-      map("t").to(toApp("Warp")),
+      map("t").to(toApp("Ghostty")),
       map("s").to(toApp("Stremio Enhanced")),
     ]),
   ]);
