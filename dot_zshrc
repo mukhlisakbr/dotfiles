@@ -11,6 +11,9 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit snippet OMZP::git
 
+# Compinit
+autoload -Uz compinit && compinit
+
 # Starship prompt
 eval "$(starship init zsh)"
 
