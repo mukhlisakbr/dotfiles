@@ -81,10 +81,10 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
 # Android SDK
 export ANDROID_HOME=$HOME/library/android/sdk
-export ANDROID_NDK_HOME=$ANDROID_HOME/ndk/27.1.12297006
 export PATH="$PATH:$ANDROID_HOME/emulator"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
-export PATH="$PATH:$ANDROID_HOME/build-tools/35.0.0"
+export PATH="$PATH:$ANDROID_HOME/build-tools/36.1.0"
+export ANDROID_NDK_HOME="$ANDROID_HOME/ndk/29.0.14206865"
 
 # XDG Config Home
 export XDG_CONFIG_HOME="$HOME/.config"
