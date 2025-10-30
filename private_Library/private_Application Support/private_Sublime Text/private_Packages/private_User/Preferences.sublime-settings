@@ -20,4 +20,6 @@
   "theme": "Adaptive.sublime-theme",
   "color_scheme": "Packages/1337 Color Scheme/1337.tmTheme",
   "index_files": true,
+  "dark_color_scheme": "Mariana.sublime-color-scheme",
+  "light_color_scheme": "Mariana.sublime-color-scheme",
 }
