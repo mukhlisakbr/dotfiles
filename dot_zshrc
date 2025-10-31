@@ -80,11 +80,13 @@ export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
 # Android SDK
-export ANDROID_HOME=$HOME/library/android/sdk
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export ANDROID_SDK_ROOT="$ANDROID_HOME"
+export ANDROID_NDK_HOME="$ANDROID_HOME/ndk/29.0.14206865"
+
 export PATH="$PATH:$ANDROID_HOME/emulator"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
 export PATH="$PATH:$ANDROID_HOME/build-tools/36.1.0"
-export ANDROID_NDK_HOME="$ANDROID_HOME/ndk/29.0.14206865"
 
 # XDG Config Home
 export XDG_CONFIG_HOME="$HOME/.config"
