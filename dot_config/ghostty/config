@@ -19,8 +19,8 @@ macos-option-as-alt = true
 macos-titlebar-style = tabs
 
 # bg
-background-opacity = 0.8
-background-blur = 20
+#background-opacity = 0.8
+#background-blur = 20
 
 # keybind
 keybind = shift+enter=text:\n
@@ -31,6 +31,7 @@ keybind = shift+enter=text:\n
 #theme = catppuccin-mocha.conf
 #theme = dracula
 #theme = "3024 Night"
-theme = "Adventure"
+#theme = "Adventure"
+theme = "GitHub Light Default"
 
 unfocused-split-opacity = 1

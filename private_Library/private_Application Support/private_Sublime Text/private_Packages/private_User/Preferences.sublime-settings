@@ -1,6 +1,6 @@
 {
   // fonts
-  "font_size": 13,
+  "font_size": 14,
   "font_face": "GeistMono NFM",
   "font_options": ["no_liga", "no_clig", "no_calt"],
 
@@ -18,7 +18,7 @@
 
   // theme
   "theme": "Adaptive.sublime-theme",
-  "color_scheme": "Packages/1337 Color Scheme/1337.tmTheme",
+  "color_scheme": "GitHub Light.sublime-color-scheme",
   "index_files": true,
   "dark_color_scheme": "Mariana.sublime-color-scheme",
   "light_color_scheme": "Mariana.sublime-color-scheme",
