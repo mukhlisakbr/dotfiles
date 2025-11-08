@@ -32,6 +32,8 @@ keybind = shift+enter=text:\n
 #theme = dracula
 #theme = "3024 Night"
 #theme = "Adventure"
-theme = "GitHub Light Default"
+#theme = "GitHub Light Default"
+#theme = "Adwaita"
+#theme = "Builtin Solarized Light"
 
 unfocused-split-opacity = 1

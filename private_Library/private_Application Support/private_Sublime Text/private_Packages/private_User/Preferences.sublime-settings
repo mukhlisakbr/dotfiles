@@ -1,12 +1,11 @@
 {
   // fonts
-  "font_size": 14,
+  "font_size": 13,
   "font_face": "GeistMono NFM",
   "font_options": ["no_liga", "no_clig", "no_calt"],
 
   // packages
-  "ignored_packages": [
-  ],
+  "ignored_packages": ["Vintage"],
 
   // indentation
   "tab_size": 2,
@@ -18,7 +17,7 @@
 
   // theme
   "theme": "Adaptive.sublime-theme",
-  "color_scheme": "GitHub Light.sublime-color-scheme",
+  "color_scheme": "Monokai.sublime-color-scheme",
   "index_files": true,
   "dark_color_scheme": "Mariana.sublime-color-scheme",
   "light_color_scheme": "Mariana.sublime-color-scheme",

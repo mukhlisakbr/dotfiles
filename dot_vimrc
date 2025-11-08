@@ -32,7 +32,7 @@ set re=0
 "colorscheme dracula
 
 "built in themes
-colorscheme default
+colorscheme torte
 
 "remap
 inoremap kj <Esc>
