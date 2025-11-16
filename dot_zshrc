@@ -4,16 +4,6 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
-# Zinit plugin manager
-source /opt/homebrew/opt/zinit/zinit.zsh
-zinit light zsh-users/zsh-autosuggestions
-zinit light zsh-users/zsh-syntax-highlighting
-zinit light zsh-users/zsh-completions
-zinit snippet OMZP::git
-
-# Compinit
-autoload -Uz compinit && compinit
-
 # zoxide z jump
 eval "$(zoxide init zsh)"
 
