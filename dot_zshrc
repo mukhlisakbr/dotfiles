@@ -37,16 +37,6 @@ export ANDROID_NDK_HOME="$ANDROID_HOME/ndk/29.0.14206865"
 
 export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/36.1.0:$PATH"
 
-# Yazi with cd
-y() {
-  local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-  yazi "$@" --cwd-file="$tmp"
-  if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-    builtin cd -- "$cwd"
-  fi
-  rm -f -- "$tmp"
-}
-
 # Added by Windsurf
 export PATH="/Users/ghost/.codeium/windsurf/bin:$PATH"
 
