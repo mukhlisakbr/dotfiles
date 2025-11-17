@@ -24,30 +24,15 @@ function main() {
   const appLauncherRule = rule("Modifiers: App Launcher").manipulators([
     withModifier("›⌘")([
       map("a").to(toApp("ChatGPT")),
-      map("b").to(toApp("Helium")),
+      map("b").to(toApp("Google Chrome")),
       map("c").to(toApp("WhatsApp")),
       map("e").to(toApp("Cursor")),
       map("f").to(toApp("Finder")),
       map("m").to(toApp("Spotify")),
       map("p").to(toApp("Bitwarden")),
-      map("t").to(toApp("Ghostty")),
-      map("s").to(toApp("Stremio Enhanced")),
+      map("t").to(toApp("Warp")),
     ]),
   ]);
-
-  //const windowManagementRule = rule(
-  //  "Modifiers: Window Management"
-  //).manipulators([
-  //  withModifier("fn")([
-  //    // Moving windows
-  //    map("h").to(toKey("←", "⌥⌃")),
-  //    map("j").to(toKey("↓", "⌥⌃")),
-  //    map("k").to(toKey("↑", "⌥⌃")),
-  //    map("l").to(toKey("→", "⌥⌃")),
-  //    // Maximize window
-  //    map("⏎").to(toKey("⏎", "⌥⌃")),
-  //  ]),
-  //]);
 
   // --- Hyper Key Rules ---
   const generalHyperRules = rule("Hyper: General").manipulators([
@@ -87,7 +72,7 @@ function main() {
       ]),
     ]);
   const chromeHyperRules = rule("Hyper: Chromium Browsers")
-    .condition(ifApp(["com.google.Chrome", "net.imput.helium"]))
+    .condition(ifApp(["com.google.Chrome"]))
     .manipulators([
       withModifier("Hyper")([
         map("t").to(toKey("a", "⌘⇧")), // Search Tabs

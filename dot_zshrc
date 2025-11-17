@@ -7,11 +7,6 @@ source $ZSH/oh-my-zsh.sh
 # zoxide z jump
 eval "$(zoxide init zsh)"
 
-# ngrok 
-if command -v ngrok &>/dev/null; then
-  eval "$(ngrok completion)"
-fi
-
 # eza ls aliases
 alias eza="eza --icons --sort=type"
 alias l="eza"
