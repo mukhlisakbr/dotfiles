@@ -62,3 +62,6 @@ export HERD_PHP_85_INI_SCAN_DIR="/Users/ghost/Library/Application Support/Herd/c
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/ghost/.antigravity/antigravity/bin:$PATH"
