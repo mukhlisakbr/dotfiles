@@ -1,24 +1,10 @@
 {
-  // fonts
   "font_size": 13,
-  "font_face": "GeistMono NFM",
-  "font_options": ["no_liga", "no_clig", "no_calt"],
 
-  // packages
-  "ignored_packages": ["Vintage"],
-
-  // indentation
   "tab_size": 2,
   "translate_tabs_to_spaces": true,
+  "index_files": true,
 
-  // cursor
   "caret_extra_bottom": 0,
   "caret_extra_top": 0,
-
-  // theme
-  "theme": "Adaptive.sublime-theme",
-  "color_scheme": "Mariana.sublime-color-scheme",
-  "index_files": true,
-  "dark_color_scheme": "Mariana.sublime-color-scheme",
-  "light_color_scheme": "Mariana.sublime-color-scheme",
 }
