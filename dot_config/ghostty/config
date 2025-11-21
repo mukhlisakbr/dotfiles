@@ -17,6 +17,6 @@ macos-titlebar-style = tabs
 keybind = shift+enter=text:\n
 
 # theme
-theme = "Adventure"
+theme = "Abernathy"
 
 unfocused-split-opacity = 1
