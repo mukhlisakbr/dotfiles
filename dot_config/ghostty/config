@@ -1,12 +1,7 @@
 # font
-#font-family = "JetBrainsMono Nerd Font Mono"
 font-family = "GeistMono Nerd Font Mono"
 font-size = 13
 font-feature = -calt, -liga, -dlig
-
-# cell
-#adjust-cell-height = "-8%"
-#adjust-cell-width = "-8%"
 
 # window
 window-padding-balance = true
@@ -18,22 +13,10 @@ copy-on-select = clipboard
 macos-option-as-alt = true
 macos-titlebar-style = tabs
 
-# bg
-#background-opacity = 0.8
-#background-blur = 20
-
 # keybind
 keybind = shift+enter=text:\n
 
 # theme
-#theme = "GitHub-Dark-Default"
-#theme = "ayu"
-#theme = catppuccin-mocha.conf
-#theme = dracula
-#theme = "3024 Night"
-#theme = "Adventure"
-#theme = "GitHub Light Default"
-#theme = "Adwaita"
-#theme = "Builtin Solarized Light"
+theme = "Arthur"
 
 unfocused-split-opacity = 1
