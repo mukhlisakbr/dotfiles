@@ -8,35 +8,55 @@ import {
   withModifier,
 } from "karabiner.ts";
 
+type HyperModifier = ReturnType<typeof withModifier>;
+
 /**
  * Main function to generate Karabiner configuration.
  */
-function main() {
-  // --- Base Layers & Global Rules ---
-  const hyperKeyRule = rule("Base: Hyper Key").manipulators([
+function createBaseRules() {
+  const capsLockHyperRule = rule("Base | Caps Lock as Hyper").manipulators([
     map("⇪").toHyper().toIfAlone("⎋"),
   ]);
-  const globalRemaps = rule("Base: Global Remaps").manipulators([
-    map("⎋").to("⇪"), // Escape to Caps Lock
+
+  const escapeToCapsRule = rule("Base | Escape to Caps Lock").manipulators([
+    map("⎋").to("⇪"),
   ]);
 
-  // --- Modifier-based Rules ---
-  const appLauncherRule = rule("Modifiers: App Launcher").manipulators([
+  return [capsLockHyperRule, escapeToCapsRule];
+}
+
+function createHyperRules() {
+  const hyper = withModifier("Hyper");
+
+  return [
+    createGeneralHyperRule(hyper),
+    createCodeEditorHyperRule(hyper),
+    createChromiumHyperRule(hyper),
+  ];
+}
+
+function createModifierRules() {
+  return [createAppLauncherRule()];
+}
+
+function createAppLauncherRule() {
+  return rule("Launcher | Favorite Apps").manipulators([
     withModifier("›⌘")([
       map("a").to(toApp("ChatGPT")),
       map("b").to(toApp("Google Chrome")),
       map("c").to(toApp("WhatsApp")),
-      map("e").to(toApp("Cursor")),
+      map("e").to(toApp("Windsurf")),
       map("f").to(toApp("Finder")),
       map("m").to(toApp("Spotify")),
       map("p").to(toApp("Bitwarden")),
       map("t").to(toApp("Warp")),
     ]),
   ]);
+}
 
-  // --- Hyper Key Rules ---
-  const generalHyperRules = rule("Hyper: General").manipulators([
-    withModifier("Hyper")([
+function createGeneralHyperRule(hyper: HyperModifier) {
+  return rule("Hyper | General Navigation").manipulators([
+    hyper([
       // VIM-style arrow keys
       map("h").to(toKey("←")),
       map("j").to(toKey("↓")),
@@ -53,10 +73,20 @@ function main() {
       map("o").to(toKey("o", "⌃")), // Terminal open command
     ]),
   ]);
-  const codeEditorHyperRules = rule("Hyper: Code Editor")
-    .condition(ifApp(["com.microsoft.VSCode", "com.trae.app", "com.todesktop.230313mzl4w4u92", "com.exafunction.windsurf"]))
+}
+
+function createCodeEditorHyperRule(hyper: HyperModifier) {
+  return rule("Hyper | Code Editors")
+    .condition(
+      ifApp([
+        "com.microsoft.VSCode",
+        "com.trae.app",
+        "com.todesktop.230313mzl4w4u92",
+        "com.exafunction.windsurf",
+      ])
+    )
     .manipulators([
-      withModifier("Hyper")([
+      hyper([
         map("t").to(toKey("`", "⌃")), // Toggle Terminal
         map("g").to(toKey("g", "⌃⇧")), // Toggle Source Control
         map("e").to(toKey("e", "⌘⇧")), // Toggle Explorer
@@ -71,29 +101,24 @@ function main() {
         map("␣").to(toKey("␣", "⌃")), // Trigger Autocomplete
       ]),
     ]);
-  const chromeHyperRules = rule("Hyper: Chromium Browsers")
+}
+
+function createChromiumHyperRule(hyper: HyperModifier) {
+  return rule("Hyper | Chromium Browsers")
     .condition(ifApp(["com.google.Chrome"]))
     .manipulators([
-      withModifier("Hyper")([
+      hyper([
         map("t").to(toKey("a", "⌘⇧")), // Search Tabs
       ]),
     ]);
+}
 
-  // --- Write configuration ---
-  writeToProfile("Default", [
-    // Base Layers & Global Rules
-    hyperKeyRule,
-    globalRemaps,
+function main() {
+  const baseRules = createBaseRules();
+  const modifierRules = createModifierRules();
+  const hyperRules = createHyperRules();
 
-    // Modifier-based Rules
-    appLauncherRule,
-    //windowManagementRule,
-
-    // Hyper Key Rules
-    codeEditorHyperRules,
-    chromeHyperRules,
-    generalHyperRules,
-  ]);
+  writeToProfile("Default", [...baseRules, ...modifierRules, ...hyperRules]);
 }
 
 main();
