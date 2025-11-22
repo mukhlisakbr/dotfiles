@@ -2,7 +2,7 @@
   "font_size": 13,
   "font_face": "GeistMono Nerd Font Mono",
 
-  "ignored_packages": [""],
+  "ignored_packages": [],
 
   "tab_size": 2,
   "translate_tabs_to_spaces": true,
