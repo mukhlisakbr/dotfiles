@@ -17,6 +17,6 @@ macos-titlebar-style = tabs
 keybind = shift+enter=text:\n
 
 # theme
-theme = "Gruvbox Dark Hard"
+theme = ""
 
 unfocused-split-opacity = 1
