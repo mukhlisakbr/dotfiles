@@ -23,11 +23,17 @@ alias lla="eza -la"
 
 # fzf
 FD_BASE="fd --strip-cwd-prefix"
+
 export FZF_DEFAULT_COMMAND="$FD_BASE --type f"
 export FZF_CTRL_T_COMMAND="$FD_BASE --type f"
 export FZF_ALT_C_COMMAND="$FD_BASE --type d"
-export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always {}'"
-export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
+
+export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always {}' \
+  --preview-window=right:60%:wrap"
+
+export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200' \
+  --preview-window=right:60%:wrap"
+
 source <(fzf --zsh)
 
 # git wip

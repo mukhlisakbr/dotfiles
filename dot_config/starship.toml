@@ -1,6 +1,3 @@
-# Global timeout untuk semua command Starship
-command_timeout = 1000
-
 # Inserts a blank line between shell prompts
 add_newline = false
 

@@ -70,6 +70,8 @@ function createGeneralHyperRule(hyper: HyperModifier) {
       map("r").to(toKey("r", "⌃")),
       map("v").to(toKey("v", "⌃")),
       map("t").to(toKey("t", "⌃")),
+      map("d").to(toKey("d", "⌃")),
+      map("u").to(toKey("u", "⌃")),
       map("o").to(toKey("o", "⌃")), // Terminal open command
     ]),
   ]);
