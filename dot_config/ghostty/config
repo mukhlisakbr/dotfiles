@@ -17,6 +17,6 @@ macos-titlebar-style = tabs
 keybind = shift+enter=text:\n
 
 # theme
-theme = ""
+theme = "3024 Night"
 
 unfocused-split-opacity = 1
