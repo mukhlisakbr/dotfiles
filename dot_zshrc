@@ -15,6 +15,7 @@ source /opt/homebrew/opt/zinit/zinit.zsh
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light jessarcher/zsh-artisan
+zinit cdreplay -q
 
 # eza ls aliases
 alias eza="eza --icons --sort=type"
