@@ -2,7 +2,8 @@
   "font_size": 13,
   "font_face": "GeistMono Nerd Font Mono",
 
-  "ignored_packages": [],
+  "ignored_packages": [
+  ],
 
   "tab_size": 2,
   "translate_tabs_to_spaces": true,
@@ -10,6 +11,6 @@
 
   "caret_extra_bottom": 0,
   "caret_extra_top": 0,
-  "color_scheme": "Mariana.sublime-color-scheme",
+  "color_scheme": "Monokai.sublime-color-scheme",
   "theme": "Adaptive.sublime-theme",
 }

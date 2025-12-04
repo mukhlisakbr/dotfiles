@@ -85,6 +85,7 @@ function createCodeEditorHyperRule(hyper: HyperModifier) {
         "com.trae.app",
         "com.todesktop.230313mzl4w4u92",
         "com.exafunction.windsurf",
+        "dev.kiro.desktop"
       ])
     )
     .manipulators([

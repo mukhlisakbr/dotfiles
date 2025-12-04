@@ -1,19 +1,36 @@
 {
-  "theme": "Default",
-  "selectedAuthType": "oauth-personal",
+  "ide": {
+    "hasSeenNudge": true,
+    "enabled": true
+  },
   "mcpServers": {
     "context7": {
-      "httpUrl": "https://mcp.context7.com/mcp"
-    },
-    "mobile-mcp": {
-      "command": "bunx",
-      "args": [
-        "-y",
-        "@mobilenext/mobile-mcp@latest"
-      ]
+      "httpUrl": "https://mcp.context7.com/mcp",
+      "headers": {
+        "Accept": "application/json, text/event-stream"
+      }
     }
   },
-  "preferredEditor": "vscode",
-  "hasSeenIdeIntegrationNudge": true,
-  "ideMode": true
+  "general": {
+    "preferredEditor": "vscode",
+    "previewFeatures": false
+  },
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  },
+  "ui": {
+    "theme": "Default",
+    "hideBanner": true,
+    "footer": {
+      "hideContextPercentage": false
+    },
+    "showModelInfoInChat": true
+  },
+  "tools": {
+    "shell": {
+      "showColor": true
+    }
+  }
 }
