@@ -11,7 +11,7 @@ copy-on-select = clipboard
 
 # macos
 macos-option-as-alt = true
-macos-titlebar-style = tabs
+#macos-titlebar-style = tabs
 
 # keybind
 keybind = shift+enter=text:\n
@@ -20,6 +20,6 @@ keybind = shift+enter=text:\n
 #theme = "Arthur"
 
 # transparent
-background-opacity = 0.8
-background-blur = true
-unfocused-split-opacity = 1
+#background-opacity = 0.8
+#background-blur = true
+#unfocused-split-opacity = 1
