@@ -17,6 +17,9 @@ macos-titlebar-style = tabs
 keybind = shift+enter=text:\n
 
 # theme
-theme = "Afterglow"
+#theme = "Arthur"
 
+# transparent
+background-opacity = 0.8
+background-blur = true
 unfocused-split-opacity = 1
