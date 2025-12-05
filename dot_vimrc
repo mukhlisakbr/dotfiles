@@ -18,7 +18,7 @@ set clipboard=unnamed
 set re=0
 
 "themes
-colorscheme desert
+colorscheme slate
 
 "remap
 inoremap kj <Esc>
