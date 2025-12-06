@@ -1,11 +1,13 @@
 // Factory CLI Settings
 // This file contains your Factory CLI configuration.
 {
-  "model": "glm-4.6",
-  "reasoningEffort": "none",
+  "model": "claude-opus-4-5-20251101",
+  "reasoningEffort": "low",
   "cloudSessionSync": true,
   "diffMode": "github",
-  "ideExtensionPromptedAt": {},
+  "ideExtensionPromptedAt": {
+    "vscode": 1764951337612
+  },
   "autonomyMode": "auto-high",
   "ideActivationNudgedForVersion": {},
   "enableCompletionBell": false,
@@ -52,8 +54,9 @@
     "chmod -R 777 /",
     "chmod -R 000 /",
     "chown -R",
-    "format",
-    "powershell Remove-Item -Recurse -Force"
+    "powershell Remove-Item -Recurse -Force",
+    "Format-Volume",
+    "format.com"
   ],
   "enableCustomDroids": true,
   "includeCoAuthoredByDroid": true,
@@ -61,6 +64,7 @@
   "enableReadinessReport": true,
   "todoDisplayMode": "pinned",
   "allowBackgroundProcesses": true,
-  "showThinkingInMainView": true,
-  "ideAutoConnect": false
+  "showThinkingInMainView": false,
+  "ideAutoConnect": false,
+  "opus45PriceChangeDismissed": true
 }
