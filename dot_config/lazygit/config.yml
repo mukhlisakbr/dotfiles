@@ -1,7 +1,7 @@
-git:
-  overrideGpg: true
-
-gui:
-  theme:
-    selectedLineBgColor:
-      - bold
+#git:
+#  overrideGpg: true
+#
+#gui:
+#  theme:
+#    selectedLineBgColor:
+#      - bold
