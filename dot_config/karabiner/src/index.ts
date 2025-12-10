@@ -29,9 +29,9 @@ function createHyperRules() {
   const hyper = withModifier("Hyper");
 
   return [
-    createGeneralHyperRule(hyper),
     createCodeEditorHyperRule(hyper),
     createChromiumHyperRule(hyper),
+    createGeneralHyperRule(hyper),
   ];
 }
 
