@@ -23,6 +23,9 @@ alias l="eza"
 alias ll="eza -l"
 alias lla="eza -la"
 
+# other aliases
+alias lg="lazygit"
+
 # fzf
 FD_BASE="fd --strip-cwd-prefix"
 
