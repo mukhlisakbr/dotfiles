@@ -1,8 +1,8 @@
 // Factory CLI Settings
 // This file contains your Factory CLI configuration.
 {
-  "model": "custom:ag-opus-4.5-t-2",
-  "reasoningEffort": "none",
+  "model": "claude-opus-4-5-20251101",
+  "reasoningEffort": "high",
   "cloudSessionSync": true,
   "diffMode": "github",
   "ideExtensionPromptedAt": {
