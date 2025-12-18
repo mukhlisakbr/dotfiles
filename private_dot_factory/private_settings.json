@@ -20,7 +20,13 @@
   "commandAllowlist": [
     "ls",
     "pwd",
-    "dir"
+    "dir",
+    "git status",
+    "git diff",
+    "git log",
+    "git show",
+    "git blame",
+    "git ls-files"
   ],
   // Commands that will ALWAYS require confirmation, regardless of autonomy level.
   // These are dangerous commands that could cause data loss or system damage.
