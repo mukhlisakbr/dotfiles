@@ -1,8 +1,8 @@
 // Factory CLI Settings
 // This file contains your Factory CLI configuration.
 {
-  "model": "claude-opus-4-5-20251101",
-  "reasoningEffort": "high",
+  "model": "custom:antigravity-opus-4.5-thinking-2",
+  "reasoningEffort": "none",
   "cloudSessionSync": true,
   "diffMode": "github",
   "ideExtensionPromptedAt": {
@@ -68,7 +68,7 @@
   "includeCoAuthoredByDroid": true,
   "enableDroidShield": true,
   "enableReadinessReport": true,
-  "todoDisplayMode": "pinned",
+  "todoDisplayMode": "inline",
   "allowBackgroundProcesses": true,
   "showThinkingInMainView": false,
   "ideAutoConnect": true,
