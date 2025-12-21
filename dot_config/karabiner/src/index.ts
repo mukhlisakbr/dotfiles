@@ -49,7 +49,7 @@ function createAppLauncherRule() {
       map("f").to(toApp("Finder")),
       map("m").to(toApp("Spotify")),
       map("p").to(toApp("Bitwarden")),
-      map("t").to(toApp("Ghostty")),
+      map("t").to(toApp("iTerm")),
     ]),
   ]);
 }

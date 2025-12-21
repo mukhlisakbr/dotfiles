@@ -4,7 +4,7 @@
   "model": "custom:Antigravity-Opus-4.5-0",
   "reasoningEffort": "none",
   "cloudSessionSync": true,
-  "diffMode": "github",
+  "diffMode": "unified",
   "ideExtensionPromptedAt": {
     "vscode": 1764951337612
   },
