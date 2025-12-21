@@ -1,7 +1,7 @@
 // Factory CLI Settings
 // This file contains your Factory CLI configuration.
 {
-  "model": "custom:antigravity-opus-4.5-thinking-2",
+  "model": "custom:Antigravity-Opus-4.5-0",
   "reasoningEffort": "none",
   "cloudSessionSync": true,
   "diffMode": "github",
@@ -64,13 +64,17 @@
     "Format-Volume",
     "format.com"
   ],
-  "enableCustomDroids": true,
   "includeCoAuthoredByDroid": true,
   "enableDroidShield": true,
-  "enableReadinessReport": true,
-  "todoDisplayMode": "inline",
+  "todoDisplayMode": "pinned",
   "allowBackgroundProcesses": true,
-  "showThinkingInMainView": false,
+  "showThinkingInMainView": true,
   "ideAutoConnect": true,
-  "opus45PriceChangeDismissed": true
+  "showTokenUsageIndicator": true,
+  "enableWarmup": true,
+  "enableCustomDroids": true,
+  "enableReadinessReport": true,
+  "opus45PriceChangeDismissed": true,
+  "hooksDisabled": false,
+  "specSaveDir": ".factory/docs"
 }
