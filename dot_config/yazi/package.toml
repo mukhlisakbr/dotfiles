@@ -25,3 +25,13 @@ hash = "9dbbb64ea20f9f1271c31951dea55c7b"
 use = "AdithyanA2005/nord"
 rev = "3a791e9"
 hash = "fa7142cda74a50b271ea212356b40b57"
+
+[[flavor.deps]]
+use = "gosxrgxx/flexoki-light"
+rev = "45eb0a0"
+hash = "1ee212b0799497b54c7e60bac8931e4e"
+
+[[flavor.deps]]
+use = "Mintass/rose-pine-dawn"
+rev = "5c6d353"
+hash = "d9d9463d5d43ced18e18986d05439ace"

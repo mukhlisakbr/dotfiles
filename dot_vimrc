@@ -2,6 +2,7 @@ call plug#begin()
 Plug 'sheerun/vim-polyglot'
 Plug 'tribela/vim-transparent'
 Plug 'jszakmeister/vim-togglecursor'
+Plug 'leviosa42/vim-github-theme'
 call plug#end()
 
 syntax on
@@ -16,9 +17,10 @@ set hlsearch
 set ruler
 set clipboard=unnamed
 set re=0
+set background=light
 
 "themes
-colorscheme default
+colorscheme github_light
 
 "remap
 inoremap kj <Esc>
