@@ -4882,6 +4882,8 @@
 	<false/>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
+	<key>TerminalVMargin</key>
+	<integer>5</integer>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 </dict>
