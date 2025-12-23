@@ -42,14 +42,17 @@ function createModifierRules() {
 function createAppLauncherRule() {
   return rule("Launcher | Favorite Apps").manipulators([
     withModifier("›⌘")([
-      map("a").to(toApp("ChatGPT")),
-      map("b").to(toApp("Google Chrome")),
-      map("c").to(toApp("WhatsApp")),
-      map("e").to(toApp("Windsurf")),
-      map("f").to(toApp("Finder")),
-      map("m").to(toApp("Spotify")),
-      map("p").to(toApp("Bitwarden")),
-      map("t").to(toApp("iTerm")),
+      map("a").to(toApp("ChatGPT")),            // AI
+      map("b").to(toApp("Google Chrome")),      // Browser
+      map("c").to(toApp("WhatsApp")),           // Chat
+      map("e").to(toApp("Visual Studio Code")), // Editor
+      map("f").to(toApp("Finder")),             // Files
+      map("l").to(toApp("Herd")),               // Local Server
+      map("m").to(toApp("Spotify")),            // Music
+      map("p").to(toApp("Bitwarden")),          // Password
+      map("s").to(toApp("Sublime Text")),       // Secondary Editor
+      map("t").to(toApp("iTerm")),              // Terminal
+      map("w").to(toApp("Telegram")),           // Work Chat
     ]),
   ]);
 }
