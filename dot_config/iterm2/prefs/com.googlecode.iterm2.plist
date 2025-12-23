@@ -32,6 +32,12 @@
 	<string>6CC95397-27C5-44DA-B586-4C3A7B781381</string>
 	<key>Default Browser Profile Guid</key>
 	<string>6CC95397-27C5-44DA-B586-4C3A7B781381</string>
+	<key>DimBackgroundWindows</key>
+	<false/>
+	<key>DimOnlyText</key>
+	<false/>
+	<key>DoubleClickPerformsSmartSelection</key>
+	<true/>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000</key>
@@ -967,7 +973,7 @@
 			<key>Disable Window Resizing</key>
 			<true/>
 			<key>Faint Text Alpha</key>
-			<real>0.500221108490566</real>
+			<real>0.5</real>
 			<key>Faint Text Alpha (Dark)</key>
 			<real>0.5</real>
 			<key>Faint Text Alpha (Light)</key>
@@ -1190,7 +1196,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>5000</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1333,6 +1339,8 @@
 			<string>/Users/ghost</string>
 		</dict>
 	</array>
+	<key>PerPaneBackgroundImage</key>
+	<true/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1366,8 +1374,16 @@
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
+	<key>SeparateStatusBarsPerPane</key>
+	<false/>
+	<key>ShowMarksInScrollbar</key>
+	<false/>
+	<key>ShowPaneTitles</key>
+	<false/>
 	<key>SoundForEsc</key>
 	<false/>
+	<key>SplitPaneDimmingAmount</key>
+	<real>0.2452726790048543</real>
 	<key>StretchTabsToFillBar</key>
 	<false/>
 	<key>TabStyleWithAutomaticOption</key>
@@ -1376,6 +1392,8 @@
 	<integer>5</integer>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
+	<key>WrapDroppedFilenamesInQuotesWhenPasting</key>
+	<true/>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>1</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
