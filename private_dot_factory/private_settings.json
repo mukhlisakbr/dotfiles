@@ -1,0 +1,31 @@
+{
+  "ideExtensionPromptedAt": {
+    "vscode": 1766655923569
+  },
+  "sessionDefaultSettings": {
+    "autonomyMode": "auto-high",
+    "model": "custom:gemini-claude-opus-4-5-thinking-0",
+    "reasoningEffort": "none"
+  },
+  "diffMode": "unified",
+  "ideAutoConnect": true,
+  "showThinkingInMainView": true,
+  "showTokenUsageIndicator": true,
+  "allowBackgroundProcesses": false,
+  "customModels": [
+    {
+      "model": "gemini-claude-opus-4-5-thinking",
+      "id": "custom:gemini-claude-opus-4-5-thinking-0",
+      "index": 0,
+      "baseUrl": "http://localhost:8317/v1",
+      "apiKey": "dummy-not-used",
+      "displayName": "gemini-claude-opus-4-5-thinking",
+      "noImageSupport": false,
+      "provider": "openai"
+    }
+  ],
+  "cloudSessionSync": false,
+  "hooks": {
+    "hooksDisabled": true
+  }
+}
