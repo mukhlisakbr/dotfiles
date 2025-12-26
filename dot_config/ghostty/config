@@ -17,7 +17,7 @@ macos-titlebar-style = tabs
 keybind = shift+enter=text:\n
 
 # theme
-theme = "TokyoNight Night"
+theme = "catppuccin-mocha.conf"
 
 # transparent
 #background-opacity = 0.8

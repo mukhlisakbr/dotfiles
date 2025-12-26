@@ -5,6 +5,7 @@ Plug 'jszakmeister/vim-togglecursor'
 Plug 'leviosa42/vim-github-theme'
 Plug 'wojciechkepka/vim-github-dark'
 Plug 'folke/tokyonight.nvim', { 'rtp': 'extras/vim' }
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 call plug#end()
 
 syntax on
@@ -22,7 +23,7 @@ set re=0
 set background=dark
 
 "themes
-colorscheme tokyonight
+colorscheme catppuccin_mocha
 
 "remap
 inoremap kj <Esc>
