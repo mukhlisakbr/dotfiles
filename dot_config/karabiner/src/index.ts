@@ -51,7 +51,7 @@ function createAppLauncherRule() {
       map("m").to(toApp("Spotify")),            // Music
       map("p").to(toApp("Bitwarden")),          // Password
       map("s").to(toApp("Sublime Text")),       // Secondary Editor
-      map("t").to(toApp("iTerm")),              // Terminal
+      map("t").to(toApp("Ghostty")),            // Terminal
       map("w").to(toApp("Telegram")),           // Work Chat
     ]),
   ]);
