@@ -21,7 +21,7 @@ set re=0
 set background=dark
 
 "themes
-colorscheme default
+colorscheme ghdark
 
 "remap
 inoremap kj <Esc>
