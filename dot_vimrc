@@ -4,6 +4,7 @@ Plug 'tribela/vim-transparent'
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'leviosa42/vim-github-theme'
 Plug 'wojciechkepka/vim-github-dark'
+Plug 'folke/tokyonight.nvim', { 'rtp': 'extras/vim' }
 call plug#end()
 
 syntax on
@@ -21,7 +22,7 @@ set re=0
 set background=dark
 
 "themes
-colorscheme ghdark
+colorscheme tokyonight
 
 "remap
 inoremap kj <Esc>

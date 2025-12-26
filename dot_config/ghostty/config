@@ -17,7 +17,7 @@ macos-titlebar-style = tabs
 keybind = shift+enter=text:\n
 
 # theme
-theme = "Github Dark Default"
+theme = "TokyoNight Night"
 
 # transparent
 #background-opacity = 0.8
