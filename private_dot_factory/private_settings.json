@@ -7,7 +7,7 @@
     "model": "custom:gemini-claude-opus-4-5-thinking-0",
     "reasoningEffort": "none"
   },
-  "diffMode": "unified",
+  "diffMode": "github",
   "ideAutoConnect": true,
   "showThinkingInMainView": true,
   "showTokenUsageIndicator": true,
@@ -27,5 +27,6 @@
   "cloudSessionSync": false,
   "hooks": {
     "hooksDisabled": true
-  }
+  },
+  "todoDisplayMode": "pinned"
 }
