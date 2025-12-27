@@ -37,12 +37,12 @@ export FZF_DEFAULT_OPTS=" \
 --color=border:#6C7086,label:#CDD6F4"
 export FZF_DEFAULT_COMMAND="$FD_BASE --type f"
 export FZF_CTRL_T_COMMAND="$FD_BASE --type f"
-export FZF_ALT_C_COMMAND="$FD_BASE --type d"
 export FZF_CTRL_T_OPTS="
   --preview 'bat -n --color=always {}'
   --preview-window=right:60%:wrap
   --bind 'ctrl-d:preview-page-down,ctrl-u:preview-page-up'
 "
+export FZF_ALT_C_COMMAND="$FD_BASE --type d"
 export FZF_ALT_C_OPTS="
   --preview 'tree -C {} | head -200'
   --preview-window=right:60%:wrap
