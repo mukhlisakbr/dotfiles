@@ -27,7 +27,7 @@ alias lla="eza -la"
 alias lg="lazygit"
 alias wip='git add . && git commit -m "wip" && git push'
 
-# fzf
+# fzf setup
 FD_BASE="fd --strip-cwd-prefix"
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
