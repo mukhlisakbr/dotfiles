@@ -17,38 +17,32 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light jessarcher/zsh-artisan
 zinit cdreplay -q
 
-# eza ls aliases
+# aliases ls
 alias eza="eza --icons --sort=type"
 alias l="eza"
 alias ll="eza -l"
 alias lla="eza -la"
 
-# other aliases
+# aliases git
 alias lg="lazygit"
+alias wip='git add . && git commit -m "wip" && git push'
 
 # fzf
 FD_BASE="fd --strip-cwd-prefix"
-
 export FZF_DEFAULT_COMMAND="$FD_BASE --type f"
 export FZF_CTRL_T_COMMAND="$FD_BASE --type f"
 export FZF_ALT_C_COMMAND="$FD_BASE --type d"
-
 export FZF_CTRL_T_OPTS="
   --preview 'bat -n --color=always {}'
   --preview-window=right:60%:wrap
   --bind 'ctrl-d:preview-page-down,ctrl-u:preview-page-up'
 "
-
 export FZF_ALT_C_OPTS="
   --preview 'tree -C {} | head -200'
   --preview-window=right:60%:wrap
   --bind 'ctrl-d:preview-page-down,ctrl-u:preview-page-up'
 "
-
 source <(fzf --zsh)
-
-# git wip
-alias wip='git add . && git commit -m "wip" && git push'
 
 # def editor
 export EDITOR='vim'
@@ -56,49 +50,37 @@ export EDITOR='vim'
 # sublime
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
-# java
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+# windsurf bin
+export PATH="/Users/ghost/.codeium/windsurf/bin:$PATH"
 
-# android sdk
+# antigravity bin
+export PATH="/Users/ghost/.antigravity/antigravity/bin:$PATH"
+
+# bun global bin
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# java and android sdk
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export ANDROID_SDK_ROOT="$ANDROID_HOME"
 export ANDROID_NDK_HOME="$ANDROID_HOME/ndk/29.0.14206865"
-
 export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/36.1.0:$PATH"
-
-# Added by Windsurf
-export PATH="/Users/ghost/.codeium/windsurf/bin:$PATH"
 
 # kiro
 [[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
 
-# Herd injected PHP binary.
+# Herd injected PHP bin and config
 export PATH="/Users/ghost/Library/Application Support/Herd/bin/":$PATH
-
-# Herd injected PHP 8.2 configuration.
 export HERD_PHP_82_INI_SCAN_DIR="/Users/ghost/Library/Application Support/Herd/config/php/82/"
-
-# Herd injected PHP 8.3 configuration.
 export HERD_PHP_83_INI_SCAN_DIR="/Users/ghost/Library/Application Support/Herd/config/php/83/"
-
-# Herd injected PHP 8.4 configuration.
 export HERD_PHP_84_INI_SCAN_DIR="/Users/ghost/Library/Application Support/Herd/config/php/84/"
-
-# Herd injected PHP 8.5 configuration.
 export HERD_PHP_85_INI_SCAN_DIR="/Users/ghost/Library/Application Support/Herd/config/php/85/"
 
-# Herd injected NVM configuration
+# Herd injected NVM config
 export NVM_DIR="/Users/ghost/Library/Application Support/Herd/config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
 [[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# Added by Antigravity
-export PATH="/Users/ghost/.antigravity/antigravity/bin:$PATH"
 
 # yazi 
 function y() {
@@ -108,4 +90,3 @@ function y() {
 	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
-
