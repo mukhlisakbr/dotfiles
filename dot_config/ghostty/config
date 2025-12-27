@@ -1,5 +1,6 @@
 # font
-font-family = "GeistMono Nerd Font Mono"
+#font-family = "GeistMono Nerd Font Mono"
+font-family = "JetBrainsMono Nerd Font Mono"
 #font-family = "BlexMono Nerd Font Mono"
 font-size = 13
 font-feature = -calt, -liga, -dlig
