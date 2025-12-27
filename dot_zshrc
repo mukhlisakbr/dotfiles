@@ -17,6 +17,9 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light jessarcher/zsh-artisan
 zinit cdreplay -q
 
+# eza
+export EZA_CONFIG_DIR="$HOME/.config/eza"
+
 # aliases ls
 alias eza="eza --icons --sort=type"
 alias l="eza"
