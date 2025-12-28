@@ -5,7 +5,7 @@
   "sessionDefaultSettings": {
     "autonomyMode": "auto-high",
     "model": "custom:gemini-claude-opus-4-5-thinking(xhigh)-0",
-    "reasoningEffort": "none"
+    "reasoningEffort": "high"
   },
   "diffMode": "github",
   "ideAutoConnect": true,
