@@ -4,7 +4,7 @@
   },
   "sessionDefaultSettings": {
     "autonomyMode": "auto-high",
-    "model": "custom:gemini-claude-opus-4-5-thinking-0",
+    "model": "custom:gemini-claude-opus-4-5-thinking(xhigh)-0",
     "reasoningEffort": "none"
   },
   "diffMode": "github",
@@ -14,12 +14,12 @@
   "allowBackgroundProcesses": false,
   "customModels": [
     {
-      "model": "gemini-claude-opus-4-5-thinking",
-      "id": "custom:gemini-claude-opus-4-5-thinking-0",
+      "model": "gemini-claude-opus-4-5-thinking(xhigh)",
+      "id": "custom:gemini-claude-opus-4-5-thinking(xhigh)-0",
       "index": 0,
       "baseUrl": "http://localhost:8317/v1",
       "apiKey": "dummy-not-used",
-      "displayName": "gemini-claude-opus-4-5-thinking",
+      "displayName": "gemini-claude-opus-4-5-thinking(xhigh)",
       "noImageSupport": false,
       "provider": "openai"
     }
