@@ -17,11 +17,11 @@
       "model": "gemini-claude-opus-4-5-thinking(xhigh)",
       "id": "custom:gemini-claude-opus-4-5-thinking(xhigh)-0",
       "index": 0,
-      "baseUrl": "http://localhost:8317/v1",
+      "baseUrl": "http://localhost:8317",
       "apiKey": "dummy-not-used",
       "displayName": "gemini-claude-opus-4-5-thinking(xhigh)",
-      "noImageSupport": false,
-      "provider": "openai"
+      "supportsImages": true,
+      "provider": "anthropic"
     }
   ],
   "cloudSessionSync": false,
