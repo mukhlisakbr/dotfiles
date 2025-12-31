@@ -2,20 +2,21 @@
   "$schema": "https://opencode.ai/config.json",
 
   "provider": {
-    "vp": {
+    "ag": {
       "npm": "@ai-sdk/openai-compatible",
-      "name": "VP",
+      "name": "AG",
       "options": {
         "baseURL": "http://localhost:8317/v1",
         "apiKey": "dummy"
       },
       "models": {
-        "gemini-claude-opus-4-5-thinking": {
-          "name": "AG Opus 4.5 T"
+        "opus-45-xhigh": {
+          "name": "Opus 4.5 XH",
+          "id": "gemini-claude-opus-4-5-thinking(xhigh)"
         }
       }
     }
   },
 
-  "model": "vp/gemini-claude-opus-4-5-thinking"
+  "model": "ag/opus-45-xhigh"
 }

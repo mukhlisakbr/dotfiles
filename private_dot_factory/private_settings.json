@@ -11,7 +11,7 @@
   "ideAutoConnect": true,
   "showThinkingInMainView": true,
   "showTokenUsageIndicator": true,
-  "allowBackgroundProcesses": false,
+  "allowBackgroundProcesses": true,
   "customModels": [
     {
       "model": "gemini-claude-opus-4-5-thinking(xhigh)",
@@ -26,7 +26,8 @@
   ],
   "cloudSessionSync": false,
   "hooks": {
-    "hooksDisabled": true
+    "hooksDisabled": false
   },
-  "todoDisplayMode": "pinned"
+  "todoDisplayMode": "pinned",
+  "logoAnimation": "always"
 }
