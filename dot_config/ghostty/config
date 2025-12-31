@@ -24,4 +24,4 @@ theme = "catppuccin-latte.conf"
 # transparent
 #background-opacity = 0.8
 #background-blur = true
-#unfocused-split-opacity = 1
+unfocused-split-opacity = 1
