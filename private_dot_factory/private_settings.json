@@ -4,8 +4,8 @@
   },
   "sessionDefaultSettings": {
     "autonomyMode": "auto-high",
-    "model": "custom:gemini-claude-opus-4-5-thinking(xhigh)-0",
-    "reasoningEffort": "high"
+    "model": "custom:AG-Opus-4.5-T-XH-0",
+    "reasoningEffort": "none"
   },
   "diffMode": "github",
   "ideAutoConnect": true,
@@ -15,12 +15,12 @@
   "customModels": [
     {
       "model": "gemini-claude-opus-4-5-thinking(xhigh)",
-      "id": "custom:gemini-claude-opus-4-5-thinking(xhigh)-0",
+      "id": "custom:AG-Opus-4.5-T-XH-0",
       "index": 0,
       "baseUrl": "http://localhost:8317",
       "apiKey": "dummy-not-used",
-      "displayName": "gemini-claude-opus-4-5-thinking(xhigh)",
-      "supportsImages": true,
+      "displayName": "AG Opus 4.5 T XH",
+      "noImageSupport": false,
       "provider": "anthropic"
     }
   ],
