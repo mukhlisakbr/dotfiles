@@ -29,5 +29,5 @@
     "hooksDisabled": false
   },
   "todoDisplayMode": "pinned",
-  "logoAnimation": "always"
+  "logoAnimation": "off"
 }
