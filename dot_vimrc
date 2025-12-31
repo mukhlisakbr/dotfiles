@@ -20,10 +20,10 @@ set hlsearch
 set ruler
 set clipboard=unnamed
 set re=0
-set background=dark
+set background=light
 
 "themes
-colorscheme catppuccin_mocha
+colorscheme catppuccin_latte
 
 "remap
 inoremap kj <Esc>
