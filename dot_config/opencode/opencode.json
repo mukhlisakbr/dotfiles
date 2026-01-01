@@ -1,0 +1,49 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "anthropic": {
+      "npm": "@ai-sdk/anthropic",
+      "name": "anthropic",
+      "options": {
+        "baseURL": "http://localhost:8317/v1",
+        "apiKey" : "dummy"
+      },
+      "models": {
+        "gemini-claude-opus-4-5-thinking(200000)": {
+          "name": "Opus 4.5 MAX",
+          "attachment": true,
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 200000,
+            "output": 64000
+          }
+        }
+      }
+    },
+    "google": {
+      "npm": "@ai-sdk/google",
+      "name": "google",
+      "options": {
+        "baseURL": "http://localhost:8317/v1beta",
+        "apiKey" : "dummy"
+      },
+      "models": {
+        "gemini-3-pro-preview(32768)": {
+          "name": "Gemini 3 Pro MAX",
+          "attachment": true,
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 65536
+          }
+        }
+      }
+    }
+  }
+}
