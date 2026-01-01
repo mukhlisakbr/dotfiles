@@ -4,7 +4,7 @@
   },
   "sessionDefaultSettings": {
     "autonomyMode": "auto-high",
-    "model": "custom:Opus-4.5-MAX-0",
+    "model": "custom:Gemini-3-Pro-HIGH-1",
     "reasoningEffort": "none"
   },
   "diffMode": "github",
@@ -24,11 +24,11 @@
       "noImageSupport": false,
       "provider": "anthropic"
     },
-    { 
+    {
       "model": "gemini-3-pro-preview(high)",
-      "id": "custom:Gemini-3-Pro-HIGH-0",
-      "index": 0,
-      "baseUrl": "http://localhost:8317",
+      "id": "custom:Gemini-3-Pro-HIGH-1",
+      "index": 1,
+      "baseUrl": "http://localhost:8317/v1",
       "apiKey": "dummy",
       "displayName": "Gemini 3 Pro HIGH",
       "maxOutputTokens": 65536,
