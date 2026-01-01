@@ -4,8 +4,8 @@
   },
   "sessionDefaultSettings": {
     "autonomyMode": "auto-high",
-    "model": "custom:AG-Opus-4.5-XH-0",
-    "reasoningEffort": "high"
+    "model": "custom:Opus-4.5-MAX-0",
+    "reasoningEffort": "none"
   },
   "diffMode": "github",
   "ideAutoConnect": true,
@@ -14,26 +14,26 @@
   "allowBackgroundProcesses": true,
   "customModels": [
     {
-      "model": "gemini-claude-opus-4-5-thinking(xhigh)",
-      "id": "custom:AG-Opus-4.5-XH-0",
+      "model": "gemini-claude-opus-4-5-thinking(200000)",
+      "id": "custom:Opus-4.5-MAX-0",
       "index": 0,
-      "baseUrl": "http://localhost:8317/v1",
+      "baseUrl": "http://localhost:8317",
       "apiKey": "dummy",
-      "displayName": "AG Opus 4.5 XH",
+      "displayName": "Opus 4.5 MAX",
       "maxOutputTokens": 64000,
       "noImageSupport": false,
-      "provider": "openai"
+      "provider": "anthropic"
     },
-    {
+    { 
       "model": "gemini-3-pro-preview(high)",
-      "id": "custom:AG-Gemini-3-Pro-H-1",
-      "index": 1,
-      "baseUrl": "http://localhost:8317/v1",
+      "id": "custom:Gemini-3-Pro-HIGH-0",
+      "index": 0,
+      "baseUrl": "http://localhost:8317",
       "apiKey": "dummy",
-      "displayName": "AG Gemini 3 Pro H",
-      "maxOutputTokens": 64000,
+      "displayName": "Gemini 3 Pro HIGH",
+      "maxOutputTokens": 65536,
       "noImageSupport": false,
-      "provider": "openai"
+      "provider": "generic-chat-completion-api"
     }
   ],
   "cloudSessionSync": false,
