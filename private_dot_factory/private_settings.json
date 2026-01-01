@@ -5,7 +5,7 @@
   "sessionDefaultSettings": {
     "autonomyMode": "auto-high",
     "model": "custom:AG-Opus-4.5-XH-0",
-    "reasoningEffort": "none"
+    "reasoningEffort": "high"
   },
   "diffMode": "github",
   "ideAutoConnect": true,
@@ -20,9 +20,9 @@
       "baseUrl": "http://localhost:8317/v1",
       "apiKey": "dummy",
       "displayName": "AG Opus 4.5 XH",
+      "maxOutputTokens": 64000,
       "noImageSupport": false,
-      "provider": "openai",
-      "maxOutputTokens": 64000
+      "provider": "openai"
     },
     {
       "model": "gemini-3-pro-preview(high)",
@@ -31,9 +31,9 @@
       "baseUrl": "http://localhost:8317/v1",
       "apiKey": "dummy",
       "displayName": "AG Gemini 3 Pro H",
+      "maxOutputTokens": 64000,
       "noImageSupport": false,
-      "provider": "openai",
-      "maxOutputTokens": 64000
+      "provider": "openai"
     }
   ],
   "cloudSessionSync": false,
