@@ -4,7 +4,7 @@
   },
   "sessionDefaultSettings": {
     "autonomyMode": "auto-high",
-    "model": "custom:Gemini-3-Pro-MAX-1",
+    "model": "custom:Opus-4.5-MAX-0",
     "reasoningEffort": "none"
   },
   "diffMode": "github",
