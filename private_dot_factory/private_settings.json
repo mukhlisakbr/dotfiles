@@ -4,7 +4,7 @@
   },
   "sessionDefaultSettings": {
     "autonomyMode": "auto-high",
-    "model": "custom:Gemini-3-Pro-HIGH-1",
+    "model": "custom:Gemini-3-Pro-MAX-1",
     "reasoningEffort": "none"
   },
   "diffMode": "github",
@@ -25,12 +25,12 @@
       "provider": "anthropic"
     },
     {
-      "model": "gemini-3-pro-preview(high)",
-      "id": "custom:Gemini-3-Pro-HIGH-1",
+      "model": "gemini-3-pro-preview(32768)",
+      "id": "custom:Gemini-3-Pro-MAX-1",
       "index": 1,
       "baseUrl": "http://localhost:8317/v1",
       "apiKey": "dummy",
-      "displayName": "Gemini 3 Pro HIGH",
+      "displayName": "Gemini 3 Pro MAX",
       "maxOutputTokens": 65536,
       "noImageSupport": false,
       "provider": "generic-chat-completion-api"
