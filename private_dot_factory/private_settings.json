@@ -9,7 +9,7 @@
   },
   "diffMode": "github",
   "ideAutoConnect": true,
-  "showThinkingInMainView": true,
+  "showThinkingInMainView": false,
   "showTokenUsageIndicator": true,
   "allowBackgroundProcesses": true,
   "customModels": [
