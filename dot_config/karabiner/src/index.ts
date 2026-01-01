@@ -69,15 +69,23 @@ function createGeneralHyperRule(hyper: HyperModifier) {
       map("]").to(toKey("]", "⌘⇧")),
       map("[").to(toKey("[", "⌘⇧")),
       // Shell & text commands
-      map("c").to(toKey("c", "⌃")),
-      map("r").to(toKey("r", "⌃")),
-      map("v").to(toKey("v", "⌃")),
-      map("t").to(toKey("t", "⌃")),
-      map("d").to(toKey("d", "⌃")),
-      map("u").to(toKey("u", "⌃")),
-      map("o").to(toKey("o", "⌃")), // Terminal open command
-      map("p").to(toKey("p", "⌃")), // Previous command in history
+      map("a").to(toKey("a", "⌃")), // Beginning of line
+      map("b").to(toKey("b", "⌃")), // Backward one char
+      map("c").to(toKey("c", "⌃")), // Cancel / Interrupt
+      map("d").to(toKey("d", "⌃")), // EOF / Exit
+      map("e").to(toKey("e", "⌃")), // End of line
+      map("f").to(toKey("f", "⌃")), // Forward search
+      map("g").to(toKey("g", "⌃")), // Cancel search
+      map("n").to(toKey("n", "⌃")), // Next command
+      map("o").to(toKey("o", "⌃")), // Open command
+      map("p").to(toKey("p", "⌃")), // Previous command
+      map("r").to(toKey("r", "⌃")), // Reverse search
+      map("t").to(toKey("t", "⌃")), // Transpose
+      map("u").to(toKey("u", "⌃")), // Clear line
+      map("v").to(toKey("v", "⌃")), // Paste
+      map("w").to(toKey("w", "⌃")), // Delete word backward
       map("x").to(toKey("x", "⌃")), // Cut / Kill line
+      map("y").to(toKey("y", "⌃")), // Yank (paste kill ring)
       map("z").to(toKey("z", "⌃")), // Suspend process
     ]),
   ]);
