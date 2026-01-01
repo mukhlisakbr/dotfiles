@@ -4,24 +4,36 @@
   },
   "sessionDefaultSettings": {
     "autonomyMode": "auto-high",
-    "model": "custom:AG-Opus-4.5-T-XH-0",
+    "model": "custom:AG-Opus-4.5-XH-0",
     "reasoningEffort": "none"
   },
   "diffMode": "github",
   "ideAutoConnect": true,
-  "showThinkingInMainView": false,
+  "showThinkingInMainView": true,
   "showTokenUsageIndicator": true,
   "allowBackgroundProcesses": true,
   "customModels": [
     {
       "model": "gemini-claude-opus-4-5-thinking(xhigh)",
-      "id": "custom:AG-Opus-4.5-T-XH-0",
+      "id": "custom:AG-Opus-4.5-XH-0",
       "index": 0,
-      "baseUrl": "http://localhost:8317",
-      "apiKey": "dummy-not-used",
-      "displayName": "AG Opus 4.5 T XH",
+      "baseUrl": "http://localhost:8317/v1",
+      "apiKey": "dummy",
+      "displayName": "AG Opus 4.5 XH",
       "noImageSupport": false,
-      "provider": "anthropic"
+      "provider": "openai",
+      "maxOutputTokens": 64000
+    },
+    {
+      "model": "gemini-3-pro-preview(high)",
+      "id": "custom:AG-Gemini-3-Pro-H-1",
+      "index": 1,
+      "baseUrl": "http://localhost:8317/v1",
+      "apiKey": "dummy",
+      "displayName": "AG Gemini 3 Pro H",
+      "noImageSupport": false,
+      "provider": "openai",
+      "maxOutputTokens": 64000
     }
   ],
   "cloudSessionSync": false,
