@@ -56,6 +56,9 @@ source <(fzf --zsh)
 # def editor
 export EDITOR='vim'
 
+# timezone
+export TZ='Asia/Jakarta'
+
 # sublime
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
