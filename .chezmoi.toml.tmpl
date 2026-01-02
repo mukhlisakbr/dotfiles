@@ -1,0 +1,12 @@
+encryption = "gpg"
+
+[gpg]
+    symmetric = true
+    args = ["--batch", "--passphrase", {{ (bitwarden "item" "chezmoi-passphrase").login.password | quote }}, "--no-symkey-cache", "--quiet"]
+
+[bitwarden]
+    unlock = "auto"
+
+[git]
+    autoCommit = true
+    autoPush = true
