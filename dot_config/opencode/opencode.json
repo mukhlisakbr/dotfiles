@@ -1,50 +1,21 @@
 {
-  "$schema": "https://opencode.ai/config.json",
-  "enabled_providers": ["anthropic", "google"],
-  "provider": {
-    "anthropic": {
-      "npm": "@ai-sdk/anthropic",
-      "name": "anthropic",
-      "whitelist": ["gemini-claude-opus-4-5-thinking(200000)"],
-      "options": {
-        "baseURL": "http://localhost:8317/v1",
-        "apiKey" : "dummy"
-      },
-      "models": {
-        "gemini-claude-opus-4-5-thinking(200000)": {
-          "name": "Opus 4.5 MAX",
-          "attachment": true,
-          "modalities": {
-            "input": ["text", "image"],
-            "output": ["text"]
-          },
-          "limit": {
-            "context": 200000,
-            "output": 64000
-          }
-        }
-      }
-    },
+  "$schema" : "https://opencode.ai/config.json",
+  "plugin" : [
+    "@franlol/opencode-md-table-formatter@0.0.3",
+    "opencode-antigravity-auth@1.2.7"
+  ],
+  "provider" : {
     "google": {
-      "npm": "@ai-sdk/google",
-      "name": "google",
-      "whitelist": ["gemini-3-pro-preview(32768)"],
-      "options": {
-        "baseURL": "http://localhost:8317/v1beta",
-        "apiKey" : "dummy"
-      },
       "models": {
-        "gemini-3-pro-preview(32768)": {
-          "name": "Gemini 3 Pro MAX",
-          "attachment": true,
-          "modalities": {
-            "input": ["text", "image"],
-            "output": ["text"]
-          },
-          "limit": {
-            "context": 1048576,
-            "output": 65536
-          }
+        "antigravity-gemini-3-pro-high": {
+          "name": "Gemini 3 Pro High (Antigravity)",
+          "limit": { "context": 1048576, "output": 65535 },
+          "modalities": { "input": ["text", "image", "pdf"], "output": ["text"] }
+        },
+        "antigravity-claude-opus-4-5-thinking-high": {
+          "name": "Claude Opus 4.5 Think High (Antigravity)",
+          "limit": { "context": 200000, "output": 64000 },
+          "modalities": { "input": ["text", "image", "pdf"], "output": ["text"] }
         }
       }
     }
