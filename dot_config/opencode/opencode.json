@@ -2,8 +2,7 @@
   "$schema": "https://opencode.ai/config.json",
   "plugin": [
     "@franlol/opencode-md-table-formatter@0.0.3",
-    "opencode-antigravity-auth@1.2.7",
-    "opencode-openai-codex-auth@4.2.0"
+    "opencode-antigravity-auth@1.2.7"
   ],
   "mcp": {
     "context7": {
@@ -16,143 +15,34 @@
     },
     "chrome-devtools": {
       "type": "local",
-      "command": [
-        "npx",
-        "-y",
-        "chrome-devtools-mcp@latest"
-      ]
+      "command": ["npx", "-y", "chrome-devtools-mcp@latest"]
     },
     "mcp-appstore": {
       "type": "local",
-      "command": [
-        "node", 
-        "/Users/ghost/oss/mcp-appstore/server.js"
-      ],
+      "command": ["node", "/Users/ghost/oss/mcp-appstore/server.js"]
     },
     "google-trends": {
       "type": "local",
-      "command": [
-        "uvx",
-        "google-trends-mcp-qihoo"
-      ]
+      "command": ["uvx", "google-trends-mcp-qihoo"]
     }
   },
   "provider": {
     "google": {
       "models": {
         "antigravity-gemini-3-pro-high": {
-          "name": "Gemini 3 Pro High (Antigravity)",
-          "limit": {
-            "context": 1048576,
-            "output": 65535
-          },
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          }
+          "name": "AG Gemini 3 Pro H",
+          "limit": { "context": 1048576, "output": 65535 },
+          "modalities": { "input": ["text", "image", "pdf"], "output": ["text"] }
         },
         "antigravity-claude-sonnet-4-5-thinking-high": {
-          "name": "Claude Sonnet 4.5 Think High (Antigravity)",
-          "limit": {
-            "context": 200000,
-            "output": 64000
-          },
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          }
+          "name": "AG Sonnet 4.5 T H",
+          "limit": { "context": 200000, "output": 64000 },
+          "modalities": { "input": ["text", "image", "pdf"], "output": ["text"] }
         },
         "antigravity-claude-opus-4-5-thinking-high": {
-          "name": "Claude Opus 4.5 Think High (Antigravity)",
-          "limit": {
-            "context": 200000,
-            "output": 64000
-          },
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        }
-      }
-    },
-    "openai": {
-      "options": {
-        "reasoningEffort": "medium",
-        "reasoningSummary": "auto",
-        "textVerbosity": "medium",
-        "include": [
-          "reasoning.encrypted_content"
-        ],
-        "store": false
-      },
-      "models": {
-        "gpt-5.2-xhigh": {
-          "name": "GPT 5.2 Extra High (OAuth)",
-          "limit": {
-            "context": 272000,
-            "output": 128000
-          },
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "options": {
-            "reasoningEffort": "xhigh",
-            "reasoningSummary": "detailed",
-            "textVerbosity": "medium",
-            "include": [
-              "reasoning.encrypted_content"
-            ],
-            "store": false
-          }
-        },
-        "gpt-5.2-codex-xhigh": {
-          "name": "GPT 5.2 Codex Extra High (OAuth)",
-          "limit": {
-            "context": 272000,
-            "output": 128000
-          },
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "options": {
-            "reasoningEffort": "xhigh",
-            "reasoningSummary": "detailed",
-            "textVerbosity": "medium",
-            "include": [
-              "reasoning.encrypted_content"
-            ],
-            "store": false
-          }
+          "name": "AG Opus 4.5 T H",
+          "limit": { "context": 200000, "output": 64000 },
+          "modalities": { "input": ["text", "image", "pdf"], "output": ["text"] }
         }
       }
     }
