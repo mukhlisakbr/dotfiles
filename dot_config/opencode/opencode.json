@@ -21,6 +21,20 @@
         "-y",
         "chrome-devtools-mcp@latest"
       ]
+    },
+    "mcp-appstore": {
+      "type": "local",
+      "command": [
+        "node", 
+        "/Users/ghost/oss/mcp-appstore/server.js"
+      ],
+    },
+    "google-trends": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "google-trends-mcp-qihoo"
+      ]
     }
   },
   "provider": {
