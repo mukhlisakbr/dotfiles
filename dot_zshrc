@@ -30,6 +30,10 @@ alias lla="eza -la"
 alias lg="lazygit"
 alias wip='git add . && git commit -m "wip" && git push'
 
+# aliases other
+alias oc="opencode"
+alias cc="claude --dangerously-skip-permissions"
+
 # fzf setup
 FD_BASE="fd --strip-cwd-prefix"
 export FZF_DEFAULT_OPTS=" \
@@ -102,6 +106,3 @@ function y() {
 	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
-
-# opencode alias
-alias oc='opencode'
