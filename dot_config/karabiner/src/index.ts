@@ -43,7 +43,7 @@ function createAppLauncherRule() {
   return rule("Launcher | Favorite Apps").manipulators([
     withModifier("›⌘")([
       map("a").to(toApp("ChatGPT")),            // AI
-      map("b").to(toApp("Google Chrome")),      // Browser
+      map("b").to(toApp("Helium")),              // Browser
       map("c").to(toApp("WhatsApp")),           // Chat
       map("e").to(toApp("Visual Studio Code")), // Editor
       map("f").to(toApp("Finder")),             // Files
