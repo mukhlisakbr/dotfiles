@@ -4,8 +4,8 @@
   },
   "sessionDefaultSettings": {
     "autonomyMode": "auto-high",
-    "model": "custom:opus45max-0",
-    "reasoningEffort": "high"
+    "model": "custom:Opus-4.5-MAX-0",
+    "reasoningEffort": "none"
   },
   "diffMode": "github",
   "ideAutoConnect": true,
@@ -15,7 +15,7 @@
   "customModels": [
     {
       "model": "gemini-claude-opus-4-5-thinking(200000)",
-      "id": "custom:opus45max-0",
+      "id": "custom:Opus-4.5-MAX-0",
       "index": 0,
       "baseUrl": "http://localhost:8317",
       "apiKey": "your-api-key-1",
@@ -26,7 +26,7 @@
     },
     {
       "model": "gemini-3-pro-preview(32768)",
-      "id": "custom:gem3pro-1",
+      "id": "custom:Gemini-3-Pro-MAX-1",
       "index": 1,
       "baseUrl": "http://localhost:8317/v1",
       "apiKey": "your-api-key-1",
