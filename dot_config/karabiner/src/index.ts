@@ -43,7 +43,7 @@ function createAppLauncherRule() {
   return rule("Launcher | Favorite Apps").manipulators([
     withModifier("›⌘")([
       map("a").to(toApp("ChatGPT")),            // AI
-      map("b").to(toApp("Helium")),              // Browser
+      map("b").to(toApp("Google Chrome")),       // Browser
       map("c").to(toApp("WhatsApp")),           // Chat
       map("e").to(toApp("Visual Studio Code")), // Editor
       map("f").to(toApp("Finder")),             // Files
@@ -122,7 +122,7 @@ function createCodeEditorHyperRule(hyper: HyperModifier) {
 
 function createChromiumHyperRule(hyper: HyperModifier) {
   return rule("Hyper | Chromium Browsers")
-    .condition(ifApp(["com.google.Chrome", "com.electron.helium"]))
+    .condition(ifApp(["com.google.Chrome", "net.imput.helium"]))
     .manipulators([
       hyper([
         map("t").to(toKey("a", "⌘⇧")), // Search Tabs
