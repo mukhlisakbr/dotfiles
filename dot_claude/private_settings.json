@@ -8,12 +8,12 @@
     "padding": 0
   },
   "enabledPlugins": {
-    "context7@claude-plugins-official": true,
     "commit-commands@claude-plugins-official": true,
     "feature-dev@claude-plugins-official": true,
     "frontend-design@claude-plugins-official": true,
     "security-guidance@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true
+    "typescript-lsp@claude-plugins-official": true,
+    "claude-notifications-go@claude-notifications-go": true
   },
   "promptSuggestionEnabled": false
 }

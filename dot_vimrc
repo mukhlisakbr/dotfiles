@@ -23,7 +23,7 @@ set re=0
 set background=dark
 
 "themes
-colorscheme catppuccin_macchiato
+colorscheme catppuccin_mocha
 
 "remap
 inoremap kj <Esc>

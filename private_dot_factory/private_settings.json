@@ -2,14 +2,9 @@
   "ideExtensionPromptedAt": {
     "vscode": 1766655923569
   },
-  "sessionDefaultSettings": {
-    "autonomyMode": "auto-high",
-    "model": "custom:Opus-4.5-MAX-0",
-    "reasoningEffort": "none"
-  },
   "diffMode": "github",
   "ideAutoConnect": true,
-  "showThinkingInMainView": true,
+  "showThinkingInMainView": false,
   "showTokenUsageIndicator": true,
   "allowBackgroundProcesses": true,
   "customModels": [
@@ -41,5 +36,10 @@
     "hooksDisabled": false
   },
   "todoDisplayMode": "pinned",
-  "logoAnimation": "off"
+  "logoAnimation": "off",
+  "sessionDefaultSettings": {
+    "model": "custom:Opus-4.5-MAX-0",
+    "reasoningEffort": "none",
+    "autonomyMode": "auto-high"
+  }
 }
