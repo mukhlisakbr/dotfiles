@@ -122,7 +122,7 @@ function createCodeEditorHyperRule(hyper: HyperModifier) {
 
 function createChromiumHyperRule(hyper: HyperModifier) {
   return rule("Hyper | Chromium Browsers")
-    .condition(ifApp(["com.google.Chrome"]))
+    .condition(ifApp(["com.google.Chrome", "com.electron.helium"]))
     .manipulators([
       hyper([
         map("t").to(toKey("a", "⌘⇧")), // Search Tabs
