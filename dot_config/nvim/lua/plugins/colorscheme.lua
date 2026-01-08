@@ -1,26 +1,16 @@
 return {
   {
-    "folke/tokyonight.nvim",
+    "catppuccin/nvim",
+    name = "catppuccin",
     opts = {
-      style = "night",
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
+      flavour = "mocha",
+      transparent_background = true,
     },
   },
   {
-    "projekt0n/github-nvim-theme",
-    name = "github-theme",
-    options = {
-      transparent = true,
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin",
     },
-  },
-  {
-    --"LazyVim/LazyVim",
-    --opts = {
-    -- colorscheme = "github_light_default",
-    --},
   },
 }
