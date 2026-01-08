@@ -59,7 +59,7 @@ export FZF_ALT_C_OPTS="
 source <(fzf --zsh)
 
 # def editor
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # timezone
 export TZ='Asia/Jakarta'
