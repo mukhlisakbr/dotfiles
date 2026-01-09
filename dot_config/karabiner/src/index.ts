@@ -87,6 +87,7 @@ function createGeneralHyperRule(hyper: HyperModifier) {
       map("x").to(toKey("x", "⌃")), // Cut / Kill line
       map("y").to(toKey("y", "⌃")), // Yank (paste kill ring)
       map("z").to(toKey("z", "⌃")), // Suspend process
+      map("␣").to(toKey("␣", "⌃")), // Tmux prefix (Ctrl+Space)
     ]),
   ]);
 }
