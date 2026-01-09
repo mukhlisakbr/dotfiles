@@ -66,8 +66,8 @@ function createGeneralHyperRule(hyper: HyperModifier) {
       map("k").to(toKey("↑")),
       map("l").to(toKey("→")),
       // Tab navigation
-      map("]").to(toKey("]", "⌘⇧")),
-      map("[").to(toKey("[", "⌘⇧")),
+      map(",").to(toKey("[", "⌘⇧")), // Prev tab
+      map(".").to(toKey("]", "⌘⇧")), // Next tab
       // Shell & text commands
       map("a").to(toKey("a", "⌃")), // Beginning of line
       map("b").to(toKey("b", "⌃")), // Backward one char
