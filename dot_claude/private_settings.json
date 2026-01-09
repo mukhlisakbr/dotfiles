@@ -9,6 +9,6 @@
     "security-guidance@claude-plugins-official": true,
     "typescript-lsp@claude-plugins-official": true
   },
-  "language": "Indonesian",
+  "language": "bahasa indonesia",
   "promptSuggestionEnabled": false
 }
