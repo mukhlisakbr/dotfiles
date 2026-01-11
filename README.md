@@ -15,49 +15,57 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply ghost
 - **zsh** - Shell configuration with zinit plugin manager
 - **starship** - Cross-shell prompt
 
-### Terminal Emulators
-- ghostty
-- alacritty
-- kitty
-- wezterm
-- iTerm2
+### Terminal
+- **ghostty** - Primary terminal emulator
 
 ### Editors
-- **neovim** - Primary editor
+- **neovim** - Primary editor (LazyVim)
 - **vim** - `.vimrc` for basic vim usage
-- **ideavim** - JetBrains IDE vim emulation
 
 ### CLI Tools
 - bat, eza, fd, fzf, ripgrep - Modern unix utilities
 - yazi - Terminal file manager
-- lazygit - Git TUI
 - tmux - Terminal multiplexer
 - aria2 - Download utility
 
 ### macOS
-- karabiner - Keyboard customization (with karabiner.ts)
-- aerospace - Tiling window manager
-- raycast, rectangle, homerow - Productivity tools
+- **karabiner** - Keyboard customization (with karabiner.ts)
 
-### Development
+### AI Coding Tools
+- **claude** - Claude Code CLI
+- **opencode** - OpenCode CLI
+
+### Other
+- Sublime Text - Editor settings
+- vimium - Browser vim extension
 - Brewfile - Homebrew dependencies
 - git config
-- Various language/tool configs
 
 ## Structure
 
 ```
 .
-├── Brewfile              # Homebrew dependencies
-├── dot_zshrc             # Zsh configuration
-├── dot_vimrc             # Vim configuration
-├── dot_config/           # ~/.config/ contents
-│   ├── nvim/             # Neovim
-│   ├── ghostty/          # Ghostty terminal
-│   ├── karabiner/        # Keyboard customization
-│   ├── starship.toml     # Prompt
-│   └── ...
-└── encrypted_*.asc       # GPG-encrypted secrets
+├── Brewfile                    # Homebrew dependencies
+├── dot_zshrc                   # Zsh configuration
+├── dot_zprofile                # Zsh profile
+├── dot_vimrc                   # Vim configuration
+├── dot_config/
+│   ├── nvim/                   # Neovim (LazyVim)
+│   ├── ghostty/                # Ghostty terminal
+│   ├── karabiner/              # Keyboard customization
+│   ├── starship.toml           # Prompt
+│   ├── bat/                    # bat config & themes
+│   ├── eza/                    # eza theme
+│   ├── fd/                     # fd ignore
+│   ├── yazi/                   # File manager
+│   ├── tmux/                   # Terminal multiplexer
+│   ├── aria2/                  # Download manager
+│   ├── mise/                   # Version manager
+│   └── opencode/               # OpenCode CLI
+├── dot_claude/                 # Claude Code settings
+├── dot_ssh/                    # SSH config (encrypted)
+├── private_dot_gitconfig       # Git configuration
+└── encrypted_*.asc             # GPG-encrypted secrets
 ```
 
 ## Usage
@@ -74,4 +82,7 @@ chezmoi add ~/.config/some/file
 
 # See what would change
 chezmoi diff
+
+# Remove a file from management (source + target)
+chezmoi forget ~/.some/file && rm ~/.some/file
 ```
