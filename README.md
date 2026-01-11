@@ -38,8 +38,7 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply ghost
 ### Other
 - Sublime Text - Editor settings
 - vimium - Browser vim extension
-- Brewfile - Homebrew dependencies
-- git config
+- mise - Version manager
 
 ## Structure
 
@@ -61,10 +60,12 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply ghost
 │   ├── tmux/                   # Terminal multiplexer
 │   ├── aria2/                  # Download manager
 │   ├── mise/                   # Version manager
-│   └── opencode/               # OpenCode CLI
+│   ├── opencode/               # OpenCode CLI
+│   └── git/                    # Global gitignore
 ├── dot_claude/                 # Claude Code settings
 ├── dot_ssh/                    # SSH config (encrypted)
 ├── private_dot_gitconfig       # Git configuration
+├── private_Library/            # Sublime Text settings
 └── encrypted_*.asc             # GPG-encrypted secrets
 ```
 
