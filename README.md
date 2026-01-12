@@ -15,6 +15,9 @@ bw login
 # 3. Install chezmoi via brew dan apply dotfiles
 brew install chezmoi
 chezmoi init --apply mukhlisakbr
+
+# 4. Install semua dependencies dari Brewfile
+brew bundle -v
 ```
 
 ## What's Included
