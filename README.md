@@ -18,6 +18,9 @@ chezmoi init --apply mukhlisakbr
 
 # 4. Install semua dependencies dari Brewfile
 brew bundle -v
+
+# 5. Install tools dari mise (node, bun, dll)
+mise install
 ```
 
 ## What's Included
