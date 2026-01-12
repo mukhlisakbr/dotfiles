@@ -128,7 +128,7 @@ function createChromiumHyperRule(hyper: HyperModifier) {
     .condition(ifApp(["com.google.Chrome", "net.imput.helium"]))
     .manipulators([
       hyper([
-        map("t").to(toKey("a", "⌘⇧")), // Search Tabs
+        map("f").to(toKey("a", "⌘⇧")), // Search Tabs
       ]),
     ]);
 }
