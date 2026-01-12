@@ -164,6 +164,24 @@ Enable tap to click and 3 finger dragging:
 ```sh
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+
+# Enable App Exposé with four finger swipe down
+defaults write com.apple.dock showAppExposeGestureEnabled -bool true
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture -int 2
+killall Dock
+```
+
+### Trackpad Click
+
+Set light click pressure dan enable silent clicking:
+
+```sh
+# Set click pressure to light (0=light, 1=medium, 2=firm)
+defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 0
+defaults write com.apple.AppleMultitouchTrackpad SecondClickThreshold -int 0
+
+# Enable silent/quiet clicking
+defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
 ```
 
 ### Startup Sound
