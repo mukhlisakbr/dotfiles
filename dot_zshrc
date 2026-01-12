@@ -67,9 +67,6 @@ export TZ='Asia/Jakarta'
 # sublime
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
-# windsurf bin
-export PATH="/Users/ghost/.codeium/windsurf/bin:$PATH"
-
 # antigravity bin
 export PATH="/Users/ghost/.antigravity/antigravity/bin:$PATH"
 
@@ -84,21 +81,6 @@ export ANDROID_SDK_ROOT="$ANDROID_HOME"
 export ANDROID_NDK_HOME="$ANDROID_HOME/ndk/29.0.14206865"
 export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/36.1.0:$PATH"
 
-# kiro
-[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
-
-# Herd injected PHP bin and config
-export PATH="/Users/ghost/Library/Application Support/Herd/bin/":$PATH
-export HERD_PHP_82_INI_SCAN_DIR="/Users/ghost/Library/Application Support/Herd/config/php/82/"
-export HERD_PHP_83_INI_SCAN_DIR="/Users/ghost/Library/Application Support/Herd/config/php/83/"
-export HERD_PHP_84_INI_SCAN_DIR="/Users/ghost/Library/Application Support/Herd/config/php/84/"
-export HERD_PHP_85_INI_SCAN_DIR="/Users/ghost/Library/Application Support/Herd/config/php/85/"
-
-# Herd injected NVM config
-export NVM_DIR="/Users/ghost/Library/Application Support/Herd/config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
-
 # yazi 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -110,3 +92,11 @@ function y() {
 
 # Mise activation
 eval "$(mise activate zsh)"
+
+
+# Herd injected PHP 8.4 configuration.
+export HERD_PHP_84_INI_SCAN_DIR="/Users/batman/Library/Application Support/Herd/config/php/84/"
+
+
+# Herd injected PHP binary.
+export PATH="/Users/batman/Library/Application Support/Herd/bin/":$PATH
