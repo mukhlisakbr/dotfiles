@@ -12,14 +12,17 @@ Personal dotfiles managed with [chezmoi](https://www.chezmoi.io/) for macOS.
 brew install bitwarden-cli
 bw login
 
-# 3. Install chezmoi and apply dotfiles
+# 3. Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# 4. Install chezmoi and apply dotfiles
 brew install chezmoi
 chezmoi init --apply mukhlisakbr
 
-# 4. Install dependencies from Brewfile
+# 5. Install dependencies from Brewfile
 brew bundle -v
 
-# 5. Install runtime tools via mise (node, bun, etc.)
+# 6. Install runtime tools via mise (node, bun, etc.)
 mise install
 ```
 
