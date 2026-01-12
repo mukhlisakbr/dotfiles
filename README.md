@@ -150,3 +150,7 @@ Enable tap to click and 3 finger dragging:
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
 ```
+
+### Startup Sound
+
+Disable startup chime via **System Settings → Sound → uncheck "Play sound on startup"**.
