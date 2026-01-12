@@ -60,6 +60,8 @@ function createAppLauncherRule() {
 function createGeneralHyperRule(hyper: HyperModifier) {
   return rule("Hyper | General Navigation").manipulators([
     hyper([
+      // Screenshot
+      map("s").to(toKey("4", "⌘⌃⇧")), // Screenshot area to clipboard
       // VIM-style arrow keys
       map("h").to(toKey("←")),
       map("j").to(toKey("↓")),
