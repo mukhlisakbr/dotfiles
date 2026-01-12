@@ -136,6 +136,18 @@ defaults write com.apple.dock autohide-time-modifier -float 0.15
 killall Dock
 ```
 
+### Dock Tilesize
+
+Set fixed icon size untuk dock:
+
+```sh
+# Set dock icon size to 36 pixels
+defaults write com.apple.dock tilesize -int 36
+
+# Restart dock
+killall Dock
+```
+
 ### Trackpad & Mouse Speed
 
 Set tracking speed (range: 0-3, higher = faster):
