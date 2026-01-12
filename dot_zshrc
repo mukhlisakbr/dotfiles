@@ -74,12 +74,10 @@ export PATH="/Users/ghost/.antigravity/antigravity/bin:$PATH"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# java and android sdk
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-export ANDROID_SDK_ROOT="$ANDROID_HOME"
-export ANDROID_NDK_HOME="$ANDROID_HOME/ndk/29.0.14206865"
-export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/36.1.0:$PATH"
+# android sdk
+export ANDROID_HOME="$HOME/.android/sdk"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
+export PATH="$ANDROID_HOME/emulator:$PATH"
 
 # yazi 
 function y() {

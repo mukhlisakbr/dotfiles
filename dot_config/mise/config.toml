@@ -1,3 +1,4 @@
 [tools]
 bun = "latest"
+java = "zulu-17"
 node = "lts"
