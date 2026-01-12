@@ -75,9 +75,13 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # android sdk
-export ANDROID_HOME="$HOME/.android/sdk"
+export ANDROID_HOME="/opt/homebrew/share/android-commandlinetools"
+export ANDROID_SDK_ROOT="$ANDROID_HOME"
 export PATH="$ANDROID_HOME/platform-tools:$PATH"
 export PATH="$ANDROID_HOME/emulator:$PATH"
+
+# android emulator alias
+alias emu='emulator -avd Pixel_8_API_36'
 
 # yazi 
 function y() {
