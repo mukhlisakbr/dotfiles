@@ -8,18 +8,18 @@ Personal dotfiles managed with [chezmoi](https://www.chezmoi.io/) for macOS.
 # 1. Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# 2. Install Bitwarden CLI (untuk decrypt secrets)
+# 2. Install Bitwarden CLI (for decrypting secrets)
 brew install bitwarden-cli
 bw login
 
-# 3. Install chezmoi via brew dan apply dotfiles
+# 3. Install chezmoi and apply dotfiles
 brew install chezmoi
 chezmoi init --apply mukhlisakbr
 
-# 4. Install semua dependencies dari Brewfile
+# 4. Install dependencies from Brewfile
 brew bundle -v
 
-# 5. Install tools dari mise (node, bun, dll)
+# 5. Install runtime tools via mise (node, bun, etc.)
 mise install
 ```
 
@@ -42,13 +42,6 @@ mise install
 - tmux - Terminal multiplexer
 - aria2 - Download utility
 
-### macOS
-- **karabiner** - Keyboard customization (with karabiner.ts)
-- **Key Repeat** - Fast key repeat settings (see below)
-- **Dock Animation** - Fast dock show/hide (see below)
-- **Trackpad/Mouse Speed** - Custom tracking speed (see below)
-- **Trackpad Gestures** - Tap to click & 3 finger dragging (see below)
-
 ### AI Coding Tools
 - **claude** - Claude Code CLI
 - **opencode** - OpenCode CLI
@@ -57,6 +50,7 @@ mise install
 - Sublime Text - Editor settings
 - vimium - Browser vim extension
 - mise - Version manager
+- karabiner - Keyboard customization (with karabiner.ts)
 
 ## Structure
 
@@ -106,61 +100,53 @@ chezmoi diff
 chezmoi forget ~/.some/file && rm ~/.some/file
 ```
 
-## macOS Key Repeat
+## macOS Settings
 
-Enable fast key repeat untuk Ghostty dan VS Code:
+Optional settings to configure after setup. Logout and login after running these commands.
+
+### Key Repeat
+
+Enable fast key repeat for Ghostty and VS Code:
 
 ```sh
-# Disable press-and-hold untuk accent characters
+# Disable press-and-hold for accent characters
 defaults write com.mitchellh.ghostty ApplePressAndHoldEnabled -bool false
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
-# Set key repeat ke nilai tercepat
+# Set key repeat to fastest
 defaults write -g KeyRepeat -int 1
 defaults write -g InitialKeyRepeat -int 10
 ```
 
-Logout dan login kembali setelah menjalankan command di atas.
+### Dock Animation
 
-## macOS Dock Animation
-
-Percepat animasi dock show/hide:
+Speed up dock show/hide animation:
 
 ```sh
-# Hilangkan delay sebelum dock muncul
+# Remove delay before dock appears
 defaults write com.apple.dock autohide-delay -float 0
 
-# Percepat animasi show/hide
+# Speed up animation
 defaults write com.apple.dock autohide-time-modifier -float 0.15
 
 # Restart dock
 killall Dock
 ```
 
-## macOS Trackpad & Mouse Speed
+### Trackpad & Mouse Speed
 
 Set tracking speed (range: 0-3, higher = faster):
 
 ```sh
-# Trackpad speed
 defaults write -g com.apple.trackpad.scaling -float 0.875
-
-# Mouse speed
 defaults write -g com.apple.mouse.scaling -float 0.875
 ```
 
-Logout dan login kembali setelah menjalankan command di atas.
+### Trackpad Gestures
 
-## macOS Trackpad Gestures
-
-Enable tap to click dan 3 finger dragging:
+Enable tap to click and 3 finger dragging:
 
 ```sh
-# Tap to click
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
-
-# 3 finger dragging
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
 ```
-
-Logout dan login kembali setelah menjalankan command di atas.
