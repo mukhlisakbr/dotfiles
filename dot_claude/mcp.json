@@ -27,7 +27,7 @@
     "appstore": {
       "type": "stdio",
       "command": "node",
-      "args": ["~/data/oss/mcp-appstore/server.js"],
+      "args": ["/Users/batman/data/oss/mcp-appstore/server.js"],
       "env": {}
     },
     "tavily": {
