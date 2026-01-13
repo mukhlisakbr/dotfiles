@@ -1,0 +1,48 @@
+{
+  "mcpServers": {
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "devtools": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["chrome-devtools-mcp@latest"],
+      "env": {}
+    },
+    "exa": {
+      "type": "http",
+      "url": "https://mcp.exa.ai/mcp"
+    },
+    "grep": {
+      "type": "http",
+      "url": "https://mcp.grep.app"
+    },
+    "trends": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["google-trends-mcp-qihoo"],
+      "env": {}
+    },
+    "appstore": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["~/data/oss/mcp-appstore/server.js"],
+      "env": {}
+    },
+    "tavily": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "tavily-mcp@latest"],
+      "env": {
+        "TAVILY_API_KEY": "${TAVILY_API_KEY}"
+      }
+    },
+    "mobile": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@mobilenext/mobile-mcp@latest"],
+      "env": {}
+    }
+  }
+}
