@@ -20,7 +20,7 @@ brew install chezmoi
 chezmoi init --apply mukhlisakbr
 
 # 5. Install dependencies from Brewfile
-brew bundle -v
+brew bundle install -g -v
 
 # 6. Install runtime tools via mise (node, bun, etc.)
 mise install
@@ -28,38 +28,20 @@ mise install
 
 ## What's Included
 
-### Shell
-- **zsh** - Shell configuration with zinit plugin manager
-- **starship** - Cross-shell prompt
-
-### Terminal
-- **ghostty** - Primary terminal emulator
-
-### Editors
-- **neovim** - Primary editor (LazyVim)
-- **vim** - `.vimrc` for basic vim usage
-
-### CLI Tools
-- bat, eza, fd, fzf, ripgrep - Modern unix utilities
-- yazi - Terminal file manager
-- tmux - Terminal multiplexer
-- aria2 - Download utility
-
-### AI Coding Tools
-- **claude** - Claude Code CLI
-- **opencode** - OpenCode CLI
-
-### Other
-- Sublime Text - Editor settings
-- vimium - Browser vim extension
-- mise - Version manager
-- karabiner - Keyboard customization (with karabiner.ts)
+| Category | Tools |
+|----------|-------|
+| Shell | zsh (zinit), starship prompt |
+| Terminal | ghostty |
+| Editors | neovim (LazyVim), vim |
+| CLI | bat, eza, fd, fzf, ripgrep, yazi, tmux, aria2 |
+| AI Coding | Claude Code, OpenCode |
+| Other | Sublime Text, vimium, mise, karabiner |
 
 ## Structure
 
 ```
 .
-├── Brewfile                    # Homebrew dependencies
+├── dot_Brewfile                # Homebrew dependencies (~/.Brewfile)
 ├── dot_zshrc                   # Zsh configuration
 ├── dot_zprofile                # Zsh profile
 ├── dot_vimrc                   # Vim configuration
@@ -76,9 +58,10 @@ mise install
 │   ├── aria2/                  # Download manager
 │   ├── mise/                   # Version manager
 │   ├── opencode/               # OpenCode CLI
+│   ├── vimium/                 # Browser vim extension
 │   └── git/                    # Global gitignore
 ├── dot_claude/                 # Claude Code settings
-├── dot_ssh/                    # SSH config (encrypted)
+├── dot_ssh/                    # SSH config
 ├── private_dot_gitconfig       # Git configuration
 ├── private_Library/            # Sublime Text settings
 └── encrypted_*.asc             # GPG-encrypted secrets
@@ -86,104 +69,77 @@ mise install
 
 ## Usage
 
+### Brewfile
+
+Brewfile is stored at `~/.Brewfile` (global). Use `-g` flag for all operations:
+
 ```sh
-# Pull and apply latest changes
-chezmoi update
-
-# Edit a managed file
-chezmoi edit ~/.zshrc
-
-# Add a new file to management
-chezmoi add ~/.config/some/file
-
-# See what would change
-chezmoi diff
-
-# Remove a file from management (source + target)
-chezmoi forget ~/.some/file && rm ~/.some/file
+brew bundle install -g              # Install dependencies
+brew bundle dump -g --force --no-vscode  # Update Brewfile (skip vscode extensions)
+brew bundle check -g                # Verify all dependencies are installed
+brew bundle list -g                 # List dependencies
 ```
+
+> VS Code extensions are skipped since Settings Sync is used instead.
+
+### Chezmoi
+
+```sh
+chezmoi add ~/.config/some/file     # Add a new file
+chezmoi diff                        # Check for unsynced changes
+chezmoi re-add ~/.zshrc             # Sync target changes back to source
+chezmoi destroy ~/.some/file        # Remove from source and target
+chezmoi update                      # Pull and apply from remote
+```
+
+> Workflow: Edit files directly at target location, then use `chezmoi diff` to check and `chezmoi re-add` to sync.
 
 ## macOS Settings
 
-Optional settings to configure after setup. Logout and login after running these commands.
+Optional settings. Logout/login after running these commands.
 
-### Key Repeat
-
-Enable fast key repeat for Ghostty and VS Code:
+### Keyboard
 
 ```sh
-# Disable press-and-hold for accent characters
+# Fast key repeat for Ghostty and VS Code
 defaults write com.mitchellh.ghostty ApplePressAndHoldEnabled -bool false
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
-
-# Set key repeat to fastest
 defaults write -g KeyRepeat -int 1
 defaults write -g InitialKeyRepeat -int 10
 ```
 
-### Dock Animation
-
-Speed up dock show/hide animation:
+### Dock
 
 ```sh
-# Remove delay before dock appears
+# Fast dock animation
 defaults write com.apple.dock autohide-delay -float 0
-
-# Speed up animation
 defaults write com.apple.dock autohide-time-modifier -float 0.15
-
-# Restart dock
-killall Dock
-```
-
-### Dock Tilesize
-
-Set fixed icon size untuk dock:
-
-```sh
-# Set dock icon size to 36 pixels
 defaults write com.apple.dock tilesize -int 36
-
-# Restart dock
 killall Dock
 ```
 
-### Trackpad & Mouse Speed
-
-Set tracking speed (range: 0-3, higher = faster):
+### Trackpad
 
 ```sh
+# Tap to click + 3 finger drag
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+
+# App Exposé with 4 finger swipe down
+defaults write com.apple.dock showAppExposeGestureEnabled -bool true
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture -int 2
+killall Dock
+
+# Light + silent click
+defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 0
+defaults write com.apple.AppleMultitouchTrackpad SecondClickThreshold -int 0
+defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
+
+# Tracking speed (0-3)
 defaults write -g com.apple.trackpad.scaling -float 0.875
 defaults write -g com.apple.mouse.scaling -float 0.875
 ```
 
-### Trackpad Gestures
+### Other
 
-Enable tap to click and 3 finger dragging:
-
-```sh
-defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
-
-# Enable App Exposé with four finger swipe down
-defaults write com.apple.dock showAppExposeGestureEnabled -bool true
-defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture -int 2
-killall Dock
-```
-
-### Trackpad Click
-
-Set light click pressure dan enable silent clicking:
-
-```sh
-# Set click pressure to light (0=light, 1=medium, 2=firm)
-defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 0
-defaults write com.apple.AppleMultitouchTrackpad SecondClickThreshold -int 0
-
-# Enable silent/quiet clicking
-defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
-```
-
-### Startup Sound
-
-Disable startup chime via **System Settings → Sound → uncheck "Play sound on startup"**.
+- **Startup Sound**: System Settings → Sound → uncheck "Play sound on startup"
