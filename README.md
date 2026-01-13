@@ -74,10 +74,10 @@ mise install
 Brewfile is stored at `~/.Brewfile` (global). Use `-g` flag for all operations:
 
 ```sh
-brew bundle install -g              # Install dependencies
-brew bundle dump -g --force --no-vscode  # Update Brewfile (skip vscode extensions)
-brew bundle check -g                # Verify all dependencies are installed
-brew bundle list -g                 # List dependencies
+brew bundle install -g                   # Install dependencies
+brew bundle dump -g --force --no-vscode  # Update Brewfile (skip vscode)
+brew bundle check -g                     # Verify all installed
+brew bundle list -g                      # List dependencies
 ```
 
 > VS Code extensions are skipped since Settings Sync is used instead.
@@ -111,26 +111,23 @@ defaults write -g InitialKeyRepeat -int 10
 ### Dock
 
 ```sh
-# Fast dock animation
+# Fast animation + icon size + App Exposé gesture
 defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -float 0.15
 defaults write com.apple.dock tilesize -int 36
+defaults write com.apple.dock showAppExposeGestureEnabled -bool true
 killall Dock
 ```
 
-### Trackpad
+### Trackpad & Mouse
 
 ```sh
-# Tap to click + 3 finger drag
+# Tap to click + 3 finger drag + 4 finger swipe for App Exposé
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
-
-# App Exposé with 4 finger swipe down
-defaults write com.apple.dock showAppExposeGestureEnabled -bool true
 defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture -int 2
-killall Dock
 
-# Light + silent click
+# Light + quiet click
 defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 0
 defaults write com.apple.AppleMultitouchTrackpad SecondClickThreshold -int 0
 defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
