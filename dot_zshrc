@@ -32,8 +32,10 @@ alias wip='git add . && git commit -m "wip" && git push'
 
 # aliases other
 alias oc="opencode"
-alias cc="claude --mcp-config ~/.claude/mcp.json"
-alias ccd="claude --mcp-config ~/.claude/mcp.json --dangerously-skip-permissions"
+CLAUDE_CMD="claude --mcp-config ~/.claude/mcp.json"
+alias cc="$CLAUDE_CMD"
+alias ccd="$CLAUDE_CMD --dangerously-skip-permissions"
+alias ccc="$CLAUDE_CMD -c"
 
 # fzf setup
 FD_BASE="fd --strip-cwd-prefix"
