@@ -1,14 +1,12 @@
-# ohmyzsh
+# ===========================================
+# Core Setup
+# ===========================================
+
+# oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME=""
 plugins=(git)
-source $ZSH/oh-my-zsh.sh
-
-# starship
-eval "$(starship init zsh)"
-
-# zoxide z jump
-eval "$(zoxide init zsh)"
+source "$ZSH/oh-my-zsh.sh"
 
 # zinit
 source /opt/homebrew/opt/zinit/zinit.zsh
@@ -17,27 +15,69 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light jessarcher/zsh-artisan
 zinit cdreplay -q
 
+# starship
+eval "$(starship init zsh)"
+
+# ===========================================
+# Base Environment
+# ===========================================
+
+export EDITOR='nvim'
+export TZ='Asia/Jakarta'
+
+# ===========================================
+# Tools
+# ===========================================
+
 # eza
 export EZA_CONFIG_DIR="$HOME/.config/eza"
-
-# aliases ls
 alias eza="eza --icons --sort=type"
 alias l="eza"
 alias ll="eza -l"
 alias lla="eza -la"
 
-# aliases git
+# git
 alias lg="lazygit"
 alias wip='git add . && git commit -m "wip" && git push'
 
-# aliases other
-alias oc="opencode"
+# sublime
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+
+# antigravity
+export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# android
+export ANDROID_HOME="/opt/homebrew/share/android-commandlinetools"
+export ANDROID_SDK_ROOT="$ANDROID_HOME"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
+export PATH="$ANDROID_HOME/emulator:$PATH"
+alias emu='emulator -avd Pixel_8_API_36'
+
+# herd
+export HERD_PHP_84_INI_SCAN_DIR="$HOME/Library/Application Support/Herd/config/php/84/"
+export PATH="$HOME/Library/Application Support/Herd/bin:$PATH"
+
+# claude
 CLAUDE_CMD="claude --mcp-config ~/.claude/mcp.json"
 alias cc="$CLAUDE_CMD"
 alias ccd="$CLAUDE_CMD --dangerously-skip-permissions"
 alias ccc="$CLAUDE_CMD -c"
 
-# fzf setup
+# opencode
+alias oc="opencode"
+
+# ===========================================
+# Tool Initializations
+# ===========================================
+
+# zoxide
+eval "$(zoxide init zsh)"
+
+# fzf
 FD_BASE="fd --strip-cwd-prefix"
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
@@ -60,32 +100,14 @@ export FZF_ALT_C_OPTS="
 "
 source <(fzf --zsh)
 
-# def editor
-export EDITOR='nvim'
+# mise
+eval "$(mise activate zsh)"
 
-# timezone
-export TZ='Asia/Jakarta'
+# ===========================================
+# Functions
+# ===========================================
 
-# sublime
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
-
-# antigravity bin
-export PATH="/Users/ghost/.antigravity/antigravity/bin:$PATH"
-
-# bun global bin
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# android sdk
-export ANDROID_HOME="/opt/homebrew/share/android-commandlinetools"
-export ANDROID_SDK_ROOT="$ANDROID_HOME"
-export PATH="$ANDROID_HOME/platform-tools:$PATH"
-export PATH="$ANDROID_HOME/emulator:$PATH"
-
-# android emulator alias
-alias emu='emulator -avd Pixel_8_API_36'
-
-# yazi 
+# yazi - cd on exit
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
@@ -93,14 +115,3 @@ function y() {
 	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
-
-# Mise activation
-eval "$(mise activate zsh)"
-
-
-# Herd injected PHP 8.4 configuration.
-export HERD_PHP_84_INI_SCAN_DIR="/Users/batman/Library/Application Support/Herd/config/php/84/"
-
-
-# Herd injected PHP binary.
-export PATH="/Users/batman/Library/Application Support/Herd/bin/":$PATH
