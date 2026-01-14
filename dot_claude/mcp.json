@@ -22,13 +22,15 @@
       "type": "stdio",
       "command": "uvx",
       "args": ["google-trends-mcp-qihoo"],
-      "env": {}
+      "env": {},
+      "disabled": true
     },
     "appstore": {
       "type": "stdio",
       "command": "node",
       "args": ["/Users/batman/data/oss/mcp-appstore/server.js"],
-      "env": {}
+      "env": {},
+      "disabled": true
     },
     "tavily": {
       "type": "stdio",
@@ -36,13 +38,15 @@
       "args": ["-y", "tavily-mcp@latest"],
       "env": {
         "TAVILY_API_KEY": "${TAVILY_API_KEY}"
-      }
+      },
+      "disabled": true
     },
     "mobile": {
       "type": "stdio",
       "command": "npx",
       "args": ["-y", "@mobilenext/mobile-mcp@latest"],
-      "env": {}
+      "env": {},
+      "disabled": true
     }
   }
 }
