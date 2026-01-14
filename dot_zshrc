@@ -49,6 +49,7 @@ export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+eval "$(bun completions)"
 
 # android
 export ANDROID_HOME="/opt/homebrew/share/android-commandlinetools"
@@ -100,6 +101,9 @@ source <(fzf --zsh)
 
 # mise
 eval "$(mise activate zsh)"
+
+# npm
+eval "$(npm completion)"
 
 # ===========================================
 # Functions
