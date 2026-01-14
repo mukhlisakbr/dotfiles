@@ -10,5 +10,6 @@
     "typescript-lsp@claude-plugins-official": true
   },
   "language": "bahasa indonesia",
-  "promptSuggestionEnabled": false
+  "promptSuggestionEnabled": false,
+  "autoUpdatesChannel": "latest"
 }
