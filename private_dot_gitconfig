@@ -5,6 +5,9 @@
 [init]
   defaultBranch = main
 
+[include]
+  path = ~/.config/delta/catppuccin.gitconfig
+
 [core]
   pager = delta
 
@@ -12,6 +15,7 @@
   diffFilter = delta --color-only
 
 [delta]
+  features = catppuccin-mocha
   navigate = true
   side-by-side = true
   line-numbers = true
