@@ -4,6 +4,7 @@
   "font_face": "JetBrainsMono Nerd Font Mono",
 
   "ignored_packages": [
+    "Vintage"
   ],
 
   // indentation
