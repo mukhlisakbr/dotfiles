@@ -9,7 +9,10 @@
     "security-guidance@claude-plugins-official": true,
     "typescript-lsp@claude-plugins-official": true,
     "context7@claude-plugins-official": true,
-    "code-simplifier@claude-plugins-official": true
+    "code-simplifier@claude-plugins-official": true,
+    "expo-app-design@expo-plugins": true,
+    "expo-deployment@expo-plugins": true,
+    "upgrading-expo@expo-plugins": true
   },
   "language": "bahasa indonesia",
   "promptSuggestionEnabled": false,
