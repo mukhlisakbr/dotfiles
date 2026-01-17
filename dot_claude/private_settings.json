@@ -12,7 +12,8 @@
     "code-simplifier@claude-plugins-official": true,
     "expo-app-design@expo-plugins": true,
     "expo-deployment@expo-plugins": true,
-    "upgrading-expo@expo-plugins": true
+    "upgrading-expo@expo-plugins": true,
+    "Notion@claude-plugins-official": true
   },
   "language": "bahasa indonesia",
   "promptSuggestionEnabled": false,
