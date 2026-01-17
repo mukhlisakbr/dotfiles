@@ -1,21 +1,29 @@
 {
-  "permissions": {
-    "defaultMode": "plan"
+  "autoUpdatesChannel" : "latest",
+  "enabledPlugins" : {
+    "code-simplifier@claude-plugins-official" : true,
+    "commit-commands@claude-plugins-official" : true,
+    "context7@claude-plugins-official" : true,
+    "expo-app-design@expo-plugins" : true,
+    "expo-deployment@expo-plugins" : true,
+    "feature-dev@claude-plugins-official" : true,
+    "frontend-design@claude-plugins-official" : true,
+    "Notion@claude-plugins-official" : true,
+    "security-guidance@claude-plugins-official" : true,
+    "typescript-lsp@claude-plugins-official" : true,
+    "upgrading-expo@expo-plugins" : true
   },
-  "enabledPlugins": {
-    "commit-commands@claude-plugins-official": true,
-    "feature-dev@claude-plugins-official": true,
-    "frontend-design@claude-plugins-official": true,
-    "security-guidance@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true,
-    "context7@claude-plugins-official": true,
-    "code-simplifier@claude-plugins-official": true,
-    "expo-app-design@expo-plugins": true,
-    "expo-deployment@expo-plugins": true,
-    "upgrading-expo@expo-plugins": true,
-    "Notion@claude-plugins-official": true
+  "env" : {
+    "ANTHROPIC_AUTH_TOKEN" : "quotio-local-C003810B-011E-485C-A341-C5C8E67A8C9A",
+    "ANTHROPIC_BASE_URL" : "http://127.0.0.1:8317",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL" : "gemini-3-flash-preview",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL" : "gemini-3-pro-preview",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL" : "gemini-3-pro-preview"
   },
-  "language": "bahasa indonesia",
-  "promptSuggestionEnabled": false,
-  "autoUpdatesChannel": "latest"
+  "language" : "bahasa indonesia",
+  "model" : "gemini-3-pro-preview",
+  "permissions" : {
+    "defaultMode" : "plan"
+  },
+  "promptSuggestionEnabled" : false
 }
