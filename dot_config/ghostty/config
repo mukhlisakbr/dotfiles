@@ -19,7 +19,7 @@ macos-titlebar-style = tabs
 keybind = shift+enter=text:\n
 
 # theme
-theme = "catppuccin-mocha.conf"
+theme = Dracula
 
 # transparent
 #background-opacity = 0.8
