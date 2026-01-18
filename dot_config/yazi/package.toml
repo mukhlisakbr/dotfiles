@@ -5,3 +5,8 @@ deps = []
 use = "yazi-rs/flavors:dracula"
 rev = "4a1802a"
 hash = "7a870f143a4026a893ea3123be711e7a"
+
+[[flavor.deps]]
+use = "Mintass/rose-pine"
+rev = "d91f8f2"
+hash = "87da3630653b6d272e43658418599188"
