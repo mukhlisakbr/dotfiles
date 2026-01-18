@@ -46,11 +46,12 @@ FZF_PREVIEW_WINDOW="--preview-window=60%:wrap"
 FZF_PREVIEW_BIND="--bind=ctrl-d:preview-page-down,ctrl-u:preview-page-up"
 
 export FZF_DEFAULT_COMMAND="$FD_BASE --type f"
-export FZF_DEFAULT_OPTS=" \
-  --color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 \
-  --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 \
-  --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 \
-  --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4"
+export FZF_DEFAULT_OPTS="
+	--color=fg:#908caa,bg:#191724,hl:#ebbcba
+	--color=fg+:#e0def4,bg+:#26233a,hl+:#ebbcba
+	--color=border:#403d52,header:#31748f,gutter:#191724
+	--color=spinner:#f6c177,info:#9ccfd8
+	--color=pointer:#c4a7e7,marker:#eb6f92,prompt:#908caa"
 
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS="--preview='bat -n --color=always {}' $FZF_PREVIEW_WINDOW $FZF_PREVIEW_BIND"

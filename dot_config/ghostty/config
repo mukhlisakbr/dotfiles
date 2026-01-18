@@ -19,7 +19,7 @@ macos-titlebar-style = tabs
 keybind = shift+enter=text:\n
 
 # theme
-theme = Dracula
+theme = Rose Pine
 
 # transparent
 #background-opacity = 0.8

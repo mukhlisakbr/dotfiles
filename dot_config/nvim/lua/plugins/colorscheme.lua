@@ -1,11 +1,18 @@
 return {
   {
-    "Mofiqul/dracula.nvim",
+    "rose-pine/neovim",
+    name = "rose-pine",
+    opts = {
+      variant = "main",
+      styles = {
+        transparency = true,
+      },
+    },
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "dracula",
+      colorscheme = "rose-pine",
     },
   },
 }
