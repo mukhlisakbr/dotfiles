@@ -4,7 +4,7 @@
   "font_face": "JetBrainsMono Nerd Font Mono",
 
   "ignored_packages": [
-    "Vintage"
+    "Vintage",
   ],
 
   // indentation
@@ -16,6 +16,7 @@
   "caret_extra_top": 0,
 
   // theme
-  "color_scheme": "Catppuccin Mocha.sublime-color-scheme",
+  "color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
   "theme": "Adaptive.sublime-theme",
+  "index_files": true,
 }
