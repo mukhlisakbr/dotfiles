@@ -16,7 +16,7 @@
     "Notion@claude-plugins-official": true
   },
   "language": "bahasa indonesia",
+  "syntaxHighlightingDisabled": false,
   "promptSuggestionEnabled": false,
   "autoUpdatesChannel": "latest"
 }
-
