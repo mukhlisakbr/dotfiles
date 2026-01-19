@@ -16,7 +16,12 @@
     "Notion@claude-plugins-official": true
   },
   "language": "bahasa indonesia",
-  "syntaxHighlightingDisabled": false,
-  "promptSuggestionEnabled": false,
+  "outputStyle": "Explanatory",
+  "alwaysThinkingEnabled": true,
+  "showTurnDuration": true,
+  "terminalProgressBarEnabled": true,
+  "spinnerTipsEnabled": false,
+  "cleanupPeriodDays": 7,
+  "enableAllProjectMcpServers": true,
   "autoUpdatesChannel": "latest"
 }
