@@ -100,19 +100,12 @@ export PATH="$ANDROID_HOME/emulator:$PATH"
 alias emu='emulator -avd Pixel_8_API_36'
 
 # herd
-export HERD_PHP_84_INI_SCAN_DIR="$HOME/Library/Application Support/Herd/config/php/84/"
-export PATH="$HOME/Library/Application Support/Herd/bin:$PATH"
+export PATH="/Users/batman/Library/Application Support/Herd/bin:$PATH"
+export HERD_PHP_84_INI_SCAN_DIR="/Users/batman/Library/Application Support/Herd/config/php/84/"
+export HERD_PHP_85_INI_SCAN_DIR="/Users/batman/Library/Application Support/Herd/config/php/85/"
 
 # sublime
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
 # antigravity
 export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
-
-
-# Herd injected PHP 8.4 configuration.
-export HERD_PHP_84_INI_SCAN_DIR="/Users/batman/Library/Application Support/Herd/config/php/84/"
-
-
-# Herd injected PHP 8.5 configuration.
-export HERD_PHP_85_INI_SCAN_DIR="/Users/batman/Library/Application Support/Herd/config/php/85/"
