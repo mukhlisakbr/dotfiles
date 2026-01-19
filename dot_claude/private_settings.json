@@ -1,7 +1,9 @@
 {
+  "cleanupPeriodDays": 7,
   "permissions": {
     "defaultMode": "plan"
   },
+  "enableAllProjectMcpServers": true,
   "enabledPlugins": {
     "commit-commands@claude-plugins-official": true,
     "feature-dev@claude-plugins-official": true,
@@ -15,13 +17,12 @@
     "upgrading-expo@expo-plugins": true,
     "Notion@claude-plugins-official": true
   },
-  "language": "bahasa indonesia",
   "outputStyle": "Explanatory",
+  "language": "bahasa indonesia",
+  "spinnerTipsEnabled": false,
   "alwaysThinkingEnabled": true,
+  "autoUpdatesChannel": "latest",
   "showTurnDuration": true,
   "terminalProgressBarEnabled": true,
-  "spinnerTipsEnabled": false,
-  "cleanupPeriodDays": 7,
-  "enableAllProjectMcpServers": true,
-  "autoUpdatesChannel": "latest"
+  "promptSuggestionEnabled": false
 }
