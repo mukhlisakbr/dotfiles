@@ -18,10 +18,5 @@
   "language": "bahasa indonesia",
   "syntaxHighlightingDisabled": false,
   "promptSuggestionEnabled": false,
-  "autoUpdatesChannel": "latest",
-  "statusLine": {
-    "type": "command",
-    "command": "bunx -y ccstatusline@latest",
-    "padding": 0
-  }
+  "autoUpdatesChannel": "latest"
 }
