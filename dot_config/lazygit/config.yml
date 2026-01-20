@@ -1,30 +1,27 @@
-# DRACULA
 gui:
+  nerdFontsVersion: "3"
   theme:
     activeBorderColor:
-      - "#FF79C6"
-      - bold
+      - "#ff9e64"
+      - "bold"
     inactiveBorderColor:
-      - "#BD93F9"
+      - "#27a1b9"
     searchingActiveBorderColor:
-      - "#8BE9FD"
-      - bold
+      - "#ff9e64"
+      - "bold"
     optionsTextColor:
-      - "#6272A4"
+      - "#7aa2f7"
     selectedLineBgColor:
-      - "#6272A4"
-    inactiveViewSelectedLineBgColor:
-      - bold
+      - "#283457"
     cherryPickedCommitFgColor:
-      - "#6272A4"
+      - "#7aa2f7"
     cherryPickedCommitBgColor:
-      - "#8BE9FD"
+      - "#bb9af7"
     markedBaseCommitFgColor:
-      - "#8BE9FD"
+      - "#7aa2f7"
     markedBaseCommitBgColor:
-      - "#F1FA8C"
+      - "#e0af68"
     unstagedChangesColor:
-      - "#FF5555"
+      - "#db4b4b"
     defaultFgColor:
-      - "#F8F8F2"
-  nerdFontsVersion: "3"
+      - "#c0caf5"
