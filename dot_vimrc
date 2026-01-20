@@ -24,7 +24,7 @@ set re=0
 set background=dark
 
 "themes
-colorscheme dracula
+colorscheme tokyonight-night
 
 "remap
 inoremap kj <Esc>
