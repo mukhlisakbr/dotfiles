@@ -19,7 +19,7 @@ macos-titlebar-style = tabs
 keybind = shift+enter=text:\n
 
 # theme
-theme = Dracula
+theme = "Tokyonight Night"
 
 # transparent
 #background-opacity = 0.8
