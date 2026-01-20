@@ -1,5 +1,12 @@
 return {
   {
+    "folke/tokyonight.nvim",
+    opts = {
+      style = "night",
+      transparent = true,
+    },
+  },
+  {
     "Mofiqul/dracula.nvim",
     opts = {
       transparent_bg = true,
@@ -18,7 +25,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "dracula",
+      colorscheme = "tokyonight",
     },
   },
 }
