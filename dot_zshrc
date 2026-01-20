@@ -47,11 +47,29 @@ FZF_PREVIEW_WINDOW="--preview-window=60%:wrap"
 FZF_PREVIEW_BIND="--bind=ctrl-d:preview-page-down,ctrl-u:preview-page-up"
 
 export FZF_DEFAULT_COMMAND="$FD_BASE --type f"
-export FZF_DEFAULT_OPTS="
-	--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9
-	--color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9
-	--color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6
-	--color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4"
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
+  --highlight-line \
+  --info=inline-right \
+  --ansi \
+  --layout=reverse \
+  --border=none \
+  --color=bg+:#283457 \
+  --color=bg:#16161e \
+  --color=border:#27a1b9 \
+  --color=fg:#c0caf5 \
+  --color=gutter:#16161e \
+  --color=header:#ff9e64 \
+  --color=hl+:#2ac3de \
+  --color=hl:#2ac3de \
+  --color=info:#545c7e \
+  --color=marker:#ff007c \
+  --color=pointer:#ff007c \
+  --color=prompt:#2ac3de \
+  --color=query:#c0caf5:regular \
+  --color=scrollbar:#27a1b9 \
+  --color=separator:#ff9e64 \
+  --color=spinner:#ff007c \
+"
 
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS="--preview='bat -n --color=always {}' $FZF_PREVIEW_WINDOW $FZF_PREVIEW_BIND"
