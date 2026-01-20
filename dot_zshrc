@@ -22,6 +22,7 @@ eval "$(starship init zsh)"
 # Base Environment
 # ===========================================
 
+export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR='nvim'
 export TZ='Asia/Jakarta'
 

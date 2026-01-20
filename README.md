@@ -24,6 +24,11 @@ brew bundle install -g -v
 
 # 6. Install runtime tools via mise (node, bun, etc.)
 mise install
+
+# 7. Install vim-plug for Vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +PlugInstall +qall
 ```
 
 ## What's Included
