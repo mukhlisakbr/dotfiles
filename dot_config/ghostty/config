@@ -1,7 +1,5 @@
 # font
-#font-family = "GeistMono Nerd Font Mono"
 font-family = "JetBrainsMono Nerd Font Mono"
-#font-family = "BlexMono Nerd Font Mono"
 font-size = 13
 font-feature = -calt, -liga, -dlig
 
@@ -18,11 +16,6 @@ macos-titlebar-style = tabs
 # keybind
 keybind = shift+enter=text:\n
 
-# theme
-#theme = "Tokyonight Night"
-
 # transparent
-#background-opacity = 0.8
-#background-blur = true
 unfocused-split-opacity = 1
 

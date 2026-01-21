@@ -2,11 +2,6 @@ call plug#begin()
 Plug 'sheerun/vim-polyglot'
 Plug 'tribela/vim-transparent'
 Plug 'jszakmeister/vim-togglecursor'
-Plug 'leviosa42/vim-github-theme'
-Plug 'wojciechkepka/vim-github-dark'
-Plug 'folke/tokyonight.nvim', { 'rtp': 'extras/vim' }
-Plug 'catppuccin/vim', { 'as': 'catppuccin' }
-Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
 syntax on
@@ -24,7 +19,7 @@ set re=0
 set background=dark
 
 "themes
-colorscheme tokyonight-night
+colorscheme desert
 
 "remap
 inoremap kj <Esc>
