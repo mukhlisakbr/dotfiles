@@ -26,7 +26,7 @@
   "alwaysThinkingEnabled": true,
   "autoUpdatesChannel": "latest",
   "showTurnDuration": true,
-  "terminalProgressBarEnabled": true,
+  "terminalProgressBarEnabled": false,
   "promptSuggestionEnabled": false,
   "model": "opus"
 }
