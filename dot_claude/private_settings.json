@@ -27,5 +27,6 @@
   "autoUpdatesChannel": "latest",
   "showTurnDuration": true,
   "terminalProgressBarEnabled": true,
-  "promptSuggestionEnabled": false
+  "promptSuggestionEnabled": false,
+  "model": "opus"
 }
