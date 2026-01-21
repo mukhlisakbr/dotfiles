@@ -49,7 +49,7 @@ function createAppLauncherRule() {
       map("f").to(toApp("Finder")),             // Files
       map("l").to(toApp("Herd")),               // Local Server
       map("m").to(toApp("Spotify")),            // Music
-      map("n").to(toApp("Notion")),             // Notes
+      map("n").to(toApp("Notes")),              // Notes (Apple Notes)
       map("p").to(toApp("Bitwarden")),          // Password
       map("s").to(toApp("Sublime Text")),       // Secondary Editor
       map("t").to(toApp("Ghostty")),            // Terminal
