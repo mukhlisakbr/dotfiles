@@ -23,7 +23,7 @@ eval "$(starship init zsh)"
 # ===========================================
 
 export XDG_CONFIG_HOME="$HOME/.config"
-export EDITOR='nvim'
+export EDITOR='vim'
 export TZ='Asia/Jakarta'
 
 # ===========================================
@@ -45,38 +45,11 @@ eval "$(npm completion)"
 FD_BASE="fd --strip-cwd-prefix"
 FZF_PREVIEW_WINDOW="--preview-window=60%:wrap"
 FZF_PREVIEW_BIND="--bind=ctrl-d:preview-page-down,ctrl-u:preview-page-up"
-
 export FZF_DEFAULT_COMMAND="$FD_BASE --type f"
-#export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
-#  --highlight-line \
-#  --info=inline-right \
-#  --ansi \
-#  --layout=reverse \
-#  --border=none \
-#  --color=bg+:#283457 \
-#  --color=bg:#16161e \
-#  --color=border:#27a1b9 \
-#  --color=fg:#c0caf5 \
-#  --color=gutter:#16161e \
-#  --color=header:#ff9e64 \
-#  --color=hl+:#2ac3de \
-#  --color=hl:#2ac3de \
-#  --color=info:#545c7e \
-#  --color=marker:#ff007c \
-#  --color=pointer:#ff007c \
-#  --color=prompt:#2ac3de \
-#  --color=query:#c0caf5:regular \
-#  --color=scrollbar:#27a1b9 \
-#  --color=separator:#ff9e64 \
-#  --color=spinner:#ff007c \
-#"
-
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS="--preview='bat -n --color=always {}' $FZF_PREVIEW_WINDOW $FZF_PREVIEW_BIND"
-
 export FZF_ALT_C_COMMAND="$FD_BASE --type d"
 export FZF_ALT_C_OPTS="--preview='tree -C {} | head -200' $FZF_PREVIEW_WINDOW $FZF_PREVIEW_BIND"
-
 source <(fzf --zsh)
 
 # zoxide
