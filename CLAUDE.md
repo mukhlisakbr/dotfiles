@@ -10,6 +10,8 @@ Chezmoi-managed dotfiles repository for macOS. Chezmoi naming conventions:
 - `encrypted_*.asc` → GPG-encrypted (decrypted via Bitwarden)
 - `empty_` → creates empty files
 
+Auto-commit and auto-push are enabled in `.chezmoi.toml.tmpl`.
+
 ## Common Commands
 
 ```sh
@@ -24,6 +26,12 @@ chezmoi re-add ~/.path/to/file
 
 # Add new file to chezmoi management
 chezmoi add ~/.path/to/file
+
+# Remove file from chezmoi (source and target)
+chezmoi destroy ~/.path/to/file
+
+# Pull and apply from remote
+chezmoi update
 
 # Install/update Homebrew dependencies
 brew bundle install -g
@@ -43,7 +51,10 @@ mise install
 | `dot_config/nvim/` | `~/.config/nvim/` | LazyVim (Neovim) |
 | `dot_config/ghostty/` | `~/.config/ghostty/` | Terminal emulator |
 | `dot_config/karabiner/` | `~/.config/karabiner/` | Keyboard customization (TypeScript-based) |
+| `dot_config/mise/` | `~/.config/mise/` | Runtime versions (node, bun, java) |
+| `dot_config/starship.toml` | `~/.config/starship.toml` | Shell prompt |
 | `dot_claude/` | `~/.claude/` | Claude Code global settings |
+| `dot_ssh/` | `~/.ssh/` | SSH configuration (encrypted) |
 | `private_dot_gitconfig` | `~/.gitconfig` | Git configuration |
 
 ### Encrypted Files
@@ -55,18 +66,13 @@ Files ending in `.asc` are GPG-encrypted and require Bitwarden CLI to be logged 
 Located at `dot_config/karabiner/`, uses TypeScript with the `karabiner.ts` library:
 ```sh
 cd ~/.config/karabiner
-bun install
-bun run build  # Generates karabiner.json
+npm install
+npm run build  # Generates karabiner.json
 ```
 
 ## Theming
 
-Consistent Dracula/Catppuccin theming across tools:
-- Ghostty: Dracula theme
 - Neovim: Tokyo Night
-- Vim: Catppuccin Mocha
-- Git delta: Catppuccin Mocha
-- fzf: Dracula colors
 
 ## Web Search
 
