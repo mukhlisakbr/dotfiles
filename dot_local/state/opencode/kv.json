@@ -1,0 +1,11 @@
+{
+  "sidebar": "hide",
+  "thinking_visibility": true,
+  "timestamps": "hide",
+  "tool_details_visibility": true,
+  "assistant_metadata_visibility": true,
+  "scrollbar_visible": true,
+  "animations_enabled": true,
+  "theme": "system",
+  "tips_hidden": true
+}
