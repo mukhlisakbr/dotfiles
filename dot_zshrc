@@ -101,3 +101,6 @@ export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
 # antigravity
 export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
+
+# bitwarden ssh agent
+export SSH_AUTH_SOCK=/Users/<user>/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
