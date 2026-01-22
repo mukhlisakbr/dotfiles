@@ -1,6 +1,5 @@
 call plug#begin()
 Plug 'sheerun/vim-polyglot'
-Plug 'tribela/vim-transparent'
 Plug 'jszakmeister/vim-togglecursor'
 call plug#end()
 
@@ -19,7 +18,7 @@ set re=0
 set background=dark
 
 "themes
-colorscheme desert
+colorscheme habamax
 
 "remap
 inoremap kj <Esc>
