@@ -175,3 +175,53 @@ killall Dock
 **Via System Settings:**
 
 - Sound → Play sound on startup: **Off**
+
+## Keyboard Shortcuts
+
+Custom shortcuts via [Karabiner-Elements](https://karabiner-elements.pqrs.org/). Config: `~/.config/karabiner/src/index.ts`
+
+### Caps Lock Behavior
+
+| Trigger | Action |
+|---------|--------|
+| Caps Lock (hold) | Hyper key (⌘⌃⌥⇧) |
+| Caps Lock (tap) | Escape |
+| Escape | Caps Lock |
+
+### App Launcher (Right ⌘ + Key)
+
+| Key | App | Key | App |
+|-----|-----|-----|-----|
+| A | ChatGPT | M | Spotify |
+| B | Chrome | N | Notes |
+| C | WhatsApp | P | Bitwarden |
+| E | VS Code | S | Sublime Text |
+| F | Finder | T | Ghostty |
+| L | Herd | W | Telegram |
+
+### Hyper Key Shortcuts
+
+**Code Editors** (VSCode, Cursor, Windsurf, Trae, Kiro):
+
+| Key | Action | Key | Action |
+|-----|--------|-----|--------|
+| T | Terminal | O | Go to Symbol |
+| G | Source Control | W | Symbol (Workspace) |
+| E | Explorer | D | Go to Definition |
+| X | Extensions | I | Copilot Chat |
+| B | Toggle Sidebar | P | Command Palette |
+| F | Go to File | Space | Autocomplete |
+
+**Browser** (Chrome, Helium):
+
+| Key | Action |
+|-----|--------|
+| F | Search Tabs |
+
+**Global**:
+
+| Key | Action | Key | Action |
+|-----|--------|-----|--------|
+| S | Screenshot | H/J/K/L | Arrow keys |
+| , | Previous tab | . | Next tab |
+| A-Z | Ctrl+letter (shell/emacs) | Space | Tmux prefix |

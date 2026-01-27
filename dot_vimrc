@@ -15,7 +15,7 @@ set hlsearch
 set ruler
 set clipboard=unnamed
 set re=0
-set background=light
+set background=dark
 
 "themes
 colorscheme default
