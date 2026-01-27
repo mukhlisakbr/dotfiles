@@ -18,6 +18,12 @@
         "source": "github",
         "repo": "expo/claude-plugins"
       }
+    },
+    "ui-ux-pro-max-skill": {
+      "source": {
+        "source": "github",
+        "repo": "nextlevelbuilder/ui-ux-pro-max-skill"
+      }
     }
   },
   "outputStyle": "Explanatory",
@@ -25,7 +31,6 @@
   "spinnerTipsEnabled": false,
   "alwaysThinkingEnabled": true,
   "promptSuggestionEnabled": false,
-  "autoUpdatesChannel": "latest",
   "showTurnDuration": true,
   "terminalProgressBarEnabled": false
 }
