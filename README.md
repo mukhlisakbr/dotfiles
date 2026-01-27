@@ -121,47 +121,57 @@ chezmoi update                      # Pull and apply from remote
 
 ## macOS Settings
 
-Optional settings. Logout/login after running these commands.
+Optional settings. Logout/restart may be required after changes.
 
 ### Keyboard
 
+**Via Terminal** (faster than UI allows):
+
 ```sh
-# Fast key repeat for Ghostty and VS Code
+# Disable press-and-hold for specific apps (hidden setting)
 defaults write com.mitchellh.ghostty ApplePressAndHoldEnabled -bool false
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
+# Key repeat + initial delay faster than UI slider minimum
 defaults write -g KeyRepeat -int 1
 defaults write -g InitialKeyRepeat -int 10
 ```
 
 ### Dock
 
+**Via Terminal** (instant auto-hide + precise size):
+
 ```sh
-# Fast animation + icon size + App Exposé gesture
 defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -float 0.15
 defaults write com.apple.dock tilesize -int 36
-defaults write com.apple.dock showAppExposeGestureEnabled -bool true
 killall Dock
 ```
 
-### Trackpad & Mouse
+### Trackpad
 
-```sh
-# Tap to click + 3 finger drag + 4 finger swipe for App Exposé
-defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
-defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture -int 2
+**Via System Settings:**
 
-# Light + quiet click
-defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 0
-defaults write com.apple.AppleMultitouchTrackpad SecondClickThreshold -int 0
-defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
+- Trackpad → Tracking speed: **5th notch**
+- Trackpad → Click: **Light**
+- Trackpad → Quiet Click: **On**
+- Trackpad → Tap to click: **On**
+- Trackpad → More Gestures → App Exposé: **Swipe Down with Four Fingers**
 
-# Tracking speed (0-3)
-defaults write -g com.apple.trackpad.scaling -float 0.875
-defaults write -g com.apple.mouse.scaling -float 0.875
-```
+### Mouse
 
-### Other
+**Via System Settings:**
 
-- **Startup Sound**: System Settings → Sound → uncheck "Play sound on startup"
+- Mouse → Tracking speed: **5th notch**
+
+### Accessibility
+
+**Via System Settings:**
+
+- Accessibility → Pointer Control → Trackpad Options → Use trackpad for dragging: **Three Finger Drag**
+
+### Sound
+
+**Via System Settings:**
+
+- Sound → Play sound on startup: **Off**
