@@ -3,7 +3,15 @@
   "permissions": {
     "defaultMode": "plan"
   },
+  "model": "opus",
   "enableAllProjectMcpServers": true,
+  "enabledPlugins": {
+    "commit-commands@claude-plugins-official": true,
+    "feature-dev@claude-plugins-official": true,
+    "security-guidance@claude-plugins-official": true,
+    "context7@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true
+  },
   "extraKnownMarketplaces": {
     "expo-plugins": {
       "source": {
@@ -12,21 +20,12 @@
       }
     }
   },
-  "enabledPlugins": {
-    "commit-commands@claude-plugins-official": true,
-    "feature-dev@claude-plugins-official": true,
-    "security-guidance@claude-plugins-official": true,
-    "context7@claude-plugins-official": true,
-    "code-simplifier@claude-plugins-official": true,
-    "Notion@claude-plugins-official": true
-  },
   "outputStyle": "Explanatory",
   "language": "bahasa indonesia",
   "spinnerTipsEnabled": false,
   "alwaysThinkingEnabled": true,
+  "promptSuggestionEnabled": false,
   "autoUpdatesChannel": "latest",
   "showTurnDuration": true,
-  "terminalProgressBarEnabled": false,
-  "promptSuggestionEnabled": false,
-  "model": "opus"
+  "terminalProgressBarEnabled": false
 }
