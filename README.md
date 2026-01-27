@@ -35,12 +35,18 @@ vim +PlugInstall +qall
 
 | Category | Tools |
 |----------|-------|
-| Shell | zsh (zinit), starship prompt |
-| Terminal | ghostty |
-| Editors | neovim (LazyVim), vim |
-| CLI | bat, eza, fd, fzf, ripgrep, yazi, tmux, aria2 |
-| AI Coding | Claude Code, OpenCode |
-| Other | Sublime Text, vimium, mise, karabiner |
+| Shell | zsh, zinit, starship |
+| Terminal | ghostty, tmux |
+| Editors | neovim (LazyVim), vim, Sublime Text |
+| CLI | bat, eza, fd, fzf, ripgrep, yazi, aria2, git-delta, lazygit, glow, htop, jq, tree, zoxide, wget, sevenzip |
+| Dev Tools | gh, go, biome, uv, pnpm, vercel-cli, flyctl, watchman |
+| Media | ffmpeg, imagemagick, pngquant, poppler, resvg, mpv |
+| Android | apktool, bundletool, jadx, maestro, android-commandlinetools |
+| AI Coding | Claude Code, OpenCode, Antigravity, ChatGPT |
+| Network | speedtest, wgcf, cloudflare-warp |
+| Apps | Raycast, Rectangle, Homerow, OrbStack, TablePlus, DaisyDisk, iStat Menus, HTTP Toolkit, KeepingYouAwake, Cyberduck, DBngin, Herd, Telegram, WhatsApp, ExpressVPN |
+| Security | bitwarden-cli, gnupg |
+| Other | mise, karabiner, vimium, Google Chrome, Logi Options+ |
 
 ## Structure
 
@@ -50,13 +56,15 @@ vim +PlugInstall +qall
 ├── dot_zshrc                   # Zsh configuration
 ├── dot_zprofile                # Zsh profile
 ├── dot_vimrc                   # Vim configuration
+├── encrypted_dot_zshenv.asc    # Encrypted zsh environment
+├── empty_dot_hushlogin         # Suppress login message
 ├── dot_config/
 │   ├── nvim/                   # Neovim (LazyVim)
 │   ├── ghostty/                # Ghostty terminal
-│   ├── karabiner/              # Keyboard customization
+│   ├── karabiner/              # Keyboard customization (TypeScript)
 │   ├── starship.toml           # Prompt
-│   ├── bat/                    # bat config & themes
-│   ├── eza/                    # eza theme
+│   ├── bat/                    # bat (placeholder)
+│   ├── eza/                    # eza (placeholder)
 │   ├── fd/                     # fd ignore
 │   ├── yazi/                   # File manager
 │   ├── tmux/                   # Terminal multiplexer
@@ -64,11 +72,23 @@ vim +PlugInstall +qall
 │   ├── mise/                   # Version manager
 │   ├── opencode/               # OpenCode CLI
 │   ├── vimium/                 # Browser vim extension
-│   └── git/                    # Global gitignore
+│   ├── private_git/            # Global gitignore
+│   ├── lazygit/                # Lazygit config
+│   └── delta/                  # Git-delta config
 ├── dot_claude/                 # Claude Code settings
-├── dot_ssh/                    # SSH config
+│   ├── CLAUDE.md
+│   ├── mcp.json
+│   └── private_settings.json
+├── dot_local/                  # Local data
+│   ├── share/opencode/         # OpenCode data (encrypted)
+│   └── state/opencode/         # OpenCode state
+├── dot_ssh/                    # SSH config (encrypted)
 ├── private_dot_gitconfig       # Git configuration
-├── private_Library/            # Sublime Text settings
+├── private_Library/            # macOS Library
+│   └── .../Sublime Text/       # Sublime Text settings
+│       ├── Default (OSX).sublime-keymap
+│       ├── Package Control.sublime-settings
+│       └── Preferences.sublime-settings
 └── encrypted_*.asc             # GPG-encrypted secrets
 ```
 

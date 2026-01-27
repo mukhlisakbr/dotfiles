@@ -15,10 +15,10 @@ set hlsearch
 set ruler
 set clipboard=unnamed
 set re=0
-set background=dark
+set background=light
 
 "themes
-colorscheme habamax
+colorscheme default
 
 "remap
 inoremap kj <Esc>
