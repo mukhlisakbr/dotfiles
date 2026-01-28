@@ -1,0 +1,7 @@
+# VIM Navigation with Ctrl (Caps Lock = Ctrl via Hyperkey)
+# Ctrl + HJKL = Arrow Keys
+
+ctrl - h : skhd -k "left"
+ctrl - j : skhd -k "down"
+ctrl - k : skhd -k "up"
+ctrl - l : skhd -k "right"
