@@ -44,9 +44,9 @@ vim +PlugInstall +qall
 | Android | apktool, bundletool, jadx, maestro, android-commandlinetools |
 | AI Coding | Claude Code, OpenCode, Antigravity, ChatGPT |
 | Network | speedtest, wgcf, cloudflare-warp |
-| Apps | Raycast, Rectangle, Homerow, OrbStack, TablePlus, DaisyDisk, iStat Menus, HTTP Toolkit, KeepingYouAwake, Cyberduck, DBngin, Herd, Telegram, WhatsApp, ExpressVPN |
+| Apps | Raycast, Rectangle, OrbStack, TablePlus, DaisyDisk, iStat Menus, HTTP Toolkit, KeepingYouAwake, Cyberduck, DBngin, Herd, Telegram, WhatsApp, ExpressVPN, Transmission, Stremio, KeyboardCleanTool |
 | Security | bitwarden-cli, gnupg |
-| Other | mise, karabiner, vimium, Google Chrome, Logi Options+ |
+| Other | mise, Superkey, Google Chrome, Logi Options+ |
 
 ## Structure
 
@@ -61,20 +61,15 @@ vim +PlugInstall +qall
 ├── dot_config/
 │   ├── nvim/                   # Neovim (LazyVim)
 │   ├── ghostty/                # Ghostty terminal
-│   ├── karabiner/              # Keyboard customization (TypeScript)
 │   ├── starship.toml           # Prompt
-│   ├── bat/                    # bat (placeholder)
-│   ├── eza/                    # eza (placeholder)
 │   ├── fd/                     # fd ignore
 │   ├── yazi/                   # File manager
 │   ├── tmux/                   # Terminal multiplexer
 │   ├── aria2/                  # Download manager
 │   ├── mise/                   # Version manager
 │   ├── opencode/               # OpenCode CLI
-│   ├── vimium/                 # Browser vim extension
 │   ├── private_git/            # Global gitignore
-│   ├── lazygit/                # Lazygit config
-│   └── delta/                  # Git-delta config
+│   └── lazygit/                # Lazygit config
 ├── dot_claude/                 # Claude Code settings
 │   ├── CLAUDE.md
 │   ├── mcp.json
@@ -178,50 +173,12 @@ killall Dock
 
 ## Keyboard Shortcuts
 
-Custom shortcuts via [Karabiner-Elements](https://karabiner-elements.pqrs.org/). Config: `~/.config/karabiner/src/index.ts`
-
-### Caps Lock Behavior
+Custom shortcuts via [Superkey](https://superkey.app/).
 
 | Trigger | Action |
 |---------|--------|
-| Caps Lock (hold) | Hyper key (⌘⌃⌥⇧) |
+| Caps Lock (hold) | Left Control |
 | Caps Lock (tap) | Escape |
-| Escape | Caps Lock |
-
-### App Launcher (Right ⌘ + Key)
-
-| Key | App | Key | App |
-|-----|-----|-----|-----|
-| A | ChatGPT | M | Spotify |
-| B | Chrome | N | Notes |
-| C | WhatsApp | P | Bitwarden |
-| E | VS Code | S | Sublime Text |
-| F | Finder | T | Ghostty |
-| L | Herd | W | Telegram |
-
-### Hyper Key Shortcuts
-
-**Code Editors** (VSCode, Cursor, Windsurf, Trae, Kiro):
-
-| Key | Action | Key | Action |
-|-----|--------|-----|--------|
-| T | Terminal | O | Go to Symbol |
-| G | Source Control | W | Symbol (Workspace) |
-| E | Explorer | D | Go to Definition |
-| X | Extensions | I | Copilot Chat |
-| B | Toggle Sidebar | P | Command Palette |
-| F | Go to File | Space | Autocomplete |
-
-**Browser** (Chrome, Helium):
-
-| Key | Action |
-|-----|--------|
-| F | Search Tabs |
-
-**Global**:
-
-| Key | Action | Key | Action |
-|-----|--------|-----|--------|
-| S | Screenshot | H/J/K/L | Arrow keys |
-| , | Previous tab | . | Next tab |
-| A-Z | Ctrl+letter (shell/emacs) | Space | Tmux prefix |
+| Caps Lock + H/J/K/L | ←↓↑→ (Arrow keys) |
+| Double tap Shift | Caps Lock |
+| ⇧⌘K | Toggle Seek |
