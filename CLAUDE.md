@@ -50,9 +50,15 @@ mise install
 | `dot_zshrc`, `dot_zprofile` | `~/.zshrc`, `~/.zprofile` | Shell configuration |
 | `dot_config/nvim/` | `~/.config/nvim/` | LazyVim (Neovim) |
 | `dot_config/ghostty/` | `~/.config/ghostty/` | Terminal emulator |
-| `dot_config/karabiner/` | `~/.config/karabiner/` | Keyboard customization (TypeScript-based) |
 | `dot_config/mise/` | `~/.config/mise/` | Runtime versions (node, bun, java) |
 | `dot_config/starship.toml` | `~/.config/starship.toml` | Shell prompt |
+| `dot_config/tmux/` | `~/.config/tmux/` | Terminal multiplexer |
+| `dot_config/lazygit/` | `~/.config/lazygit/` | Git TUI client |
+| `dot_config/yazi/` | `~/.config/yazi/` | Terminal file manager |
+| `dot_config/aria2/` | `~/.config/aria2/` | Download manager |
+| `dot_config/fd/` | `~/.config/fd/` | Fast find alternative |
+| `dot_config/opencode/` | `~/.config/opencode/` | OpenCode AI assistant |
+| `dot_config/private_git/` | `~/.config/git/` | Git global config |
 | `dot_claude/` | `~/.claude/` | Claude Code global settings |
 | `dot_ssh/` | `~/.ssh/` | SSH configuration (encrypted) |
 | `private_dot_gitconfig` | `~/.gitconfig` | Git configuration |
@@ -60,20 +66,3 @@ mise install
 ### Encrypted Files
 
 Files ending in `.asc` are GPG-encrypted and require Bitwarden CLI to be logged in for decryption. The encryption key is retrieved automatically via `bw get password`.
-
-### Karabiner Configuration
-
-Located at `dot_config/karabiner/`, uses TypeScript with the `karabiner.ts` library:
-```sh
-cd ~/.config/karabiner
-npm install
-npm run build  # Generates karabiner.json
-```
-
-## Theming
-
-- Neovim: Tokyo Night
-
-## Web Search
-
-Gunakan `mcp__exa__web_search_exa` untuk pencarian web, bukan WebSearch built-in.
