@@ -31,23 +31,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 vim +PlugInstall +qall
 ```
 
-## What's Included
-
-| Category | Tools |
-|----------|-------|
-| Shell | zsh, zinit, starship |
-| Terminal | ghostty, tmux |
-| Editors | neovim (LazyVim), vim, Sublime Text |
-| CLI | bat, eza, fd, fzf, ripgrep, yazi, aria2, git-delta, lazygit, glow, htop, jq, tree, zoxide, wget, sevenzip |
-| Dev Tools | gh, go, biome, uv, pnpm, vercel-cli, flyctl, watchman |
-| Media | ffmpeg, imagemagick, pngquant, poppler, resvg, mpv |
-| Android | apktool, bundletool, jadx, maestro, android-commandlinetools |
-| AI Coding | Claude Code, OpenCode, Antigravity, ChatGPT |
-| Network | speedtest, wgcf, cloudflare-warp |
-| Apps | Raycast, Rectangle, OrbStack, TablePlus, DaisyDisk, iStat Menus, HTTP Toolkit, KeepingYouAwake, Cyberduck, DBngin, Herd, Telegram, WhatsApp, ExpressVPN, Transmission, Stremio, KeyboardCleanTool |
-| Security | bitwarden-cli, gnupg |
-| Other | mise, Superkey, Google Chrome, Logi Options+ |
-
 ## Structure
 
 ```
@@ -64,12 +47,10 @@ vim +PlugInstall +qall
 │   ├── starship.toml           # Prompt
 │   ├── fd/                     # fd ignore
 │   ├── yazi/                   # File manager
-│   ├── tmux/                   # Terminal multiplexer
 │   ├── aria2/                  # Download manager
 │   ├── mise/                   # Version manager
 │   ├── opencode/               # OpenCode CLI
-│   ├── private_git/            # Global gitignore
-│   └── lazygit/                # Lazygit config
+│   └── private_git/            # Global gitignore
 ├── dot_claude/                 # Claude Code settings
 │   ├── CLAUDE.md
 │   ├── mcp.json
