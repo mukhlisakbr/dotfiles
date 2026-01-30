@@ -5,6 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Repository Overview
 
 Chezmoi-managed dotfiles repository for macOS. Chezmoi naming conventions:
+
 - `dot_` → `.` (hidden files)
 - `private_` → restricted permissions
 - `encrypted_*.asc` → GPG-encrypted (decrypted via Bitwarden)
@@ -51,35 +52,36 @@ mise install
 
 ### Configuration Targets
 
-| Directory | Target | Purpose |
-|-----------|--------|---------|
-| `dot_zshrc`, `dot_zprofile` | `~/.zshrc`, `~/.zprofile` | Shell configuration |
-| `dot_config/nvim/` | `~/.config/nvim/` | LazyVim (Neovim) |
-| `dot_config/ghostty/` | `~/.config/ghostty/` | Terminal emulator |
-| `dot_config/mise/` | `~/.config/mise/` | Runtime versions |
-| `dot_config/starship.toml` | `~/.config/starship.toml` | Shell prompt |
-| `dot_config/yazi/` | `~/.config/yazi/` | Terminal file manager |
-| `dot_config/opencode/` | `~/.config/opencode/` | OpenCode AI assistant |
-| `dot_config/private_git/` | `~/.config/git/` | Git global ignore |
-| `dot_claude/` | `~/.claude/` | Claude Code settings |
-| `dot_ssh/` | `~/.ssh/` | SSH configuration (encrypted) |
-| `private_dot_gitconfig` | `~/.gitconfig` | Git configuration |
+| Directory                   | Target                    | Purpose                       |
+| --------------------------- | ------------------------- | ----------------------------- |
+| `dot_zshrc`, `dot_zprofile` | `~/.zshrc`, `~/.zprofile` | Shell configuration           |
+| `dot_config/nvim/`          | `~/.config/nvim/`         | LazyVim (Neovim)              |
+| `dot_config/ghostty/`       | `~/.config/ghostty/`      | Terminal emulator             |
+| `dot_config/mise/`          | `~/.config/mise/`         | Runtime versions              |
+| `dot_config/starship.toml`  | `~/.config/starship.toml` | Shell prompt                  |
+| `dot_config/yazi/`          | `~/.config/yazi/`         | Terminal file manager         |
+| `dot_config/opencode/`      | `~/.config/opencode/`     | OpenCode AI assistant         |
+| `dot_config/private_git/`   | `~/.config/git/`          | Git global ignore             |
+| `dot_claude/`               | `~/.claude/`              | Claude Code settings          |
+| `dot_ssh/`                  | `~/.ssh/`                 | SSH configuration (encrypted) |
+| `private_dot_gitconfig`     | `~/.gitconfig`            | Git configuration             |
 
 ### Encrypted Files
 
 Files ending in `.asc` are GPG-encrypted. **Requires Bitwarden CLI login** - passphrase retrieved from Bitwarden automatically.
 
-| File | Purpose |
-|------|---------|
-| `encrypted_dot_zshenv.asc` | Sensitive environment variables (API keys) |
-| `dot_ssh/encrypted_config.asc` | SSH hosts configuration |
-| `dot_local/share/opencode/encrypted_private_auth.json.asc` | OpenCode authentication |
+| File                                                       | Purpose                                    |
+| ---------------------------------------------------------- | ------------------------------------------ |
+| `encrypted_dot_zshenv.asc`                                 | Sensitive environment variables (API keys) |
+| `dot_ssh/encrypted_config.asc`                             | SSH hosts configuration                    |
+| `dot_local/share/opencode/encrypted_private_auth.json.asc` | OpenCode authentication                    |
 
 ### Key Tool Integrations
 
 **Shell stack:** zsh → oh-my-zsh (git plugin) → zinit (autosuggestions, syntax-highlighting) → starship
 
 **Neovim:** LazyVim with extras:
+
 - Languages: TypeScript, JSON, YAML, Docker, Prisma, Tailwind, TOML
 - Formatting/Linting: Prettier, ESLint
 - Editor: snacks_explorer, snacks_picker, inc-rename
@@ -88,11 +90,11 @@ Files ending in `.asc` are GPG-encrypted. **Requires Bitwarden CLI login** - pas
 
 ## Shell Aliases
 
-| Alias | Command |
-|-------|---------|
-| `lg` | `lazygit` |
-| `wip` | `git add . && git commit -m "wip" && git push` |
-| `cc` | `claude --mcp-config ~/.claude/mcp.json` |
-| `ccc` | `claude --mcp-config ~/.claude/mcp.json -c` |
-| `oc` | `opencode` |
-| `l` / `ll` / `lla` | `eza` with icons |
+| Alias              | Command                                        |
+| ------------------ | ---------------------------------------------- |
+| `lg`               | `lazygit`                                      |
+| `wip`              | `git add . && git commit -m "wip" && git push` |
+| `cc`               | `claude --mcp-config ~/.claude/mcp.json`       |
+| `ccc`              | `claude --mcp-config ~/.claude/mcp.json -c`    |
+| `oc`               | `opencode`                                     |
+| `l` / `ll` / `lla` | `eza` with icons                               |
