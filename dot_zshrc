@@ -9,11 +9,13 @@ source /opt/homebrew/opt/zinit/zinit.zsh
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light jessarcher/zsh-artisan
+zinit light wbingli/zsh-claudecode-completion
 zinit cdreplay -q
 
 # starship
 eval "$(starship init zsh)"
 
+# environment
 export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR='vim'
 export TZ='Asia/Jakarta'
