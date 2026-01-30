@@ -37,7 +37,7 @@ mise install
 echo "[7/7] Installing vim-plug..."
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim +PlugInstall +qall
+vim -es -u ~/.vimrc -i NONE -c "PlugInstall" -c "qa"
 
 echo "=== Setup complete! ==="
 echo "Please restart your terminal or run: source ~/.zshrc"
