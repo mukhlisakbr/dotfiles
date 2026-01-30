@@ -30,14 +30,6 @@ eval "$(bun completions)"
 eval "$(npm completion)"
 
 # fzf
-FD_BASE="fd --strip-cwd-prefix"
-FZF_PREVIEW_WINDOW="--preview-window=60%:wrap"
-FZF_PREVIEW_BIND="--bind=ctrl-d:preview-page-down,ctrl-u:preview-page-up"
-export FZF_DEFAULT_COMMAND="$FD_BASE --type f"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_CTRL_T_OPTS="--preview='bat -n --color=always {}' $FZF_PREVIEW_WINDOW $FZF_PREVIEW_BIND"
-export FZF_ALT_C_COMMAND="$FD_BASE --type d"
-export FZF_ALT_C_OPTS="--preview='tree -C {} | head -200' $FZF_PREVIEW_WINDOW $FZF_PREVIEW_BIND"
 source <(fzf --zsh)
 
 # zoxide
