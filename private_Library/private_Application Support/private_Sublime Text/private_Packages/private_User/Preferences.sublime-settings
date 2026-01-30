@@ -11,8 +11,5 @@
   "caret_extra_bottom": 0,
   "caret_extra_top": 0,
 
-  // theme
-  "color_scheme": "Mariana.sublime-color-scheme",
-  "theme": "Default.sublime-theme",
   "ignored_packages": [],
 }
