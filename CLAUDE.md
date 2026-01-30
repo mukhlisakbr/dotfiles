@@ -94,7 +94,7 @@ Files ending in `.asc` are GPG-encrypted. **Requires Bitwarden CLI login** - pas
 | ------------------ | ---------------------------------------------- |
 | `lg`               | `lazygit`                                      |
 | `wip`              | `git add . && git commit -m "wip" && git push` |
-| `cc`               | `claude --mcp-config ~/.claude/mcp.json`       |
-| `ccc`              | `claude --mcp-config ~/.claude/mcp.json -c`    |
+| `cc`               | `claude`                                       |
+| `ccc`              | `claude -c`                                    |
 | `oc`               | `opencode`                                     |
 | `l` / `ll` / `lla` | `eza` with icons                               |

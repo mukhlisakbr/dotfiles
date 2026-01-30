@@ -76,10 +76,9 @@ alias lg="lazygit"
 alias wip='git add . && git commit -m "wip" && git push'
 
 # claude
-CLAUDE_CMD="claude --mcp-config ~/.claude/mcp.json"
-alias cc="$CLAUDE_CMD"
-alias ccd="$CLAUDE_CMD --dangerously-skip-permissions"
-alias ccc="$CLAUDE_CMD -c"
+alias cc="claude"
+alias ccd="claude --dangerously-skip-permissions"
+alias ccc="claude -c"
 
 # opencode
 alias oc="opencode"
