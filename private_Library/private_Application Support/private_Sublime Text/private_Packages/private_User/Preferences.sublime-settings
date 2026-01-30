@@ -1,5 +1,6 @@
 {
-  "ignored_packages": [],
+  "ignored_packages": [
+  ],
   "font_size": 13,
   "font_face": "JetBrainsMono Nerd Font Mono",
   "tab_size": 2,
