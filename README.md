@@ -17,9 +17,9 @@ Personal dotfiles managed with [chezmoi](https://www.chezmoi.io/) for macOS.
 Brewfile is stored at `~/.Brewfile` (global). Use `-g` flag for all operations:
 
 ```sh
-brew bundle install -g                   # Install dependencies
+brew bundle install -g -v                # Install dependencies
 brew bundle dump -g --force --no-vscode  # Update Brewfile (skip vscode)
-brew bundle check -g                     # Verify all installed
+brew bundle check -g -v                  # Verify all installed
 brew bundle list -g                      # List dependencies
 ```
 

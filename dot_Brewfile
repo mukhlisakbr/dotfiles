@@ -1,7 +1,6 @@
 brew "apktool"
 brew "aria2"
 brew "bat"
-brew "biome"
 brew "bitwarden-cli"
 brew "bundletool"
 brew "chezmoi"
