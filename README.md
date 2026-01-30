@@ -4,31 +4,10 @@ Personal dotfiles managed with [chezmoi](https://www.chezmoi.io/) for macOS.
 
 ## Setup
 
+> ⚠️ **First-time setup only.** Do not run twice.
+
 ```sh
-# 1. Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-# 2. Install Bitwarden CLI (for decrypting secrets)
-brew install bitwarden-cli
-bw login
-
-# 3. Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# 4. Install chezmoi and apply dotfiles
-brew install chezmoi
-chezmoi init --apply mukhlisakbr
-
-# 5. Install dependencies from Brewfile
-brew bundle install -g -v
-
-# 6. Install runtime tools via mise (node, bun, etc.)
-mise install
-
-# 7. Install vim-plug for Vim
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim +PlugInstall +qall
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mukhlisakbr/dotfiles/main/setup.sh)"
 ```
 
 ## Usage
@@ -65,19 +44,7 @@ Logout/restart may be required after changes.
 ### Via Terminal
 
 ```sh
-# Keyboard: disable press-and-hold (hidden setting, enables key repeat in these apps)
-defaults write com.mitchellh.ghostty ApplePressAndHoldEnabled -bool false
-defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
-
-# Keyboard: key repeat + initial delay (faster than UI slider allows)
-defaults write -g KeyRepeat -int 1
-defaults write -g InitialKeyRepeat -int 10
-
-# Dock: instant auto-hide + precise icon size
-defaults write com.apple.dock autohide-delay -float 0
-defaults write com.apple.dock autohide-time-modifier -float 0.15
-defaults write com.apple.dock tilesize -int 42
-killall Dock
+~/.local/share/chezmoi/macos-defaults.sh
 ```
 
 ### Via System Settings
