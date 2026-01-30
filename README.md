@@ -156,10 +156,10 @@ killall Dock
 
 Custom shortcuts via [Superkey](https://superkey.app/).
 
-| Trigger | Action |
-|---------|--------|
-| Caps Lock (hold) | Left Control |
-| Caps Lock (tap) | Escape |
+| Trigger             | Action            |
+| ------------------- | ----------------- |
+| Caps Lock (hold)    | Left Control      |
+| Caps Lock (tap)     | Escape            |
 | Caps Lock + H/J/K/L | ←↓↑→ (Arrow keys) |
-| Double tap Shift | Caps Lock |
-| ⇧⌘K | Toggle Seek |
+| Double tap Shift    | Caps Lock         |
+| ⇧⌘K                 | Toggle Seek       |
