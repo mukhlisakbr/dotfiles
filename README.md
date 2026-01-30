@@ -7,7 +7,7 @@ Personal dotfiles managed with [chezmoi](https://www.chezmoi.io/) for macOS.
 > ⚠️ **First-time setup only.** Do not run twice.
 
 ```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mukhlisakbr/dotfiles/main/setup.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mukhlisakbr/dotfiles/main/scripts/setup.sh)"
 ```
 
 ## Usage
@@ -44,7 +44,7 @@ Logout/restart may be required after changes.
 ### Via Terminal
 
 ```sh
-~/.local/share/chezmoi/macos-defaults.sh
+~/.local/share/chezmoi/scripts/macos-defaults.sh
 ```
 
 ### Via System Settings
