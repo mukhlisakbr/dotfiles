@@ -76,22 +76,22 @@ defaults write -g InitialKeyRepeat -int 10
 # Dock: instant auto-hide + precise icon size
 defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -float 0.15
-defaults write com.apple.dock tilesize -int 36
+defaults write com.apple.dock tilesize -int 42
 killall Dock
 ```
 
 ### Via System Settings
 
-| Path | Value |
-|------|-------|
-| Trackpad → Tracking speed | 5th notch |
-| Trackpad → Click | Light |
-| Trackpad → Quiet Click | On |
-| Trackpad → Tap to click | On |
-| Trackpad → More Gestures → App Exposé | Swipe Down with Four Fingers |
-| Mouse → Tracking speed | 5th notch |
-| Accessibility → Pointer Control → Trackpad Options → Dragging | Three Finger Drag |
-| Sound → Play sound on startup | Off |
+| Path                                                          | Value                        |
+| ------------------------------------------------------------- | ---------------------------- |
+| Trackpad → Tracking speed                                     | 5th notch                    |
+| Trackpad → Click                                              | Light                        |
+| Trackpad → Quiet Click                                        | On                           |
+| Trackpad → Tap to click                                       | On                           |
+| Trackpad → More Gestures → App Exposé                         | Swipe Down with Four Fingers |
+| Mouse → Tracking speed                                        | 5th notch                    |
+| Accessibility → Pointer Control → Trackpad Options → Dragging | Three Finger Drag            |
+| Sound → Play sound on startup                                 | Off                          |
 
 ## Keyboard Shortcuts
 
