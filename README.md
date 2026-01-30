@@ -31,43 +31,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 vim +PlugInstall +qall
 ```
 
-## Structure
-
-```
-.
-├── dot_Brewfile                # Homebrew dependencies (~/.Brewfile)
-├── dot_zshrc                   # Zsh configuration
-├── dot_zprofile                # Zsh profile
-├── dot_vimrc                   # Vim configuration
-├── encrypted_dot_zshenv.asc    # Encrypted zsh environment
-├── empty_dot_hushlogin         # Suppress login message
-├── dot_config/
-│   ├── nvim/                   # Neovim (LazyVim)
-│   ├── ghostty/                # Ghostty terminal
-│   ├── starship.toml           # Prompt
-│   ├── fd/                     # fd ignore
-│   ├── yazi/                   # File manager
-│   ├── aria2/                  # Download manager
-│   ├── mise/                   # Version manager
-│   ├── opencode/               # OpenCode CLI
-│   └── private_git/            # Global gitignore
-├── dot_claude/                 # Claude Code settings
-│   ├── CLAUDE.md
-│   ├── mcp.json
-│   └── private_settings.json
-├── dot_local/                  # Local data
-│   ├── share/opencode/         # OpenCode data (encrypted)
-│   └── state/opencode/         # OpenCode state
-├── dot_ssh/                    # SSH config (encrypted)
-├── private_dot_gitconfig       # Git configuration
-├── private_Library/            # macOS Library
-│   └── .../Sublime Text/       # Sublime Text settings
-│       ├── Default (OSX).sublime-keymap
-│       ├── Package Control.sublime-settings
-│       └── Preferences.sublime-settings
-└── encrypted_*.asc             # GPG-encrypted secrets
-```
-
 ## Usage
 
 ### Brewfile
@@ -97,60 +60,38 @@ chezmoi update                      # Pull and apply from remote
 
 ## macOS Settings
 
-Optional settings. Logout/restart may be required after changes.
+Logout/restart may be required after changes.
 
-### Keyboard
-
-**Via Terminal** (faster than UI allows):
+### Via Terminal
 
 ```sh
-# Disable press-and-hold for specific apps (hidden setting)
+# Keyboard: disable press-and-hold (hidden setting, enables key repeat in these apps)
 defaults write com.mitchellh.ghostty ApplePressAndHoldEnabled -bool false
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
-# Key repeat + initial delay faster than UI slider minimum
+# Keyboard: key repeat + initial delay (faster than UI slider allows)
 defaults write -g KeyRepeat -int 1
 defaults write -g InitialKeyRepeat -int 10
-```
 
-### Dock
-
-**Via Terminal** (instant auto-hide + precise size):
-
-```sh
+# Dock: instant auto-hide + precise icon size
 defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -float 0.15
 defaults write com.apple.dock tilesize -int 36
 killall Dock
 ```
 
-### Trackpad
+### Via System Settings
 
-**Via System Settings:**
-
-- Trackpad → Tracking speed: **5th notch**
-- Trackpad → Click: **Light**
-- Trackpad → Quiet Click: **On**
-- Trackpad → Tap to click: **On**
-- Trackpad → More Gestures → App Exposé: **Swipe Down with Four Fingers**
-
-### Mouse
-
-**Via System Settings:**
-
-- Mouse → Tracking speed: **5th notch**
-
-### Accessibility
-
-**Via System Settings:**
-
-- Accessibility → Pointer Control → Trackpad Options → Use trackpad for dragging: **Three Finger Drag**
-
-### Sound
-
-**Via System Settings:**
-
-- Sound → Play sound on startup: **Off**
+| Path | Value |
+|------|-------|
+| Trackpad → Tracking speed | 5th notch |
+| Trackpad → Click | Light |
+| Trackpad → Quiet Click | On |
+| Trackpad → Tap to click | On |
+| Trackpad → More Gestures → App Exposé | Swipe Down with Four Fingers |
+| Mouse → Tracking speed | 5th notch |
+| Accessibility → Pointer Control → Trackpad Options → Dragging | Three Finger Drag |
+| Sound → Play sound on startup | Off |
 
 ## Keyboard Shortcuts
 
