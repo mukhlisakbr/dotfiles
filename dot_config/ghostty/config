@@ -10,15 +10,7 @@ window-padding-balance = true
 copy-on-select = clipboard
 
 # macos
-macos-option-as-alt = true
 macos-titlebar-style = tabs
 
 # keybind
 keybind = shift+enter=text:\n
-
-# theme
-#theme = Alabaster
-
-# transparent
-unfocused-split-opacity = 1
-
