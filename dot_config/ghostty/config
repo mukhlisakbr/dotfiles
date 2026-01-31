@@ -12,6 +12,3 @@ copy-on-select = clipboard
 # macos
 macos-titlebar-style = tabs
 macos-option-as-alt = true
-
-# keybind
-keybind = shift+enter=text:\n
