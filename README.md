@@ -124,6 +124,72 @@ killall Dock
 | Finder → Sidebar                                              | Unpin: AirDrop, Shared, Recents |
 | Keyboard → Keyboard Shortcuts → Spotlight → Show Spotlight Search | Off                             |
 
+## Initial App Setup
+
+### Raycast
+
+Settings:
+
+| Setting               | Value                            |
+| --------------------- | -------------------------------- |
+| AI                    | Off                              |
+| Extensions (wizard)   | Don't install all                |
+| Raycast Hotkey        | ⌘Space (replaces Spotlight)      |
+| Grant Access          | Files and Folders, Accessibility |
+
+Extensions:
+
+| Extension             | Shortcut / Config                |
+| --------------------- | -------------------------------- |
+| Clipboard History     | ⇧⌘V                              |
+| Search Emoji          | ⌃⌘Space (replaces macOS picker)  |
+| Window Management     | Preset: Magnet                   |
+| Screenshot            | —                                |
+
+### Superkey
+
+General:
+
+| Setting               | Value                            |
+| --------------------- | -------------------------------- |
+| Launch on login       | On                               |
+| Check update auto     | On                               |
+| Menu bar icon         | Changed                          |
+
+Presets:
+
+| Preset                      | Value                      |
+| --------------------------- | -------------------------- |
+| Remap Caps Lock to          | Left Control               |
+| Quick press Caps Lock to    | Escape                     |
+| Caps Lock + H/J/K/L         | Enable                     |
+| Double Shift to Caps Lock   | Enable                     |
+
+Seek:
+
+| Setting               | Value                            |
+| --------------------- | -------------------------------- |
+| Toggle Seek shortcut  | ⇧⌘K                              |
+
+### VS Code
+
+Profile icon → Backup and Sync Settings → Sign in with GitHub → Wait until all sync done
+
+### Google Chrome
+
+| Setting                         | Value                  |
+| ------------------------------- | ---------------------- |
+| Automatically send usage stats  | Off                    |
+
+### Logi Options+
+
+| Step                  | Action                           |
+| --------------------- | -------------------------------- |
+| Permissions           | Grant all                        |
+| Help us improve       | No Thanks                        |
+| Account               | Login                            |
+| Mouse → Settings      | Restore settings from backup     |
+
 ## Keyboard Shortcuts
 
 Custom shortcuts via [Superkey](https://superkey.app/).
