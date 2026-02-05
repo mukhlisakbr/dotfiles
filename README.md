@@ -139,22 +139,31 @@ Custom shortcuts via [Superkey](https://superkey.app/).
 Brewfile is stored at `~/.Brewfile` (global). Use `-g` flag for all operations:
 
 ```sh
-brew bundle install -g -v                # Install dependencies
-brew bundle dump -g --force --no-vscode  # Update Brewfile (skip vscode)
-brew bundle check -g -v                  # Verify all installed
-brew bundle list -g                      # List dependencies
+# Install dependencies
+brew bundle install -g -v
+# Update Brewfile
+brew bundle dump -g --force --no-vscode --no-go
+# Verify all installed
+brew bundle check -g -v
+# List dependencies
+brew bundle list -g
 ```
 
-> VS Code extensions are skipped since Settings Sync is used instead.
+> VS Code extensions and Go packages are skipped since they're managed separately.
 
 ### Chezmoi
 
 ```sh
-chezmoi add ~/.config/some/file     # Add a new file
-chezmoi diff                        # Check for unsynced changes
-chezmoi re-add ~/.zshrc             # Sync target changes back to source
-chezmoi destroy ~/.some/file        # Remove from source and target
-chezmoi update                      # Pull and apply from remote
+# Add a new file
+chezmoi add ~/.config/some/file
+# Check for unsynced changes
+chezmoi diff
+# Sync target changes back to source
+chezmoi re-add ~/.zshrc
+# Remove from source and target
+chezmoi destroy ~/.some/file
+# Pull and apply from remote
+chezmoi update
 ```
 
 > Workflow: Edit files directly at target location, then use `chezmoi diff` to check and `chezmoi re-add` to sync.
