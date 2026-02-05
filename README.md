@@ -90,16 +90,26 @@ killall Dock
 
 ### Via System Settings
 
-| Path                                                          | Value                        |
-| ------------------------------------------------------------- | ---------------------------- |
-| Trackpad → Tracking speed                                     | 5th notch                    |
-| Trackpad → Click                                              | Light                        |
-| Trackpad → Quiet Click                                        | On                           |
-| Trackpad → Tap to click                                       | On                           |
-| Trackpad → More Gestures → App Exposé                         | Swipe Down with Four Fingers |
-| Mouse → Tracking speed                                        | 5th notch                    |
-| Accessibility → Pointer Control → Trackpad Options → Dragging | Three Finger Drag            |
-| Sound → Play sound on startup                                 | Off                          |
+| Path                                                          | Value                           |
+| ------------------------------------------------------------- | ------------------------------- |
+| Trackpad → Tracking speed                                     | 5th notch                       |
+| Trackpad → Click                                              | Light                           |
+| Trackpad → Quiet Click                                        | On                              |
+| Trackpad → Tap to click                                       | On                              |
+| Trackpad → More Gestures → App Exposé                         | Swipe Down with Four Fingers    |
+| Mouse → Tracking speed                                        | 5th notch                       |
+| Accessibility → Pointer Control → Trackpad Options → Dragging | Three Finger Drag               |
+| Sound → Play sound on startup                                 | Off                             |
+| Displays → Resolution                                         | More Space                      |
+| Displays → Night Shift → Schedule                             | Custom: 00:00 to 23:59          |
+| Finder → Settings → General → New windows show                | Home folder                     |
+| Finder → Settings → Advanced → Show all filename extensions   | On                              |
+| Finder → Settings → Advanced → Keep folders on top            | All options                     |
+| Finder → Settings → Advanced → When performing a search       | Current Folder                  |
+| Finder → View → Show Path Bar                                 | On                              |
+| Finder → View → Show Status Bar                               | On                              |
+| Finder → View                                                 | Column View (⌘3)                |
+| Finder → Sidebar                                              | Unpin: AirDrop, Shared, Recents |
 
 ## Keyboard Shortcuts
 
