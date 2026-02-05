@@ -4,6 +4,12 @@ Personal dotfiles managed with [chezmoi](https://www.chezmoi.io/) for macOS.
 
 ## Setup
 
+### 0. Enable Terminal App Management
+
+Required for installing some apps (e.g., ExpressVPN) that need terminal automation access.
+
+System Settings → Privacy & Security → App Management → Terminal → On
+
 ### 1. Install Homebrew
 
 ```sh
@@ -98,8 +104,10 @@ killall Dock
 | Trackpad → Tap to click                                       | On                              |
 | Trackpad → More Gestures → App Exposé                         | Swipe Down with Four Fingers    |
 | Mouse → Tracking speed                                        | 5th notch                       |
-| Accessibility → Pointer Control → Trackpad Options → Dragging | Three Finger Drag               |
+| Accessibility → Pointer Control → Trackpad Options            | Use trackpad for dragging, Dragging style: Three Finger Drag |
 | Sound → Play sound on startup                                 | Off                             |
+| Menu Bar → Spotlight                                          | Don't Show in Menu Bar          |
+| Menu Bar → Clock Options                                       | Show Date: Never, Show the Day of the Week: Off |
 | Displays → Resolution                                         | More Space                      |
 | Displays → Night Shift → Schedule                             | Custom: 00:00 to 23:59          |
 | Finder → Settings → General → New windows show                | Home folder                     |
@@ -110,6 +118,7 @@ killall Dock
 | Finder → View → Show Status Bar                               | On                              |
 | Finder → View                                                 | Column View (⌘3)                |
 | Finder → Sidebar                                              | Unpin: AirDrop, Shared, Recents |
+| Keyboard → Keyboard Shortcuts → Spotlight → Show Spotlight Search | Off                             |
 
 ## Keyboard Shortcuts
 
