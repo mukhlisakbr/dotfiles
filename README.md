@@ -4,11 +4,14 @@ Personal dotfiles managed with [chezmoi](https://www.chezmoi.io/) for macOS.
 
 ## Setup
 
-### 0. Enable Terminal App Management
+### 0. Initial System Settings
 
-Required for installing some apps (e.g., ExpressVPN) that need terminal automation access.
+| Path                                                    | Value    |
+| ------------------------------------------------------- | -------- |
+| General → About → Name                                  | macbook  |
+| Privacy & Security → App Management → Terminal          | On       |
 
-System Settings → Privacy & Security → App Management → Terminal → On
+> Rename the Mac first for consistent hostname. Enable Terminal App Management for installing apps like ExpressVPN.
 
 ### 1. Install Homebrew
 
@@ -110,6 +113,7 @@ killall Dock
 | Menu Bar → Clock Options                                       | Show Date: Never, Show the Day of the Week: Off |
 | Displays → Resolution                                         | More Space                      |
 | Displays → Night Shift → Schedule                             | Custom: 00:00 to 23:59          |
+| Dock → Automatically hide and show the Dock                   | On                              |
 | Finder → Settings → General → New windows show                | Home folder                     |
 | Finder → Settings → Advanced → Show all filename extensions   | On                              |
 | Finder → Settings → Advanced → Keep folders on top            | All options                     |
