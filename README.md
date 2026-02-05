@@ -101,6 +101,7 @@ killall Dock
 
 | Path                                                          | Value                           |
 | ------------------------------------------------------------- | ------------------------------- |
+| Appearance → Icon & Widget Style                              | Dark                            |
 | Trackpad → Tracking speed                                     | 5th notch                       |
 | Trackpad → Click                                              | Light                           |
 | Trackpad → Quiet Click                                        | On                              |
