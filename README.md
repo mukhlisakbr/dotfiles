@@ -128,14 +128,12 @@ killall Dock
 
 ### Raycast
 
-Settings:
+Wizard:
 
-| Setting               | Value                            |
-| --------------------- | -------------------------------- |
-| AI                    | Off                              |
-| Extensions (wizard)   | Don't install all                |
-| Raycast Hotkey        | ⌘Space (replaces Spotlight)      |
-| Grant Access          | Files and Folders, Accessibility |
+1. AI: Off
+2. Extensions: Don't install all
+3. Raycast Hotkey: ⌘Space (replaces Spotlight)
+4. Grant Access: Files and Folders, Accessibility
 
 Extensions:
 
@@ -177,17 +175,18 @@ Profile icon → Backup and Sync Settings → Sign in with GitHub → Wait until
 
 ### Google Chrome
 
-| Setting                         | Value                  |
-| ------------------------------- | ---------------------- |
-| Automatically send usage stats  | Off                    |
+Wizard: Automatically send usage stats: Off
 
 ### Logi Options+
 
-| Step                  | Action                           |
+Wizard:
+
+1. Grant all permissions
+2. Help us improve: No Thanks
+3. Login
+
+| Path                  | Action                           |
 | --------------------- | -------------------------------- |
-| Permissions           | Grant all                        |
-| Help us improve       | No Thanks                        |
-| Account               | Login                            |
 | Mouse → Settings      | Restore settings from backup     |
 
 ## Keyboard Shortcuts
