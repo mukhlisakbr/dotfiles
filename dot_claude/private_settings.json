@@ -34,5 +34,5 @@
   "alwaysThinkingEnabled": true,
   "promptSuggestionEnabled": false,
   "showTurnDuration": true,
-  "terminalProgressBarEnabled": false
+  "terminalProgressBarEnabled": true
 }
