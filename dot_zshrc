@@ -32,7 +32,6 @@ eval "$(bun completions)"
 eval "$(npm completion)"
 
 # fzf
-export FZF_DEFAULT_OPTS="--layout=reverse"
 source <(fzf --zsh)
 
 # zoxide
