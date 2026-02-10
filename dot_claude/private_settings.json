@@ -7,11 +7,11 @@
   "enableAllProjectMcpServers": true,
   "enabledPlugins": {
     "commit-commands@claude-plugins-official": true,
-    "feature-dev@claude-plugins-official": true,
+    "feature-dev@claude-plugins-official": false,
     "security-guidance@claude-plugins-official": true,
     "context7@claude-plugins-official": true,
     "code-simplifier@claude-plugins-official": true,
-    "ui-ux-pro-max@ui-ux-pro-max-skill": true,
+    "ui-ux-pro-max@ui-ux-pro-max-skill": false,
     "github@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
