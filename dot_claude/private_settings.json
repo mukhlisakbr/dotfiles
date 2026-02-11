@@ -23,5 +23,6 @@
   "alwaysThinkingEnabled": true,
   "promptSuggestionEnabled": false,
   "showTurnDuration": true,
-  "terminalProgressBarEnabled": true
+  "terminalProgressBarEnabled": true,
+  "model": "opus"
 }
