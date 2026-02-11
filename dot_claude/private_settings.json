@@ -1,20 +1,14 @@
 {
-  "cleanupPeriodDays": 7,
   "permissions": {
     "defaultMode": "plan"
   },
+  "model": "opus",
   "enableAllProjectMcpServers": true,
   "enabledPlugins": {
-    "commit-commands@claude-plugins-official": true,
-    "context7@claude-plugins-official": true,
-    "github@claude-plugins-official": true
+    "commit-commands@claude-plugins-official": true
   },
   "outputStyle": "Explanatory",
-  "language": "bahasa indonesia",
+  "language": "indonesian",
   "spinnerTipsEnabled": false,
-  "alwaysThinkingEnabled": true,
-  "promptSuggestionEnabled": false,
-  "showTurnDuration": true,
-  "terminalProgressBarEnabled": true,
-  "model": "opus"
+  "promptSuggestionEnabled": false
 }
