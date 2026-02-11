@@ -9,14 +9,6 @@
     "context7@claude-plugins-official": true,
     "github@claude-plugins-official": true
   },
-  "extraKnownMarketplaces": {
-    "expo-plugins": {
-      "source": {
-        "source": "github",
-        "repo": "expo/claude-plugins"
-      }
-    }
-  },
   "outputStyle": "Explanatory",
   "language": "bahasa indonesia",
   "spinnerTipsEnabled": false,
