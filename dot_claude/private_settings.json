@@ -12,5 +12,6 @@
   "outputStyle": "Explanatory",
   "language": "indonesian",
   "spinnerTipsEnabled": false,
-  "promptSuggestionEnabled": false
+  "promptSuggestionEnabled": false,
+  "skipDangerousModePermissionPrompt": true
 }
