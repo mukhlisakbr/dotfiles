@@ -2,7 +2,7 @@
   "permissions": {
     "defaultMode": "acceptEdits"
   },
-  "model": "opus[1m]",
+  "model": "opus",
   "outputStyle": "Explanatory",
   "language": "indonesian",
   "spinnerTipsEnabled": false,
