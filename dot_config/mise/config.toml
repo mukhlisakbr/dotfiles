@@ -2,6 +2,6 @@
 bun = "latest"
 go = "latest"
 java = "zulu-17"
-node = "latest"
+node = "lts"
 "npm:eas-cli" = "latest"
 python = "latest"
