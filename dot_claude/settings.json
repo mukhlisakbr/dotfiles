@@ -3,8 +3,8 @@
     "defaultMode": "acceptEdits"
   },
   "model": "opus[1m]",
+  "outputStyle": "Explanatory",
   "language": "indonesian",
-  "promptSuggestionEnabled": false,
   "spinnerTipsEnabled": false,
-  "outputStyle": "Explanatory"
+  "promptSuggestionEnabled": false
 }
