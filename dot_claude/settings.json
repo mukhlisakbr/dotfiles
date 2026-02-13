@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "defaultMode": "acceptEdits"
+  },
+  "model": "opus[1m]",
+  "language": "indonesian",
+  "promptSuggestionEnabled": false,
+  "spinnerTipsEnabled": false,
+  "outputStyle": "Explanatory"
+}
