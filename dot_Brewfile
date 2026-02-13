@@ -5,7 +5,6 @@ brew "bat"
 brew "bitwarden-cli"
 brew "bundletool"
 brew "chezmoi"
-brew "cliproxyapi", args: ["HEAD"], restart_service: :changed
 brew "eza"
 brew "fd"
 brew "ffmpeg"
