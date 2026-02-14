@@ -23,10 +23,9 @@ export TZ='Asia/Jakarta'
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-[ -s "/Users/batman/.bun/_bun" ] && source "/Users/batman/.bun/_bun"
 
 # npm
-eval "$(npm completion)"
+source <(npm completion)
 
 # fzf
 source <(fzf --zsh)
