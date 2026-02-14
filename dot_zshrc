@@ -23,7 +23,7 @@ export TZ='Asia/Jakarta'
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-eval "$(bun completions)"
+[ -s "/Users/batman/.bun/_bun" ] && source "/Users/batman/.bun/_bun"
 
 # npm
 eval "$(npm completion)"
@@ -59,6 +59,7 @@ alias ccc="claude -c"
 
 # opencode
 alias oc="opencode"
+source <(opencode completion)
 
 # android
 export ANDROID_HOME="/opt/homebrew/share/android-commandlinetools"
