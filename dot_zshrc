@@ -20,9 +20,6 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR='vim'
 export TZ='Asia/Jakarta'
 
-# mise
-eval "$(mise activate zsh)"
-
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"

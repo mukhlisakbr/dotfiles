@@ -1,7 +1,0 @@
-[tools]
-bun = "latest"
-go = "latest"
-java = "zulu-17"
-node = "lts"
-"npm:eas-cli" = "latest"
-python = "latest"
