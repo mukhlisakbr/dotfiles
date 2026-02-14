@@ -8,7 +8,7 @@
       "type": "remote",
       "url": "https://mcp.context7.com/mcp",
     },
-    "zai-mcp-server": {
+    "zai": {
       "type": "local",
       "command": ["npx", "-y", "@z_ai/mcp-server@latest"],
       "environment": {
