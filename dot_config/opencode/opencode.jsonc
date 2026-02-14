@@ -2,11 +2,19 @@
   "$schema": "https://opencode.ai/config.json",
   "default_agent": "plan",
   "theme": "system",
-  "model": "glm-4.7",
+  "model": "zai/glm-4.7",
   "mcp": {
     "context7": {
       "type": "remote",
-      "url": "https://mcp.context7.com/mcp"
-    }
-  }
+      "url": "https://mcp.context7.com/mcp",
+    },
+    "zai-mcp-server": {
+      "type": "local",
+      "command": ["npx", "-y", "@z_ai/mcp-server@latest"],
+      "environment": {
+        "Z_AI_API_KEY": "{env:Z_AI_API_KEY}",
+        "Z_AI_MODE": "ZAI",
+      },
+    },
+  },
 }
