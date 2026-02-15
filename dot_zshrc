@@ -15,6 +15,9 @@ zinit cdreplay -q
 # starship
 eval "$(starship init zsh)"
 
+# homebrew
+export HOMEBREW_NO_ENV_HINTS=1
+
 # environment
 export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR='vim'
@@ -51,7 +54,7 @@ alias lla="eza -la"
 # git
 alias wip='git add . && git commit -m "wip" && git push'
 
-# claude
+# claudecode
 alias cc="claude"
 alias ccd="claude --dangerously-skip-permissions"
 alias ccc="claude -c"
@@ -59,6 +62,10 @@ alias ccc="claude -c"
 # opencode
 alias oc="opencode"
 source <(opencode completion)
+export OPENCODE_ENABLE_EXA="true"
+
+# uv
+export PATH="/Users/batman/.local/bin:$PATH"
 
 # android
 export ANDROID_HOME="/opt/homebrew/share/android-commandlinetools"
@@ -83,3 +90,4 @@ export SSH_AUTH_SOCK=/Users/batman/Library/Containers/com.bitwarden.desktop/Data
 
 # antigravity
 export PATH="/Users/batman/.antigravity/antigravity/bin:$PATH"
+
