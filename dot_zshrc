@@ -83,3 +83,6 @@ export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
 
 # bitwarden ssh agent
 export SSH_AUTH_SOCK=/Users/batman/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
+
+# Added by Antigravity
+export PATH="/Users/batman/.antigravity/antigravity/bin:$PATH"
