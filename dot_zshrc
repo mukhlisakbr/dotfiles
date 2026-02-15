@@ -78,11 +78,8 @@ export NVM_DIR="/Users/batman/Library/Application Support/Herd/config/nvm"
 # sublime
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
-# antigravity
-export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
-
 # bitwarden ssh agent
 export SSH_AUTH_SOCK=/Users/batman/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
 
-# Added by Antigravity
+# antigravity
 export PATH="/Users/batman/.antigravity/antigravity/bin:$PATH"
