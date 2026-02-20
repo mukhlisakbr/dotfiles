@@ -19,9 +19,7 @@ eval "$(starship init zsh)"
 export HOMEBREW_NO_ENV_HINTS=1
 
 # environment
-export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR='vim'
-export TZ='Asia/Jakarta'
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
@@ -62,6 +60,13 @@ export OPENCODE_ENABLE_EXA="true"
 
 # uv
 export PATH="/Users/batman/.local/bin:$PATH"
+
+# java + android
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$PATH:$ANDROID_HOME/emulator"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
 
 # herd
 export PATH="/Users/batman/Library/Application Support/Herd/bin:$PATH"
