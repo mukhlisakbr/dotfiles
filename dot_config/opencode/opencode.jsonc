@@ -1,8 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "default_agent": "plan",
-  "theme": "system",
-  "model": "zai/glm-4.7",
   "mcp": {
     "context7": {
       "type": "remote",
