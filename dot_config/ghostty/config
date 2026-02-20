@@ -12,3 +12,6 @@ copy-on-select = clipboard
 # macos
 macos-titlebar-style = tabs
 macos-option-as-alt = true
+
+# theme
+theme = Catppuccin Mocha
