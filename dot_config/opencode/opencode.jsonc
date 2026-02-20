@@ -14,5 +14,9 @@
         "Z_AI_MODE": "ZAI",
       },
     },
+    "chrome": {
+      "type": "local",
+      "command": ["npx", "-y", "chrome-devtools-mcp@latest"]
+    }
   },
 }
