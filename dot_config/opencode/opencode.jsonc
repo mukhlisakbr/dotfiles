@@ -6,7 +6,7 @@
       "type": "remote",
       "url": "https://mcp.context7.com/mcp",
       "headers": {
-        "CONTEXT7_API_KEY": "{env:CONTEXT7_API_KEY}"
+        "CONTEXT7_API_KEY": "{env:CONTEXT7_API_KEY}",
       },
     },
     "zai": {
@@ -19,7 +19,43 @@
     },
     "chrome": {
       "type": "local",
-      "command": ["npx", "-y", "chrome-devtools-mcp@latest"]
-    }
+      "command": ["npx", "-y", "chrome-devtools-mcp@latest"],
+    },
+  },
+  "provider": {
+    "bailian-coding-plan-test": {
+      "npm": "@ai-sdk/anthropic",
+      "name": "Model Studio Coding Plan",
+      "options": {
+        "baseURL": "https://coding-intl.dashscope.aliyuncs.com/apps/anthropic/v1",
+        "apiKey": "{env:MODEL_STUDIO_API_KEY}",
+      },
+      "models": {
+        "qwen3.5-plus": {
+          "name": "Qwen3.5 Plus",
+          "options": {
+            "thinking": {
+              "type": "enabled",
+              "budgetTokens": 1024,
+            },
+          },
+        },
+        "qwen3-max-2026-01-23": {
+          "name": "Qwen3 Max 2026-01-23",
+          "options": {
+            "thinking": {
+              "type": "enabled",
+              "budgetTokens": 1024,
+            },
+          },
+        },
+        "qwen3-coder-plus": {
+          "name": "Qwen3 Coder Plus",
+        },
+        "qwen3-coder-next": {
+          "name": "Qwen3 Coder Next",
+        },
+      },
+    },
   },
 }
