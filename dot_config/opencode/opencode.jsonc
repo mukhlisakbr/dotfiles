@@ -24,14 +24,18 @@
   },
   "provider": {
     "model-studio-coding-plan": {
-      "npm": "@ai-sdk/anthropic",
+      "npm": "@ai-sdk/openai-compatible",
       "name": "Model Studio Coding Plan",
       "options": {
-        "baseURL": "https://coding-intl.dashscope.aliyuncs.com/apps/anthropic/v1",
+        "baseURL": "https://coding-intl.dashscope.aliyuncs.com/v1",
       },
       "models": {
         "qwen3.5-plus": {
           "name": "Qwen3.5 Plus",
+          "limit": {
+            "context": 1000000,
+            "output": 65536,
+          },
         },
       },
     },
