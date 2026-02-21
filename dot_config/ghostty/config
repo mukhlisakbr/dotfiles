@@ -1,6 +1,6 @@
 # font
 font-family = "JetBrainsMono Nerd Font Mono"
-font-size = 13
+font-size = 12
 font-feature = -calt, -liga, -dlig
 
 # window
@@ -15,3 +15,6 @@ macos-option-as-alt = true
 
 # theme
 theme = ""
+
+# transparent
+unfocused-split-opacity = 1

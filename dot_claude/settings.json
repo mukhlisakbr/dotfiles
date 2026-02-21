@@ -9,5 +9,6 @@
   "language": "indonesian",
   "spinnerTipsEnabled": false,
   "alwaysThinkingEnabled": true,
-  "promptSuggestionEnabled": false
+  "promptSuggestionEnabled": false,
+  "skipDangerousModePermissionPrompt": true
 }
