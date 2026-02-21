@@ -3,10 +3,10 @@
   "permissions": {
     "defaultMode": "plan"
   },
-  "model": "opus",
+  "model": "opus[1m]",
+  "enableAllProjectMcpServers": true,
   "outputStyle": "Explanatory",
   "language": "indonesian",
   "spinnerTipsEnabled": false,
-  "enableAllProjectMcpServers": true,
   "alwaysThinkingEnabled": true
 }
