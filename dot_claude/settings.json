@@ -8,5 +8,6 @@
   "outputStyle": "Explanatory",
   "language": "indonesian",
   "spinnerTipsEnabled": false,
-  "alwaysThinkingEnabled": true
+  "alwaysThinkingEnabled": true,
+  "promptSuggestionEnabled": false
 }
