@@ -1,9 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
   "permissions": {
     "defaultMode": "plan"
   },
-  "model": "opus[1m]",
+  "model": "opus",
   "enableAllProjectMcpServers": true,
   "outputStyle": "Explanatory",
   "language": "indonesian",
