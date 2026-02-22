@@ -2,7 +2,6 @@
   "$schema": "https://opencode.ai/config.json",
   "default_agent": "plan",
   "plugin": [
-    "opencode-antigravity-auth@latest",
     "@franlol/opencode-md-table-formatter@latest",
     "opencode-pty@latest",
   ],
@@ -28,32 +27,165 @@
     },
   },
   "provider": {
-    "google": {
+    "quotio": {
       "models": {
-        "antigravity-gemini-3.1-pro": {
-          "name": "Gemini 3.1 Pro (Antigravity)",
-          "limit": { "context": 1048576, "output": 65535 },
+        "claude-opus-4-6-thinking": {
+          "attachment": true,
+          "limit": {
+            "context": 200000,
+            "output": 64000,
+          },
           "modalities": {
-            "input": ["text", "image", "pdf"],
+            "input": ["text", "image"],
             "output": ["text"],
           },
-          "variants": {
-            "low": { "thinkingLevel": "low" },
-            "high": { "thinkingLevel": "high" },
+          "name": "Claude Opus 4 6 Thinking",
+          "options": {
+            "thinking": {
+              "budgetTokens": 10000,
+              "type": "enabled",
+            },
           },
+          "reasoning": true,
         },
-        "antigravity-claude-opus-4-6-thinking": {
-          "name": "Claude Opus 4.6 Thinking (Antigravity)",
-          "limit": { "context": 200000, "output": 64000 },
+        "claude-sonnet-4-6": {
+          "attachment": true,
+          "limit": {
+            "context": 200000,
+            "output": 64000,
+          },
           "modalities": {
-            "input": ["text", "image", "pdf"],
+            "input": ["text", "image"],
             "output": ["text"],
           },
-          "variants": {
-            "low": { "thinkingConfig": { "thinkingBudget": 8192 } },
-            "max": { "thinkingConfig": { "thinkingBudget": 32768 } },
-          },
+          "name": "Claude Sonnet 4 6",
         },
+        "gemini-2.5-flash": {
+          "attachment": true,
+          "limit": {
+            "context": 1048576,
+            "output": 65536,
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"],
+          },
+          "name": "Gemini 2.5 Flash",
+        },
+        "gemini-2.5-flash-lite": {
+          "attachment": true,
+          "limit": {
+            "context": 1048576,
+            "output": 65536,
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"],
+          },
+          "name": "Gemini 2.5 Flash Lite",
+        },
+        "gemini-3-flash": {
+          "attachment": true,
+          "limit": {
+            "context": 1048576,
+            "output": 65536,
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"],
+          },
+          "name": "Gemini 3 Flash",
+        },
+        "gemini-3-pro-high": {
+          "attachment": true,
+          "limit": {
+            "context": 1048576,
+            "output": 65536,
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"],
+          },
+          "name": "Gemini 3 Pro High",
+        },
+        "gemini-3-pro-image": {
+          "attachment": true,
+          "limit": {
+            "context": 1048576,
+            "output": 65536,
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"],
+          },
+          "name": "Gemini 3 Pro Image",
+        },
+        "gemini-3.1-pro-high": {
+          "attachment": true,
+          "limit": {
+            "context": 1048576,
+            "output": 65536,
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"],
+          },
+          "name": "Gemini 3.1 Pro High",
+        },
+        "gemini-3.1-pro-low": {
+          "attachment": true,
+          "limit": {
+            "context": 1048576,
+            "output": 65536,
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"],
+          },
+          "name": "Gemini 3.1 Pro Low",
+        },
+        "gpt-oss-120b-medium": {
+          "attachment": true,
+          "limit": {
+            "context": 400000,
+            "output": 32768,
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"],
+          },
+          "name": "Gpt Oss 120B Medium",
+        },
+        "tab_flash_lite_preview": {
+          "attachment": false,
+          "limit": {
+            "context": 128000,
+            "output": 16384,
+          },
+          "modalities": {
+            "input": ["text"],
+            "output": ["text"],
+          },
+          "name": "Tab_Flash_Lite_Preview",
+        },
+        "tab_jump_flash_lite_preview": {
+          "attachment": false,
+          "limit": {
+            "context": 128000,
+            "output": 16384,
+          },
+          "modalities": {
+            "input": ["text"],
+            "output": ["text"],
+          },
+          "name": "Tab_Jump_Flash_Lite_Preview",
+        },
+      },
+      "name": "Quotio",
+      "npm": "@ai-sdk/anthropic",
+      "options": {
+        "apiKey": "quotio-local-908DFA83-9B03-4048-87A9-785F622F2516",
+        "baseURL": "http://127.0.0.1:8317/v1",
       },
     },
   },
