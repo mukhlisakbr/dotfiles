@@ -4,6 +4,7 @@
   "plugin": [
     "opencode-antigravity-auth@latest",
     "@franlol/opencode-md-table-formatter@latest",
+    "opencode-pty@latest",
   ],
   "mcp": {
     "context7": {
