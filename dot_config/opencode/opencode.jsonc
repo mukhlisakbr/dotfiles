@@ -3,7 +3,8 @@
   "default_agent": "plan",
   "plugin": [
     "@nick-vi/opencode-type-inject@latest",
-    "opencode-antigravity-auth@latest"
+    "opencode-antigravity-auth@latest",
+    "@franlol/opencode-md-table-formatter@latest",
   ],
   "mcp": {
     "context7": {
@@ -32,22 +33,28 @@
         "antigravity-gemini-3.1-pro": {
           "name": "Gemini 3.1 Pro (Antigravity)",
           "limit": { "context": 1048576, "output": 65535 },
-          "modalities": { "input": ["text", "image", "pdf"], "output": ["text"] },
+          "modalities": {
+            "input": ["text", "image", "pdf"],
+            "output": ["text"],
+          },
           "variants": {
             "low": { "thinkingLevel": "low" },
-            "high": { "thinkingLevel": "high" }
-          }
+            "high": { "thinkingLevel": "high" },
+          },
         },
         "antigravity-claude-opus-4-6-thinking": {
           "name": "Claude Opus 4.6 Thinking (Antigravity)",
           "limit": { "context": 200000, "output": 64000 },
-          "modalities": { "input": ["text", "image", "pdf"], "output": ["text"] },
+          "modalities": {
+            "input": ["text", "image", "pdf"],
+            "output": ["text"],
+          },
           "variants": {
             "low": { "thinkingConfig": { "thinkingBudget": 8192 } },
-            "max": { "thinkingConfig": { "thinkingBudget": 32768 } }
-          }
+            "max": { "thinkingConfig": { "thinkingBudget": 32768 } },
+          },
         },
-      }
-    }
+      },
+    },
   },
 }
