@@ -62,6 +62,9 @@ export OPENCODE_ENABLE_EXA="true"
 alias gm="gemini"
 alias gmy="gemini -y"
 
+# codex
+alias co="codex"
+
 # uv
 export PATH="/Users/batman/.local/bin:$PATH"
 
