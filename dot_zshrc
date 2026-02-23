@@ -58,6 +58,10 @@ alias ccc="claude -c"
 alias oc="opencode"
 export OPENCODE_ENABLE_EXA="true"
 
+# gemini
+alias gm="gemini"
+alias gmy="gemini -y"
+
 # uv
 export PATH="/Users/batman/.local/bin:$PATH"
 
