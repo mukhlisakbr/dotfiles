@@ -20,11 +20,15 @@
     "hideTips": true,
     "hideBanner": true,
     "footer": {
-      "hideContextPercentage": false
+      "hideContextPercentage": false,
+      "hideSandboxStatus": true
     },
     "showMemoryUsage": true,
     "showCitations": true,
     "showModelInfoInChat": true,
     "useBackgroundColor": false
+  },
+  "experimental": {
+    "plan": true
   }
 }
