@@ -1,7 +1,7 @@
 # font
-#font-family = "JetBrainsMono Nerd Font Mono"
+#font-family = "JetBrains Mono"
 font-family = "GeistMono Nerd Font Mono"
-font-size = 16
+font-size = 13
 font-feature = -calt, -liga, -dlig
 
 # window
@@ -11,11 +11,11 @@ window-padding-balance = true
 copy-on-select = clipboard
 
 # macos
-macos-titlebar-style = tabs
+#macos-titlebar-style = tabs
 macos-option-as-alt = true
 
 # theme
 theme = ""
 
 # transparent
-unfocused-split-opacity = 1
+unfocused-split-opacity = 0.5

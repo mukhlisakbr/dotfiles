@@ -2,9 +2,10 @@
   "ignored_packages": [
   ],
   "font_size": 13,
-  "font_face": "JetBrainsMono Nerd Font Mono",
+  "font_face": "GeistMono Nerd Font Mono",
   "tab_size": 2,
   "translate_tabs_to_spaces": true,
   "caret_extra_bottom": 0,
   "caret_extra_top": 0,
+  "highlight_line": true,
 }
