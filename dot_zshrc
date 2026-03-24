@@ -1,19 +1,29 @@
 # ohmyzsh
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME=""
-plugins=(git npm)
+zstyle ':omz:plugins:eza' 'icons' yes
+zstyle ':omz:plugins:eza' 'dirs-first' yes
+plugins=(
+	git
+	npm
+	brew
+	composer
+	nvm
+	ssh
+	sublime
+	laravel
+	eza
+	copypath
+	starship
+	fzf
+	zoxide
+)
 source "$ZSH/oh-my-zsh.sh"
 
 # zinit
 source /opt/homebrew/opt/zinit/zinit.zsh
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-syntax-highlighting
-zinit light jessarcher/zsh-artisan
-zinit light wbingli/zsh-claudecode-completion
 zinit cdreplay -q
-
-# starship
-eval "$(starship init zsh)"
 
 # homebrew
 export HOMEBREW_NO_ENV_HINTS=1
@@ -25,12 +35,6 @@ export EDITOR='vim'
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# fzf
-source <(fzf --zsh)
-
-# zoxide
-eval "$(zoxide init zsh)"
-
 # yazi
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -39,12 +43,6 @@ function y() {
 	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
-
-# eza
-alias eza="eza --icons --group-directories-first"
-alias l="eza"
-alias ll="eza -l"
-alias la="eza -la"
 
 # git
 alias wip='git add . && git commit -m "wip" && git push'
