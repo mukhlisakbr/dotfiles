@@ -14,7 +14,6 @@ plugins=(
 	laravel
 	eza
 	copypath
-#	starship
 	fzf
 	zoxide
 )
@@ -24,7 +23,6 @@ source "$ZSH/oh-my-zsh.sh"
 source /opt/homebrew/opt/zinit/zinit.zsh
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-syntax-highlighting
-zinit cdreplay -q
 
 # homebrew
 export HOMEBREW_NO_ENV_HINTS=1
@@ -55,11 +53,6 @@ alias ccc="claude -c"
 
 # opencode
 alias oc="opencode"
-export OPENCODE_ENABLE_EXA="true"
-
-# gemini
-alias gm="gemini"
-alias gmy="gemini -y"
 
 # codex
 alias co="codex"
@@ -82,9 +75,5 @@ export NVM_DIR="/Users/batman/Library/Application Support/Herd/config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
 
-# sublime
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
-
 # bitwarden ssh agent
 export SSH_AUTH_SOCK=/Users/batman/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
-
