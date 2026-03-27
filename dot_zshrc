@@ -16,6 +16,7 @@ plugins=(
 	copypath
 	fzf
 	zoxide
+	uv
 )
 source "$ZSH/oh-my-zsh.sh"
 
@@ -27,7 +28,7 @@ zinit light zsh-users/zsh-syntax-highlighting
 # homebrew
 export HOMEBREW_NO_ENV_HINTS=1
 
-# environment
+# editor
 export EDITOR='vim'
 
 # bun

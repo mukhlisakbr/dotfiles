@@ -6,16 +6,16 @@
       "type": "remote",
       "url": "https://mcp.context7.com/mcp",
       "headers": {
-        "CONTEXT7_API_KEY": "{env:API_KEY_MCP_CONTEXT7}",
-      },
+        "CONTEXT7_API_KEY": "{env:API_KEY_MCP_CONTEXT7}"
+      }
     },
     "chrome": {
       "type": "local",
-      "command": ["bunx", "chrome-devtools-mcp@latest"],
+      "command": ["bunx", "chrome-devtools-mcp@latest"]
     },
     "exa": {
       "type": "remote",
-      "url": "https://mcp.exa.ai/mcp?exaApiKey={env:API_KEY_MCP_EXA}",
+      "url": "https://mcp.exa.ai/mcp?exaApiKey={env:API_KEY_MCP_EXA}"
     }
-  },
+  }
 }

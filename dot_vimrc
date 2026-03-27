@@ -1,31 +1,20 @@
+"plugins
 call plug#begin()
-" Paket syntax + indent untuk banyak bahasa (sekalian sensible defaults)
 Plug 'sheerun/vim-polyglot'
-" Ubah bentuk cursor saat pindah mode (normal/insert) di terminal
 Plug 'jszakmeister/vim-togglecursor'
-" Buat highlight background jadi transparan
 Plug 'tribela/vim-transparent'
 call plug#end()
 
-" Catatan: syntax/filetype/autoindent sudah di-handle vim-polyglot
-
-" Aktifkan true color (24-bit) kalau terminal mendukung
+"settings
 set termguicolors
-" Gunakan spasi saat menekan Tab
 set expandtab
-" Tampilkan nomor baris
 set number
-" Sorot hasil pencarian terakhir
-set hlsearch
-" Tampilkan posisi cursor (line/col)
-set ruler
-" Pakai clipboard sistem (register unnamed)
 set clipboard=unnamed
-" Pilih regex engine otomatis (lebih aman untuk pola kompleks)
-set re=0
+set incsearch
+set hlsearch
 
-" Theme
+"theme
 colorscheme default
 
-" Remap: ketik 'kj' di insert mode untuk keluar ke normal mode
+"remaps
 inoremap kj <Esc>
