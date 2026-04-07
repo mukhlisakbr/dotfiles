@@ -1,6 +1,6 @@
 {
-  "sidebar": "auto",
-  "thinking_visibility": false,
+  "sidebar": "hide",
+  "thinking_visibility": true,
   "timestamps": "show",
   "tool_details_visibility": true,
   "assistant_metadata_visibility": true,
