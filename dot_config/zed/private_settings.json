@@ -1,0 +1,21 @@
+{
+  "ui_font_family": "GeistMono Nerd Font Mono",
+  "buffer_font_family": "GeistMono Nerd Font Mono",
+  "git_panel": {
+    "tree_view": false
+  },
+  "ui_font_size": 14.0,
+  "buffer_font_size": 13.0,
+  "disable_ai": true,
+  "tab_size": 2,
+  "vim_mode": true,
+  "use_system_prompts": false,
+  "use_system_path_prompts": false,
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+}
