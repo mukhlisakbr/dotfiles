@@ -1,0 +1,18 @@
+;; Goku source config for Karabiner-Elements
+;; Generate once: goku
+;; Watch for changes: gokuw
+
+{:profiles {:goku {:default true}}
+
+ :main
+ [{:des "Map Escape to Caps Lock"
+   :rules [[:##escape :caps_lock]]}
+
+  {:des "Map Caps Lock to Escape when alone, Left Control when held"
+   :rules [[:##caps_lock :left_control nil {:alone :escape}]]}
+
+  {:des "Map Left Control + hjkl to arrow keys"
+   :rules [[:!Th :left_arrow]
+           [:!Tj :down_arrow]
+           [:!Tk :up_arrow]
+           [:!Tl :right_arrow]]}]}
