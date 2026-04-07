@@ -4,7 +4,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'tribela/vim-transparent'
-Plug 'your-github-username/cursor-dark.nvim'
+Plug 'ydkulks/cursor-dark.nvim'
 
 call plug#end()
 
