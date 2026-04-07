@@ -14,7 +14,9 @@ macos-titlebar-style = tabs
 macos-option-as-alt = true
 
 # theme
-theme = "Adventure"
+#theme = "Catppuccin Mocha"
 
 # transparent
 unfocused-split-opacity = 0.5
+#background-opacity = 0.85
+#background-blur = true
