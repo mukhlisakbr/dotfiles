@@ -1,20 +1,30 @@
-"plugins
 call plug#begin()
+
 Plug 'sheerun/vim-polyglot'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'tribela/vim-transparent'
+
 call plug#end()
 
-"settings
 set termguicolors
+set tabstop=2
+set shiftwidth=2
+set smartindent
 set expandtab
 set number
 set clipboard=unnamed
 set incsearch
 set hlsearch
+set ignorecase
+set smartcase
+set mouse=a
+set scrolloff=5
 
-"theme
-colorscheme default
+colorscheme desert
 
-"remaps
+let mapleader=" "
+
 inoremap kj <Esc>
+
+nnoremap <silent> <leader>h :nohlsearch<CR>
