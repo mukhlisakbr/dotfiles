@@ -4,6 +4,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'tribela/vim-transparent'
+Plug 'your-github-username/cursor-dark.nvim'
 
 call plug#end()
 
@@ -21,7 +22,7 @@ set smartcase
 set mouse=a
 set scrolloff=5
 
-colorscheme desert
+colorscheme cursor-dark
 
 let mapleader=" "
 
