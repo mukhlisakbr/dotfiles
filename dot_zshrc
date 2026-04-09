@@ -41,7 +41,7 @@ alias wip='git add . && git commit -m "wip" && git push'
 alias cc="claude --dangerously-skip-permissions"
 
 # opencode
-alias oc="opencode"
+alias oc="OPENCODE_ENABLE_EXA=1 opencode"
 
 # uv
 export PATH="/Users/batman/.local/bin:$PATH"
