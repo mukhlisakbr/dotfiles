@@ -89,6 +89,6 @@
     "quotio/claude-opus-4-6-thinking": "max",
     "quotio/gpt-5.3-codex": "max",
     "openai/gpt-5.3-codex": "xhigh",
-    "openai/gpt-5.4": "xhigh"
+    "openai/gpt-5.4": "low"
   }
 }
