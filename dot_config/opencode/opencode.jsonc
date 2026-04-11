@@ -1,0 +1,19 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "build",
+  "mcp": {
+    "chrome-devtools": {
+      "type": "local",
+      "command": ["bunx", "chrome-devtools-mcp@latest"]
+    },
+    "heroui-native": {
+      "type": "local",
+      "command": ["bunx", "@heroui/native-mcp@latest"]
+    },
+    "uniwind": {
+      "type": "remote",
+      "url": "https://docs.uniwind.dev/mcp",
+      "enabled": true,
+    }
+  }
+}
