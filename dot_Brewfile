@@ -59,6 +59,8 @@ cask "raycast"
 cask "rectangle"
 cask "sublime-text"
 cask "tableplus"
+cask "telegram"
+cask "whatsapp"
 cask "zed"
 cask "zulu@17"
 mas "Bitwarden", id: 1352778147
