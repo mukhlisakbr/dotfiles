@@ -15,7 +15,7 @@ plugins=(
 	sublime
 	uv
 	zoxide
-  starship
+	starship
 	mise
 )
 source "$ZSH/oh-my-zsh.sh"
