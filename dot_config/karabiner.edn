@@ -3,7 +3,7 @@
 ;; Watch for changes: gokuw
 
 {:profiles {:goku {:default true}}
-
+ :templates {:open "open -a \"%s\""}
  :main
  [{:des "Map Escape to Caps Lock"
    :rules [[:##escape :caps_lock]]}
@@ -15,4 +15,9 @@
    :rules [[:!Th :left_arrow]
            [:!Tj :down_arrow]
            [:!Tk :up_arrow]
-           [:!Tl :right_arrow]]}]}
+           [:!Tl :right_arrow]]}
+
+  {:des "App launcher (RCmd)"
+   :rules [[:!Qb [:open "Google Chrome"]]
+           [:!Qe [:open "Zed"]]
+           [:!Qt [:open "Ghostty"]]]}]}
