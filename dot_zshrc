@@ -44,6 +44,9 @@ alias cc="claude --dangerously-skip-permissions"
 # opencode
 alias oc="OPENCODE_ENABLE_EXA=1 opencode"
 
+# codex
+alias cx="codex --yolo"
+
 # uv
 export PATH="/Users/ghost/.local/bin:$PATH"
 
