@@ -18,7 +18,9 @@
            [:!Tl :right_arrow]]}
 
   {:des "App launcher (RCmd)"
-   :rules [[:!Qb [:open "Google Chrome"]]
-           [:!Qe [:open "Zed"]]
-           [:!Qt [:open "Ghostty"]]
-           [:!Qm [:open "Spotify"]]]}]}
+    :rules [[:!Qb [:open "Google Chrome"]]
+            [:!Qa [:open "ChatGPT"]]
+            [:!Qc [:open "WhatsApp"]]
+            [:!Qe [:open "Zed"]]
+            [:!Qt [:open "Ghostty"]]
+            [:!Qm [:open "Spotify"]]]}]}
