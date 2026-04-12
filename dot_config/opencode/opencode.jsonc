@@ -3,7 +3,22 @@
   "mcp": {
     "chrome-devtools": {
       "type": "local",
-      "command": ["bunx", "chrome-devtools-mcp@latest"],
+      "command": ["bunx", "chrome-devtools-mcp@latest"]
+    },
+    "stitch": {
+      "type": "remote",
+      "url": "https://stitch.googleapis.com/mcp",
+      "headers": {
+        "X-Goog-Api-Key": "{env:STITCH_API_KEY}"
+      }
+    },
+    "zai": {
+      "type": "local",
+      "command": ["bunx","@z_ai/mcp-server"],
+      "environment": {
+        "Z_AI_API_KEY": "{env:ZAI_API_KEY}",
+        "Z_AI_MODE": "ZAI"
+      }
     }
   },
 }
