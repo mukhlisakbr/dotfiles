@@ -47,6 +47,16 @@ alias oc="OPENCODE_ENABLE_EXA=1 opencode"
 # codex
 alias cx="codex --yolo"
 
+# scrcpy
+alias sc="command scrcpy \
+  --turn-screen-off \
+  --stay-awake \
+  --max-size=1024 \
+  --video-bit-rate=2M \
+  --max-fps=30 \
+  --window-width=320 \
+  --no-audio"
+
 # uv
 export PATH="/Users/ghost/.local/bin:$PATH"
 
