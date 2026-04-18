@@ -6,7 +6,7 @@ brew "bitwarden-cli"
 brew "chezmoi"
 brew "eza"
 brew "fd"
-brew "ffmpeg-full"
+brew "ffmpeg-full", link: true
 brew "fzf"
 brew "gh"
 brew "gnupg"
