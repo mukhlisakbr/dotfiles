@@ -49,6 +49,7 @@ alias cx="codex --yolo"
 
 # scrcpy
 alias sc="command scrcpy \
+  --always-on-top \
   --turn-screen-off \
   --stay-awake \
   --max-size=1024 \
