@@ -7,6 +7,7 @@
   "translate_tabs_to_spaces": true,
   "caret_extra_bottom": 0,
   "caret_extra_top": 0,
+  "vintage_start_in_command_mode": true,
   "theme": "Adaptive.sublime-theme",
   "color_scheme": "Mariana.sublime-color-scheme",
 }
