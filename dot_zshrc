@@ -5,6 +5,7 @@ zstyle ':omz:plugins:eza' 'icons' yes
 zstyle ':omz:plugins:eza' 'dirs-first' yes
 plugins=(
 	brew
+	bun
 	composer
 	eza
 	fzf
