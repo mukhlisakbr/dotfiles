@@ -1,0 +1,14 @@
+" ui
+set number
+
+" indentation
+filetype plugin indent on
+set expandtab
+set shiftwidth=2
+set tabstop=2
+
+" syntax
+syntax on
+
+" mappings
+inoremap kj <Esc>
