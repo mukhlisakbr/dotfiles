@@ -1,4 +1,5 @@
 brew "bun"
+brew "chezmoi"
 brew "eza"
 brew "fd"
 brew "ffmpeg-full", link: true
