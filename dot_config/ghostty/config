@@ -1,0 +1,11 @@
+# macos
+macos-option-as-alt = true
+macos-titlebar-style = tabs
+
+# window
+copy-on-select = clipboard
+window-padding-balance = true
+
+# font
+font-family = "GeistMono Nerd Font Mono"
+font-feature = -calt, -liga
