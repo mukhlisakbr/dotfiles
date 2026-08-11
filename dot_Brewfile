@@ -1,3 +1,4 @@
+brew "agent-browser"
 brew "bun"
 brew "chezmoi"
 brew "eza"
